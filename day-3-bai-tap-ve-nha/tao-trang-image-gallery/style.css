@@ -1,0 +1,46 @@
+body{
+	width: 100%;
+	margin: auto;
+}
+.banner{
+	width: 60%;
+	height:300px;
+	margin: auto;
+}
+.banner img{
+	max-height: 290px;
+}
+.nav-bar{
+	width: 60%;
+	height: 50px;
+	display: flex;
+	margin-left: 240px;
+	margin-right: 100px;
+}
+.nav-bar a{
+	width: 100%;
+	text-align: left;
+	text-decoration: none;
+	font-size: 25px;
+}
+.products{
+	width: 60%;
+	margin-top: 10px;
+	margin-left: 200px;
+}
+p{
+	font-weight: bold;
+}
+.sp1 .sp2 .sp3{
+	display: flex;
+	width: 100%;
+}
+.sp1 .sp2 .sp3 img{
+	margin: 200px;
+	padding: 100px;
+	height: 50px;
+}
+.products img:hover{
+	background-color: #ff0000;
+	color: blue;
+}
