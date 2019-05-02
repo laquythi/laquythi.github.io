@@ -23,6 +23,10 @@ body{
 	text-decoration: none;
 	font-size: 25px;
 }
+.nav-bar a:hover{
+	background-color: blue;
+	color: red;
+}
 .products{
 	width: 60%;
 	margin-top: 10px;
