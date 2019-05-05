@@ -4,20 +4,22 @@ body{
 	margin: 0px;
 	padding: 0px;
 	display: flex;
+	/* ở đây nếu để body(thẻ cha là flex) thì các class con width có thể lớn hơn 33.33% thì
+	các ảnh vẫn chia đều. */
 }
 .left{
-	width: 1000px;
+	width: 50%;/* ở đây width: ((100% -30px)/3) cũng dc */
 	height: 400px;
-	background-color: red;
+	background-color: green;
 	margin-right: 15px;
 }
 .mid{
-	width: 1000px;
+	width: 50%;/* như mọi lần thì ở đây là width=33.33% */
 	height: 400px;
 	background-color: blue;
 }
 .right{
-	width: 1000px;
+	width: 50%;
 	height: 400px;
 	background-color: green;
 	margin-left: 15px;

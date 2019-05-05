@@ -1,0 +1,20 @@
+body{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.login{
+	width: 10%;
+	height: 100px;
+	background-color: blue;
+	margin: 100px;
+	transition: width 5s;
+}
+.login:hover{
+	width: 40%;
+}
+p{
+	border: 10% solid 3px;
+	padding: 40px;
+	color: green;
+}

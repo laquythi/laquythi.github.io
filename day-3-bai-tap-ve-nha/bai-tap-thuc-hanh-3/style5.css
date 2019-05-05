@@ -6,17 +6,17 @@ body{
 	display: flex;
 }
 .left{
-	width: 100%;
+	width: calc(100% /3); /* co the thay bang 33.33% */
 	height: 400px;
 	background-color: red;
 }
 .mid{
-	width: 100%;
+	width: calc(100% /3);
 	height: 400px;
 	background-color: green;
 }
 .right{
-	width: 1000px;
+	width: calc(100% /3);
 	height: 400px;
 	background-color: blue;
 }
