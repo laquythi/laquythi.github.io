@@ -1,0 +1,36 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+#menu ul{
+	list-style: none;
+	background-color: gray;
+}
+#menu ul li{
+	display: inline-table;
+	height: 40px;
+	width: 180px;
+	line-height: 40px;
+	position:relative;
+	text-align: center;
+}
+#menu ul li a{
+	color: #333;
+	text-decoration: none;
+	display: block;
+}
+#menu ul li a:hover{
+	background: blue;
+	color: green;
+}
+li .sub-menu{
+	display: none;
+}
+li:hover .sub-menu {
+	display: flex;
+	background: gray;
+	color: blue;
+  position:absolute;
+}
+
+ 

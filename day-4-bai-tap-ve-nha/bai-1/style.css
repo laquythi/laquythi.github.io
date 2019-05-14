@@ -1,20 +1,17 @@
 body{
 	width: 100%;
-	margin: 0;
+	margin: 100px;
 	padding: 0;
 }
-.login{
-	width: 10%;
-	height: 100px;
-	background-color: blue;
-	margin: 100px;
-	transition: width 5s;
+button{
+	width: 210px;
+	height: 70px;
+	color: blue;
+	transition: all 1s;
+	border-radius: 3px;
+
 }
-.login:hover{
-	width: 40%;
-}
-p{
-	border: 10% solid 3px;
-	padding: 40px;
-	color: green;
+button:hover{
+	border-radius: 30px;
+	background: #21a284;
 }

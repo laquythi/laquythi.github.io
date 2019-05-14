@@ -1,0 +1,88 @@
+*{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.container{
+	width: 100%;
+	margin: 20px;
+}
+.top ul{
+	display: flex;
+}
+.top ul li{
+	list-style: none;
+}
+.top ul li a{
+	font-size: 30px;
+	text-decoration: none;
+	color: red;
+}
+.top ul li a:hover{
+	background: gray;
+	color: black;
+}
+.mid{
+	margin-top: 40px;
+	display: flex;
+}
+.left{
+	width: 30%;
+	margin: 10px;
+}
+.left ul{
+	margin: 10px;
+}
+.left ul li{
+	list-style: none;
+	border-bottom: 1px green solid;
+	background-color: white;
+}
+.left ul li a{
+	text-decoration: none;
+	font-size: 25px;
+
+}
+.left ul li a:hover{
+	background-color: white;
+	color: blue;
+}
+.sub-menu{
+	display: none;
+	background-color: blue;
+}
+.left ul li:hover .sub-menu{
+	display: block;
+	margin:0 20px;
+	color: blue;
+}
+.sub2{
+	display: none;
+}
+ul.sub-menu li:hover .sub2{
+	display: block;
+	margin:0 20px;
+	color: blue;
+}
+.right{
+	width: 70%;
+	margin-right: 120px;	 
+}
+h1{
+	text-align: center;
+}
+.images{
+	display: flex;
+	width: 100%;
+}
+.images img{
+	width: 30%;
+	margin: 10px;
+}
+.chat img{
+	width: 2%;
+	height: 5%;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+}

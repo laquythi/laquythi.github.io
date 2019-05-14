@@ -1,0 +1,48 @@
+*{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.container{
+	width: 100%;
+	margin: 20px;
+}
+.mid{
+	margin-top: 40px;
+	display: flex;
+}
+.left{
+	width: 30%;
+	margin: 10px;
+}
+.left ul{
+	margin: 10px;
+}
+.left ul li{
+	list-style: none;
+	border-bottom: 0.1px green solid;
+	 
+}
+.left ul li a{
+	text-decoration: none;
+	font-size: 25px;
+}
+.left ul li a:hover{
+	background-color: red;
+}
+.sub-menu{
+	display: none;
+	/* background-color: blue; */
+}
+.left ul li:hover .sub-menu{
+	display: block;
+	margin:0 20px;
+	/* color: blue; */
+}
+.sub2{
+	display: none;
+}
+ul.sub-menu li:hover .sub2{
+	display: block;
+	margin:0 15px;
+}
