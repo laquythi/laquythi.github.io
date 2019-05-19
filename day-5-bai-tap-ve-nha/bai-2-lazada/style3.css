@@ -32,11 +32,14 @@
 }
 .sub-menu{
 	display: none;
+	background: blue;
 	/* background-color: blue; */
 }
 .left ul li:hover .sub-menu{
 	display: block;
-	margin:0 20px;
+	margin-left: 180px;
+	top: -40px;
+	/* margin:0 20px; */
 	/* color: blue; */
 }
 .sub2{
