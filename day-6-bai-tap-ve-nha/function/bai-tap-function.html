@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>example</title>
+</head>
+<body>
+	<script>
+		b1:tính bình phương của 1 số
+		function tinhbinhphuong(a){
+			return a*a; // return Math.pow(a,2)
+		}
+		console.log (tinhbinhphuong(8));
+
+		b2:tính thế kỷ của năm(cho vào 1 năm,xem năm đó thuộc thế kỷ nào)
+		function tinhtheky(a){
+			return Math.ceil(a/100);
+		}
+		console.log (tinhtheky(1991)); // kết quả 20.
+
+		b3:cắt chuỗi
+		function catchuoi(a){
+			return a.substring(0,10) + " ...";
+		}
+		console.log (catchuoi("laquythithaibinh"));
+		function catchuoi(a){
+			return a.slice(0,10) + " ..."; //return a.substr(0,10) + " ...";
+		}
+		console.log (catchuoi("thilaquytechmaster"));
+		function catchuoi(a){
+			return a.slice(0,8).toUpperCase() + " " + a.slice(8,12) + " " + a.slice(12,18).toUpperCase() ;
+		}
+		console.log (catchuoi("thilaquytechmaster")); ==> THILAQUY tech MASTER;
+
+		b4:viết hoa chữ cái đầu tiên
+		function Afirst(a){
+			return a.charAt(0).toUpperCase() + a.slice(1);
+		}
+		console.log (Afirst("laquythi")); ==> Laquythi
+
+		function chuoi(a){
+			return a.slice(0,5).toUpperCase() + " " + a.slice(5);
+		}
+		console.log (chuoi("laquythi")); ==>LAQUY thi
+		
+		b5:tìm số nhỏ nhất trong mảng.
+		function timsonhonhat(a){
+			a.sort();
+			return a[0];
+		}
+		console.log (timsonhonhat([9,10,32,11]));
+
+		b6:sắp xếp tên trong mảng
+		function sapxepten(name){
+			name.sort();
+			return name;
+		}
+		console.log (sapxepten(["thi","anh","phong","trang"])); ==> ["anh", "phong", "thi", "trang"]
+
+		function sapxepten(name){
+			name.reverse();// dùng reverse ko sắp xếp tên theo abc mà chỉ đảo ngược thứ tự được viết trong mảng. muốn sắp xêp ngược theo bảng chữ cái,ta dùng function sapxepnguoc ben duoi;
+			return name;
+		}
+		console.log (sapxepten(["thi","anh","phong","trang"])); ==> ["trang", "phong", "anh", "thi"]
+
+		function sapxepnguoc(name){
+			name.sort(); // ==> anh phong thi trang
+			name.reverse(); // ==> trang thi phong anh 
+		}
+		console.log (sapxepnguoc(["thi","anh","phong","trang"])); ==>
+	</script>
+</body>
+</html>
