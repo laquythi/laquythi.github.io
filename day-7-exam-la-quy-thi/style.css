@@ -1,0 +1,40 @@
+body{
+	margin:0px;
+	padding:0px;
+	background:#009298;
+}
+.img{
+	display:flex;
+}
+.img a{
+	text-decoration:none;
+}
+.img a p:hover{
+	/* background-color:#669966; */
+	color:#00CCFF;
+}
+.img a p{
+	text-align:left;
+	margin-left:50px;
+	font-size:30px;
+	color:#555555;
+}
+p{
+	color:#CCCCCC;
+	font-size: 25px;
+	margin:10px;
+}
+img{
+	width: 70%;
+	margin: 0 40px;
+	height: 200px;
+	opacity: 1;
+	transition: opacity 1s linear;
+	transition: all 2s;
+}
+.hn img:hover{
+	opacity:0.5;
+}
+.sg img:hover{
+	transform:translate(0,-10px);
+}

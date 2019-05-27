@@ -9,8 +9,7 @@
   margin-left: 500px;
   align-items: center;
 }
-h2{
-   
+h2{  
   font-size: 30px;
   color: red;
 }
@@ -27,7 +26,6 @@ h2{
   text-align: center;
   transition: transform 2s;
   transform-style: preserve-3d;
-  
 }
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
