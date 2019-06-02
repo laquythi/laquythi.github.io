@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bài tập vòng lặp</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<script>
+		//bai 1:Cho 1 chuỗi số, hãy viết hàm có tác dụng sao chép chuỗi số lên 10 lần, ngăn cách nhau bởi ký tự "-".
+		function lapchuoi(a){
+			var newa = "";
+			for(var i=0;i<10;i++){
+				newa = newa + a + "-";
+			}
+			return newa.substring(0,newa.length-1);
+		}
+		console.log (lapchuoi([113]));
+
+		//bai 2:Cho 1 số nguyên dương n. Viết hàm tính n giai thừa (n!)
+		//bài này e dùng đệ quy,mới tính dc giá trị của 5!. chưa làm dc theo yêu cầu 5! = 1 * 2 * 3 * 4 * 5 = 120.
+		function tinhGiaiThua(a){
+			if(a==0){
+				return 1;
+			}else{
+				return a*tinhGiaiThua(a-1);
+			}
+		}
+		console.log (tinhGiaiThua(6));
+
+		//c2:
+		function tinhGiaiThua(a){
+			var giaiThua = 1;
+			for(var i=1;i<=a;i++){
+				giaiThua= giaiThua*i;
+			}
+			document.write giaiThua;
+		}
+		console.log (tinhGiaiThua(6));
+
+		//bai 3:  Cho 1 chuỗi, hãy viết hàm đảo ngược chuỗi đó
+		//c1:dùng vòng lặp ngược để đảo lại các ký tự.
+		function daoNguocChuoi(a){
+			var newa = "";
+			for(var i=a.length-1;i>=0;i--){
+				newa = newa + a[i];
+			}
+			return newa;
+		}
+		document.write (daoNguocChuoi("laquythi"));
+
+		//c2:
+		function daoNguocChuoi(a){
+			var tachTungKyTu = a.split("");//hello ==> h e l l o
+			var daoNguocKyTu = tachTungKyTu.reverse(); //h e l l o ==> o l l e h
+			var newa = daoNguocKyTu.join("");// o l l e h => olleh
+			return newa; // olleh;
+		}
+		console.log (daoNguocChuoi("hello"));
+
+		//bai 4:Cho 1 mảng tên của n học viên. Viết function sắp xếp lại thứ tự các học viên theo bảng chữ cái và in ra màn hình danh sách học viên kèm theo số thứ tự 
+
+		function sapXepTen(a){
+			a.sort();
+			for(var i=0;i<a.length;i++){
+				document.write ("<p>" + "sinh vien thu " + i + " la " + a[i] + "</p>");
+			}
+		}
+		console.log (sapXepTen(["thi","anh","phong","trang"]));//=> sinh vien thu 0 la anh,thu 1 la phong,thu 2 la thi,thu 3 la trang.
+
+		function sapXepTen(a){
+			a.sort();
+			for(var i=1;i<a.length;i++){
+				document.write ("<p>" + "sinh vien thu " + i + " la " + a[i] + "</p>");
+			}
+		}
+		console.log (sapXepTen(["","thi","anh","phong","trang"])); //=> sinh vien thu 1 la anh,2 la phong,3 la thi,4 la trang
+
+		//bai 5:  Cho 1 mảng các số. Viết function tạo ra 1 mảng mới với các số là số dư tương ứng khi chia các số trong mảng cũ cho 2
+		//c1:
+		function tinhSoDu(a){
+			var b=[];
+			var i = 0;
+			for(var i=0;i<=a.length-1;i++){
+				b[i]= a[i]%2 + " ";
+				//b[i].push; dòng lệnh này e chưa hiểu lắm,ko cần cũng vẫn in ra dc mảng mới gồm các số dư.
+				document.write (b[i]);
+			}
+		}
+		tinhSoDu([3,2,6,5,9]);
+
+		//c2:
+		function tinhSoDu(a){
+			var b=[];
+			for(var i=0;i<=a.length-1;i++){
+				b.push(a[i]%2);
+			}
+			return b;
+		}
+		console.log (tinhSoDu([3,2,6,5,9]));
+
+		// bai 6:Chỉ dùng vòng lặp for hoặc while, viết function in ra màn hình các số từ 1 đến 100 sao cho những giá trị là chẵn sẽ có màu xanh, những giá trị là lẻ có màu đỏ.
+		for(var a=0;a<=100;a++){
+			if(a%2==0){
+				document.write ('<span style="color:red">' + " " + a);
+			}else{
+				document.write ('<span style="color:blue">' + " " + a);
+			}
+		}
+	</script>
+</body>
+</html>

@@ -13,42 +13,65 @@
 		console.log (tinhbinhphuong(8));
 
 		b2:tính thế kỷ của năm(cho vào 1 năm,xem năm đó thuộc thế kỷ nào)
+		c1:tính thế kỷ theo lịch Gregory,ví dụ năm 2000 vẫn là thế kỷ 20,thế kỷ 21 bắt đầu từ 2001.
 		function tinhtheky(a){
 			return Math.ceil(a/100);
 		}
 		console.log (tinhtheky(1991)); // kết quả 20.
 
+		c2:tính theo lịch thiên văn
+		function tinhTheKy(a){
+			if(a%100==0){
+				return Math.ceil(a/100+1)
+			}else{
+				return Math.cei(a/100);
+			}
+		}
+		console.log (tinhTheKy(2000)); ==>ket qua la 21
 		b3:cắt chuỗi
+		//c1:
 		function catchuoi(a){
 			return a.substring(0,10) + " ...";
 		}
 		console.log (catchuoi("laquythithaibinh"));
+
+		//c2:
 		function catchuoi(a){
 			return a.slice(0,10) + " ..."; //return a.substr(0,10) + " ...";
 		}
 		console.log (catchuoi("thilaquytechmaster"));
+
+		//c3:
 		function catchuoi(a){
 			return a.slice(0,8).toUpperCase() + " " + a.slice(8,12) + " " + a.slice(12,18).toUpperCase() ;
 		}
 		console.log (catchuoi("thilaquytechmaster")); ==> THILAQUY tech MASTER;
 
 		b4:viết hoa chữ cái đầu tiên
+		c1:
 		function Afirst(a){
 			return a.charAt(0).toUpperCase() + a.slice(1);
 		}
 		console.log (Afirst("laquythi")); ==> Laquythi
-
+		c2:
 		function chuoi(a){
 			return a.slice(0,5).toUpperCase() + " " + a.slice(5);
 		}
 		console.log (chuoi("laquythi")); ==>LAQUY thi
+		c3:
+		function Afirst(a){
+			a=a.slice().toLowerCase();
+			return a.slice(0,1).toUpperCase() + a.slice(1);
+		}
+		console.log (Afirst("LAQUYTHI"));
 		
 		b5:tìm số nhỏ nhất trong mảng.
 		function timsonhonhat(a){
-			a.sort();
+			a.sort((a,b) => a-b); //ở đây nếu đổi lại thanh b-a thì sẽ sort ra số lớn nhất.
 			return a[0];
 		}
-		console.log (timsonhonhat([9,10,32,11]));
+		var a = [9,11,93,54,65,847];
+		console.log (timsonhonhat(a)); ==> ket qua 9;
 
 		b6:sắp xếp tên trong mảng
 		function sapxepten(name){
