@@ -59,7 +59,7 @@
 		console.log (daoNguocChuoi("hello"));
 
 		//bai 4:Cho 1 mảng tên của n học viên. Viết function sắp xếp lại thứ tự các học viên theo bảng chữ cái và in ra màn hình danh sách học viên kèm theo số thứ tự 
-
+		//c1:
 		function sapXepTen(a){
 			a.sort();
 			for(var i=0;i<a.length;i++){
@@ -67,7 +67,7 @@
 			}
 		}
 		console.log (sapXepTen(["thi","anh","phong","trang"]));//=> sinh vien thu 0 la anh,thu 1 la phong,thu 2 la thi,thu 3 la trang.
-
+		//c2:
 		function sapXepTen(a){
 			a.sort();
 			for(var i=1;i<a.length;i++){
@@ -100,13 +100,16 @@
 		console.log (tinhSoDu([3,2,6,5,9]));
 
 		// bai 6:Chỉ dùng vòng lặp for hoặc while, viết function in ra màn hình các số từ 1 đến 100 sao cho những giá trị là chẵn sẽ có màu xanh, những giá trị là lẻ có màu đỏ.
-		for(var a=0;a<=100;a++){
-			if(a%2==0){
-				document.write ('<span style="color:red">' + " " + a);
-			}else{
-				document.write ('<span style="color:blue">' + " " + a);
+		function test(){
+			for(var a=0;a<=100;a++){
+				if(a%2==0){
+					document.write ('<span style="color:red">' + " " + a);
+				}else{
+					document.write ('<span style="color:blue">' + " " + a);
+				}
 			}
 		}
+		test();
 	</script>
 </body>
 </html>
