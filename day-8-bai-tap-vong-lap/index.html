@@ -8,17 +8,29 @@
 <body>
 	<script>
 		//bai 1:Cho 1 chuỗi số, hãy viết hàm có tác dụng sao chép chuỗi số lên 10 lần, ngăn cách nhau bởi ký tự "-".
+		//c1:
 		function lapchuoi(a){
-			var newa = "";
+			var newa = ""; //ở đây chỉ cần newa = ""; ko cần var newa
 			for(var i=0;i<10;i++){
 				newa = newa + a + "-";
 			}
 			return newa.substring(0,newa.length-1);
 		}
-		console.log (lapchuoi([113]));
+		console.log (lapchuoi([113])); // chỉ cần lapchuoi(123);
+
+		//c2:
+		function lapchuoi(a){
+			var newa = "";
+			for(var i=0;i<9;i++){//lặp 9 lần
+				newa = newa + a  + "-";
+			}
+			newa = newa + a; // sau khi lặp 9 lần cộng thêm 1 lần cuối cùng nữa là thành 10;
+			return newa; //trả về kết quả lặp 10 lần.
+		}
+		lapchuoi(113);
 
 		//bai 2:Cho 1 số nguyên dương n. Viết hàm tính n giai thừa (n!)
-		//bài này e dùng đệ quy,mới tính dc giá trị của 5!. chưa làm dc theo yêu cầu 5! = 1 * 2 * 3 * 4 * 5 = 120.
+		// c1:bài này e dùng đệ quy,mới tính dc giá trị của 5!. chưa làm dc theo yêu cầu 5! = 1 * 2 * 3 * 4 * 5 = 120.
 		function tinhGiaiThua(a){
 			if(a==0){
 				return 1;
@@ -30,13 +42,13 @@
 
 		//c2:
 		function tinhGiaiThua(a){
-			var giaiThua = 1;
+			var giaithua=1;
 			for(var i=1;i<=a;i++){
-				giaiThua= giaiThua*i;
+				giaithua=giaithua*i;
 			}
-			document.write giaiThua;
+			return giaithua;
 		}
-		console.log (tinhGiaiThua(6));
+		tinhGiaiThua(7); // ket qua 5040;
 
 		//bai 3:  Cho 1 chuỗi, hãy viết hàm đảo ngược chuỗi đó
 		//c1:dùng vòng lặp ngược để đảo lại các ký tự.
@@ -56,7 +68,7 @@
 			var newa = daoNguocKyTu.join("");// o l l e h => olleh
 			return newa; // olleh;
 		}
-		console.log (daoNguocChuoi("hello"));
+		console.log (daoNguocChuoi("hello")); //ở đây chỉ cần daoNguocChuoi("hello");
 
 		//bai 4:Cho 1 mảng tên của n học viên. Viết function sắp xếp lại thứ tự các học viên theo bảng chữ cái và in ra màn hình danh sách học viên kèm theo số thứ tự 
 		//c1:
@@ -80,7 +92,6 @@
 		//c1:
 		function tinhSoDu(a){
 			var b=[];
-			var i = 0;
 			for(var i=0;i<=a.length-1;i++){
 				b[i]= a[i]%2 + " ";
 				//b[i].push; dòng lệnh này e chưa hiểu lắm,ko cần cũng vẫn in ra dc mảng mới gồm các số dư.
@@ -92,7 +103,7 @@
 		//c2:
 		function tinhSoDu(a){
 			var b=[];
-			for(var i=0;i<=a.length-1;i++){
+			for(var i=0;i<=a.length-1;i++){  //có thể thay bằng i<a.length
 				b.push(a[i]%2);
 			}
 			return b;

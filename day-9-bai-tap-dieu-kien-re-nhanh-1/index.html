@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bài tập điều kiện rẽ nhánh 1</title>
+</head>
+<body>
+	<script>
+		 // Bài 1. Sử dụng câu lệnh if để viết 1 hàm với 2 tham số bất kỳ, kiểm tra xem 2 tham số có phải là number không và tìm ra số lớn nhất trong 2 số đó.
+		 function vietHam(a,b){
+		 	if(typeof a == "number" && typeof b != "number"){
+		 		document.write("a ở dạng number,b ko ở dạng number");
+		 	}else if(typeof a != "number" && typeof b == "number"){
+		 		document.write("a ko ở dạng number,b ở dạng number");
+		 	}else if(typeof a != "number" && typeof b != "number"){
+		 		document.write("cả a và b đểu ko ở dạng number");
+		 	}else{
+		 		document.write("a và b đều ở dạng number" + "<br/>");
+		 		var ketqua = a-b;
+		 		if(ketqua ==0){
+		 			document.write("a bằng b");
+		 		}else if(ketqua < 0){
+		 			document.write("a nhỏ hơn b");
+		 		}else{
+		 			document.write("a lớn hơn b");
+		 		}
+		 	}
+		 }
+		 vietHam(5,7);
+
+		 //bài 2: Viết 1 hàm dùng để tính giai thừa của 1 số. Kiểm tra tham số đầu vào phải là 1 số nguyên >= 0, sau đó tính giai thừa và in ra kết quả.
+		 function tinhGiaiThua(a){
+		 	if(a>=0){
+		 		let giaithua =1;
+		 		for(let i=1;i<=a;i++){
+		 			giaithua = giaithua * i;
+		 		}
+		 		return giaithua;
+		 	}else{
+		 		document.write("tham số truyền vào nhỏ hơn 0");
+		 	}
+		 }
+		 tinhGiaiThua(5);
+
+		 //bài 3: Cho 1 mảng các số bất kỳ. Tạo ra 1 mảng mới chỉ chứa các số chẵn lấy ra từ mảng trên và sắp xếp theo thứ tự giảm dần.
+		 function taoMangChan(a){
+		 	let soChan = [];
+		 	for(let i = length;i > 0;i--){
+		 		if(a[i]%2==0){
+		 			soChan.push(a[i]);
+		 		}
+		 	}
+		 	return soChan.sort().reverse();
+		 }
+		 taoMangChan([40,9,5,32,33,12,55]); //ở đây nếu thay 32 bằng 132 thì kết quả bị sai.code hiểu rằng 132 là 13(2).
+
+		 // bài 4:  Một trang web cho phép người dùng tạo tài khoản. Hãy viết hàm kiểm tra tính hợp lệ của thông tin người dùng nhập vào. Nếu hợp lệ trả về "Pass", nếu không hợp lệ trả về "Fail".
+		</script>
+	</body>
+	</html>
