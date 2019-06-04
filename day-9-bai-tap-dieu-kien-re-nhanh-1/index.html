@@ -50,11 +50,21 @@
 		 			soChan.push(a[i]);
 		 		}
 		 	}
-		 	return soChan.sort().reverse();
+		 	return soChan.sort(function(a,b){return a-b}).reverse();
 		 }
 		 taoMangChan([40,9,5,32,33,12,55]); //ở đây nếu thay 32 bằng 132 thì kết quả bị sai.code hiểu rằng 132 là 13(2).
 
 		 // bài 4:  Một trang web cho phép người dùng tạo tài khoản. Hãy viết hàm kiểm tra tính hợp lệ của thông tin người dùng nhập vào. Nếu hợp lệ trả về "Pass", nếu không hợp lệ trả về "Fail".
+		 function kiemTra(user){
+		 	user = {
+		 		username = "",
+		 		password = "",
+		 		confirm = ""
+		 	};
+		 	if(username.length>20 || username.length == null){
+
+		 	}
+		 }
 		</script>
 	</body>
 	</html>
