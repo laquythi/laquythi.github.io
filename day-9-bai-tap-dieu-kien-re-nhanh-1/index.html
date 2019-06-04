@@ -17,7 +17,7 @@
 		 	}else{
 		 		document.write("a và b đều ở dạng number" + "<br/>");
 		 		var ketqua = a-b;
-		 		if(ketqua ==0){
+		 		if(ketqua == 0){
 		 			document.write("a bằng b");
 		 		}else if(ketqua < 0){
 		 			document.write("a nhỏ hơn b");
@@ -30,13 +30,16 @@
 
 		 //bài 2: Viết 1 hàm dùng để tính giai thừa của 1 số. Kiểm tra tham số đầu vào phải là 1 số nguyên >= 0, sau đó tính giai thừa và in ra kết quả.
 		 function tinhGiaiThua(a){
-		 	if(a>=0){
+		 	if(a >= 0 && a % 1 == 0){
 		 		let giaithua =1;
 		 		for(let i=1;i<=a;i++){
 		 			giaithua = giaithua * i;
 		 		}
 		 		return giaithua;
-		 	}else{
+		 	}else if(a % 1 != 0){
+		 		document.write("tham số truyền vào ko là số nguyên");
+		 	}
+		 	else{
 		 		document.write("tham số truyền vào nhỏ hơn 0");
 		 	}
 		 }
@@ -61,8 +64,14 @@
 		 		password = "",
 		 		confirm = ""
 		 	};
-		 	if(username.length>20 || username.length == null){
-
+		 	if(username.length > 20 || username.length == null){
+		 		document.write("username rỗng hoặc quá dài");
+		 	}if(6 <= password.length <= 32){
+		 		document.write("password quá dài hoặc quá ngắn");
+		 	}if(confirm != password){
+		 		document.write("xác nhận mật khẩu ko đúng,mời bạn xác nhận lại mật khẩu");
+		 	}else{
+		 		document.write("hoàn tất tạo tài khoản");
 		 	}
 		 }
 		</script>
