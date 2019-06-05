@@ -58,22 +58,31 @@
 		 taoMangChan([40,9,5,32,33,12,55]);
 
 		 // bài 4:  Một trang web cho phép người dùng tạo tài khoản. Hãy viết hàm kiểm tra tính hợp lệ của thông tin người dùng nhập vào. Nếu hợp lệ trả về "Pass", nếu không hợp lệ trả về "Fail".
+
 		 function kiemTra(user){
-		 	user = {
-		 		username = "",
-		 		password = "",
-		 		confirm = ""
-		 	};
-		 	if(username.length > 20 || username.length == null){
+		 	if(user.name.length > 20 && user.name == null){
 		 		document.write("username rỗng hoặc quá dài");
-		 	}if(6 <= password.length <= 32){
+		 	}if(6 <= user.password.length && user.password.length <=32 ){
 		 		document.write("password quá dài hoặc quá ngắn");
-		 	}if(confirm != password){
+		 	}if(user.confirm != user.password){
 		 		document.write("xác nhận mật khẩu ko đúng,mời bạn xác nhận lại mật khẩu");
 		 	}else{
 		 		document.write("hoàn tất tạo tài khoản");
 		 	}
 		 }
+		 	let thi = {
+		 		name : "0thi",
+		 		password : 123456,
+		 		confirm : 123456
+		 	}
+		 	 console.log(kiemTra(thi));//hoàn tất tạo tài khoản.
+
+		 	 let dat = {
+		 	 	name : "dat",
+		 	 	password : 12345678912345678912345,
+		 	 	confirm : 123456789123456789123
+		 	 }
+		 	 console.log (kiemTra(dat));// xác nhận mật khẩu ko đúng,mời bạn nhập lại mật khẩu.
 		</script>
 	</body>
 	</html>
