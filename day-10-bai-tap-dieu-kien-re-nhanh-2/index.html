@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bài tập điều kiện rẽ nhánh 2</title>
+</head>
+<body>
+	<script>
+		//bài 1: In ra màn hình ngày, tháng năm hiện tại và xác định đó là mùa nào trong năm. Ví dụ lấy ngày tháng năm hiện tại bằng đối tượng Date của javascript:
+		dayName = new Array(
+			"chủ nhật",
+			"thứ 2",
+			"thứ 3",
+			"thứ 4",
+			"thứ 5",
+			"thứ 6",
+			"thứ 7"
+			);
+		monthName = new Array(
+			"tháng 1",
+			"tháng 2",
+			"tháng 3",
+			"tháng 4",
+			"tháng 5",
+			"tháng 6",
+			"tháng 7",
+			"tháng 8",
+			"tháng 9",
+			"tháng 10",
+			"tháng 11",
+			"tháng 12"
+			);
+		now = new Date();
+		document.write(
+			now.getHours()+" : "+now.getMinutes()+" phút "+dayName[now.getDay()] +" , "+now.getDate()+" / "+monthName[now.getMonth()]+" / "+now.getFullYear()
+			);
+		let month = new Date().getMonth();
+		switch (month) {
+			case 1:
+			case 2:
+			case 3:
+			document.write(" Mùa Xuân");
+			break;
+			case 4:
+			case 5:
+			case 6:
+			document.write(" Mùa Hạ");
+			break;
+			case 7:
+			case 8:
+			case 9:
+			document.write(" Mùa Thu");
+			break;
+			case 10:
+			case 11:
+			case 12:
+			document.write(" Mùa Đông");
+			break;
+		}
+
+		undefined	
+
+
+	 	//bài 2:Một sinh viên có điểm kiểm tra môn lập trình web là x dưới dạng số (0 <= x <= 10). Hãy chuyển điểm số sang dạng chữ với điều kiện sau:
+
+	 	// Từ 8.5 đến 10: Điểm A
+	 	// Từ 7 đến dưới 8.5: Điểm B
+	 	// Từ 5.5 đến dưới 7: Điểm C
+	 	// Từ 4 đến dưới 5.5: Điểm D
+	 	// Từ 0 đến dưới 4: Điểm F
+	 	//c1: dùng if else
+	 	function diemKiemTra(x){
+	 		if(typeof x == "number" && 10 >= x && x >= 0){
+	 			if(x >= 8.5 && x <= 10){
+	 				document.write("ban dc diem A");
+	 			}else if(x >= 7.0 && x < 8.5){
+	 				document.write("ban dc diem B");
+	 			}else if(x >= 5.5 && x < 7){
+	 				document.write("ban dc diem C");
+	 			}else if(x < 5.5 && x >= 4){
+	 				document.write("ban dc diem D");
+	 			}else{
+	 				document.write("ban dc diem F");
+	 			}
+	 		}else{
+	 			document.write("so truyen vao ko la so nguyen");
+	 		}
+	 	}
+	 	console.log (diemKiemTra(-6));
+
+	 	//bài 3 : Viết hàm translate() có tác dụng dịch từ "Hello" sang 5 thứ tiếng khác nhau (tự chọn) với tham số truyền vào là mã quốc gia, sử dụng switch và mặc định dịch sang tiếng Việt.
+	 	function tranSlate(a){
+	 		switch(a){
+	 			case "US":
+	 			document.write("code for fun");
+	 			break;
+	 			case "JP":
+	 			document.write("楽しみのためのコード");
+	 			break;
+	 			case "Arab":
+	 			document.write("مز للمتعة");
+	 			break;
+	 			case "CN":
+	 			document.write("有趣的代码");
+	 			break;
+	 			case "JEW":
+	 			document.write("קוד בשביל הכיף");
+	 			break;
+	 			default:
+	 			document.write("code cho vui");
+	 		}
+	 	}
+	 	tranSlate("abc");
+
+	 // bài 4 :  Cho 1 mảng chỉ gồm các giá trị true và false. Hãy kiểm tra xem giá trị true xuất hiện lần đầu trong mảng ở vị trí nào.
+	 function timViTri(a){
+	 	for(let i=0;i<=a.length;i++){
+	 		if(a[i] == "false"){
+	 			document.write("phần tử true xuất hiện lần đầu tại vị trí " + i);
+	 			break;
+	 		}
+	 	}
+	 }
+	 timViTri(["false","false","false","false","false","true"]);
+	</script>
+</body>
+</html>
