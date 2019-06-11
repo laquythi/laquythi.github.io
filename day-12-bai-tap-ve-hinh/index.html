@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai tap ve hinh</title>
+</head>
+<body>
+	<script>
+		//b1:iết funciton printTriangle(height), với height là số integer > 2, in ra màn hình 1 hình tam giác vuông cân có chiều cao height.
+		//c1:
+		function tamGiacCan(a){
+			for(var i=1;i<a+1;i++){
+				for(var j=1;j<i+1;j++){
+					document.write("*");
+				}
+				document.write("<br/>");
+			}
+			document.write(" ");
+		}
+		console.log (tamGiacCan(6));
+		//c2: 
+		function veTamGiac(h){
+			var str = "";
+			for(var i=0;i<h;i++){
+				for(var j=0;j<h;j++){
+					if(j==0 || i==h-1 || i==j){
+						str = str + "*";
+					}else{
+						str = str + " ";
+					}
+				}
+				str = str + "<br/>";
+			}
+			document.write("<pre>" + str + "</pre>");
+		}
+		console.log (veTamGiac(6));
+
+		//Bài 2. Viết function printEmptyRectangle(width, height), với width và height là 2 số integer > 3, in ra một hình chữ nhật rỗng có kích thước width x height. 
+
+		function veHinhChuNhat(a,b){
+			let str = "";
+			for(let i=0;i<a;i++){
+				for(let j=0;j<b;j++){
+					if(i == 0 || i == 2 || (j == i-1 || j == b-1) ){
+						str = str + "*";
+					}else{
+						str = str + " ";
+					}
+				}
+				str = str + "<br/>";
+			}
+			document.write("<pre>" + str + "</pre>");
+		}
+		veHinhChuNhat(3,5);
+
+		//Bài 3. Viết function printSpecialTriangle(height), với height là số integer > 1, in ra hình tam giác cân ngược với chiều cao bằng height.
+		function veTamGiacNguoc(a){
+			let str = "";
+			for(let i=a-1; i>=0 ;i--){
+				for(let j=2*a ; j>=0;j--){
+					if(j>=(a-1-i) && j<=(a-1+i)){
+						str = str + "*"; 
+					}
+					else {
+						str = str + " ";
+					}
+				}
+				str = str + "<br/>";
+			}
+			document.write("<pre>" + str + "</pre>");
+		}
+		veTamGiacNguoc(5);
+
+		 //Bài 4. Viết function printX(height), với height là số integer > 4 và là số lẻ, in ra hình chữ X có chiều cao bằng height.
+		 function vietX(a){
+		 	let str = "";
+		 	for(let i=0;i<a;i++){
+		 		for(let j=0;j<a;j++){
+		 			if(i == j || i == a-1-j ){ // j = a-1-i cũng dc.
+		 				str = str + "*";
+		 			}else{
+		 				str = str + " ";
+		 			}
+		 		}
+		 		str = str + "<br/>";
+		 	}
+		 	document.write("<pre>" + str + "</pre>");
+		 }
+		 vietX(5);
+
+		 //Bài 5. Viết function printButterfly(height), với height là số integer > 4 và là số lẻ, in ra hình con bướm có chiều cao bằng height
+		 function veHinh(a){
+		 	let str = "";
+		 	for(let i=0;i<a;i++){
+		 		for(let j=0;j<a;j++){
+		 			if(i ==j || i+j ==a-1 ||
+		 				(j<i && i+j < a) ||
+		 				(j>i && i+j >=a)
+		 				){
+		 				str = str + "*";
+		 		}else{
+		 			str = str + " ";
+		 		}
+		 	}
+		 	str = str + "<br/>";
+		 }
+		 document.write("<pre>" + str + "</pre>");
+		}
+		veHinh(5);
+
+		//bài 6 : vẽ chữ cái đầu tiên của tên
+		function veTen(a){
+			let str = "";
+			for(let i=0;i<a;i++){
+				for(let j=0;j<a;j++){
+					if(i==0 || ((j == 2 ) && i <= a) ) {
+						str = str + "*";
+					}else{
+						str = str + " ";
+					}
+				}
+				str = str + "<br/>";
+			}
+			document.write("<pre>" + str + "<pre/>");
+		}
+		veTen(5);
+	</script>
+</body>
+</html>
