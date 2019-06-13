@@ -8,16 +8,16 @@
 	<script>
 		//b1:iết funciton printTriangle(height), với height là số integer > 2, in ra màn hình 1 hình tam giác vuông cân có chiều cao height.
 		//c1:
-		function tamGiacCan(a){
-			for(var i=1;i<a+1;i++){
-				for(var j=1;j<i+1;j++){
+		function veTamGiacCan(a){
+			for(var i=0;i<a;i++){
+				for(var j=0;j<i;j++){
 					document.write("*");
 				}
 				document.write("<br/>");
 			}
 			document.write(" ");
 		}
-		console.log (tamGiacCan(6));
+		veTamGiacCan(6); // bài này vẽ ra 1 tam giác đặc.
 		//c2: 
 		function veTamGiac(h){
 			var str = "";
@@ -33,7 +33,7 @@
 			}
 			document.write("<pre>" + str + "</pre>");
 		}
-		console.log (veTamGiac(6));
+		console.log (veTamGiac(6));// bài này vẽ ra 1 tam giác rỗng ở giữa.
 
 		//Bài 2. Viết function printEmptyRectangle(width, height), với width và height là 2 số integer > 3, in ra một hình chữ nhật rỗng có kích thước width x height. 
 
@@ -41,7 +41,8 @@
 			let str = "";
 			for(let i=0;i<a;i++){
 				for(let j=0;j<b;j++){
-					if(i == 0 || i == 2 || (j == i-1 || j == b-1) ){
+					if(i == 0 || i == 2  || (j == i-1 || j == b-1) ){
+						// đoạn i == 2 có thể thay bằng i == h-1
 						str = str + "*";
 					}else{
 						str = str + " ";
@@ -108,12 +109,39 @@
 		}
 		veHinh(5);
 
+		//c2: code của Tuấn.
+		function conbuom(n){
+			let str='';
+			let star=1;
+			let space=n-2;
+			let star1=(n-1)/2;
+			let space1=1;
+			//nửa trên.
+			for(let i=0;i<(n-1)/2;i++){
+				str +='*'.repeat(star)+' '.repeat(space) +'*'.repeat(star)+'<br>';
+				star++;
+				space-=2;
+			}
+			//hàng giữa
+			str +='*'.repeat(n)+'<br>';
+			//nửa dưới.
+			for(let i=(n+1)/2;i<n;i++){
+				str +='*'.repeat(star1)+' '.repeat(space1) +'*'.repeat(star1)+'<br>';
+				star1--;
+				space1+=2;
+			}
+
+			document.write('<pre>' +str+'</pre>');
+		}
+		conbuom(7);
+
 		//bài 6 : vẽ chữ cái đầu tiên của tên
 		function veTen(a){
 			let str = "";
 			for(let i=0;i<a;i++){
 				for(let j=0;j<a;j++){
 					if(i==0 || ((j == 2 ) && i <= a) ) {
+						//ở đây điều kiện chỉ cần là i=0 || j=2
 						str = str + "*";
 					}else{
 						str = str + " ";
