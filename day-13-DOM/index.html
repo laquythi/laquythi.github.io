@@ -21,44 +21,77 @@
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora tenetur inventore neque itaque iste deleniti voluptatem nesciunt, soluta quas. Ullam dolorum aperiam maiores adipisci iure dignissimos consequatur commodi optio. Inventore.
 		</p>
 		<button type="button" onclick="changeColor()">change color</button>
-		<button type="button" onclick="changeBg()">change background</button>
-		<button type="button" onclick="copyContent()">copy content</button>
-		<button type="button" onclick="changeFontSize()">change font-size</button>
+		<button type="button" onclick="changeBg('gray')">change background</button>
+		<button type="button" onclick="copyContent('p2','p3')">copy content</button>
+		<button type="button" onclick="changeFontSize(16)">change font-size</button>
 		<button type="button" onclick="increaseFontSize()">increase font-size</button>
 		<button type="button" onclick="decreaseFontSize()">decrease font-size</button>
 	</div>
-	
-
 	<script>
 		//b1:
 		function changeColor(){
-			document.getElementById("p1").style.color = "blue";
-			document.getElementById("p2").style.color = "yellow";
-			document.getElementById("p3").style.color = "red";
+			document.getElementById("p1").style.color = "green";
+			document.getElementById("p2").style.color = "red";
+			document.getElementById("p3").style.color = "yellow";
 		}
 		//b2:
 		function changeBg(){
-			document.getElementById("container").style.backgroundColor = "green";
+		// 	document.getElementById("container").style.backgroundColor = "green";
+			//c1 chưa đúng.
+			//c2: bytton onclick = change bgcolor("orange");
+			document.getElementById("container").style.backgroundColor = "color";
 		}
 		//b3:
-		function copyContent(p1,p2){
-			var p1Content = document.getElementById("p1");
-			var p2Content = document.getElementById("p2");
+		function copyContent(x,y){
+			var p1Content = document.getElementById(x);
+			var p2Content = document.getElementById(y);
 			p1Content.innerHTML = p2Content.innerHTML;
+			//c1 chua dung.
+			//c2:
+			// button onclick = copyContent("p2","p3")
+			// function copycontent(x,y){
+			// 	var p1Content = document.getElementById(x);
+			// 	var p2Content = document.getElementById(y);
+			// }
 		}
 		//b4:
-		function changeFontSize(){
-			document.getElementById("container").style.fontSize = "25px";
+		function changeFontSize(x){
+			//document.getElementsByTagName("p")[0].style.fontSize = x + "px";
+			//document.getElementsByTagName("p")[1].style.fontSize = x + "px";
+			//document.getElementsByTagName("p")[2].style.fontSize = x + "px";
+			let p = document.getElementsByTagName("p");
+			for(let i=0;i<p.length;i++){
+				p[i].style.fontSize = x + "px";
+			}
+			//document.getElementById("container").style.fontSize = "25px";
+			//c1 chưa đúng.
+			//cach 2: button onclick changefontsize(10),
+			//document.getelementbyid("container").style.fontsize = x + "px";
 		}
 		//b5:
-		function increaseFontSize(){
-			document.getElementById("p1").style.fontSize = "27px";
-			document.getElementById("p1").style.backgroundColor = "gray";
+		// function increaseFontSize(){
+		// 	document.getElementById("p1").style.fontSize = "21px";
+		// 	document.getElementById("p1").style.backgroundColor = "gray";
+		// }
+		//c2:
+		function increaseFontSize(paragraph){
+			let getP = document.getElementById(paragraph);
+			let getFontSize = parseFloat(getComputedStyle(getP).getPropertyValue("font-size"));
+			if(getFontSize < 30){
+				getP.style.fontSize = ++getFontSize + "px";
+			}
 		}
 		//b6:
-		function decreaseFontSize(){
-			document.getElementById("p3").style.fontSize = "15px";
-			document.getElementById("p3").style.backgroundColor = "#8888";
+		// function decreaseFontSize(){
+		// 	document.getElementById("p3").style.fontSize = "15px";
+		// 	document.getElementById("p3").style.backgroundColor = "#8888";
+		// }
+		function decreaseFontSize(paragraph){
+			let getP = document.getElementById(paragraph);
+			let getFontSize = parseFloat(getComputedStyle(getP).getPropertyValue("font-size"));
+			if(getFontSize > 10){
+				getP.style.fontSize = --getFontSize + "px";
+			}
 		}
 	</script>
 </body>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>demo DOM</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="container">
+		<p id="p1">
+			The Landmark 81 là một tòa nhà chọc trời trong tổ hợp dự án Vinhomes Central Park, một dự án có tổng mức đầu tư 40.000 tỷ đồng, do Công ty Cổ phần Đầu tư xây dựng Tân Liên Phát thuộc Vingroup làm chủ đầu tư. Tòa tháp cao 81 tầng( với 3 tầng hầm), hiện tại là tòa nhà cao nhất Việt Nam[2], cao nhất Đông Nam Á và đứng thứ 12 thế giới từ tháng 7 năm 2018. Dự án được xây dựng ở Tân Cảng, quận Bình Thạnh, ven sông Sài Gòn. Dự án được khởi công ngày 26/07/2014.<br/>
+
+			Tháng 12/2018, đại diện Công ty Vinhomes thừa nhận với báo chí có 244 căn hộ thuộc các tầng từ 22 đến 45 có sự nhầm lẫn công năng khi bán cho khách hàng. Theo đó, 244 Officetel - căn hộ có chức năng văn phòng và sử dụng 50 năm - đã bị nhầm thành căn hộ ở được sử dụng lâu dài khi bán cho khách hàng.[3]
+		</p>
+		<p id="p2">
+			Quận 1 hay Quận Nhất[2] là quận trung tâm của Thành phố Hồ Chí Minh. Nhiều cơ quan chính quyền, các Lãnh sự quán các nước và nhà cao tầng đều tập trung tại quận này (nhà cao tầng nhất Quận 1 và thứ nhì Thành phố Hồ Chí Minh là Bitexco Financial Tower). Quận 1 được xem là nơi sầm uất và có mức sống cao nhất của Thành phố về mọi phương diện. Đường Đồng Khởi và phố đi bộ Nguyễn Huệ là những khu phố thương mại chính của quận 1.[2]
+		</p>
+		<p class="p3">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum enim qui magni repellat cupiditate accusantium doloribus distinctio maxime ratione? Earum unde optio nulla quod porro minima a officia eveniet, cum.<br/>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa accusamus est cum, velit provident quasi earum voluptatum doloremque labore, adipisci, nesciunt fugit eos. Illum odit officiis, a vero sint quas!<br/>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora tenetur inventore neque itaque iste deleniti voluptatem nesciunt, soluta quas. Ullam dolorum aperiam maiores adipisci iure dignissimos consequatur commodi optio. Inventore.
+		</p>
+		<button type="button" onclick="changeColor()">change color</button>
+		<button type="button" onclick="changeBg('color')">change background</button>
+		<button type="button" onclick="copyContent('p2','p3')">copy content</button>
+		<button type="button" onclick="changeFontSize(16)">change font-size</button>
+		<button type="button" onclick="increaseFontSize()">increase font-size</button>
+		<button type="button" onclick="decreaseFontSize()">decrease font-size</button>
+	</div>
+	<script>
+		//b1 đổi màu 3 đoạn văn
+		function changeColor() {
+			document.getElementById("p1").style.color = "blue";
+			document.getElementById("p2").style.color = "yellow";
+			document.getElementById("p3").style.color = "red";
+		}
+
+		//b2 đổi màu nền
+		function changeBg(color) {
+			document.getElementById("container").style.backgroundColor = color;
+		}
+
+		//b3 thay đổi nôi dung đoạn 1 gióng đoạn 2
+		function copyContent(x, y) {
+			var p1Content = document.getElementById(x);
+			var p2Content = document.getElementById(y);
+			p1Content.innerHTML = p2Content.innerHTML;
+		}
+		//b4 thay đổi font chữ của 3 đoạn
+		function changeFontSize1(x) {
+			document.getElementById("box").style.fontSize = x + "px";
+		}
+</script>
+</body>
+</html>

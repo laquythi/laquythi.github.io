@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>demo bang tinh</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="form">
+		<form action="" name="form">
+			<input type="text" class="textview" name="textview">
+		</form>
+		<table>
+			<tr>
+				<td><input class="button" type="button" value="C" onclick="clean()"></td>
+				<td><input class="button" type="button" value="<" onclick="back()"></td>
+				<td><input class="button" type="button" value="/" onclick="insert('/')" ></td>
+				<td><input class="button" type="button" value="x" onclick="insert('*')" ><td>
+				</tr>
+				<tr>
+					<td><input class="button" type="button" value="7" onclick="insert('7')"></td>
+					<td><input class="button" type="button" value="8" onclick="insert('8')"></td>
+					<td><input class="button" type="button" value="9" onclick="insert('9')"></td>
+					<td><input class="button" type="button" value="-" onclick="insert('-')"></td>
+				</tr>
+				<tr>
+					<td><input class="button" type="button" value="4" onclick="insert('4')"></td>
+					<td><input class="button" type="button" value="5" onclick="insert('5')"></td>
+					<td><input class="button" type="button" value="6" onclick="insert('6')"></td>
+					<td><input class="button" type="button" value="+" onclick="insert('+')"></td>
+				</tr>
+				<tr>
+					<td><input class="button" type="button" value="1" onclick="insert('1')"></td>
+					<td><input class="button" type="button" value="2" onclick="insert('2')"></td>
+					<td><input class="button" type="button" value="3" onclick="insert('3')"></td>
+					<td rowspan="2px"><input class="button" type="button" style="height:106px" value="=" onclick="equal()"></td>
+				</tr>
+				<tr>
+					<td colspan="2px"><input type="button" class="button" style="width:106px" value="0" onclick="insert('0')"></td>
+					<td><input type="button" class="button" value="." onclick="insert('.')"></td>
+				</tr>
+				<tr>
+					<td><input type="button" class="button" value="sin" onclick="fnsin()"></td>
+					<td><input type="button" class="button" value="cos" onclick="fncos()"></td>
+					<td><input type="button" class="button" value="tan" onclick="fntan()"></td>
+					<td><input type="button" class="button" value="^2" onclick="square()"></td>
+				</tr>
+			</table>
+		</div>
+		<script>
+			function insert(number){
+				document.form.textview.value = document.form.textview.value + number;
+			}
+			function clean(){
+				document.form.textview.value = "";
+			}
+			function back(){
+				var exp = document.form.textview.value;
+				document.form.textview.value = exp.substring(0,exp.length-1);
+			}
+			function equal(){
+				var exp = document.form.textview.value;
+				if(exp){
+					document.form.textview.value = eval(exp);
+				}
+			}
+			function fnsin(){
+				document.form.textview.value = Math.sin(document.form.textview.value);
+			}
+			function fncos(){
+				document.form.textview.value = Math.cos(document.form.textview.value);
+			}
+			function fntan(){
+				document.form.textview.value = Math.tan(document.form.textview.value);
+			}
+			function square(){
+				document.form.textview.value = Math.pow(document.form.textview.value,2);
+			}
+		</script>
+	</body>
+	</html>
