@@ -2,6 +2,11 @@
 	margin: 0;
 	padding: 0;
 }
+.form{
+	border: 2px solid #8888;
+	width:225px;
+	background-color:#8888;
+}
 .button {
 	width: 50px;
 	height: 50px;
@@ -13,15 +18,20 @@
 	color: #fff;
 }
 .textview {
-	width: 204px;
+	width: 210px;
 	margin: 2px;
 	font-size: 25px;
 	padding: 5px;
 	border: none;
 	color: #607d8b;
+	text-align:right;
+	background: blue;
 }
 .main {
 	position: absolute;
 	top: 20%;
 	left: 40%;
+}
+.button:hover{
+	background: gray;
 }

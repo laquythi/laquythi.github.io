@@ -93,11 +93,11 @@
 		 // bài 4:  Một trang web cho phép người dùng tạo tài khoản. Hãy viết hàm kiểm tra tính hợp lệ của thông tin người dùng nhập vào. Nếu hợp lệ trả về "Pass", nếu không hợp lệ trả về "Fail".
 
 		 function kiemTra(user){
-		 	if(user.name.length > 20 && user.name == null){
+		 	if(user.name.length > 20 || user.name == null){
 		 		document.write("username rỗng hoặc quá dài");
-		 	}if(6 <= user.password.length && user.password.length <=32 ){
+		 	}else if(user.password.length >=6 && user.password.length <=32 ){
 		 		document.write("password quá dài hoặc quá ngắn");
-		 	}if(user.confirm != user.password){
+		 	}else if(user.confirm != user.password){
 		 		document.write("xác nhận mật khẩu ko đúng,mời bạn xác nhận lại mật khẩu");
 		 	}else{
 		 		document.write("hoàn tất tạo tài khoản");
@@ -116,6 +116,21 @@
 		 	 	confirm : 123456789123456789123
 		 	 }
 		 	 console.log (kiemTra(dat));// xác nhận mật khẩu ko đúng,mời bạn nhập lại mật khẩu.
+
+
+
+		 	 function kiemTra(user){
+		 	 	if(user.name.length < 20 && user.name != null && 
+		 	 		user.password.length >=6 && user.password.length <= 32
+		 	 		&& user.confirm == user.password
+		 	 		){
+		 	 		document.write("hoan tat tao tai khoan");
+		 	 }else if(user.password.length < 6 && user.password.length > 32 ){
+		 	 	document.write("password quá dài hoặc quá ngắn");
+		 	 }else if(user.confirm != user.password){
+		 	 	document.write("xác nhận mật khẩu ko đúng,mời bạn xác nhận lại mật khẩu");
+		 	 }
+		 	}
 		 	</script>
 		 </body>
 		 </html>
