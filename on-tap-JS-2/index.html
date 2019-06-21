@@ -266,8 +266,8 @@
    	//van chua dung,ket qua ra ko bao gom so 0.
    	function sapXepSo(number){
    		let newnumber = number.toString().split("");
-   		for(let i=-1;i<newnumber.length;i++){
-   			for(let j=-1;j<newnumber.length;j++){
+   		for(let i=0;i<newnumber.length;i++){
+   			for(let j=0;j<newnumber.length;j++){
    				if(newnumber[j] >= newnumber[i]){
    					let temp = newnumber[j];
    					newnumber[j] = newnumber[i];
