@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ontap js</title>
+</head>
+<body>
+	<script>
+		//b1:viet ham tinh the tich hinh cau
+		function theTichHinhCau(a){
+			return (4*Math.PI*Math.pow(a,3))/3;
+		}
+		theTichHinhCau(5);
+		//b2:viet ham truyen vao 2 so nguyen,tinh tong cac so nam giua chung.
+		function tinhTongGiua(a,b){
+			if(typeof a == "number" && typeof b == "number"){
+				let min = Math.min(a,b);
+				let max = Math.max(a,b);
+				let tong = 0;
+				for(let i = min+1;i<max;i++){
+					tong = tong + i;
+				}
+				return tong;
+			}
+		}
+		tinhTongGiua(3,8);
+		//b3: cho 1 so,kiem tra xem do co phai la so nguyen to hay ko.
+		function kiemTra(a){
+			flag = true;
+			if(!Number.isInteger(a) || a < 2){
+				flag = false;
+			}else{
+				for(let i = 2;i < a;i++){
+					if(a % i == 0){
+						flag = false;
+						break;
+					}else{
+						flag = true;
+					}
+				}
+			}
+			if(flag == true){
+				return true;
+			}else{
+				return false;
+			}
+		}
+		kiemTra(100);
+		//b4: cho 1 so nguyen duong bat ky,tinh tong tat ca cac so nguyen to nho hon hoac bang tham so truyen vao.
+		function kiemTraSoNguyenTo(a){
+			flag = true;
+			if(!Number.isInteger(a) || a < 2){
+				flag = false;
+			}else{
+				for(let i=2;i<a;i++){
+					if(a%i==0){
+						flag = false;
+						break;
+					}else{
+						flag = true;
+					}
+				}
+			}
+			if(flag == true){
+				return true;
+			}else{
+				return false;
+			}
+		}
+		function tinhTongSoNguyenTo(a){
+			let sum = 0;
+			for(let i=2;i<=a;i++){
+				if(kiemTraSoNguyenTo(i)){
+					sum = sum + i;
+				}
+			}
+			return sum;
+		}
+		tinhTongSoNguyenTo(10);
+		//b5:cho 1 so nguyen duong,tinh tong tat ca cac uoc so cua so do.
+		function tinhTongUocSo(a){
+			if(!Number.isInteger(a) || a <= 0){
+				document.write("tham so truyen vao ko la so nguyen hoac nho hon 0");
+			}else{
+				let sum = 0;
+				for(let i=1;i<=a;i++){
+					if(a%i==0){
+						sum = sum + i;
+					}
+				}
+				return sum;
+			}
+		}
+		tinhTongUocSo(9);
+		//b6:cho 1 so nguyen duong bat ky,tinh tong cac so chan thuoc day fibonacci nho hon hoac bang tham so truyen vao.
+		function tinhTongChan(a){
+			let x = 0;
+			let y = 1;
+			let tong = 0;
+			let sumChan = 0;
+			while((x+y)<=a){
+				tong = x + y;
+				x = y;
+				y = tong;
+				if(tong%2==0){
+					sumChan = sumChan + tong;
+				}
+			}
+			return sumChan;
+		}
+		tinhTongChan(20);
+		 //phan 2: xu ly chuoi
+		 //b1:chuyen 1 chuoi gom nhieu tu thanh chuoi moi viet hoa ky tu dau tien
+		 function vietHoaChuCaiDauTien(str){
+		 	let newstr = str.toLowerCase().split(" ");
+		 	for(let i=0;i<newstr.length;i++){
+		 		newstr[i] = newstr[i].charAt(0).toUpperCase() + newstr[i].slice(1);
+		 	}
+		 	return newstr.join(" ");
+		 }
+		 vietHoaChuCaiDauTien("tran thi thuy");
+	 	//b2:chuyen 1 chuoi gom nhieu tu thanh dang spinal case.
+	 	function chuyenChuoi(str){
+	 		let newstr = str.toLowerCase().split(" ");
+	 		return newstr.join("-");
+	 	}
+	 	chuyenChuoi("thuy tran thi");
+	 	//b3:cho 2 chuoi,kiem tra xem chuoi 1 co chua toan bo ky tu cua chuoi 2 hay ko.
+	 	//b4:cho 1 chuoi,kiem tra xem do co phai la chuoi doi xung hay ko.
+	 	function kiemTraChuoi(str){
+	 		let str1 = str.split("");
+	 		let kq;
+	 		for(let i=0;i<str1.length;i++){
+	 			for(let j=str1.length-1;j>=0;j--){
+	 				if(str1[i] == str1[j]){
+	 					kq = true;
+	 				}else{
+	 					kq = false;
+	 				}
+	 			}
+	 		}
+	 		if(kq == true){
+	 			document.write(str + " là chuỗi đối xứng");
+	 		}else{
+	 			document.write(str + " không phải là chuỗi đối xứng");
+	 		}
+	 	}
+	 	kiemTraChuoi("1001");
+	 	//phan 3:xu ly mang.
+	 	//b1:viet ham loai bo cac gia tri sai trong 1 mang.
+	 	//bai nay lam chua dung.
+	 	function giaTriSai(arr) {
+
+	 		var filterArr=arr.filter(function(val){
+	 			return Boolean(val);  
+	 		});
+
+	 		return filterArr;
+	 	}
+	 	console.log(giaTriSai([0, 1, null, NaN, 2, undefined, false]));
+	 	//phan 4:xu ly object.
+	 	//b2:cho 1 object chua thong tin sinh vien,viet ham sap xep lai mang theo ten hoc vien.
+	 	student.sort(function(a, b){
+	 		if (a.name.toLowerCase() < b.name.toLowerCase()) {return -1;}
+	 		if (a.name.toLowerCase() > b.name.toLowerCase()) {return 1;}
+	 		return 0;
+	 	});
+
+	 	document.write("<p>" + student[0].name + " - " + student[0].age + "</p>");
+
+	 	document.write("<p>" + student[1].name + " - " + student[1].age + "</p>");
+
+	 	document.write("<p>" + student[2].name + " - " + student[2].age + "</p>");
+	 	//b3:cho 1 object chua thong tin sinh vien,viet ham sap xep lai theo tuoi hoc vien tu cao den thap.
+	 	//bai nay lam cung chua dung.
+	 	var student = [
+	 	{name:"Bình", age:24, gender: "Male"},
+	 	{name:"An", age:21, gender: "Male"},
+	 	{name:"Sơn", age:25, gender: "Male"}
+	 	];
+	 	student.sort(function(a, b){return b.age - a.age});
+
+	 	document.write("<p>" + student[0].name + " - " + student[0].age + "</p>");
+
+	 	document.write("<p>" + student[1].name + " - " + student[1].age + "</p>");
+
+	 	document.write("<p>" + student[2].name + " - " + student[2].age + "</p>");
+	 	//phan5:tong hop.
+	 	//b1:giai va bien luan phuong trinh bac nhat ax+b=0;
+	 	function phuongTrinhBacMot(a,b){
+	 		//ax + b = 0;
+	 		if(typeof a == "number" && typeof b == "number"){
+	 			if(a ==0){
+	 				if(b ==0){
+	 					document.write("phuong trinh co vo so nghiem");
+	 				}else{
+	 					document.write("phuong trinh vo nghiem");
+	 				}
+	 			}else{
+	 			//ax + b = 0 ==> x = -b/a
+	 			document.write("phuong trinh co 1 nghiem duy nhat x = " + (-b/a));
+	 		}
+	 	}else{
+	 		document.write("tham so truyen vao ko o dang number");
+	 	}
+	 }
+	 phuongTrinhBacMot(0,5);
+	 //b2: giai va bien luan phuong trinh bac 2 ax^2 + bx +c = 0;
+	 function phuongTrinhBacHai(a,b,c){
+	 	if(typeof a == "number" && typeof b == "number" && typeof c == "number"){
+	 		//ax^2+bx+c=0
+	 		if(a == 0){
+	 			//bx+c=0;
+	 			if(b == 0){
+	 				if(c == 0){
+	 					document.write("pt co vo so nghiem");
+	 				}else{
+	 					document.write("pt vo nghiem");
+	 				}
+	 			}else{
+	 				document.write("pt co 1 nghiem x = " + (-b/a));
+	 			}
+	 		}else{
+	 			let delta = Math.pow(b,2) - 4*a*c;
+	 			if(delta < 0){
+	 				document.write("pt vo nghiem");
+	 			}else if(delta == 0){
+	 				document.write("pt co 1 nghiem kep x1 = x2 = " + ((-b)/2*a));
+	 			}else{
+	 				let x1 = (-b + Math.sqrt(delta))/2*a;
+	 				let x2 = (-b - Math.sqrt(delta))/2*a;
+	 				document.write("pt co 2 nghiem phan biet x1 = " + x1 + " x2 = " + x2);
+	 			}
+	 		}
+	 	}else{
+	 		document.write("tham so truyen vao ko o dang number");
+	 	}
+	 }
+	 phuongTrinhBacHai(4,6,-33);
+	 //b3: Viết hàm có 2 tham số, tham số đầu tiên là 1 chuỗi thời gian t dạng ''giờ:phút:giây'', tham số thứ 2 là 1 số x <= 1000. Kết quả trả về là 1 chuỗi biểu thị thời gian sau x giây kể từ thời điểm t. Ví dụ với t = ''9:20:56'' và x = 7 thì kết quả là ''9:21:3''.
+	 //bai nay chua hieu cach lam .
+	 function tinhThoiGian(times, seconds) {
+   		let arrTime = times.split(":"); //Đỏi chuỗi giờ thành mảng
+   		let sumSeconds =
+        Number(arrTime[0] * 3600) + Number(arrTime[1] * 60) + Number(arrTime[2]); //Tính tổng số giây của giời gian nhập
+   		let allTime = sumSeconds + seconds; //Tính tổng số giây cộng thêm
+   		let newHours = Math.floor(allTime / 3600); //Lấy giờ mới
+   		let newMinutes = Math.floor((allTime % 3600) / 60); //Lấy phút mới
+   		let newSeconds = Math.floor((allTime % 3600) % 60); //Lấy giây mới
+   		let newTime = newHours + ":" + newMinutes + ":" + newSeconds; //Dịnh dạng lại thời gian
+   		return newTime;
+   	}
+   	tinhThoiGian("17:19:54","4");
+   	//b4:Một con ốc sên leo từ đáy giếng lên miệng giếng, biết ban ngày leo được x mét, ban đêm lại bị tụt xuống y mét, hỏi sau bao nhiêu ngày thì ốc sên sẽ lên được đến miệng giếng. Viết hàm giải bài toán trên với 3 tham số h là chiều cao của giếng, x và y như mô tả trên.
+   	function tinhSoNgay(h,x,y){
+   		let leoTrongMotngay = x-y;
+   		if(leoTrongMotngay <= 0){
+   			document.write("ko bao gio len den mieng gieng");
+   		}else{
+   			let soNgay = h/leoTrongMotngay;
+   			return soNgay;
+   		}
+   	}
+   	tinhSoNgay(13,6,2);
+   	//b5:Cho 1 số nguyên, hãy viết hàm sắp xếp lại các chữ số trong số nguyên đó sao cho ra 1 số nhỏ nhất có thể (không tính số 0 đầu tiên). Ví dụ với tham số 53751 thì kết quả là 13557.
+   	//van chua dung,ket qua ra ko bao gom so 0.
+   	function sapXepSo(number){
+   		let newnumber = number.toString().split("");
+   		for(let i=-1;i<newnumber.length;i++){
+   			for(let j=-1;j<newnumber.length;j++){
+   				if(newnumber[j] >= newnumber[i]){
+   					let temp = newnumber[j];
+   					newnumber[j] = newnumber[i];
+   					newnumber[i] = temp;
+   				}
+   			}
+   		}
+   		return Number(newnumber.join(""));
+   	}
+   	sapXepSo(58302);
+   </script>
+</body>
+</html>

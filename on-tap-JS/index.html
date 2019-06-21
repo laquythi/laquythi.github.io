@@ -14,10 +14,13 @@
 		theTichHinhCau(5);
 		//b2:viết hàm truyền vào 2 số nguyen,tính tổng các số nguyên nằm giữa chúng.
 		//ví dụ 3,8:tính tổng 4+5+6+7=22;
+		//c1:
 		function tinhTongGiua(a,b){
 			if(typeof a == "number" && typeof b == "number"){
 				var sum = 0;
-				for(let i=a+1;i<b;i++){
+				let minNumber = Math.min(a,b);
+				let maxNumber = Math.max(a,b);
+				for(let i=minNumber+1;i<maxNumber;i++){
 					sum = sum + i;
 				}
 				return sum;
@@ -26,7 +29,35 @@
 			}
 		}
 		tinhTongGiua(0,9);
+		//c2:
+		function tinhTong(a,b){
+			if(a>b){
+				let tg = a;
+				a = b;
+				b = tg;
+			}
+			let x = 0;
+			for(let i=a+1;i<b;i++){
+				x = x + i;
+			}
+			return x;
+		}
+		tinhTong(4,8);
+		//c3:vẫn là tính tổng giữa nhưng chỉ tính tổng những số chẵn.
+		function tinhTongGiua(a,b){
+			let x = 0;
+			let minNumber = Math.min(a,b);
+			let maxNumber = Math.max(a,b);
+			for(let i = minNumber+1;i<maxNumber;i++){
+				if(i%2==0){
+					x = x + i;
+				}
+			}
+			return x;
+		}
+		tinhTongGiua(3,8);
 		//b3: cho 1 số,kiểm tra xem số đó có phải số nguyên tố hay ko? trả về True hoặc False
+		//c1:chưa đúng lắm.
 		function kiemTraSoNguyenTo(a){
 			var flag = true;
 			if(a < 2){
@@ -46,6 +77,51 @@
 			}
 		}
 		kiemTraSoNguyenTo(23);
+		//c2:
+		function kiemTraSoNguyenTo(x){
+			if(!Number.isInteger(x) || x < 2){
+				return false;
+			}
+			for(let i = 2;i < x; i++){
+				if(x % i ==0){
+					return false;
+					break;
+				}else{
+					return true;
+				}
+			}
+			if(true){
+				return true;
+			}else{
+				return false;
+			}
+		}
+		kiemTraSoNguyenTo(21);
+		//b4:cho 1 so nguyen duong bat ky,tinh tong tat ca cac so nguyen to nho hon hoac bang tham so truyen vao
+		function ktrasnt(n) {
+  			//ktra xem có phải là so nguyen k? hoặc nho hơn 2 k phải là snt
+  			if (!Number.isInteger(n)|| n < 2) {
+  				return false;
+  			}
+   			// check so nguyen to khi n >= 2
+   			a = Math.sqrt(n); //a bằng căn bậc 2 của n.
+   			for (let i = 2; i <= a; i++) {
+   				if (n % i == 0) {
+   					return false;
+   				}
+   			}
+   			return true;
+   		}
+   		function tinhTongSoNguyenTo(n) {
+   			let sum = 0;
+   			for (let i = 2; i <= n; i++) {
+   				if ( ktrasnt(i)) {
+   					sum += i;//sum = sum + i;
+   				}
+   			}
+   			return sum;
+   		}
+   		document.write(tinhTongSoNguyenTo(13));
 		//b5: cho 1 so nguyen duong,tinh tong cac uoc so cua so do.
 		function tinhUocSo(a){
 			let sum = 0;
@@ -71,10 +147,14 @@
 		 //b2:chuyen 1 chuoi gom nhieu tu thanh dang spinal case vi dụ hello world ==> hello-world.
 		 function chuyenChuoi(str) {
 		 	var splitStr = str.toLowerCase().split(' ');
-		 	return splitStr.join('-'); 
+		 	return splitStr.join('-');
 		 }
-
 		 console.log(chuyenChuoi("hello world"));
+		 //c2:dung regex
+		 function spinalCase(str){
+		 	return str = str.toLowerCase().replace(/ /g,"-");
+		 }
+		 spinalCase("hello wworldlfd");
 		 //b4:cho 1 chuoi,kiem tra xem do co phai la 1 chuoi doi xung hay ko.
 		 function kiemTraChuoiDoiXung(str){
 		 	let str1 = str.split(""); //==> str1 = l a q u y t h i
@@ -97,7 +177,6 @@
 		 	}
 		 }
 		 kiemTraChuoiDoiXung("la quy thi");
-
 		 //phan 4: object
 		 //bai 3: viet ham sap xep lai mang theo tuoi hoc vien tu cao den thap
 
