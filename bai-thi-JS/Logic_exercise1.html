@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chuỗi đối xứng</title>
+</head>
+<body>
+    <h1>Chuỗi đối xứng</h1>
+    <script>
+        let input = [
+        'Aha',
+        'sator arepo tenet opera rotas',
+        'Step on no pets',
+        'Shot what able cold new the see hold',
+        'Friendly as an betrayed formerly he',
+        'Morning because as to society behaved moments',
+        'Put ladies design mrs sister was',
+        'Don\'t nod',
+        'Anna',
+        'Play on hill felt john no gate',
+        'I did, did I',
+        'Am passed figure to marked in',
+        'Civic',
+        'Prosperous middletons is ye inhabiting as assistance me especially',
+        'For looking two cousins regular amongst',
+        ' On it differed repeated wandered required in',
+        'My gym',
+        'Kayak',
+        'Then girl neat why yet knew rose spot',
+        'Red rum, sir, is murder',
+        'Level',
+        'Moreover property we he kindness greatest be oh striking laughter',
+        'In me he at collecting affronting principles apartments',
+        'Madam',
+        'Has visitor law attacks pretend you calling own excited painted',
+        'Contented attending smallness it oh ye unwilling',
+        'Turned favour man two but lovers',
+        'Mom',
+        'Noon',
+        'Suffer should if waited common person little oh',
+        'Top spot',
+        'Racecar',
+        'Improved civility graceful sex few smallest screened settling',
+        'Likely active her warmly has',
+        'Radar',
+        'Was it a cat I saw',
+        ' And sir dare view but over man',
+        'Redder',
+        'So at within mr to simple assure',
+        'Refer',
+        'Mr disposing continued it offending arranging in we',
+        'Eva, can I see bees in a cave',
+        'Extremity as if breakfast agreement',
+        'Off now mistress provided out horrible opinions',
+        'No lemon, no melon',
+        'Repaper',
+        'Prevailed mr tolerably discourse',
+        'assurance estimable applauded to so',
+        'Rotator',
+        'Him everything melancholy uncommonly',
+        'solicitude inhabiting projection off',
+        'Rotor',
+        'Connection stimulated estimating excellence an to impression',
+        ' Sense child do state to defer mr of forty',
+        'Sagas',
+        'Become latter but nor abroad wisdom waited',
+        'Solos',
+        'Was delivered gentleman acuteness but daughters',
+        'In as of whole as match asked',
+        'Stats',
+        'Pleasure exertion put add entrance distance drawings',
+        'As friendship advantages resolution it alteration stimulated he or increasing',
+        ' Bed sincerity yet therefore forfeited his certainty neglected questions',
+        'Pursuit chamber as elderly amongst on',
+        'Distant however warrant farther to of',
+        'My justice wishing prudent waiting in be',
+        'Comparison age not pianoforte increasing delightful now',
+        'Insipidity sufficient dispatched any reasonably led ask',
+        'Announcing if attachment resolution sentiments admiration me on diminution'
+        ]
+        function checkSymmetricString(str) {
+            let arr=str.toLowerCase().split(" ");
+            let arrlength=arr.length;
+            for(let i = 0 ; i < arrlength/2 ;i++){
+                if(arr[i] !== arr[arrlength-i-1]){
+                    return false;
+                }
+            }
+            return true;
+        }
+        function main(){
+            input.forEach(str => {
+                if (checkSymmetricString(str))
+                    document.writeln(str, '<br/>')
+            })
+        }
+        main()
+    </script>
+</body>
+
+</html>

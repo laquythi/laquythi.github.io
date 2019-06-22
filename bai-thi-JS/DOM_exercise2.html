@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>About Me</title>
+</head>
+<body id= body>
+ <div class="container">
+    <h1>About Me</h1>
+    <ul>
+     <li >Nickname: <span id="nickname"></span>
+      <li >Favorites:  <span id="favorites"></span>
+     <li >Hometown: <span id="hometown"></span>
+   </ul>
+   <img src="" id="image" alt="">
+  </div>
+      <input type="button" value="Change font" onclick="change()"/>
+      <script>
+       function change() {
+         document.body.style.fontFamily = "Arial, sans-serif";
+       }
+       let name =document.getElementById("nickname");
+       name.innerHTML= "thilaquy@gmail.com";
+       let favorites= document.getElementById("favorites");
+       favorites.innerHTML= "read book";
+       let hometown= document.getElementById("hometown");
+       hometown.innerHTML= "thai binh";
+       document.getElementsByTagName("li")[0].classList.add("listitem");
+       document.getElementsByTagName("li")[1].classList.add("listitem");
+       document.getElementsByTagName("li")[2].classList.add("listitem");
+       document.getElementsByClassName("listitem")[0].style.color="red";
+       document.getElementsByClassName("listitem")[1].style.color="blue";
+       document.getElementsByClassName("listitem")[2].style.color="green";
+       document.getElementById("image").src = "https://scontent.fhan3-1.fna.fbcdn.net/v/t1.0-1/p160x160/46823314_2024008477690012_184247525698437120_n.jpg?_nc_cat=111&_nc_oc=AQmTPm64UQdm8hwV8I1LtRB8UtyGvjKCoEhbg3NvEW2Nw9cD7643x2l2V82dhYnFyAs&_nc_ht=scontent.fhan3-1.fna&oh=c17a6b95cc72ce469d0b4d7ab183a574&oe=5D7A7AA7";
+     </script>
+   </body>
+   </html>
