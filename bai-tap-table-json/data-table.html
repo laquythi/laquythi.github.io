@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>table lam cach 1</title>
+	<meta charset="utf-8">
+	<script
+	src="https://code.jquery.com/jquery-3.4.1.min.js"
+	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>data table</h1>
+	<div class="table-wrapper">
+		<table>
+			<thead>
+				<th> profile_image</th>
+				<th> display_name</th>
+				<th> reputation</th>
+				<th> website_url</th>
+				<th> creation_date</th>
+			</thead>
+			<tbody>
+				
+			</tbody>
+		</table>	
+	</div>
+	<script>
+		$.ajax({
+  url: "http://localhost:3000/items",
+
+  success: function(users ) {
+    render(users)
+  }
+});
+		function render(users){
+			const tbody=$('tbody')
+			console.log(tbody[0])
+			for(let i=0;i<users.length;i++){
+				const user=users[i];
+				let tr=$('<tr></tr>')
+				tbody.append(tr)
+				//profilr_name
+				let profile_image_td=$('<td></td>')
+				let profile_image=$('<img/>')
+				profile_image.attr('src',user.profile_image)
+				profile_image_td.append(profile_image)
+				tr.append(profile_image_td)
+				//dispaly_name
+				let display_name_td=$('<td></td>')
+				let display_name=$('<a></a>')
+				display_name.attr('href',user.link)
+				display_name.attr('title',user.link)
+				display_name.text(user.display_name)
+				display_name_td.append(display_name)
+				tr.append(display_name_td)
+				//reputation
+				let reputation_td=$('<td></td>')
+				reputation_td.text(user.reputation)
+				tr.append(reputation_td)
+				//website_url
+				let website_url_td=$('<td></td>')
+				let website_url=$('<a></a>')
+				website_url.attr('href',user.website_url)
+				website_url.attr('title',user.website_url)
+				website_url_td.text(user.website_url)
+				website_url_td.append(website_url)
+				tr.append(website_url_td)
+				//creation_date
+				let creation_date_td=$('<td></td>')
+				let creation_date=new Date(user.creation_date)
+				creation_date_td.text(creation_date.toDateString())
+				tr.append(creation_date_td)
+			}
+		}
+
+	</script>
+</body>
+</html>

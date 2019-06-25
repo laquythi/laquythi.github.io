@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>register form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="dangnhap">
+			<form action="trangchu.html" id="form-login">
+				<div class="em">
+					<h3>Email hoặc điện thoại</h3>
+					<input type="emailDangNhap" name="emailDangNhap" id="emailDangNhap" placeholder="nhap email"><br/>
+					<span class="error"></span>
+				</div>
+				<div class="ps">
+					<h3>mật khẩu</h3>
+					<input type="password" name="passwordDangNhap" id="passwordDangNhap" placeholder="nhap password"><br/>
+					<span class="error"></span><br/>
+				</div>
+				<div class="sb">
+					<input type="submit" value="Đăng nhập">
+				</div>
+			</form>
+		</div>
+		<div class="wrap">
+			<h1>đăng ký thành viên</h1>
+			<form action="result.html" id="form-register">
+				<input type="text" name="name" id="name" placeholder="nhập họ tên" />
+				<span class="error"></span><br/>
+				<input type="text" name="email" id="email" placeholder="nhập email" />
+				<span class="error"></span><br/>
+				<input type="password" name="password" placeholder="nhập password"><br/>
+				<select name="year">
+					<option>chọn năm sinh</option>
+					<option value="năm 1990">1990</option>
+					<option value="năm 1991">1991</option>
+					<option value="năm 1992">1992</option>
+					<option value="năm 1993">1993</option>
+				</select><br/>
+				<input type="radio" name="gender" id="male" value="male" /><label for="male">Nam</label>
+				<input type="radio" name="gender" id="female" value="female" /><label for="female">Nữ</label>
+				<input type="radio" name="gender" id="other" value="other" /><label for="other">Other</label><br/>
+				<input type="submit" value="đăng ký" />
+			</form>
+		</div>
+	</div>
+	<script src="js/jquery-3.4.1.js"></script>
+	<script>
+		$('#form-register').on('submit', function(){
+			var isValid = true;
+			//Rana Mohsin Ali hop le.
+			// rana Mohsin Ali ko hop le.
+			if ($('#name').val().match(/^([A-Z]+[a-zA-Z]*)(\s|\-)?([A-Z]+[a-zA-Z]*)?(\s|\-)?([A-Z]+[a-zA-Z]*)?$/) == null) {
+				$('#name').next('span').text('Name is invalid');
+				isValid = false;
+			}else{
+				$('#name').next('span').text('');
+			}
+
+			if($('#email').val().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/) == null){
+				$('#email').next('span').text('Email is invalid');
+				isValid = false;
+			}else{
+				$('#email').next('span').text('');
+			}
+
+			if($('#password').val().trim() == ''){
+				$('#password').next('span').text('password rong');
+				 isValid = false;
+			}else{
+				$('#password').next('span').text('');
+			};
+			return isValid;
+		});
+
+
+
+		$('#form-login').on('submit', function(){
+			var infor = true;
+			//joe@aol.com | joe@wrox.co.uk | joe@domain.info hop le.
+			// a@b | notanemail | joe@@. ko hop le
+			if($('#emailDangNhap').val().match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/) == null){
+				$('#emailDangNhap').next('span').text('Email is invalid');
+				infor = false;
+			}else{
+				$('#emailDangNhap').next('span').text('');
+			}
+			if($('#passwordDangNhap').val().trim() == ''){
+				$('#passwordDangNhap').next('span').text('passwordDangNhap rong');
+				 infor = false;
+			}else{
+				$('#passwordDangNhap').next('span').text('');
+			};
+			return infor;
+		});
+	</script>
+</body>
+</html>

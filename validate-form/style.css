@@ -1,0 +1,57 @@
+*{
+	margin:0;
+	padding:0;
+}
+.wrap{
+	margin:100px;
+	background-color:#8888;
+}
+.wrap input{
+	width:300px;
+	height:30px;
+	margin:10px;
+	padding:3px;
+}
+.wrap select{
+	width:300px;
+	height:30px;
+	margin:10px;
+	padding:3px;
+}
+.wrap input[type=radio], input[type=checkbox] {
+	margin: 0;
+	padding: 0;
+	width: auto;
+	height: auto;
+	padding-right: 10px;
+	margin-left:10px;
+}
+.dangnhap{
+	background-color:#3366FF;
+	height:90px;
+}
+.dangnhap form{
+	/* margin-left:850px; */
+	display:flex;
+	width:100%;
+	height:70px;
+	background-color:#3366FF;
+}
+.dangnhap form input{
+	margin:15px;
+	height:25px;
+}
+h3{
+	margin-left:15px;
+	color:white;
+	font-size:17px;
+	font-weight:normal;
+}
+.sb{
+	margin-top:25px;
+	height:30px;
+}
+.sb input{
+	color:white;
+	background-color:#333399;
+}

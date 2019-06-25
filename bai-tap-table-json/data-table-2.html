@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>data table lam cach 2</title>
+	<meta charset="utf-8">
+	<script
+	src="https://code.jquery.com/jquery-3.4.1.min.js"
+	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>data table</h1>
+	<div class="table-wrapper">
+		<table>
+			<thead>
+				<th> profiles_image</th>
+				<th> display_name</th>
+				<th> reputation</th>
+				<th> website_url</th>
+				<th> creation_date</th>
+			</thead>
+			<tbody>
+				
+			</tbody>
+		</table>	
+	</div>
+	<script>
+		$.ajax({
+			url: "http://localhost:3000/items",
+
+			success: function(users ) {
+				render(users)
+			}
+		});
+		function render(users){
+			const tbody=document.getElementsByTagName('tbody')[0]
+			for(let i=0;i<users.length;i++){
+				const user=users[i];
+				let tr=document.createElement('tr')
+				let creation_date = new Date(user.creation_date)
+				tr.innerHTML=`<tr>
+				<td>
+				<img src="${user.profile_image}"/>
+				</td>
+				<td>
+				<a href = "${user.link}" title = "${user.link}">${user.display_name}</a>
+				</td>
+
+				<td>
+				${user.reputation}
+				</td>
+
+				<td>
+				<a href = "${user.website_url}" title = "${user.website_url}">${user.website_url}</a>
+				</td>
+
+				<td>
+				${creation_date.toLocaleString()}
+				</td>
+				`
+				tbody.appendChild(tr)
+			}			
+		}
+
+	</script>
+</body>
+</html>
