@@ -14,11 +14,12 @@
 	<div class="table-wrapper">
 		<table>
 			<thead>
-				<th> profiles_image</th>
-				<th> display_name</th>
-				<th> reputation</th>
-				<th> website_url</th>
-				<th> creation_date</th>
+				<th>profiles_image</th>
+				<th>display_name</th>
+				<th>reputation</th>
+				<th>location</th>
+				<th>website_url</th>
+				<th>creation_date</th>
 			</thead>
 			<tbody>
 				
@@ -28,7 +29,6 @@
 	<script>
 		$.ajax({
 			url: "http://localhost:3000/items",
-
 			success: function(users ) {
 				render(users)
 			}
@@ -46,23 +46,22 @@
 				<td>
 				<a href = "${user.link}" title = "${user.link}">${user.display_name}</a>
 				</td>
-
 				<td>
 				${user.reputation}
 				</td>
-
+				<td>
+				${user.location}
+				</td>
 				<td>
 				<a href = "${user.website_url}" title = "${user.website_url}">${user.website_url}</a>
 				</td>
-
 				<td>
-				${creation_date.toLocaleString()}
+				${creation_date}
 				</td>
 				`
 				tbody.appendChild(tr)
 			}			
 		}
-
 	</script>
 </body>
 </html>

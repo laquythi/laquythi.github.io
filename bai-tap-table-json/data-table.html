@@ -14,11 +14,11 @@
 	<div class="table-wrapper">
 		<table>
 			<thead>
-				<th> profile_image</th>
-				<th> display_name</th>
-				<th> reputation</th>
-				<th> website_url</th>
-				<th> creation_date</th>
+				<th>profile_image</th>
+				<th>display_name</th>
+				<th>location</th>
+				<th>website_url</th>
+				<th>creation_date</th>
 			</thead>
 			<tbody>
 				
@@ -27,12 +27,13 @@
 	</div>
 	<script>
 		$.ajax({
-  url: "http://localhost:3000/items",
+			url: "http://localhost:3000/items",
 
-  success: function(users ) {
-    render(users)
-  }
-});
+			success: function(users ) {
+				debugger;
+				render(users)
+			}
+		});
 		function render(users){
 			const tbody=$('tbody')
 			console.log(tbody[0])
@@ -56,7 +57,7 @@
 				tr.append(display_name_td)
 				//reputation
 				let reputation_td=$('<td></td>')
-				reputation_td.text(user.reputation)
+				reputation_td.text(user.location)
 				tr.append(reputation_td)
 				//website_url
 				let website_url_td=$('<td></td>')
