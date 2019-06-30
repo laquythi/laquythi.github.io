@@ -1,0 +1,25 @@
+*{
+	margin:0;
+	padding:0;
+}
+h2{
+	font-size:30px;
+}
+p{
+	/* margin:10px; */
+	color:blue;
+	font-weight:bold;
+}
+a{
+	color:red;
+}
+a:hover{
+	text-decoration:underline;
+}
+button{
+	margin:10px;
+}
+button:hover{
+	background:gray;
+	
+}

@@ -81,10 +81,10 @@
         'Announcing if attachment resolution sentiments admiration me on diminution'
         ]
         function checkSymmetricString(str) {
-            let arr=str.toLowerCase().split(" ");
+            let arr=str.toLowerCase().split(" "); // chuẩn hơn phải là let arr = str.toLowerCase().split("");
             let arrlength=arr.length;
             for(let i = 0 ; i < arrlength/2 ;i++){
-                if(arr[i] !== arr[arrlength-i-1]){
+                if(arr[i] !== arr[arrlength-i-1]){ // chi can arr[i] != arr[arrlength-i-1]
                     return false;
                 }
             }
@@ -96,7 +96,7 @@
                     document.writeln(str, '<br/>')
             })
         }
-        main()
+        main();
     </script>
 </body>
 

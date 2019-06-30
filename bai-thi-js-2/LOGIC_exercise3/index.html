@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bội số của 5 hoặc 7</title>
+</head>
+<body>
+    <h1>Bội số của 5 hoặc 7</h1>
+    <script>
+       function multiplesOfFiveandSeven(maxValue) {
+           for(let i=0;i<=maxValue;i++){
+            if(i % 5 == 0 || i % 7 == 0){
+                document.write(i + " ");
+            }
+           }
+        }
+        multiplesOfFiveandSeven(100);
+    </script>
+</body>
+
+</html>

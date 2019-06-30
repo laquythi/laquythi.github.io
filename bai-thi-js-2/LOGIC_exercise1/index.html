@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset=utf-8 />
+    <title>so chinh phuong</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Số chính phương</title>
+</head>
+<body>
+    <h1>Số chính phương</h1>
+    <script>
+        function checkSquareNumber(value) {
+             if(value < 1 || (!Number.isInteger(value))){
+                return false;
+             }else if(Math.sqrt(value) %1 === 0){
+                return true;
+             }else{
+                return false;
+             }
+        }
+        function main(){
+           for (let i = 0; i < 1000; i++) {
+               if(checkSquareNumber(i))
+                document.write(i, '<br/>')
+            } 
+        }
+        main()
+    </script>
+</body>
+
+</html>

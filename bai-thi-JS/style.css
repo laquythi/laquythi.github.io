@@ -1,0 +1,14 @@
+*{
+	margin:0;
+	padding:0;
+}
+.container{
+	width:80%;
+	margin:20px;
+}
+li{
+	list-style:none;
+}
+input{
+	margin:20px;
+}

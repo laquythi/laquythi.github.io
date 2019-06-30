@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8 />
+	<title>Thay đổi style</title>
+</head> 
+<body>
+	<p id ='text'>javascript test - techmaster</p>
+	<div>
+		<button id="changeStyle" onclick="changeStyle()">Change Style</button>
+		<script>
+			function changeStyle(){
+				document.getElementById("text").style.fontFamily = "Arial, sans-serif";
+				document.getElementById("text").style.fontSize = "30px";
+				document.getElementById("text").style.color = "red";
+
+				let str = document.getElementById("text").textContent;
+				let newstr = str.toLowerCase().split("");
+				for(let i=0;i<newstr.length-1;i++){
+					newstr[i] = newstr[i].charAt(0).toUpperCase() + newstr[i].slice(1);
+				}
+				return newstr.join("");
+			}
+		</script>
+	</div>
+</body>
+</html>

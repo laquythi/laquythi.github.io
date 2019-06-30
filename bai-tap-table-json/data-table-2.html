@@ -14,54 +14,117 @@
 	<div class="table-wrapper">
 		<table>
 			<thead>
-				<th>profiles_image</th>
-				<th>display_name</th>
-				<th>reputation</th>
-				<th>location</th>
-				<th>website_url</th>
-				<th>creation_date</th>
-			</thead>
-			<tbody>
-				
-			</tbody>
-		</table>	
-	</div>
-	<script>
-		$.ajax({
-			url: "http://localhost:3000/items",
-			success: function(users ) {
-				render(users)
+				<th>ảnh tài khoản <span><button onclick="topSort()">top sort</button>
+					<button onclick="botSort()">bot sort</button></span></th>
+					<th>tên tài khoản</th>
+					<th>danh tiếng</th>
+					<th>nơi ở</th>
+					<th>nguồn bài viết</th>
+					<th>ngày viết</th>
+				</thead>
+				<tbody>
+
+				</tbody>
+			</table>	
+		</div>
+		<script>
+			let users = [];
+			function getDataUsers(){
+				$.ajax({
+					url: "http://localhost:3000/items",
+					success:function (data){
+						users = data;
+						render(data);
+					}
+				})
 			}
-		});
-		function render(users){
-			const tbody=document.getElementsByTagName('tbody')[0]
-			for(let i=0;i<users.length;i++){
-				const user=users[i];
-				let tr=document.createElement('tr')
-				let creation_date = new Date(user.creation_date)
-				tr.innerHTML=`<tr>
-				<td>
-				<img src="${user.profile_image}"/>
-				</td>
-				<td>
-				<a href = "${user.link}" title = "${user.link}">${user.display_name}</a>
-				</td>
-				<td>
-				${user.reputation}
-				</td>
-				<td>
-				${user.location}
-				</td>
-				<td>
-				<a href = "${user.website_url}" title = "${user.website_url}">${user.website_url}</a>
-				</td>
-				<td>
-				${creation_date}
-				</td>
-				`
-				tbody.appendChild(tr)
-			}			
-		}
-	</script>
-</body>
-</html>
+			getDataUsers();
+			function topSort(a,b){
+				if (a.display_name.toLowerCase() < b.display_name.toLowerCase()){
+					return -1;
+				}
+				if (a.display_name.toLowerCase() > b.display_name.toLowerCase()){
+					return 1;
+				}
+				return 0;
+				users.sort(compare);
+				render(users);
+			}
+			function render(data){
+				let content = '';
+				for(var i=0;i<data.length;i++){
+					const user = data[i];
+					content += `
+					<tr>
+					<td>
+					<img src="${user.profile_image}"/>
+					</td>
+					<td>
+					<a href = "${user.link}" title = "${user.link}">${user.display_name}</a>
+					</td>
+					<td>
+					${user.reputation}
+					</td>
+					<td>
+					${user.location}
+					</td>
+					<td>
+					<a href = "${user.website_url}" title = "${user.website_url}">${user.website_url}</a>
+					</td>
+					<td>
+					${creation_date}
+					</td>
+					</tr>
+
+					`
+				}
+			}
+			$.ajax({
+				url: "http://localhost:3000/items",
+				success: function(users) {
+					function compare(a,b){
+						if (a.display_name.toLowerCase() < b.display_name.toLowerCase()){
+							return -1;
+						}
+						if (a.display_name.toLowerCase() > b.display_name.toLowerCase()){
+							return 1;
+						}
+						return 0;
+					}
+					users.sort(compare);
+					render(users);
+				}
+			});
+
+			function render(users){
+				const tbody=document.getElementsByTagName('tbody')[0]
+				for(let i=0;i<users.length;i++){
+					const user=users[i];
+					let tr=document.createElement('tr')
+					let creation_date = new Date(user.creation_date)
+					tr.innerHTML=`<tr>
+					<td>
+					<img src="${user.profile_image}"/>
+					</td>
+					<td>
+					<a href = "${user.link}" title = "${user.link}">${user.display_name}</a>
+					</td>
+					<td>
+					${user.reputation}
+					</td>
+					<td>
+					${user.location}
+					</td>
+					<td>
+					<a href = "${user.website_url}" title = "${user.website_url}">${user.website_url}</a>
+					</td>
+					<td>
+					${creation_date}
+					</td>
+					`
+					tbody.appendChild(tr)
+				}			
+			}
+		</script>
+	</body>
+	</html>

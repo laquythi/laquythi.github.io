@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>make element</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>make element</h1>
+  <script>
+    function makeElement(tag, text){
+     let tagName = document.createElement(tag);
+     tagName.innerHTML = text;
+     document.body.appendChild(tagName);
+   }
+   makeElement('h2', 'đây là thẻ h2');
+   makeElement('p', 'đây là một đoạn văn bản ngắn');
+   makeElement('a', 'đây là một link');
+   makeElement('button', 'click me!');
+ </script>
+</body>
+</html>
