@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>data json optimization</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+	integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+	<h1>data table</h1>
+	<div class="wrapper">
+		<table>
+			<thead>
+				<th>profile image</th>
+				<th order="0" value="Display Name" onclick="sort($(this))">
+					display name
+					<span class="asc"><i class="fas fa-sort-up"></i></span>
+					<span class="desc"><i class="fas fa-sort-down"></i></span>
+				</th>
+				<th order="0" value="User ID" onclick="sort($(this))">
+					User ID
+					<span class="asc"><i class="fas fa-sort-up"></i></span>
+					<span class="desc"><i class="fas fa-sort-down"></i></span>
+				</th>
+				<th>Website</th>
+				<th order="0" value="creation date" onclick="sort($(this))">Creation Date
+					<span class="asc"><i class="fas fa-sort-up"></i></span>
+					<span class="desc"><i class="fas fa-sort-down"></i></span>
+				</th>
+			</thead>
+			<tbody id="users"></tbody>
+		</table>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="56-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+	<script src="javascript.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+*{
+	margin:0;
+	padding:0;
+}
+.ferrazzi{
+	width:100%;
+	display:flex;
+}
+.img{
+	width:30%;
+	height:100px;
+}
+.infor{
+	width:70%;
+	height:100px;
+}

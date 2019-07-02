@@ -1,0 +1,41 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	width:100%;
+	margin:20px;
+}
+.ferrazzi{
+	width:90%;
+	display:flex;
+	padding:5px;
+}
+.img{
+	width:30%;
+	height:100px;
+}
+.infor{
+	width:100%;
+	height:100px;
+}
+.kiosaky{
+	width:90%;
+	display:flex;
+	margin-top:100px;
+}
+.infor2{
+	width:100%;
+	height:100px;
+	padding:10px;
+}
+.gladwell{
+	width:90%;
+	display:flex;
+	margin-top:50px;
+}
+.infor3{
+	width:100%;
+	height:100px;
+	padding:10px;
+}
