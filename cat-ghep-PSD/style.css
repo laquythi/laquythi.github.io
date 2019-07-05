@@ -14,7 +14,7 @@
 	color:black;
 }
 .logo a:hover{
-	color:blue;
+	color:grey;
 	text-decoration:none;
 }
 .menu{
@@ -24,58 +24,74 @@
 	color:black;
 }
 .col-md-3 a:hover{
-	color:blue;
+	color:grey;
 	text-decoration:none;
 }
-h5, h3{
+h6, h3{
 	margin:25px;
 }
-h5 a:hover{
-	color:blue;
+h6 a {
+	color:gray;
+}
+h6 a:hover{
+	color:black;
 	text-decoration:none;
 }
 .description p{
 	margin:25px;
 }
-b{
-	font-size:30px;
+.body p{
+	margin-top:20px;
 }
 .row{
 	margin-top:20px;
 }
-.container-fluid{
-	background:gray;
+.row1:hover{
+	color:red;
 }
-.container-fluid p{
-	font-weight:bold;
-	padding:30px;
-	text-align:center;
+span{
+	font-family:regular;
 	font-size:30px;
 }
-.input{
-	padding:20px;
+.col-md-6 .col-sm-6 > a:hover{
+	color:red;
+}
+.container-fluid{
+	background:#D3D3D3;
+	margin-top:30px;
+}
+.col-md-9{
+	margin:0 auto;
+}
+.container-fluid p{
+	font-family: regular;
+	font-weight:normal;
+	text-align:center;
+	font-size:25px;
+	padding:30px;
+}
+.container .input{
 	text-align:center;
 	display:flex;
 }
+.input img{
+	margin-top:40px;
+	margin-left:-45px;
+	padding:5px;
+	margin-bottom:30px;
+}
 input{
-	margin-left:370px;
+	margin-left:320px;
 	width:30%;
-	background:gray;
-	color:black;
-	font-weight:bold;
+	height:50px;
+	background:#D3D3D3;
+	font-weight:normal;
 	border: 0;
-	border-bottom: 2px solid lightgrey;
-	padding: 10px;
+	border-bottom: 2px solid gray;
+	padding: 1px;
 }
-i:hover{
-	color:blue;
-}
-i{
-	color:black;
-	bottom:10px;
-}
-.loadmore{
-	/* width:30%; */
+.col-md-6 .col-sm-6 p{
+	padding-top:10px;
 }
 button{
 	background:white;
@@ -86,16 +102,16 @@ button{
 	height:50px;
 }
 button:hover{
-	color:blue;
+	color:gray;
 	
 }
 footer{
-	background:gray;
+	/* background:gray; */
 	margin-top:30px;
 }
 footer .container-fluid{
 	/* display:flex; */
-	background:grey;
+	background:#f0f0f0;
 }
 footer .container-fluid .row{
 	display:flex;
@@ -107,7 +123,7 @@ ul li{
 	list-style:none;
 }
 ul li a{
-	margin:20px;
+	margin:10px;
 	width:50%;
 	color:black;
 }
