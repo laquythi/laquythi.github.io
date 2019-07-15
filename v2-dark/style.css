@@ -1,0 +1,167 @@
+*{
+	margin:0;
+	padding:0;
+}
+.hero{
+	position:relative;
+}
+.header{
+	position:absolute;
+	display:flex;
+	top:10px;
+	left:300px;
+}
+.logo{
+	width:20%;
+	display:flex;
+}
+.logo img{
+	width:100%;
+	height:auto;
+}
+.logo p{
+	margin:10px;
+	color:white;
+}
+.menu{
+	width:80%;
+	margin-top:10px;
+	margin-left:500px;
+}
+.menu ul{
+	display:flex;
+	list-style:none;
+}
+.menu ul li a{
+	margin:20px;
+}
+.button{
+	margin-left:20px;
+	width:150px;
+	height:auto;
+}
+.bg{
+	position:relative;
+}
+.bg img{
+	width:100%;
+}
+.hero-content{
+	position:absolute;
+	top:200px;
+	left:500px;
+	/* background-color:blue;
+	border:1px red solid; */
+	width:550px;
+	height:250px;
+}
+h2{
+	text-align:justify;
+	font-size:25px;
+	font-weight:bold;
+	color:white;
+}
+h4{
+	text-align:justify;
+	font-size:15px;
+	font-weight:normal;
+	color:white;
+}
+.line2{
+	position:absolute;
+	top:280px;
+	left:400px;
+	/* background-color:blue;
+	border:1px red solid; */
+	width:630px;
+	height:250px;
+}
+.row{
+	 display:flex;
+	 position:absolute;
+	 top:350px;
+	 left:530px;
+}
+.row .icon{
+	width:30%;
+	margin:5px;
+	border:2px gray solid;
+}
+.icon img{
+	margin:28px;
+}
+.icon p{
+	color:white;
+	font-size:15px;
+	margin-left:5px;
+}
+.section-1{
+	background-color:black;
+	
+	padding-left:100px;
+}
+.square{
+	display:flex;
+	padding-top:400px;
+}
+.title{
+	width:50%;
+	margin:15px;
+}
+.youtube{
+	width:50%;
+}
+.title p{
+	color:gray;
+}
+.title h3{
+	color:white;
+	font-size:27px;
+	font-weight:bold;
+}
+.input{
+	text-align:center;
+	display:flex;
+}
+input{
+	width:30%;
+	height:50px;
+	background:black;
+	font-weight:normal;
+	border: 0;
+	border-bottom: 2px solid blue;
+	padding: 1px;
+	font-weight:bold;
+	font-size:20px;
+	color:white;	
+}
+.input a i{
+	padding-top:20px;
+	margin-left:-20px;
+	color:white;
+}
+.CTA{
+	background-color:black;
+	display:flex;
+	padding-top:200px;
+	padding-left:100px;
+	position:relative;
+}
+.left{
+	width:30%;
+	color:white;
+}
+.mobile{
+	width:30%;
+}
+.mobile img{
+	position:absolute;
+	top:-5px;
+}
+.right{
+	width:40%;
+	color:white;
+}
+.rigth-top{
+	display:flex;
+}
