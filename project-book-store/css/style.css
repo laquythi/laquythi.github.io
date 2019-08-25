@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 *{
 	margin:0;
 	padding:0;
@@ -6,7 +8,9 @@
 html , body{
 	width:100%;
 	height:100%;
-	font-family: 'Roboto';
+	font-family:'Open Sans';
+	/* font-family:'Libre Baskerville'; */
+	/* font-family: 'Roboto'; */
 	font-size:20px;
 }
 /* -------html body---------- */
@@ -38,7 +42,7 @@ html , body{
 	color:#EEEEEE;
 	font-size:16px;
 	margin-top:6px;
-	margin-left:100px;
+	padding-left:50px;
 }
 .header-top .button button.btn{
 	margin-left:10px;
@@ -159,6 +163,7 @@ html , body{
 
 
 ul.breadcrumb {
+  margin-top:20px;
   padding: 10px 16px;
   width:30%;
   list-style: none;
@@ -211,9 +216,12 @@ ul.breadcrumb li a:hover {
 .author .row .sanphamlienquan{
 	top:-20%;
 }
-.author p .best-seller{
+.author  p .best-seller{
 	font-size:16px;
 	font-weight:bold;
+}
+.author .row .infor{
+	margin-top:50px;
 }
 .author h3{
 	font-size:40px;
@@ -254,36 +262,31 @@ ul.breadcrumb li a:hover {
 }
 .other-author .container-fluid p{
 	padding-top:20px;
-	
 }
 .other-author a p{
 	font-size:20px;
 	font-weight:bold;
 	color:#000000;
 }
-.other-author button{
+.other-author input{
 	background:#0DC5ED;
 	margin-left:570px;
-	width:10% !important;
 	border:none;
 	margin-bottom:30px;
 }
 @media screen and (max-width: 992px){
-	.other-author button{
+	.other-author input{
 		margin-left:496px;
-		width:15%;
 	}
 }
 @media screen and (max-width: 768px){
-	.other-author button{
+	.other-author input{
 		margin-left:384px;
-		width:20%;
 	}
 }
 @media screen and (max-width: 576px){
-	.other-author button{
+	.other-author input{
 		margin-left:188px;
-		width:15%;
 	}
 }
 /* ---------other-author----------- */
@@ -295,37 +298,84 @@ ul.breadcrumb li a:hover {
 	font-weight:bold;
 }
 .new-products p{
-	font-size:16px;
+	font-size:20px;
 	margin-top:15px;
-	line-height:5px;
+	line-height:15px;
 }
-.new-products button{
+.new-products input{
 	background:#0DC5ED;
 	margin-left:440px;
-	width:10% !important;
+	border:none;
+	margin-bottom:30px;
+}
+.new-products p.new-products-price{
+	font-size:20px;
+	color:#0DC5ED;
+}
+@media screen and (max-width: 992px){
+	.new-products input{
+		margin-left:400px;
+	}
+}
+@media screen and (max-width: 768px){
+	.new-products input{
+		margin-left:300px;
+	}
+}
+@media screen and (max-width: 576px){
+	.new-products input{
+		margin-left:208px;
+	}
+}
+/* ------new-products------ */
+
+.sanPhamTrongNuoc .price{
+	font-size:20px;
+	color:#0DC5ED;
+}
+.sanPhamTrongNuoc input{
+	background:#0DC5ED;
+	margin-left:570px;
 	border:none;
 	margin-bottom:30px;
 }
 @media screen and (max-width: 992px){
-	.new-products button{
-		margin-left:400px;
-		width:15%;
+	.sanPhamTrongNuoc input{
+		margin-left:406px;
 	}
 }
 @media screen and (max-width: 768px){
-	.new-products button{
-		margin-left:300px;
-		width:20%;
+	.sanPhamTrongNuoc input{
+		margin-left:334px;
 	}
 }
 @media screen and (max-width: 576px){
-	.new-products button{
-		margin-left:208px;
-		width:15%;
+	.sanPhamTrongNuoc input{
+		margin-left:158px;
 	}
 }
+/* ------sanPhamTrongNuoc------ */
 
-
+.footer{
+	background:#171717;
+}
+.footer .row{
+	margin-top:20px;
+}
+.footer h4{
+	margin-top:20px;
+	color:#F4E9E9;
+	font-size:18px;
+	font-weight:bold;
+}
+.footer a , .footer p{
+	color:#919294;
+	font-size:16px;	
+}
+.footer p:hover , .footer a:hover{
+	text-decoration:none;
+	color:#0DC5ED;
+}
 
 
 
