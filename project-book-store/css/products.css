@@ -75,7 +75,16 @@ ul.breadcrumb {
 		margin-left:0;
 		font-size:18px;
 	}
-	.main .locSanPham ul li{
+	.main .locSanPham{
+		display:none;
+	}
+	.main .sale-off img{
+		display:none;
+	}
+	.main .book-day img{
+		display:none;
+	}
+	/* .main .locSanPham ul li{
 		margin-left:15px;
 		line-height:20px;
 	}
@@ -87,7 +96,7 @@ ul.breadcrumb {
 	}
 	.main .locSanPham ul li.xuatXu{
 		font-size:16px;
-	}
+	} */
 }
 @media screen and (max-width: 576px){
 	.main h4{
@@ -125,9 +134,6 @@ ul.breadcrumb {
 	font-size:24px;
 	margin-bottom:20px;
 	font-weight:bold;
-}
-.main .vanHoc img{
-	
 }
 .main .khoaHocCongNghe img{
 	margin-top:20px;
