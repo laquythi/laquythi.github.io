@@ -68,13 +68,121 @@ html , body{
 	line-height:30px;
 	color:#0DC5ED;
 }
+.menu .left a:hover{
+	text-decoration:none;
+}
 .menu .right{
 	width:80%;
 }
 .menu .right ul{
 	display:flex;
-	
-	/* margin:0 20px; */
+	margin-top:17px;
+}
+.menu .right ul li{
+	display:inline;
+	list-style:none;
+	margin-top:10px;
+	margin:0 20px;
+}
+.menu .right ul li a{
+	font-size:18px;
+	color:#060606;
+}
+.menu .right ul li a:hover{
+	text-decoration:none;
+	color:#0DC5ED;
+}
+.menu .right ul li input{
+	margin-left:65px;
+	border:none;
+	outline:none;
+}
+.menu .right ul li i{
+	margin-left:-20px;
+}
+@media screen and (max-width: 1200px){
+	.menu .left{
+		display:none;
+	}
+	.menu .right ul li{
+		display:inline;
+		margin:0 10px;
+	}
+	.menu .right ul li a{
+		font-size:16px;
+	}
+	.menu .right ul li input{
+		margin-left:20px;
+	}
+	.menu .right ul li i{
+		margin-left:1px;
+	}
+}
+@media screen and (max-width: 992px){
+	.menu .left{
+		display:none;
+	}
+	.menu .right{
+		width:100%;
+	}
+	.menu .right ul li{
+		display:inline;
+		margin:0 10px;
+	}
+	.menu .right ul li a{
+		font-size:16px;
+	}
+	.menu .right ul li input{
+		margin-left:30px;
+	}
+}
+@media screen and (max-width: 768px){
+	.menu .right{
+		width:100%;
+	}
+	.menu .left{
+		display:none;
+	}
+	.menu .right ul li{
+		display:inline;
+		margin:0 5px;
+	}
+	.menu .right ul li a{
+		font-size:14px;
+	}
+	.menu .right ul li input{
+		margin-left:20px;
+	}
+}
+@media screen and (max-width: 576px){
+	.menu .right{
+		width:100%;
+	}
+	.menu .left{
+		display:none;
+	}
+	.menu .right ul li{
+		display:inline;
+		font-size:12px;
+		margin:0 3px;
+	}
+	.menu .right ul li a{
+		
+	}
+	.menu .right ul li input{
+		margin-left:10px;
+		width:65%;
+	}
+	.menu .right ul li i{
+		margin-left:-35px;
+	}
+}
+
+/* .menu .right{
+	width:80%;
+}
+.menu .right ul{
+	display:flex;
 	margin-top:17px;
 }
 .menu .right ul li{
@@ -84,7 +192,7 @@ html , body{
 .menu .right ul li a{
 	font-size:18px;
 	color:#060606;
-	margin:0 18px;
+	margin:0 25px;
 }
 .menu .right ul li a:hover{
 	text-decoration:none;
@@ -107,13 +215,16 @@ html , body{
 		line-height:16px;
 		margin:0 5px;
 	}
-	.menu .right ul li input[type=text]{
+	.menu .right ul li input{
 		font-size:16px;
 	}
 }
 @media screen and (max-width: 992px){
+	.menu .left{
+		display:none;
+	}
 	.menu .right{
-		width:70%;
+		width:100%;
 	}
 	.menu .right ul{
 		margin:0;
@@ -121,15 +232,18 @@ html , body{
 	.menu .right ul li a{
 		font-size:16px;
 		line-height:16px;
-		margin:0 5px;
+		margin:0 15px;
 	}
-	.menu .right ul li input[type=text]{
+	.menu .right ul li input{
 		font-size:16px;
 	}
 }
 @media screen and (max-width:768px){
+	.menu .left{
+		display:none;
+	}
 	.menu .right{
-		width:60%;
+		width:100%;
 	}
 	.menu .right ul{
 		margin:0;
@@ -137,15 +251,18 @@ html , body{
 	.menu .right ul li a{
 		font-size:14px;
 		line-height:18px;
-		margin-right:4px;
+		margin-right:5px;
 	}
-	.menu .right ul li input[type=text]{
+	.menu .right ul li input{
 		font-size:14px;
 	}
 }
 @media screen and (max-width: 576px){
+	.menu .left {
+		display:none;
+	}
 	.menu .right {
-		width:50%;
+		width:100%;
 	}
 	.menu .right ul{
 		margin:0;
@@ -153,25 +270,26 @@ html , body{
 	.menu .right ul li a{
 		font-size:14px;
 		line-height:5px;
-		margin-right:4px;
+		margin-right:5px
 	}
 	.menu .right ul li input{
 		width:70%;
 	}
-}
+} */
 /* ---------nav-bar-------- */
 
 
 ul.breadcrumb {
-  margin-top:20px;
-  padding: 10px 16px;
-  width:30%;
+  margin-left:-25px;
+  margin-top:30px;
+  padding: 0px 10px;
+  width:45%;
   list-style: none;
-  background-color: #EEEEEE;
+  background:white;
 }
 ul.breadcrumb li {
   display: inline;
-  font-size: 18px;
+  font-size: 20px;
 }
 ul.breadcrumb li+li:before {
   padding: 8px;
@@ -181,11 +299,50 @@ ul.breadcrumb li+li:before {
 ul.breadcrumb li a {
   color: #060606;
   text-decoration: none;
+  font-size:20px;
 }
 ul.breadcrumb li a:hover {
   color: #0DC5ED;
   text-decoration: none;
 }
+@media screen and (max-width: 992px){
+	ul.breadcrumb{
+		padding:0;
+		width:50%;
+	}
+	ul.breadcrumb li{
+	font-size:20px;
+	}
+	ul.breadcrumb li a{
+		font-size:20px;
+	}
+}
+@media screen and (max-width: 768px){
+	ul.breadcrumb{
+		margin-left:20px;
+		padding:0;
+		width:50%;
+	}
+	ul.breadcrumb li{
+		font-size:18px;
+	}
+	ul.breadcrumb li a{
+		font-size:18px;
+	}
+}
+@media screen and (max-width: 576px){
+	ul.breadcrumb{
+		margin-left:10px;
+		width:50%;
+	}
+	ul.breadcrumb li{
+		font-size:16px;
+	}
+	ul.breadcrumb li a{
+		font-size:16px;
+	}
+}
+
 /* -----breakcrumb------- */
 
 .sanPhamBanChay{
@@ -372,10 +529,12 @@ ul.breadcrumb li a:hover {
 	color:#919294;
 	font-size:16px;	
 }
-.footer p:hover , .footer a:hover{
+.footer .row a p:hover{
 	text-decoration:none;
 	color:#0DC5ED;
 }
-
-
+/* .footer .row a:hover p{
+	text-decoration:none;
+	color:#0DC5ED;
+} */
 

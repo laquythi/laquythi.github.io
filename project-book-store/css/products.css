@@ -1,0 +1,146 @@
+
+ul.breadcrumb {
+  margin-left:235px;
+  list-style: none;
+  width:45%;
+}
+@media screen and (max-width: 992px){
+	ul.breadcrumb {
+		margin-left:50px;
+		width:50%;
+	}
+}
+@media screen and (max-width: 768px){
+	ul.breadcrumb {
+		margin-left:10px;
+		width:50%;
+	}
+}
+@media screen and (max-width: 576px){
+	ul.breadcrumb {
+		margin-left:0px;
+		width:50%;
+	}
+}
+/* -----breadcrumb------ */
+
+
+.main .locSanPham{
+	background:#171717;
+}
+.main h4{
+	padding-top:15px;
+	margin-left:10px;
+	font-size:24px;
+	color:#0DC5ED;
+	font-weight:bold;
+}
+.main .locSanPham{
+	margin-left:-15px;
+}
+.main .locSanPham ul li{
+	display:block;
+	margin-left:25px;
+	line-height:30px;
+}
+.main .locSanPham ul li a{
+	font-size:20px;
+	color:#EEEEEE;
+}
+.main .locSanPham ul li a:hover{
+	color:#0DC5ED;
+	text-decoration:none;
+}
+.main .locSanPham ul li.theLoai{
+	font-size:20px;
+	color:#EEEEEE;
+}
+.main .locSanPham ul li.theLoai ul li a{
+	font-size:16px;
+}
+.main .locSanPham ul li.xuatXu{
+	font-size:20px;
+	color:#EEEEEE;
+}
+.main .locSanPham ul li.xuatXu ul li a{
+	font-size:16px;
+}
+@media screen and (max-width: 992px){
+	.main h4{
+		margin-left:0;
+	}
+}
+@media screen and (max-width: 768px){
+	.main h4{
+		margin-left:0;
+		font-size:18px;
+	}
+	.main .locSanPham ul li{
+		margin-left:15px;
+		line-height:20px;
+	}
+	.main .locSanPham ul li a{
+		font-size:16px;
+	}
+	.main .locSanPham ul li.theLoai{
+		font-size:16px;
+	}
+	.main .locSanPham ul li.xuatXu{
+		font-size:16px;
+	}
+}
+@media screen and (max-width: 576px){
+	.main h4{
+		margin-left:0;
+		font-size:16px;
+	}
+	.main .locSanPham ul li{
+		margin-left:10px;
+		line-height:20px;
+	}
+	.main .locSanPham ul li a{
+		font-size:14px;
+	}
+	.main .locSanPham ul li.theLoai{
+		font-size:14px;
+	}
+	.main .locSanPham ul li.xuatXu{
+		font-size:14px;
+	}
+}
+.main .sell-off img{
+	margin:30px -15px;
+}
+.main .book-day img{
+	margin:30px -15px;
+}
+/* -------loc-san-pham--------- */
+
+.main .row .locSanPham{
+	margin-top:48px;
+}
+.main .products h6{
+	text-align:center;
+	margin-left:-65px;
+	font-size:24px;
+	margin-bottom:20px;
+	font-weight:bold;
+}
+.main .vanHoc img{
+	margin-top:20px;
+}
+.main .khoaHocCongNghe img{
+	margin-top:20px;
+}
+.main .products p{
+	margin-top:10px;
+	font-size:18px;
+	line-height:5px;
+}
+.star{
+	color:yellow;
+}
+.fa-cart-plus {
+	margin-bottom:30px;
+	color:red;
+}
