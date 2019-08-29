@@ -1,0 +1,108 @@
+ ul.breadcrumb {
+  margin-left:-10px;
+  margin-top:20px;
+  padding: 10px 10px;
+  width:100%;
+  list-style: none;
+  background:white;
+}
+/* -----breakcrumb--------- */
+
+.gioiThieuSach .about-book{
+	margin-left:-50px;
+}
+.gioiThieuSach .about-book p{
+	margin-top:10px;
+	font-size:18px;
+	line-height:18px;
+}
+.gioiThieuSach .infor-book h4{
+	margin-top:-50px;
+	margin-left:-120px;
+}
+.gioiThieuSach .infor-book p{
+	font-size:20px;
+	line-height:22px;
+	margin-left:-120px;
+}
+@media screen and (max-width: 1200px){
+	.gioiThieuSach .about-book{
+		margin-left:-30px;
+	}
+	.gioiThieuSach .infor-book h4{
+		margin-top:-50px;
+		margin-left:0px;
+	}
+	.gioiThieuSach .infor-book p{
+		font-size:18px;
+		line-height:22px;
+		margin-left:0px;
+	}
+}
+@media screen and (max-width: 992px){
+	.gioiThieuSach .about-book{
+		margin-left:-20px;
+	}
+	.gioiThieuSach .about-book p{
+		font-size:16px;
+		line-height:16px;
+	}
+	.gioiThieuSach .about-book p{
+		font-size:18px;
+		line-height:18px;
+	}
+	.gioiThieuSach .infor-book h4{
+		margin-top:-50px;
+		margin-left:0px;
+		font-size:18px;
+	}
+	.gioiThieuSach .infor-book p{
+		font-size:16px;
+		line-height:22px;
+		margin-left:0px;
+	}
+}
+@media screen and (max-width: 768px){
+	.gioiThieuSach .about-book{
+		margin-left:0px;
+	}
+	.gioiThieuSach .about-book p{
+		font-size:16px;
+		line-height:16px;
+	}
+	.gioiThieuSach .infor-book h4{
+		margin-top:-50px;
+		margin-left:100px;
+	}
+	.gioiThieuSach .infor-book p{
+		font-size:16px;
+		line-height:16px;
+	}
+}
+@media screen and (max-width: 576px){
+	.gioiThieuSach .about-book{
+		margin-left:20px;
+	}
+	.gioiThieuSach .about-book p{
+		font-size:14px;
+		line-height:14px;
+	}
+	.gioiThieuSach .infor-book h4{
+		margin-top:10px;
+		margin-left:50px;
+	}
+	.gioiThieuSach .infor-book p{
+		font-size:14px;
+		line-height:20px;
+	}
+}
+/* -------gioiThieuSach------ */
+
+.comment{
+	margin-top:40px;
+}
+.comment h5{
+	margin:20px 0;
+}
+
+

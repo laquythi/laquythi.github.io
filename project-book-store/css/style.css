@@ -71,6 +71,26 @@ html , body{
 .menu .left a:hover{
 	text-decoration:none;
 }
+
+.menu{
+	background:#EEEEEE;
+	display:flex;
+}
+.menu .left{
+	width:20%;
+}
+.menu .left p{
+	width:50%;
+	text-align:center;
+	margin-left:20px;
+	margin-top:10px;
+	font-size:20px;
+	line-height:30px;
+	color:#0DC5ED;
+}
+.menu .left a:hover{
+	text-decoration:none;
+}
 .menu .right{
 	width:80%;
 }
@@ -177,46 +197,25 @@ html , body{
 		margin-left:-35px;
 	}
 }
-
-/* .menu .right{
-	width:80%;
-}
-.menu .right ul{
-	display:flex;
-	margin-top:17px;
-}
-.menu .right ul li{
-	list-style:none;
-	margin-top:10px;
-}
-.menu .right ul li a{
-	font-size:18px;
-	color:#060606;
-	margin:0 25px;
-}
-.menu .right ul li a:hover{
-	text-decoration:none;
-	color:#0DC5ED;
-}
-.menu .right ul li input{
-	border:none;
-	outline:none;
-}
-
 @media screen and (max-width: 1200px){
-	.menu .right{
-		width:70%;
+	.menu .left{
+		display:none;
 	}
-	.menu .right ul{
-		margin:0;
+	.menu .right {
+		width:100%;
+	}
+	.menu .right ul li{
+		display:inline;
+		margin:0 30px;
 	}
 	.menu .right ul li a{
 		font-size:16px;
-		line-height:16px;
-		margin:0 5px;
 	}
 	.menu .right ul li input{
-		font-size:16px;
+		margin-left:10px;
+	}
+	.menu .right ul li i{
+		margin-left:1px;
 	}
 }
 @media screen and (max-width: 992px){
@@ -226,64 +225,66 @@ html , body{
 	.menu .right{
 		width:100%;
 	}
-	.menu .right ul{
-		margin:0;
+	.menu .right ul li{
+		display:inline;
+		margin:0 20px;
 	}
 	.menu .right ul li a{
 		font-size:16px;
-		line-height:16px;
-		margin:0 15px;
 	}
 	.menu .right ul li input{
-		font-size:16px;
+		margin-left:120px;
 	}
 }
-@media screen and (max-width:768px){
-	.menu .left{
-		display:none;
-	}
+@media screen and (max-width: 768px){
 	.menu .right{
 		width:100%;
 	}
-	.menu .right ul{
-		margin:0;
+	.menu .left{
+		display:none;
+	}
+	.menu .right ul li{
+		display:inline;
+		margin:0 4px;
 	}
 	.menu .right ul li a{
 		font-size:14px;
-		line-height:18px;
-		margin-right:5px;
 	}
 	.menu .right ul li input{
-		font-size:14px;
+		margin-left:20px;
 	}
 }
 @media screen and (max-width: 576px){
-	.menu .left {
-		display:none;
-	}
-	.menu .right {
+	.menu .right{
 		width:100%;
 	}
-	.menu .right ul{
-		margin:0;
+	.menu .left{
+		display:none;
+	}
+	.menu .right ul li{
+		display:inline;
+		font-size:12px;
+		margin:0 9px;
 	}
 	.menu .right ul li a{
-		font-size:14px;
-		line-height:5px;
-		margin-right:5px
+		
 	}
 	.menu .right ul li input{
-		width:70%;
+		margin-left:10px;
+		width:65%;
+	}
+	.menu .right ul li i{
+		margin-left:-35px;
 	}
 } */
 /* ---------nav-bar-------- */
 
 
-ul.breadcrumb {
-  margin-left:-25px;
-  margin-top:30px;
-  padding: 0px 10px;
-  width:45%;
+ ul.breadcrumb {
+  margin-left:-10px;
+  margin-top:20px;
+  padding: 10px 10px;
+  width:100%;
   list-style: none;
   background:white;
 }
@@ -342,7 +343,6 @@ ul.breadcrumb li a:hover {
 		font-size:16px;
 	}
 }
-
 /* -----breakcrumb------- */
 
 .sanPhamBanChay{
@@ -427,24 +427,9 @@ ul.breadcrumb li a:hover {
 }
 .other-author input{
 	background:#0DC5ED;
-	margin-left:570px;
 	border:none;
-	margin-bottom:30px;
-}
-@media screen and (max-width: 992px){
-	.other-author input{
-		margin-left:496px;
-	}
-}
-@media screen and (max-width: 768px){
-	.other-author input{
-		margin-left:384px;
-	}
-}
-@media screen and (max-width: 576px){
-	.other-author input{
-		margin-left:188px;
-	}
+	margin-top:10px;
+	margin-bottom:20px;
 }
 /* ---------other-author----------- */
 
@@ -457,11 +442,10 @@ ul.breadcrumb li a:hover {
 .new-products p{
 	font-size:20px;
 	margin-top:15px;
-	line-height:15px;
+	line-height:20px;
 }
 .new-products input{
 	background:#0DC5ED;
-	margin-left:440px;
 	border:none;
 	margin-bottom:30px;
 }
@@ -470,18 +454,21 @@ ul.breadcrumb li a:hover {
 	color:#0DC5ED;
 }
 @media screen and (max-width: 992px){
-	.new-products input{
-		margin-left:400px;
+	.new-products p{
+		font-size:20px;
+		line-height:20px;
 	}
 }
 @media screen and (max-width: 768px){
-	.new-products input{
-		margin-left:300px;
+	.new-products p{
+		font-size:20px;
+		line-height:20px;
 	}
 }
 @media screen and (max-width: 576px){
-	.new-products input{
-		margin-left:208px;
+	.new-products p{
+		font-size:20px;
+		line-height:20px;
 	}
 }
 /* ------new-products------ */
@@ -492,24 +479,8 @@ ul.breadcrumb li a:hover {
 }
 .sanPhamTrongNuoc input{
 	background:#0DC5ED;
-	margin-left:570px;
 	border:none;
 	margin-bottom:30px;
-}
-@media screen and (max-width: 992px){
-	.sanPhamTrongNuoc input{
-		margin-left:406px;
-	}
-}
-@media screen and (max-width: 768px){
-	.sanPhamTrongNuoc input{
-		margin-left:334px;
-	}
-}
-@media screen and (max-width: 576px){
-	.sanPhamTrongNuoc input{
-		margin-left:158px;
-	}
 }
 /* ------sanPhamTrongNuoc------ */
 
@@ -533,8 +504,4 @@ ul.breadcrumb li a:hover {
 	text-decoration:none;
 	color:#0DC5ED;
 }
-/* .footer .row a:hover p{
-	text-decoration:none;
-	color:#0DC5ED;
-} */
 

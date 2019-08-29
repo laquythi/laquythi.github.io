@@ -1,26 +1,10 @@
-
 ul.breadcrumb {
-  margin-left:235px;
+  margin-left:-10px;
+  margin-top:20px;
+  padding: 10px 10px;
+  width:100%;
   list-style: none;
-  width:45%;
-}
-@media screen and (max-width: 992px){
-	ul.breadcrumb {
-		margin-left:50px;
-		width:50%;
-	}
-}
-@media screen and (max-width: 768px){
-	ul.breadcrumb {
-		margin-left:10px;
-		width:50%;
-	}
-}
-@media screen and (max-width: 576px){
-	ul.breadcrumb {
-		margin-left:0px;
-		width:50%;
-	}
+  background:white;
 }
 /* -----breadcrumb------ */
 
@@ -84,19 +68,6 @@ ul.breadcrumb {
 	.main .book-day img{
 		display:none;
 	}
-	/* .main .locSanPham ul li{
-		margin-left:15px;
-		line-height:20px;
-	}
-	.main .locSanPham ul li a{
-		font-size:16px;
-	}
-	.main .locSanPham ul li.theLoai{
-		font-size:16px;
-	}
-	.main .locSanPham ul li.xuatXu{
-		font-size:16px;
-	} */
 }
 @media screen and (max-width: 576px){
 	.main h4{
@@ -129,19 +100,38 @@ ul.breadcrumb {
 	margin-top:48px;
 }
 .main .products h6{
-	text-align:center;
-	margin-left:-65px;
+	text-align:left;
+	margin-left:0px;
 	font-size:24px;
-	margin-bottom:20px;
+	margin-bottom:5px;
 	font-weight:bold;
+	margin-top:40px;
 }
-.main .khoaHocCongNghe img{
-	margin-top:20px;
+.main  img{
+	margin-top:30px;
 }
 .main .products p{
 	margin-top:10px;
 	font-size:18px;
 	line-height:5px;
+}
+@media screen and (max-width: 768px){
+	.main .products p{
+		font-size:16px;
+		line-height:10px;
+		margin-top:5px;
+	}
+	.main .products input{
+		margin-left:400px;
+	}
+}
+@media screen and (max-width: 576px){
+	.main .products p{
+		font-size:14px;
+		line-height:10px;
+		margin-top:5px;
+	}
+
 }
 .star{
 	color:yellow;
@@ -149,4 +139,10 @@ ul.breadcrumb {
 .fa-cart-plus {
 	margin-bottom:30px;
 	color:red;
+	margin-top:-15px;
+	position: absolute;
+}
+.text-center{
+	margin-top:20px;
+	margin-bottom:20px;
 }
