@@ -25,6 +25,13 @@
 	line-height:22px;
 	margin-left:-120px;
 }
+.gioiThieuSach .about-book input{
+	background: #F21F1F;
+	border:none;
+}
+.gioiThieuSach .about-book input:hover{
+	background:#0DC5ED;
+}
 @media screen and (max-width: 1200px){
 	.gioiThieuSach .about-book{
 		margin-left:-30px;
@@ -104,5 +111,43 @@
 .comment h5{
 	margin:20px 0;
 }
-
-
+.comment .your-comment input{
+	width:100%;
+	/* border:none; */
+	outline:none;
+}
+.comment button{
+	background:#0DC5ED;
+	border:2px solid gray;
+	outline:none;
+	padding:4px;
+	margin-left:95px;
+}
+.comment button:hover{
+	background:#F21F1F;
+}
+@media screen and (max-width: 992px){
+	.comment button{
+		margin-left:80px;
+	}
+}
+@media screen and (max-width: 768px){
+	.comment .your-comment input{
+		width:80%;
+		margin-left:20px;
+	}
+	.comment button{
+		margin-left:
+	}
+}
+@media screen and (max-width: 576px){
+	.comment .your-comment input{
+		width:80%;
+		margin-top:20px;
+		margin-left:0px;
+	}
+	.comment button{
+		margin-top:10px;
+		margin-left:0;
+	}
+}
