@@ -29,9 +29,9 @@
 	background: #F21F1F;
 	border:none;
 }
-.gioiThieuSach .about-book input:hover{
+/* .gioiThieuSach .about-book input:hover{
 	background:#0DC5ED;
-}
+} */
 @media screen and (max-width: 1200px){
 	.gioiThieuSach .about-book{
 		margin-left:-30px;
@@ -123,9 +123,9 @@
 	padding:4px;
 	margin-left:95px;
 }
-.comment button:hover{
+/* .comment button:hover{
 	background:#F21F1F;
-}
+} */
 @media screen and (max-width: 992px){
 	.comment button{
 		margin-left:80px;
@@ -151,3 +151,62 @@
 		margin-left:0;
 	}
 }
+/* -----comment--------- */
+
+.SPLQ{
+	margin-top:40px;
+}
+.SPLQ .container h4{
+	padding-top:10px;
+	margin-bottom:-20px;
+}
+.SPLQ img{
+	margin-top:50px;
+}
+.SPLQ p{
+	margin-top:15px;
+	font-size:18px;
+	line-height:10px;
+}
+.SPLQ .price{
+	color:#0DC5ED;
+}
+.SPLQ .icon{
+	display:flex;
+	margin-top:-15px;
+}
+.SPLQ .star{
+	color:yellow;
+}
+.SPLQ  .cart{
+	color:#DF0029;
+	margin:10px;
+}
+/* -------SPLQ-san-pham-lien-quan------ */
+
+.SPDX{
+	margin-top:40px;
+}
+.SPDX img{
+	margin-top:50px;
+}
+.SPDX p{
+	margin-top:15px;
+	font-size:18px;
+	line-height:10px;
+}
+.SPDX .price{
+	color:#0DC5ED;
+}
+.SPDX .icon{
+	display:flex;
+	margin-top:-15px;
+}
+.SPDX .star{
+	color:yellow;
+}
+.SPDX .cart{
+	color:#DF0029;
+	margin:10px;
+}
+
