@@ -71,7 +71,6 @@ html , body{
 .menu .left a:hover{
 	text-decoration:none;
 }
-
 .menu{
 	background:#EEEEEE;
 	display:flex;
@@ -185,9 +184,6 @@ html , body{
 		display:inline;
 		font-size:12px;
 		margin:0 3px;
-	}
-	.menu .right ul li a{
-		
 	}
 	.menu .right ul li input{
 		margin-left:10px;
