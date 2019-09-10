@@ -429,6 +429,12 @@ ul.breadcrumb li a:hover {
 }
 /* ---------other-author----------- */
 
+.new-products {
+	margin-top:80px;
+}
+.new-products .img{
+	margin-top:30px;
+}
 .new-products h3{
 	text-align:center;
 	font-size:20px;
@@ -436,9 +442,10 @@ ul.breadcrumb li a:hover {
 	font-weight:bold;
 }
 .new-products p{
-	font-size:20px;
-	margin-top:15px;
-	line-height:20px;
+	font-size:18px;
+	margin-top:5px;
+	line-height:18px;
+	font-weight:bold;
 }
 .new-products input{
 	background:#0DC5ED;
@@ -469,6 +476,9 @@ ul.breadcrumb li a:hover {
 }
 /* ------new-products------ */
 
+.sanPhamTrongNuoc{
+	margin-top:50px;
+}
 .sanPhamTrongNuoc .price{
 	font-size:20px;
 	color:#0DC5ED;
@@ -477,6 +487,12 @@ ul.breadcrumb li a:hover {
 	background:#0DC5ED;
 	border:none;
 	margin-bottom:30px;
+}
+.sanPhamTrongNuoc p{
+	margin-top:5px;
+	font-size:18px;
+	line-height:18px;
+	font-weight:bold;
 }
 /* ------sanPhamTrongNuoc------ */
 
