@@ -6,19 +6,23 @@ ul.breadcrumb {
   list-style: none;
   background:white;
 }
+@media screen and (max-width: 768px){
+	ul.breadcrumb{
+		margin-left:-80px;
+	}
+}
+@media screen and (max-width: 576px){
+	ul.breadcrumb{
+		margin-left:-240px;
+		width:150%;
+	}
+}
 /* -----breadcrumb------ */
-
-.icon{
-	display:flex;
-	margin-top:-15px;
-}
-.cart{
-	margin-top:22px;
-	margin-left:15px;
-}
 
 .main .locSanPham{
 	background:#555555;
+	width:80%;
+	margin-left:10px;
 }
 .main h4{
 	padding-top:15px;
@@ -57,9 +61,17 @@ ul.breadcrumb {
 .main .locSanPham ul li.xuatXu ul li a{
 	font-size:16px;
 }
+@media screen and (max-width: 1200px){
+	.main .locSanPham{
+		width:100%;
+	}
+}
 @media screen and (max-width: 992px){
 	.main h4{
 		margin-left:0;
+	}
+	.main .locSanPham{
+		width:125%;
 	}
 }
 @media screen and (max-width: 768px){
@@ -70,10 +82,10 @@ ul.breadcrumb {
 	.main .locSanPham{
 		display:none;
 	}
-	.main .sale-off img{
+	.main .sale-off{
 		display:none;
 	}
-	.main .book-day img{
+	.main .book-day{
 		display:none;
 	}
 }
@@ -81,6 +93,9 @@ ul.breadcrumb {
 	.main h4{
 		margin-left:0;
 		font-size:16px;
+	}
+	.main .locSanPham{
+		width:50%;
 	}
 	.main .locSanPham ul li{
 		margin-left:10px;
@@ -96,14 +111,16 @@ ul.breadcrumb {
 		font-size:14px;
 	}
 }
-.main .sell-off img{
-	margin:30px -15px;
+.main .locSanPham .sale-off img{
+	margin-left:5px;
 }
-.main .book-day img{
-	margin:30px -15px;
+@media screen and (max-width: 768px){
+	.locSanPham .sale-off img{
+		margin-left:-10px;
+	}
 }
-.main .row .locSanPham{
-	margin-top:48px;
+.locSanPham .book-day img{
+	margin-left:10px;
 }
 /* -------loc-san-pham--------- */
 
@@ -140,7 +157,15 @@ ul.breadcrumb {
 		margin-top:5px;
 	}
 }
-
+.icon{
+	display:flex;
+	margin-top:-15px;
+}
+.icon .cart{
+	margin-top:22px;
+	/* margin-left:30px; */
+	margin-left:15px;
+}
 .star{
 	color:yellow;
 }
@@ -154,3 +179,8 @@ ul.breadcrumb {
 	margin-top:20px;
 	margin-bottom:20px;
 }
+
+
+
+
+

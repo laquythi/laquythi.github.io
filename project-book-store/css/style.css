@@ -277,7 +277,8 @@ html , body{
 
 
  ul.breadcrumb {
- /*  margin-left:-10px; */
+  margin-left:100px;
+  /* margin-left:120px; */
   margin-top:20px;
   padding: 10px 10px;
   width:100%;
@@ -342,7 +343,7 @@ ul.breadcrumb li a:hover {
 /* -----breakcrumb------- */
 
 .sanPhamBanChay{
-	background:#EEEEEE;
+	/* background:#EEEEEE; */
 	margin-top:50px;
 }
 .sanPhamBanChay h3{
@@ -359,6 +360,7 @@ ul.breadcrumb li a:hover {
 .sanPhamBanChay .price{
 	font-size:20px;
 	color:#0DC5ED;
+	font-weight:bold;
 }
 /* ------san pham ban chay----- */
 
@@ -369,9 +371,12 @@ ul.breadcrumb li a:hover {
 .author .row .sanphamlienquan{
 	top:-20%;
 }
-.author  p .best-seller{
+.author .sanphamlienquan p{
+	text-align:center;
+}
+.author  p.best-seller{
 	font-size:16px;
-	font-weight:bold;
+	font-weight:normal;
 }
 .author .row .infor{
 	margin-top:50px;
@@ -381,11 +386,6 @@ ul.breadcrumb li a:hover {
 }
 .author img{
 	margin-top:60px;
-}
-.author .row p.about{
-	font-size:16px;
-	line-height:16px;
-	margin-top:10px;
 }
 @media screen and (max-width: 992px){
 	.author p{
@@ -407,19 +407,15 @@ ul.breadcrumb li a:hover {
 	.author img.gladwell{
 		width:40%;
 	}
+	.author .sanphamlienquan p{
+		margin-left:-220px;
+	}
+	
 }
 /* -------author------ */
 
 .other-author{
 	background:#EEEEEE;
-}
-.other-author .container-fluid p{
-	padding-top:20px;
-}
-.other-author a p{
-	font-size:20px;
-	font-weight:bold;
-	color:#000000;
 }
 .other-author input{
 	background:#0DC5ED;
@@ -427,10 +423,21 @@ ul.breadcrumb li a:hover {
 	margin-top:10px;
 	margin-bottom:20px;
 }
+@media screen and (max-width: 768px){
+	.other-author a{
+		margin-left:80px;
+	}	
+}
+@media screen and (max-width: 576px){
+	.other-author p.text-center{
+		margin-left:-30px;
+	}
+}
 /* ---------other-author----------- */
 
 .new-products {
 	margin-top:80px;
+	background:#EEEEEE;
 }
 .new-products .img{
 	margin-top:30px;
@@ -438,7 +445,7 @@ ul.breadcrumb li a:hover {
 .new-products h3{
 	text-align:center;
 	font-size:20px;
-	margin:30px 0;
+	margin:5px 0;
 	font-weight:bold;
 }
 .new-products p{
