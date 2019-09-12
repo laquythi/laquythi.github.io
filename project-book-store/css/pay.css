@@ -1,10 +1,26 @@
  ul.breadcrumb {
-  /* margin-left:-10px; */
+  /* margin-left:-50px; */
   margin-top:20px;
   padding: 10px 10px;
   width:100%;
   list-style: none;
   background:white;
+}
+@media screen and (max-width: 1200px){
+	ul.breadcrumb{
+		margin-left:-65px;
+	}
+}
+@media screen and (max-width: 768px){
+	ul.breadcrumb{
+		margin-left:-80px;
+	}
+}
+@media screen and (max-width: 576px){
+	ul.breadcrumb{
+		margin-left:-100px;
+		padding:0;
+	}
 }
 /* -----breadcrumb------- */
 
@@ -39,6 +55,7 @@
 }
 .sanPhamDaChon a p{
 	color:#F21F1F;
+	margin-top:-5px;
 }
 .sanPhamDaChon a:hover{
 	text-decoration:none;
@@ -47,15 +64,24 @@
 
 .nhapThongTin{
 	margin-top:40px;
+	margin-left:60px;
+}
+.nhapThongTin .text-center{
+	margin:-10px 0;
+	color:#0DC5ED;
+}
+.nhapThongTin .text-center h5{
+	font-weight:bold;
 }
 .nhapThongTin p{
 	margin-top:25px;
 	margin-bottom:1px;
 }
 .nhapThongTin input{
-	background:#C4C4C4;
+	/* background:#C4C4C4; */
 	outline:none;
-	border:none;
+	font-size:18px;
+	/* border:none; */
 	padding:0 10px;
 }
 .nhapThongTin .cash{
@@ -76,8 +102,15 @@
 	margin-top:30px;
 }
 .nhapThongTin .final p{
-	font-size:20px;
 	line-height:10px;
+	/* color:red;
+	font-size:22px;
+	font-weight:bold; */
+}
+.nhapThongTin p.money{
+	font-size:25px;
+	font-weight:bold;
+	color:red;
 }
 .nhapThongTin .final button{
 	width:40%;
