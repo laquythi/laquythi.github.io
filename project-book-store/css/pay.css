@@ -36,6 +36,11 @@
 .sanPhamDaChon .price{
 	color:#0DC5ED;
 }
+.sanPhamDaChon p.price{
+	margin-top:15px;
+	font-size:22px;
+	font-weight:bold;
+}
 .sanPhamDaChon p{
 	font-size:18px;
 	line-height:7px;

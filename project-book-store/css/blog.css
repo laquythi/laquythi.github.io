@@ -1,17 +1,6 @@
-/* ul.breadcrumb {
-  margin-left:100px;
-  margin-top:20px;
-  list-style: none;
-  background:white;
-} */
 ul.breadcrumb{
 	margin-left:30px;
 }
-/* @media screen and (max-width: 1200px){
-	ul.breadcrumb{
-		margin-left:1200px;
-	}
-} */
 @media screen and (max-width: 576px){
 	ul.breadcrumb{
 		margin-left:20px;
@@ -26,7 +15,6 @@ ul.breadcrumb{
 .blog .img{
 	width:80%;
 	margin:30px auto;
-	/* border:1px solid gray; */
 }
 .blog .img p{
 	margin-top:10px;
@@ -48,7 +36,6 @@ ul.breadcrumb{
 		font-size:18px;
 	}
 }
-
 .text-center input{
 	padding:0 5px;
 }

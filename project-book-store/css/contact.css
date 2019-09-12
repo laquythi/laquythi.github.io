@@ -35,13 +35,22 @@ ul.breadcrumb {
 }
 .contact .feed-back input{
 	margin-top:5px;
-	/* width:80%; */
 	height:30px;
 	margin-left:-60px;
-	background:#C4C4C4;
+	background:#EEEEEE;
+	/* background:#C4C4C4; */
 	border:none;
-	padding:0 10px;
+	padding:5px;
 	outline:none;
+	width:60%;
+}
+.contact .feed-back input[type=text]{
+	color:#171717;
+}
+@media screen and (max-width: 992px){
+	.contact .feed-back input{
+		width:100%;
+	}
 }
 @media screen and (max-width: 768px){
 	.contact .feed-back p{
@@ -49,6 +58,13 @@ ul.breadcrumb {
 	}
 	.contact .feed-back input{
 		margin-left:0;
+		width:100%;
+		font-size:16px;
+	}
+}
+@media screen and (max-width: 576px){
+	.contact .feed-back input{
+		width:40%;
 	}
 }
 .contact .feed-back .typing input{
