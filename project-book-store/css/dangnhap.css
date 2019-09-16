@@ -12,17 +12,10 @@ ul.breadcrumb {
 .dang-nhap-bar{
 	background:#0DC5ED;
 }
-.dang-nhap-bar .logo{
-	
-}
 @media screen and (max-width: 992px){
 	.dang-nhap-bar .logo{
 		display:none;
 	}
-}
-
-.dang-nhap-bar .input{
-	
 }
 .dang-nhap-bar .logo a p{
 	width:40%;
@@ -36,7 +29,6 @@ ul.breadcrumb {
 .dang-nhap-bar a:hover{
 	text-decoration:none;
 }
-
 .input input{
 	width:100%;
 	border:none;
@@ -94,7 +86,8 @@ ul.breadcrumb {
 
 .new-account input{
 	margin:5px;
-	background:#C4C4C4;
+	background:#EEEEEE;
+	/* background:#C4C4C4; */
 	border:none;
 	outline:none;
 	padding:0 10px;
