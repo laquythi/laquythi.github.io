@@ -1,0 +1,222 @@
+/* code phía dưới là nav theo kiểu cũ */
+.menu{
+	background:#EEEEEE;
+	display:flex;
+}
+.menu .left{
+	width:20%;
+}
+.menu .left p{
+	width:50%;
+	text-align:center;
+	margin-left:20px;
+	margin-top:10px;
+	font-size:20px;
+	line-height:30px;
+	color:#0DC5ED;
+}
+.menu .left a:hover{
+	text-decoration:none;
+}
+.menu{
+	background:#EEEEEE;
+	display:flex;
+}
+.menu .left{
+	width:20%;
+}
+.menu .left p{
+	width:50%;
+	text-align:center;
+	margin-left:20px;
+	margin-top:10px;
+	font-size:20px;
+	line-height:30px;
+	color:#0DC5ED;
+}
+.menu .left a:hover{
+	text-decoration:none;
+}
+.menu .right{
+	width:80%;
+}
+.menu .right ul{
+	display:flex;
+	margin-top:17px;
+}
+.menu .right ul li{
+	display:inline;
+	list-style:none;
+	margin-top:10px;
+	margin:0 20px;
+}
+.menu .right ul li a{
+	font-size:18px;
+	color:#060606;
+}
+.menu .right ul li a:hover{
+	text-decoration:none;
+	color:#0DC5ED;
+}
+.menu .right ul li input{
+	margin-left:65px;
+	border:none;
+	outline:none;
+}
+.menu .right ul li i{
+	margin-left:-20px;
+}
+@media screen and (max-width: 1200px){
+	.menu .left{
+		display:none;
+	}
+	.menu .right ul li{
+		display:inline;
+		margin:0 10px;
+	}
+	.menu .right ul li a{
+		font-size:16px;
+	}
+	.menu .right ul li input{
+		margin-left:20px;
+	}
+	.menu .right ul li i{
+		margin-left:1px;
+	}
+}
+@media screen and (max-width: 992px){
+	.menu .left{
+		display:none;
+	}
+	.menu .right{
+		width:100%;
+	}
+	.menu .right ul li{
+		display:inline;
+		margin:0 10px;
+	}
+	.menu .right ul li a{
+		font-size:16px;
+	}
+	.menu .right ul li input{
+		margin-left:30px;
+	}
+}
+@media screen and (max-width: 768px){
+	.menu .right{
+		width:100%;
+	}
+	.menu .left{
+		display:none;
+	}
+	.menu .right ul li{
+		display:inline;
+		margin:0 5px;
+	}
+	.menu .right ul li a{
+		font-size:14px;
+	}
+	.menu .right ul li input{
+		margin-left:20px;
+	}
+}
+@media screen and (max-width: 576px){
+	.menu .right{
+		width:100%;
+	}
+	.menu .left{
+		display:none;
+	}
+	.menu .right ul li{
+		display:inline;
+		font-size:12px;
+		margin:0 3px;
+	}
+	.menu .right ul li input{
+		margin-left:10px;
+		width:65%;
+	}
+	.menu .right ul li i{
+		margin-left:-35px;
+	}
+}
+@media screen and (max-width: 1200px){
+	.menu .left{
+		display:none;
+	}
+	.menu .right {
+		width:100%;
+	}
+	.menu .right ul li{
+		display:inline;
+		margin:0 30px;
+	}
+	.menu .right ul li a{
+		font-size:16px;
+	}
+	.menu .right ul li input{
+		margin-left:10px;
+	}
+	.menu .right ul li i{
+		margin-left:1px;
+	}
+}
+@media screen and (max-width: 992px){
+	.menu .left{
+		display:none;
+	}
+	.menu .right{
+		width:100%;
+	}
+	.menu .right ul li{
+		display:inline;
+		margin:0 20px;
+	}
+	.menu .right ul li a{
+		font-size:16px;
+	}
+	.menu .right ul li input{
+		margin-left:120px;
+	}
+}
+@media screen and (max-width: 768px){
+	.menu .right{
+		width:100%;
+	}
+	.menu .left{
+		display:none;
+	}
+	.menu .right ul li{
+		display:inline;
+		margin:0 4px;
+	}
+	.menu .right ul li a{
+		font-size:14px;
+	}
+	.menu .right ul li input{
+		margin-left:20px;
+	}
+}
+@media screen and (max-width: 576px){
+	.menu .right{
+		width:100%;
+	}
+	.menu .left{
+		display:none;
+	}
+	.menu .right ul li{
+		display:inline;
+		font-size:12px;
+		margin:0 9px;
+	}
+	.menu .right ul li a{
+		
+	}
+	.menu .right ul li input{
+		margin-left:10px;
+		width:65%;
+	}
+	.menu .right ul li i{
+		margin-left:-35px;
+	}
+}

@@ -1,6 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap'); */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+rl('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 *{
 	margin:0;
 	padding:0;
@@ -181,7 +179,9 @@ html , body{
 		margin-left:-280px;
 	}
 }
-/* code phía dưới là nav theo kiểu cũ */
+
+
+/* code phía dưới là nav theo kiểu cũ */
 /* .menu{
 	background:#EEEEEE;
 	display:flex;
@@ -492,11 +492,16 @@ ul.breadcrumb li a:hover {
 	color:#0DC5ED;
 	font-weight:bold;
 }
+@media screen and (max-width: 576px){
+	.sanPhamBanChay .img{
+		margin-left:100px;
+	}
+}
 /* ------san pham ban chay----- */
 
 .author{
-	margin-top:100px;
-	margin-bottom:-150px;
+	margin-top:40px;
+	margin-bottom:-40px;
 }
 .author .row .sanphamlienquan{
 	top:-20%;
@@ -516,8 +521,13 @@ ul.breadcrumb li a:hover {
 }
 .author img{
 	margin-top:60px;
+	width:80%;
 }
 @media screen and (max-width: 992px){
+	.author{
+		margin-top:40px;
+		margin-bottom:10px;
+	}
 	.author p{
 		font-size:14px;
 	}
@@ -533,15 +543,28 @@ ul.breadcrumb li a:hover {
 		width:60%;
 	}
 	.author .sanphamlienquan{
-		margin-left:-70px;
+		margin-left:-80px;
+	}
+	.author .sanphamlienquan .img img{
+		width:70%;
+	}
+	.author p.best-seller{
+		font-size:13px;
 	}
 }
 @media screen and (max-width: 576px){
 	.author img.gladwell{
 		width:40%;
 	}
+	.author .img{
+		margin-left:120px;
+	}
+	.author .sanphamlienquan .img{
+		margin-left:140px;
+	}
 	.author .sanphamlienquan p{
-		margin-left:-220px;
+		margin-left:-60px;
+		font-size:20px;
 	}
 	
 }
@@ -559,11 +582,14 @@ ul.breadcrumb li a:hover {
 @media screen and (max-width: 768px){
 	.other-author a{
 		margin-left:80px;
-	}	
+	}
+	.other-author p.text-center{
+		margin-left:100px;
+	}
 }
 @media screen and (max-width: 576px){
 	.other-author p.text-center{
-		margin-left:-30px;
+		margin-left:-50px;
 	}
 }
 /* ---------other-author----------- */
@@ -613,6 +639,9 @@ ul.breadcrumb li a:hover {
 		font-size:20px;
 		line-height:20px;
 	}
+	.new-products .img{
+		margin-left:70px;
+	}
 }
 /* ------new-products------ */
 
@@ -633,6 +662,11 @@ ul.breadcrumb li a:hover {
 	font-size:18px;
 	line-height:18px;
 	font-weight:bold;
+}
+@media screen and (max-width: 576px){
+	.sanPhamTrongNuoc .img{
+		margin-left:70px;
+	}
 }
 /* ------sanPhamTrongNuoc------ */
 
