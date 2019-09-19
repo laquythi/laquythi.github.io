@@ -105,10 +105,10 @@ ul.breadcrumb {
 .contact .feed-back .text-left input{
 	margin-left:-10px;
 	background:#0DC5ED;
-	height:40px;
+	height:45px;
 	width:30%;
 	margin-top:20px;
-	margin-bottom:10px;
+	margin-bottom:20px;
 }
 @media screen and (max-width: 768px){
 	
