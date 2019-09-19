@@ -8,13 +8,18 @@ ul.breadcrumb {
 }
 @media screen and (max-width: 768px){
 	ul.breadcrumb{
-		margin-left:-80px;
+		margin-left:-180px;
 	}
 }
 @media screen and (max-width: 576px){
 	ul.breadcrumb{
 		margin-left:-240px;
 		width:150%;
+	}
+}
+@media screen and (max-width: 375px){
+	ul.breadcrumb{
+		margin-left:-230px;
 	}
 }
 /* -----breadcrumb------ */
@@ -36,7 +41,7 @@ ul.breadcrumb {
 }
 .main .locSanPham ul li{
 	display:block;
-	margin-left:25px;
+	margin-left:-15px;
 	line-height:30px;
 }
 .main .locSanPham ul li a{
@@ -60,6 +65,12 @@ ul.breadcrumb {
 }
 .main .locSanPham ul li.xuatXu ul li a{
 	font-size:16px;
+}
+.main .locSanPham .sale-off img{
+	margin-left:5px;
+}
+.main .locSanPham .book-day img{
+	margin-left:10px;
 }
 @media screen and (max-width: 1200px){
 	.main .locSanPham{
@@ -94,33 +105,6 @@ ul.breadcrumb {
 		margin-left:0;
 		font-size:16px;
 	}
-	.main .locSanPham{
-		width:50%;
-	}
-	.main .locSanPham ul li{
-		margin-left:10px;
-		line-height:20px;
-	}
-	.main .locSanPham ul li a{
-		font-size:14px;
-	}
-	.main .locSanPham ul li.theLoai{
-		font-size:14px;
-	}
-	.main .locSanPham ul li.xuatXu{
-		font-size:14px;
-	}
-}
-.main .locSanPham .sale-off img{
-	margin-left:5px;
-}
-@media screen and (max-width: 768px){
-	.locSanPham .sale-off img{
-		margin-left:-10px;
-	}
-}
-.locSanPham .book-day img{
-	margin-left:10px;
 }
 /* -------loc-san-pham--------- */
 
@@ -144,6 +128,9 @@ ul.breadcrumb {
 	color:#0DC5ED;
 }
 @media screen and (max-width: 768px){
+	.main .products{
+		margin-left:-100px;
+	}
 	.main .products p{
 		font-size:16px;
 		line-height:10px;
@@ -151,6 +138,9 @@ ul.breadcrumb {
 	}
 }
 @media screen and (max-width: 576px){
+	.main .products{
+		margin-left:20px;
+	}
 	.main .products p{
 		font-size:14px;
 		line-height:10px;

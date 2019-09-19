@@ -6,16 +6,19 @@ ul.breadcrumb {
   list-style: none;
   background:white;
 }
+@media screen and (max-width: 576px){
+	ul.breadcrumb{
+		padding-left:-150px;
+	}
+}
+@media screen and (max-width: 375px){
+	
+}
 /* ----breadcrumb--------- */
 
 
 .dang-nhap-bar{
 	background:#0DC5ED;
-}
-@media screen and (max-width: 992px){
-	.dang-nhap-bar .logo{
-		display:none;
-	}
 }
 .dang-nhap-bar .logo a p{
 	width:40%;
@@ -47,6 +50,9 @@ ul.breadcrumb {
 	width:60%;
 }
 @media screen and (max-width: 1200px){
+	.dang-nhap-bar .logo{
+		display:none;
+	}
 	.input .dangnhap input{
 		width:100%;
 	}
@@ -64,7 +70,7 @@ ul.breadcrumb {
 		width:100%;
 	}
 	.input .dangnhap input{
-		width:100%;
+		width:50%;
 	}
 }
 @media screen and (max-width: 576px){
@@ -86,9 +92,9 @@ ul.breadcrumb {
 
 .new-account input{
 	margin:5px;
-	background:#EEEEEE;
-	/* background:#C4C4C4; */
-	border:none;
+	/* background:#EEEEEE; */
+	background:white;
+	/* border:none; */
 	outline:none;
 	padding:0 10px;
 }
@@ -96,7 +102,7 @@ ul.breadcrumb {
 	display:flex;
 }
 .new-account .ho-ten input{
-	width:23.3%;
+	width:23.5%;
 }
 @media screen and (max-width: 1200px){
 	.new-account .ho-ten input{

@@ -24,6 +24,17 @@
 }
 /* -----breadcrumb------- */
 
+@media screen and (max-width: 768px){
+	.menu .search{
+		left:-120px;
+	}
+}
+@media screen and (max-width: 375px){
+	.menu .search{
+		left:0;
+	}
+}
+
 .sanPhamDaChon h6{
 	font-size:20px;
 	font-weight:bold;

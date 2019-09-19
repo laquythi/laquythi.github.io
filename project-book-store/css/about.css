@@ -23,7 +23,17 @@ html , body{
 }
 /* -----breakcrumb------- */
 
-.menu{
+@media screen and (max-width: 768px){
+	.menu .search {
+		left:-150px;
+	}
+}
+@media screen and (max-width: 375px){
+	.menu .search {
+		left:0px;
+	}
+}
+/* .menu{
 	background:#EEEEEE;
 	display:flex;
 }
@@ -152,7 +162,7 @@ html , body{
 	.menu .right ul li i{
 		margin-left:-35px;
 	}
-}
+} */
 /* --------menu-nav-bar---------- */
 
 .infor .row h3{
