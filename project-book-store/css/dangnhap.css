@@ -1,7 +1,8 @@
 ul.breadcrumb {
   /* margin-left:-10px; */
   margin-top:20px;
-  padding: 10px 10px;
+  padding-left:100px;
+  /* padding: 10px 10px; */
   width:100%;
   list-style: none;
   background:white;
@@ -12,7 +13,9 @@ ul.breadcrumb {
 	}
 }
 @media screen and (max-width: 375px){
-	
+	ul.breadcrumb{
+		padding-left:0px;
+	}
 }
 /* ----breadcrumb--------- */
 

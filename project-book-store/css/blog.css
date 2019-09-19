@@ -6,6 +6,11 @@ ul.breadcrumb{
 		margin-left:20px;
 	}
 }
+@media screen and (max-width: 375px){
+	ul.breadcrumb{
+		margin-left:40px;
+	}
+}
 /* ----breadcrumb---- */
 
 
@@ -15,6 +20,9 @@ ul.breadcrumb{
 .blog .img{
 	width:80%;
 	margin:30px auto;
+}
+.blog .img p.day{
+	font-size:14px;
 }
 .blog .img p{
 	margin-top:10px;

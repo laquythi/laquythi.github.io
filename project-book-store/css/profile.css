@@ -1,3 +1,9 @@
+@media screen and (max-width: 375px){
+	.dang-xuat-bar .dang-xuat{
+		margin-left:120px;
+		margin-top:-80px;
+	}
+}
 ul.breadcrumb {
   /* margin-left:-10px; */
   margin-top:20px;
