@@ -1,4 +1,4 @@
-rl('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+/* url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
 *{
 	margin:0;
 	padding:0;
@@ -7,7 +7,7 @@ html , body{
 	width:100%;
 	height:100%;
 	/* font-family:'Open Sans'; */
-	font-family:'Libre Baskerville';
+	font-family: 'Roboto', sans-serif;
 	/* font-family: 'Roboto'; */
 	font-size:20px;
 }
@@ -40,10 +40,10 @@ html , body{
 	color:#EEEEEE;
 	font-size:16px;
 	margin-top:6px;
-	padding-left:50px;
+	padding-left:60px;
 }
 .header-top .button button.btn{
-	margin-left:10px;
+	margin-left:5px;
 }
 .header-top .button button:hover{
 	color:#0DC5ED;
@@ -483,14 +483,14 @@ ul.breadcrumb li a:hover {
 	margin:20px 0;
 }
 .sanPhamBanChay p{
-	font-size:16px;
+	font-size:14px;
 	line-height:20px;
 	margin:5px;
 }
 .sanPhamBanChay .price{
 	font-size:20px;
 	color:#0DC5ED;
-	font-weight:bold;
+	font-weight:normal;
 }
 @media screen and (max-width: 576px){
 	.sanPhamBanChay .img{
@@ -507,7 +507,7 @@ ul.breadcrumb li a:hover {
 	top:-20%;
 }
 .author .sanphamlienquan p{
-	text-align:center;
+	margin-top:5px;
 }
 .author  p.best-seller{
 	font-size:16px;
@@ -590,6 +590,7 @@ ul.breadcrumb li a:hover {
 @media screen and (max-width: 576px){
 	.other-author p.text-center{
 		margin-left:-50px;
+		font-size: 25px;
 	}
 }
 /* ---------other-author----------- */
@@ -603,15 +604,14 @@ ul.breadcrumb li a:hover {
 }
 .new-products h3{
 	text-align:center;
-	font-size:20px;
+	font-size: 34px;
 	margin:5px 0;
 	font-weight:bold;
 }
 .new-products p{
-	font-size:18px;
-	margin-top:5px;
-	line-height:18px;
-	font-weight:bold;
+	font-size:14px;
+	margin-top:10px;
+	line-height:7px;
 }
 .new-products input{
 	background:#0DC5ED;
@@ -656,12 +656,12 @@ ul.breadcrumb li a:hover {
 	background:#0DC5ED;
 	border:none;
 	margin-bottom:30px;
+	margin-top:20px;
 }
 .sanPhamTrongNuoc p{
-	margin-top:5px;
-	font-size:18px;
-	line-height:18px;
-	font-weight:bold;
+	margin-top:10px;
+	font-size:14px;
+	line-height:5px;
 }
 @media screen and (max-width: 576px){
 	.sanPhamTrongNuoc .img{
@@ -679,15 +679,22 @@ ul.breadcrumb li a:hover {
 .footer h4{
 	margin-top:20px;
 	color:#F4E9E9;
-	font-size:18px;
+	font-size: 24px;
 	font-weight:bold;
 }
-.footer a , .footer p{
+.footer a{
 	color:#919294;
-	font-size:16px;	
+	font-size: 18px;
+	margin-top:10px
 }
-.footer .row a p:hover{
+.footer p{
+	color:#919294;
+	font-size:18px;
+	line-height:20px;
+}
+.footer .row a:hover{
 	text-decoration:none;
 	color:#0DC5ED;
 }
+/* -----footer------ */
 /* -----the-end------ */

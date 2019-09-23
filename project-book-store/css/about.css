@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,700i,900,900i&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
 *{
 	margin:0;
 	padding:0;
@@ -7,8 +8,8 @@ html , body{
 	width:100%;
 	height:100%;
 	/* font-family:'Open Sans'; */
-	font-family:'Libre Baskerville';
-	/* font-family: 'Roboto'; */
+	/* font-family:'Libre Baskerville'; */
+	font-family: 'Roboto';
 	font-size:20px;
 }
 /* -------html body---------- */
