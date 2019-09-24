@@ -1,3 +1,4 @@
+ 
  ul.breadcrumb {
   /* margin-left:-50px; */
   margin-top:20px;
@@ -13,12 +14,12 @@
 }
 @media screen and (max-width: 768px){
 	ul.breadcrumb{
-		margin-left:-80px;
+		margin-left:20px;
 	}
 }
 @media screen and (max-width: 576px){
 	ul.breadcrumb{
-		margin-left:-100px;
+		margin-left:40px;
 		padding:0;
 	}
 }
@@ -27,6 +28,12 @@
 @media screen and (max-width: 768px){
 	.menu .search{
 		left:-120px;
+	}
+}
+@media screen and (max-width: 576px){
+	.menu .search{
+		left:60px;
+		width:50%;
 	}
 }
 @media screen and (max-width: 375px){
@@ -115,13 +122,10 @@
 	margin-left:10px;
 }
 .nhapThongTin .final{
-	margin-top:30px;
+	margin-top:20px;
 }
 .nhapThongTin .final p{
-	line-height:10px;
-	/* color:red;
-	font-size:22px;
-	font-weight:bold; */
+	line-height:15px;
 }
 .nhapThongTin p.money{
 	font-size:25px;

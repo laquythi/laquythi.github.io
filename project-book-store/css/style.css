@@ -48,6 +48,11 @@ html , body{
 .header-top .button button:hover{
 	color:#0DC5ED;
 }
+@media screen and (max-width: 576px){
+	.header-top{
+		width:120%;
+	}
+}
 /* --------header-top-------- */
 
 
@@ -150,20 +155,22 @@ html , body{
 	}
 }
 @media screen and (max-width: 576px){
+	.menu{
+		width:120%;
+	}
+	.menu p.icon{
+		width:40%;
+	}
 	.menu .menu-bar{
 		width:100%;
 		float:left;
 	}
 	.menu .menu-bar ul li{
-		margin:5px 15px;
-		left:100px;
+		margin:auto 5px;
 	}
 	.menu .search{
-		width:60%;
-		margin-top:75px;
-		margin-bottom:20px;
-		margin-left:-440px;
-		/* margin-left:-400px; */
+		left:60px;
+		width:50%;
 	}
 	.menu .search input{
 		width:100%;
@@ -176,7 +183,7 @@ html , body{
 	.menu .search {
 		margin-top:75px;
 		margin-bottom:20px;
-		margin-left:-280px;
+		left:100px;
 	}
 }
 
@@ -460,7 +467,7 @@ ul.breadcrumb li a:hover {
 }
 @media screen and (max-width: 576px){
 	ul.breadcrumb{
-		margin-left:10px;
+		margin-left:60px;
 		width:50%;
 	}
 	ul.breadcrumb li{
@@ -562,8 +569,12 @@ ul.breadcrumb li a:hover {
 	.author .sanphamlienquan .img{
 		margin-left:140px;
 	}
+	.author .sanphamlienquan .img img{
+		width:30%;
+		margin-left:50px;
+	}
 	.author .sanphamlienquan p{
-		margin-left:-60px;
+		margin-left:50px;
 		font-size:20px;
 	}
 	
@@ -578,14 +589,6 @@ ul.breadcrumb li a:hover {
 	border:none;
 	margin-top:10px;
 	margin-bottom:20px;
-}
-@media screen and (max-width: 768px){
-	.other-author a{
-		margin-left:80px;
-	}
-	.other-author p.text-center{
-		margin-left:100px;
-	}
 }
 @media screen and (max-width: 576px){
 	.other-author p.text-center{
@@ -648,6 +651,9 @@ ul.breadcrumb li a:hover {
 .sanPhamTrongNuoc{
 	margin-top:50px;
 }
+.sanPhamTrongNuoc .img{
+	margin-bottom:30px;
+}
 .sanPhamTrongNuoc .price{
 	font-size:20px;
 	color:#0DC5ED;
@@ -669,6 +675,23 @@ ul.breadcrumb li a:hover {
 	}
 }
 /* ------sanPhamTrongNuoc------ */
+
+.partner{
+	margin-top:40px;
+}
+.partner .container{
+	margin-bottom:20px;
+}
+.partner .container-fluid{
+	margin-top:40px;
+}
+.partner h4{
+	margin-bottom:40px;
+}
+.partner img{
+	border-radius:30px;
+}
+
 
 .footer{
 	background:#171717;
