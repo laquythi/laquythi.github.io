@@ -1,46 +1,13 @@
  
  ul.breadcrumb {
-  /* margin-left:-50px; */
   margin-top:20px;
-  padding: 10px 10px;
-  width:100%;
+  padding:5px;
+  margin-left:20px;
+  width:80%;
   list-style: none;
   background:white;
 }
-@media screen and (max-width: 1200px){
-	ul.breadcrumb{
-		margin-left:-65px;
-	}
-}
-@media screen and (max-width: 768px){
-	ul.breadcrumb{
-		margin-left:20px;
-	}
-}
-@media screen and (max-width: 576px){
-	ul.breadcrumb{
-		margin-left:40px;
-		padding:0;
-	}
-}
 /* -----breadcrumb------- */
-
-@media screen and (max-width: 768px){
-	.menu .search{
-		left:-120px;
-	}
-}
-@media screen and (max-width: 576px){
-	.menu .search{
-		left:60px;
-		width:50%;
-	}
-}
-@media screen and (max-width: 375px){
-	.menu .search{
-		left:0;
-	}
-}
 
 .sanPhamDaChon h6{
 	font-size:20px;
@@ -82,6 +49,11 @@
 }
 .sanPhamDaChon a:hover{
 	text-decoration:none;
+}
+@media screen and (max-width: 576px){
+	.sanPhamDaChon{
+		margin-left:40px;
+	}
 }
 /* -----sanPhamDaChon----- */
 

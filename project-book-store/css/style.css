@@ -64,7 +64,6 @@ html , body{
 }
 .menu .menu-bar{
 	width:60%;
-	/* margin-left:50px; */
 	margin-top:7px;
 }
 .menu .menu-bar ul{
@@ -154,10 +153,8 @@ html , body{
 	}
 	.menu .menu-bar{
 		width:100%;
-		/* float:left; */
 	}
 	.menu .menu-bar ul li{
-		/* margin:0 3px; */
 		margin:0 8px;
 	}
 	.menu .menu-bar ul li a{
@@ -167,7 +164,6 @@ html , body{
 		margin-left:-330px;
 		width:58%;
 		margin-top:50px;
-		/* margin-top:45px; */
 	}
 	.menu .search input{
 		width:100%;
@@ -251,7 +247,6 @@ ul.breadcrumb li a:hover {
 /* -----breakcrumb------- */
 
 .sanPhamBanChay{
-	/* background:#EEEEEE; */
 	margin-top:50px;
 }
 .sanPhamBanChay h3{
@@ -463,6 +458,11 @@ ul.breadcrumb li a:hover {
 	border-radius:5px;
 	margin-bottom:20px;
 }
+@media screen and (max-width: 576px){
+	.partner{
+		display:none;
+	}
+}
 
 
 .footer{
@@ -490,6 +490,11 @@ ul.breadcrumb li a:hover {
 .footer .row a:hover{
 	text-decoration:none;
 	color:#0DC5ED;
+}
+@media screen and (max-width: 576px){
+	.footer .ft{
+		text-align:center;
+	}
 }
 /* -----footer------ */
 /* -----the-end------ */

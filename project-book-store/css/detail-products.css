@@ -200,6 +200,14 @@
 	color:#DF0029;
 	margin:10px;
 }
+@media screen and (max-width: 576px){
+	.SPLQ h4{
+		margin-left:60px;
+	}
+	.SPLQ .img{
+		margin-left:80px;
+	}
+}
 /* -------SPLQ-san-pham-lien-quan------ */
 
 .SPDX{
@@ -227,4 +235,11 @@
 	color:#DF0029;
 	margin:10px;
 }
-
+@media screen and (max-width: 576px){
+	.SPDX h4{
+		margin-left:60px;
+	}
+	.SPDX .img{
+		margin-left:80px;
+	}
+}
