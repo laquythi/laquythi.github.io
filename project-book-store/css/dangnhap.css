@@ -1,12 +1,12 @@
 ul.breadcrumb {
   margin-top:20px;
-  width:100%;
+ /*  width:100%; */
   list-style: none;
   background:white;
 }
 @media screen and (max-width: 576px){
 	ul.breadcrumb{
-		padding-left:-150px;
+		margin-left:0px;
 	}
 }
 @media screen and (max-width: 375px){

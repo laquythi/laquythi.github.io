@@ -1,19 +1,36 @@
-@media screen and (max-width: 375px){
-	.dang-xuat-bar .dang-xuat{
-		margin-left:120px;
-		margin-top:-80px;
+@media screen and (max-width: 1024px){
+	ul.breadcrumb{
+		margin-left:-10px;
+	}
+	.menu .search input{
+		width:88%;
 	}
 }
-ul.breadcrumb {
-  /* margin-left:-10px; */
-  margin-top:20px;
-  padding: 10px 10px;
-  width:100%;
-  list-style: none;
-  background:white;
+@media screen and (max-width: 768px){
+	.menu .search input{
+		width:94%;
+		margin-left:10px;
+	}
+	ul.breadcrumb{
+		margin-left:0;
+	}
 }
-/* -----breadcrumb------ */
-
+@media screen and (max-width: 576px){
+	.menu .search input{
+		width:100%;
+		margin-left:0;
+	}
+	ul.breadcrumb{
+		margin-left:0px;
+		width:100%;
+	}
+}
+@media screen and (max-width: 375px){
+	.menu .search input{
+		width:85%;
+	}
+}
+/* --------menu-search & breadcrumb-------- */
 
 .dang-xuat-bar{
 	background:#0DC5ED;
@@ -63,33 +80,50 @@ ul.breadcrumb {
 	.dang-xat-bar .logo p{
 		width:20%;
 	}
+	.dang-xuat-bar{
+		position:relative;
+	}
 	.dang-xuat-bar input{
-		margin-left:100px;
+		position:absolute;
+		margin-left:240px;
+		margin-top:-60px;
 		margin-bottom:10px;
 	}
+}
+@media screen and (max-width: 375px){
+	.dang-xuat-bar .dang-xuat{
+		margin-left:120px;
+		margin-top:-80px;
+	}
+	.dang-xuat-bar input{
+		margin-left:75px;
+		margin-top:20px;
+	}
+	
 }
 /* -----dang-xuat-bar----- */
 
 .profile h6{
-	font-size:24px;
+	font-size:22px;
 	font-weight:bold;
 	color:#171717;
 }
 .profile h6.infor{
 	color:#0DC5ED;
-	width:61%;
-	border-bottom:1px solid #171717;
 }
 .profile a p{
 	font-size:20px;
 	line-height:20px;
 	color:#171717;
 }
-.profile a p:hover{
+.profile p:hover{
 	color:#0DC5ED;
 	text-decoration:none;
 }
-.profile .email{
-	
+.profile h6:hover{
+	color:#0DC5ED;
+}
+.profile a:hover{
+	text-decoration:none;
 }
 
