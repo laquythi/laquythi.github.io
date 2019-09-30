@@ -44,3 +44,13 @@
 .text-center input{
 	padding:0 5px;
 }
+
+.back-to-top{
+	position:fixed;
+	right:60px;
+	bottom:20px;
+}
+.back-to-top i{
+	color:#0DC5ED;
+}
+/* -----the-end----- */

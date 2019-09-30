@@ -63,6 +63,7 @@ html , body{
 .menu .menu-bar{
 	width:60%;
 	margin-top:7px;
+	/* margin-left:100px; */
 }
 .menu .menu-bar ul{
 	display:flex;
@@ -288,7 +289,7 @@ ul.breadcrumb li a:hover {
 	margin-top:50px;
 }
 .author h3{
-	font-size:40px;
+	font-size:18px;
 }
 .author img{
 	margin-top:60px;
@@ -457,11 +458,11 @@ ul.breadcrumb li a:hover {
 	margin-bottom:20px;
 }
 @media screen and (max-width: 576px){
-	/* .partner{
+	.partner{
 		display:none;
-	} */
+	}
 }
-
+/* -----partner------- */
 
 .footer{
 	background:#171717;
@@ -495,4 +496,13 @@ ul.breadcrumb li a:hover {
 	}
 }
 /* -----footer------ */
+
+.back-to-top{
+	position:fixed;
+	right:60px;
+	bottom:20px;
+}
+.back-to-top i{
+	color:#0DC5ED;
+}
 /* -----the-end------ */

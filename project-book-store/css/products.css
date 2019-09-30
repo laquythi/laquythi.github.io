@@ -152,7 +152,6 @@ ul.breadcrumb {
 }
 .icon .cart{
 	margin-top:22px;
-	/* margin-left:30px; */
 	margin-left:15px;
 }
 .star{
@@ -169,6 +168,15 @@ ul.breadcrumb {
 	margin-bottom:20px;
 }
 
+.back-to-top{
+	position:fixed;
+	right:60px;
+	bottom:20px;
+}
+.back-to-top i{
+	color:#0DC5ED;
+}
+/* -----the-end----- */
 
 
 

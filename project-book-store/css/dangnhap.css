@@ -1,6 +1,5 @@
 ul.breadcrumb {
   margin-top:20px;
- /*  width:100%; */
   list-style: none;
   background:white;
 }
@@ -92,9 +91,7 @@ ul.breadcrumb {
 
 .new-account input{
 	margin:5px;
-	/* background:#EEEEEE; */
 	background:white;
-	/* border:none; */
 	outline:none;
 	padding:0 10px;
 }
@@ -156,7 +153,6 @@ h6{
 }
 .new-account .gioi-tinh .nam{
 	display:flex;
-	/* margin:0 10px; */
 }
 .new-account .gioi-tinh .nam p{
 	margin-left:5px;
@@ -178,5 +174,15 @@ input.dang-ky{
 	background:#0DC5ED;
 	border-radius:7px;
 }
+
+.back-to-top{
+	position:fixed;
+	right:60px;
+	bottom:20px;
+}
+.back-to-top i{
+	color:#0DC5ED;
+}
+/* -----the-end----- */
 
 

@@ -127,3 +127,13 @@
 	text-decoration:none;
 }
 
+.back-to-top{
+	position:fixed;
+	right:60px;
+	bottom:20px;
+}
+.back-to-top i{
+	color:#0DC5ED;
+}
+/* -----the-end----- */
+
