@@ -171,8 +171,23 @@
 	 	document.write("<p>" + student[1].name + " - " + student[1].age + "</p>");
 
 	 	document.write("<p>" + student[2].name + " - " + student[2].age + "</p>");
+
+	 	//c2:dùng vòng lặp để in ra giá trị
+	 	let student = [
+		 	{name:"Trang", age:23, gender: "FeMale"},
+		 	 {name:"Anh", age:12, gender: "Male"},
+		 	 {name:"Thi", age:28, gender: "Male"}
+		 ];
+		 student.sort(function(a, b){
+	 		if (a.name.toLowerCase() < b.name.toLowerCase()) {return -1;}
+	 		if (a.name.toLowerCase() > b.name.toLowerCase()) {return 1;}
+	 		return 0;
+	 	});
+
+		 for(let i=0;i<student.length;i++){
+		 	document.write("<p>" + student[i].name + "</p>");
+		 }
 	 	//12 b3:cho 1 object chua thong tin sinh vien,viet ham sap xep lai theo tuoi hoc vien tu cao den thap.
-	 	//bai nay lam cung chua dung.
 	 	var student = [
 	 	{name:"Bình", age:24, gender: "Male"},
 	 	{name:"An", age:21, gender: "Male"},
@@ -185,6 +200,18 @@
 	 	document.write("<p>" + student[1].name + " - " + student[1].age + "</p>");
 
 	 	document.write("<p>" + student[2].name + " - " + student[2].age + "</p>");
+
+	 	//viet ngan hon.
+	 	var student = [
+	 	{name:"Bình", age:24, gender: "Male"},
+	 	{name:"An", age:21, gender: "Male"},
+	 	{name:"Sơn", age:25, gender: "Male"}
+	 	];
+	 	student.sort(function(a, b){return b.age - a.age});
+	 	for(let i=0;i<student.length;i++){
+	 		document.write("<p>" + student[i].name + "-" + student[i].age + "</p>");
+	 	}
+	 	
 	 	//phan5:tong hop.
 	 	// 13 b1:giai va bien luan phuong trinh bac nhat ax+b=0;
 	 	function phuongTrinhBacMot(a,b){

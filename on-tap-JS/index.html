@@ -157,25 +157,43 @@
 		 spinalCase("hello wworldlfd");
 		 //b4:cho 1 chuoi,kiem tra xem do co phai la 1 chuoi doi xung hay ko.
 		//cách này chưa đúng.
-		function kiemTraChuoiDoiXung(str){
-		 	let str1 = str.split(" "); //==> str1 = l a q u y t h i
-		 	let str2 = str1.reverse();//==> str2 = i h t y u q a l
-		 	let kq = true;
-		 	for(let i=0;i<str1.length;i++){
-		 		for(let j=0;j<str2.length;j++){
-		 			if(str1[i] !== str2[j]){
-		 				kq == false;
-		 				break;
-		 			}
-		 		}
-		 	}
-		 	if(kq == true){
-		 		document.write(str + " la chuoi doi xung");
-		 	}else{
-		 		document.write(str + " ko la chuoi doi xung");
-		 	}
-		 }
-		 kiemTraChuoiDoiXung("race car");
+		// function kiemTraChuoiDoiXung(str){
+		//  	let str1 = str.split(" "); //==> str1 = l a q u y t h i
+		//  	let str2 = str1.reverse();//==> str2 = i h t y u q a l
+		//  	let kq = true;
+		//  	for(let i=0;i<str1.length;i++){
+		//  		for(let j=0;j<str2.length;j++){
+		//  			if(str1[i] !== str2[j]){
+		//  				kq == false;
+		//  				break;
+		//  			}
+		//  		}
+		//  	}
+		//  	if(kq == true){
+		//  		document.write(str + " la chuoi doi xung");
+		//  	}else{
+		//  		document.write(str + " ko la chuoi doi xung");
+		//  	}
+		//  }
+		//  kiemTraChuoiDoiXung("race car");
+
+		function kiemTraChuoi(str){
+			let kq = true;
+			let str1 = str.toLowerCase().split(" ");//chuyen chuoi ve dang in thuong + tach chuoi vd : Race car ==> r a c e c a r
+			let str2 = str1.join(""); //noi chuoi vua tach vd : r a c e c a r => racecar
+			for(let i=0;i<str2.length;i++){
+				if(str2[i] !== str2[str2.length - 1 - i]){
+					kq = false;
+					break;
+				}
+			}
+			if(kq == true){
+				document.write(str + " la chuoi doi xung");
+			}else{
+				document.write(str + " ko la chuoi doi xung");
+			}
+		}
+		kiemTraChuoi("Race car");
 		 
 		 //cách này mưới test đúng ở những chuỗi ko có khoảng trắng.
 		function kiemTraChuoi(str){
@@ -208,6 +226,8 @@
 		 document.write("<p>" + student[0].name + " - " + student[0].age + "</p>");
 		 document.write("<p>" + student[1].name + " - " + student[1].age + "</p>");
 		 document.write("<p>" + student[2].name + " - " + student[2].age + "</p>");
+
+		 
 		 //tong hop
 		 //b1:cho 2 so a,b.viet ham giai phuong trinh bac nhat dang ax+b=0
 		 function ptBacNhat(a, b)
