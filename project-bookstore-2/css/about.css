@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,700i,900,900i&display=swap');
+*{
+	margin:0;
+	padding:0;
+}
+html , body{
+	width:100%;
+	height:100%;
+	font-family: 'Roboto';
+	font-size:20px;
+}
+/* -------html body---------- */
+
+ ul.breadcrumb {
+  margin-left:-10px;
+  margin-top:20px;
+  padding: 10px 10px;
+  width:100%;
+  list-style: none;
+  background:white;
+}
+/* -----breakcrumb------- */
+
+.infor .row h3{
+	font-size:25px;
+}
+.infor .row p{
+	font-size:20px;
+}
+@media screen and (max-width: 1200px){
+	.infor .row .text-2{
+		margin-left:40px;
+	}
+}
+@media screen and (max-width: 992px){
+	.infor .row h3{
+		font-size:20px;
+	}
+	.infor .row p{
+		font-size:16px;
+	}
+	.infor .row .text-2{
+		margin:0;
+	}
+}
+@media screen and (max-width: 768px){
+	.infor .row h3{
+		font-size:16px;
+	}
+	.infor .row p{
+		font-size:16px;
+	}
+	.infor .row .text-2{
+		margin:0;
+	}
+}
+@media screen and (max-width: 576px){
+	.infor .row h3{
+		font-size:14px;
+	}
+	.infor .row p{
+		font-size:16px;
+	}
+	.infor .row .text-2{
+		margin-top:10px;
+	}
+}
+/* -------infor--------- */
+
+.book-day {
+	margin-top:50px;
+}
+.book-day h3{
+	text-align:center;
+	font-size:25px;
+	margin:20px auto;
+	font-weight:bold;
+}
+.book-day img.row-1{
+	margin:20px 50px;
+}
+.book-day img.row-2{
+	margin:20px 0;
+}
+.book-day h3{
+	margin-top:60px;
+}
+@media screen and (max-width: 1140px){
+	.book-day img.row-1{
+		margin-left:0;
+	}
+}
+@media screen and (max-width:768px){
+	.book-day img.row1{
+		margin-left:150px;
+	}
+	.book-day img.row-2{
+		margin-left:50px;
+	}
+}
+@media screen and (max-width:576px){
+	.book-day img.row-1{
+		margin-left:50px;
+	}
+	.book-day img.row-2{
+		margin-left:50px;
+	}
+}
+/* ------book-day---------- */
+@media screen and (max-width: 576px){
+	.text-center{
+		padding:0 10px;
+	}
+}
+
+.back-to-top{
+	position:fixed;
+	right:60px;
+	bottom:20px;
+}
+.back-to-top i{
+	color:#0DC5ED;
+}
+/* -------the-end--------- */

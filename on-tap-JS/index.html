@@ -156,26 +156,24 @@
 		 }
 		 spinalCase("hello wworldlfd");
 		 //b4:cho 1 chuoi,kiem tra xem do co phai la 1 chuoi doi xung hay ko.
-		//cách này chưa đúng.
-		// function kiemTraChuoiDoiXung(str){
-		//  	let str1 = str.split(" "); //==> str1 = l a q u y t h i
-		//  	let str2 = str1.reverse();//==> str2 = i h t y u q a l
-		//  	let kq = true;
-		//  	for(let i=0;i<str1.length;i++){
-		//  		for(let j=0;j<str2.length;j++){
-		//  			if(str1[i] !== str2[j]){
-		//  				kq == false;
-		//  				break;
-		//  			}
-		//  		}
-		//  	}
-		//  	if(kq == true){
-		//  		document.write(str + " la chuoi doi xung");
-		//  	}else{
-		//  		document.write(str + " ko la chuoi doi xung");
-		//  	}
-		//  }
-		//  kiemTraChuoiDoiXung("race car");
+		function kiemTraChuoi(str){
+			let kq = true;
+			let str1 = str.toLowerCase().split(" ");
+			let str2 = str1.join("");
+			for(let i=0;i<str2.length;i++){
+				if(str2[i] !== str2[str2.length - 1 - i]){
+					kq = false;
+					break;
+				}
+			}
+			return kq;
+			if(kq == true){
+				document.write(str2 + " la chuoi doi xung");
+			}else{
+				document.write(str2 + " ko la chuoi doi xung");
+			}
+		}
+		kiemTraChuoi("Race car");
 
 		function kiemTraChuoi(str){
 			let kq = true;

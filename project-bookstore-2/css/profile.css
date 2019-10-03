@@ -1,0 +1,139 @@
+@media screen and (max-width: 1024px){
+	ul.breadcrumb{
+		margin-left:-10px;
+	}
+	.menu .search input{
+		width:88%;
+	}
+}
+@media screen and (max-width: 768px){
+	.menu .search input{
+		width:94%;
+		margin-left:10px;
+	}
+	ul.breadcrumb{
+		margin-left:0;
+	}
+}
+@media screen and (max-width: 576px){
+	.menu .search input{
+		width:100%;
+		margin-left:0;
+	}
+	ul.breadcrumb{
+		margin-left:0px;
+		width:100%;
+	}
+}
+@media screen and (max-width: 375px){
+	.menu .search input{
+		width:85%;
+	}
+}
+/* --------menu-search & breadcrumb-------- */
+
+.dang-xuat-bar{
+	background:#0DC5ED;
+}
+.dang-xuat-bar .logo p{
+	width:20%;
+	font-size:20px;
+	margin:10px 10px;
+	text-align:center;
+	color:#171717;
+}
+.dang-xuat-bar .logo a:hover{
+	text-decoration:none;
+}
+.dang-xuat-bar input{
+	background:#C4C4C4;
+	border:none;
+	padding:0 5px;
+	margin-left:330px;
+	margin-top:20px;
+}
+@media screen and (max-width: 1200px){
+	.dang-xuat-bar .logo p{
+		width:25%;
+	}
+	.dang-xuat-bar input{
+		margin-left:300px;
+	}
+}
+@media screen and (max-width: 992px){
+	.dang-xuat-bar .logo p{
+		width:38%;
+	}
+	.dang-xuat-bar input{
+		margin-left:250px;
+	}
+}
+@media screen and (max-width: 768px){
+	.dang-xuat-bar .logo p{
+		width:38%;
+	}
+	.dang-xuat-bar input{
+		margin-left:150px;
+	}
+}
+@media screen and (max-width: 576px){
+	.dang-xat-bar .logo p{
+		width:20%;
+	}
+	.dang-xuat-bar{
+		position:relative;
+	}
+	.dang-xuat-bar input{
+		position:absolute;
+		margin-left:240px;
+		margin-top:-60px;
+		margin-bottom:10px;
+	}
+}
+@media screen and (max-width: 375px){
+	.dang-xuat-bar .dang-xuat{
+		margin-left:120px;
+		margin-top:-80px;
+	}
+	.dang-xuat-bar input{
+		margin-left:75px;
+		margin-top:20px;
+	}
+	
+}
+/* -----dang-xuat-bar----- */
+
+.profile h6{
+	font-size:22px;
+	font-weight:bold;
+	color:#171717;
+}
+.profile h6.infor{
+	color:#0DC5ED;
+}
+.profile a p{
+	font-size:20px;
+	line-height:20px;
+	color:#171717;
+}
+.profile p:hover{
+	color:#0DC5ED;
+	text-decoration:none;
+}
+.profile h6:hover{
+	color:#0DC5ED;
+}
+.profile a:hover{
+	text-decoration:none;
+}
+
+.back-to-top{
+	position:fixed;
+	right:60px;
+	bottom:20px;
+}
+.back-to-top i{
+	color:#0DC5ED;
+}
+/* -----the-end----- */
+

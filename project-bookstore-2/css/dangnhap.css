@@ -1,0 +1,188 @@
+ul.breadcrumb {
+  margin-top:20px;
+  list-style: none;
+  background:white;
+}
+@media screen and (max-width: 576px){
+	ul.breadcrumb{
+		margin-left:0px;
+	}
+}
+@media screen and (max-width: 375px){
+	ul.breadcrumb{
+		padding-left:0px;
+	}
+}
+/* ----breadcrumb--------- */
+
+
+.dang-nhap-bar{
+	background:#0DC5ED;
+}
+.dang-nhap-bar .logo a p{
+	width:40%;
+	font-size:20px;
+	text-align:center;
+	margin-left:-80px;
+	margin-top:15px;
+	padding-left:70px;
+	color:#000000;
+}
+.dang-nhap-bar a:hover{
+	text-decoration:none;
+}
+.input input{
+	width:100%;
+	border:none;
+	outline:none;
+	background:#C4C4C4;
+	padding:0 5px;
+	margin-bottom:10px;
+}
+.input p{
+	font-size:18px;
+	margin-top:5px;
+	margin-bottom:-1px;
+}
+.input .dangnhap input{
+	margin-top:31px;
+	width:60%;
+}
+@media screen and (max-width: 1200px){
+	.dang-nhap-bar .logo{
+		display:none;
+	}
+	.input .dangnhap input{
+		width:100%;
+	}
+}
+@media screen and (max-width: 992px){
+	.input input{
+		width:60%;
+	}
+	.input .dangnhap input{
+		width:60%;
+	}
+}
+@media screen and (max-width: 768px){
+	.input input{
+		width:100%;
+	}
+	.input .dangnhap input{
+		width:50%;
+	}
+}
+@media screen and (max-width: 576px){
+	.input input{
+		width:40%;
+	}
+	.input .dangnhap input{
+		width:40%;
+	}
+	.input .taikhoan{
+		margin-bottom:-15px;
+	}
+	.input .matkhau{
+		margin-bottom:-20px;
+	}
+}
+/* --------input-tai-khoan------ */
+
+
+.new-account input{
+	margin:5px;
+	background:white;
+	outline:none;
+	padding:0 10px;
+}
+.new-account .ho-ten{
+	display:flex;
+}
+.new-account .ho-ten input{
+	width:22.5%;
+}
+@media screen and (max-width: 1200px){
+	.new-account .ho-ten input{
+		width:27%;
+	}
+}
+@media screen and (max-width: 992px){
+	.new-account .ho-ten input{
+		width:38%;
+	}
+}
+@media screen and (max-width: 768px){
+	.new-account .ho-ten input{
+		width:24.5%;
+	}
+}
+@media screen and (max-width: 576px){
+	.new-account .ho-ten input{
+		width:24.8%;
+	}
+}
+.new-account .ngay-sinh{
+	display:flex;
+	margin-left:-10px;
+}
+.new-account .ngay-sinh input{
+	width:12%;
+	margin:0 10px;
+}
+.new-account .ngay-sinh input.year{
+	width:15%;
+}
+@media screen and (max-width: 992px){
+	.new-account .ngay-sinh input{
+		width:15%;
+	}
+	.new-account .ngay-sinh input.year{
+		width:25%;
+	}
+}
+@media screen and (max-width: 768px){
+	.new-account .ngay-sinh input.year{
+		width:15%;
+	}
+}
+h6{
+	margin-top:10px;
+}
+.new-account .gioi-tinh{
+	display:flex;
+}
+.new-account .gioi-tinh .nam{
+	display:flex;
+}
+.new-account .gioi-tinh .nam p{
+	margin-left:5px;
+}
+.new-account .gioi-tinh .nu{
+	display:flex;
+	margin:0 10px;
+}
+.new-account .gioi-tinh .nu p{
+	margin-left:5px;
+}
+.new-account .accept{
+	display:flex;
+}
+.new-account .accept p{
+	margin-left:15px;
+}
+input.dang-ky{
+	background:#0DC5ED;
+	border-radius:7px;
+}
+
+.back-to-top{
+	position:fixed;
+	right:60px;
+	bottom:20px;
+}
+.back-to-top i{
+	color:#0DC5ED;
+}
+/* -----the-end----- */
+
+

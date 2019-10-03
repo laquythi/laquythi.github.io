@@ -1,0 +1,255 @@
+ ul.breadcrumb {
+  /* padding-left:110px; */
+  margin-bottom:40px;
+  padding: 10px 10px;
+  width:100%;
+  list-style: none;
+  background:white;
+}
+@media screen and (max-width: 1200px){
+	ul.breadcrumb{
+		margin-left:20px;
+		margin-bottom:30px;
+	}
+}
+/* -----breakcrumb--------- */
+
+.gioiThieuSach .about-book{
+	/* margin-left:-50px; */
+}
+.gioiThieuSach .about-book p{
+	margin-top:10px;
+	font-size:18px;
+	line-height:18px;
+}
+.gioiThieuSach .about-book p.price{
+	font-size:25px;
+	font-weight:bold;
+	color:red;
+}
+.gioiThieuSach .infor-book h4{
+	margin-top:-30px;
+	/* margin-left:-120px; */
+}
+.gioiThieuSach .infor-book p{
+	font-size:20px;
+	line-height:22px;
+	margin-left:-120px;
+}
+.gioiThieuSach .about-book input{
+	background: #F21F1F;
+	border:none;
+}
+@media screen and (max-width: 1200px){
+	.gioiThieuSach .about-book{
+		/* margin-left:-30px; */
+	}
+	.gioiThieuSach .infor-book h4{
+		margin-top:-50px;
+		margin-left:0px;
+	}
+	.gioiThieuSach .infor-book p{
+		font-size:18px;
+		line-height:22px;
+		margin-left:0px;
+	}
+}
+@media screen and (max-width: 992px){
+	.gioiThieuSach .about-book{
+		margin-left:-20px;
+	}
+	.gioiThieuSach .about-book p{
+		font-size:16px;
+		line-height:16px;
+	}
+	.gioiThieuSach .about-book p{
+		font-size:18px;
+		line-height:18px;
+	}
+	.gioiThieuSach .infor-book h4{
+		margin-top:-50px;
+		margin-left:0px;
+		font-size:18px;
+	}
+	.gioiThieuSach .infor-book p{
+		font-size:16px;
+		line-height:22px;
+		margin-left:0px;
+	}
+}
+@media screen and (max-width: 768px){
+	.gioiThieuSach .about-book{
+		margin-left:0px;
+	}
+	.gioiThieuSach .about-book p{
+		font-size:16px;
+		line-height:16px;
+	}
+	.gioiThieuSach .about-book input{
+		margin-left:-5px;
+	}
+	.gioiThieuSach .infor-book h4{
+		margin-top:-50px;
+		margin-left:100px;
+	}
+	.gioiThieuSach .infor-book p{
+		font-size:16px;
+		line-height:16px;
+	}
+}
+@media screen and (max-width: 576px){
+	.gioiThieuSach .about-book{
+		margin-left:20px;
+	}
+	.gioiThieuSach .about-book p{
+		font-size:14px;
+		line-height:14px;
+	}
+	.gioiThieuSach .infor-book h4{
+		margin-top:10px;
+		margin-left:50px;
+	}
+	.gioiThieuSach .infor-book p{
+		font-size:14px;
+		line-height:20px;
+	}
+}
+/* -------gioiThieuSach------ */
+
+.comment{
+	margin-top:40px;
+}
+.comment h5{
+	margin:20px 0;
+}
+.comment .feedback p{
+	margin-left:10px;
+}
+.comment .nguyenHuyThiep{
+	margin-top:20px;
+}
+.comment .your-comment input{
+	width:100%;
+	padding:5px 10px;
+	/* border:none; */
+	outline:none;
+}
+.comment button{
+	background:#0DC5ED;
+	border:1px solid grey;
+	outline:none;
+	padding:5px;
+	margin-left:95px;
+}
+@media screen and (max-width: 992px){
+	.comment button{
+		margin-left:80px;
+	}
+}
+@media screen and (max-width: 768px){
+	.comment .your-comment input{
+		width:80%;
+		margin-left:20px;
+	}
+	.comment button{
+		margin-left:
+	}
+}
+@media screen and (max-width: 576px){
+	.feedback{
+		margin-bottom:30px;
+	}
+	.comment .your-comment input{
+		width:80%;
+		margin-top:20px;
+		margin-left:0px;
+	}
+	.comment button{
+		margin-top:10px;
+		margin-left:0;
+	}
+}
+/* -----comment--------- */
+
+.SPLQ{
+	margin-top:40px;
+}
+.SPLQ .container h4{
+	padding-top:10px;
+	margin-bottom:-20px;
+}
+.SPLQ img{
+	margin-top:50px;
+}
+.SPLQ p{
+	margin-top:15px;
+	font-size:18px;
+	line-height:10px;
+}
+.SPLQ .price{
+	color:#0DC5ED;
+}
+.SPLQ .icon{
+	display:flex;
+	margin-top:-15px;
+}
+.SPLQ .star{
+	color:yellow;
+}
+.SPLQ  .cart{
+	color:#DF0029;
+	margin:10px;
+}
+@media screen and (max-width: 576px){
+	.SPLQ h4{
+		margin-left:60px;
+	}
+	.SPLQ .img{
+		margin-left:80px;
+	}
+}
+/* -------SPLQ-san-pham-lien-quan------ */
+
+.SPDX{
+	margin-top:40px;
+}
+.SPDX img{
+	margin-top:50px;
+}
+.SPDX p{
+	margin-top:15px;
+	font-size:18px;
+	line-height:10px;
+}
+.SPDX .price{
+	color:#0DC5ED;
+}
+.SPDX .icon{
+	display:flex;
+	margin-top:-15px;
+}
+.SPDX .star{
+	color:yellow;
+}
+.SPDX .cart{
+	color:#DF0029;
+	margin:10px;
+}
+@media screen and (max-width: 576px){
+	.SPDX h4{
+		margin-left:60px;
+	}
+	.SPDX .img{
+		margin-left:80px;
+	}
+}
+
+.back-to-top{
+	position:fixed;
+	right:60px;
+	bottom:20px;
+}
+.back-to-top i{
+	color:#0DC5ED;
+}
+/* -----the-end----- */

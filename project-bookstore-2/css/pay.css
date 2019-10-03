@@ -1,0 +1,157 @@
+ 
+ ul.breadcrumb {
+  margin-top:20px;
+  padding:5px;
+  margin-left:20px;
+  width:80%;
+  list-style: none;
+  background:white;
+}
+/* -----breadcrumb------- */
+
+.sanPhamDaChon h6{
+	font-size:20px;
+	font-weight:bold;
+	margin-left:30px;
+}
+.sanPhamDaChon .img{
+	margin-left:30px;
+	margin-top:30px;
+}
+.sanPhamDaChon .price{
+	color:#0DC5ED;
+}
+.sanPhamDaChon p.price{
+	margin-top:15px;
+	font-size:22px;
+	font-weight:bold;
+}
+.sanPhamDaChon p{
+	font-size:18px;
+	line-height:7px;
+	margin-top:10px;
+}
+.sanPhamDaChon .soLuong p{
+	font-size:18px;
+	line-height:10px;
+	margin-top:-6px;
+}
+.sanPhamDaChon .soLuong{
+	display:flex;
+}
+.sanPhamDaChon .soLuong a{
+	margin-left:5px;
+	margin-top:-15px;
+}
+.sanPhamDaChon a p{
+	color:#F21F1F;
+	margin-top:-5px;
+}
+.sanPhamDaChon a:hover{
+	text-decoration:none;
+}
+@media screen and (max-width: 576px){
+	.sanPhamDaChon{
+		margin-left:40px;
+	}
+}
+/* -----sanPhamDaChon----- */
+
+.nhapThongTin{
+	margin-top:40px;
+	margin-left:60px;
+}
+.nhapThongTin .text-center{
+	margin:-10px 0;
+	color:#0DC5ED;
+}
+.nhapThongTin .text-center h5{
+	font-weight:bold;
+}
+.nhapThongTin p{
+	margin-top:25px;
+	margin-bottom:1px;
+}
+.nhapThongTin input{
+	/* background:#C4C4C4; */
+	outline:none;
+	font-size:18px;
+	/* border:none; */
+	padding:0 10px;
+}
+.nhapThongTin .cash{
+	display:flex;
+}
+.nhapThongTin .cash p{
+	margin-top:0px;
+	margin-left:10px;
+}
+.nhapThongTin .credit-card{
+	display:flex;
+}
+.nhapThongTin .credit-card p{
+	margin-top:0px;
+	margin-left:10px;
+}
+.nhapThongTin .final{
+	margin-top:20px;
+}
+.nhapThongTin .final p{
+	line-height:15px;
+}
+.nhapThongTin p.money{
+	font-size:25px;
+	font-weight:bold;
+	color:red;
+}
+.nhapThongTin .final button{
+	width:40%;
+	height:auto;
+	margin-top:20px;
+}
+.nhapThongTin p.final{
+	line-height:25px;
+	margin-top:15px;
+	color:#F21F1F;
+}
+/* ------nhapThongTin-------- */
+
+.QR{
+	margin-top:40px;
+}
+.QR img{
+	margin-left:100px;
+}
+.QR .text-center{
+	margin-top:20px;
+}
+@media screen and (max-width: 1200px){
+	.QR img{
+		margin-left:80px;
+	}
+}
+@media screen and (max-width: 992px){
+	.QR img{
+		margin-left:10px;
+	}
+}
+@media screen and (max-width: 768px){
+	.QR img{
+		margin-left:10px;
+	}
+}
+@media screen and (max-width: 576px){
+	.QR img{
+		margin-left:0px;
+	}
+}
+
+.back-to-top{
+	position:fixed;
+	right:60px;
+	bottom:20px;
+}
+.back-to-top i{
+	color:#0DC5ED;
+}
+/* -----the-end----- */

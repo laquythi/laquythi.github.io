@@ -1,0 +1,107 @@
+@media screen and (max-width: 768px){
+	ul.breadcrumb{
+		margin-left:-6px;
+	}
+}
+@media screen and (max-width: 576px){
+	ul.breadcrumb{
+		margin-left:0;
+	}
+}
+.contact h6{
+	font-size:26px;
+	font-weight:bold;
+	color:#0DC5ED;
+}
+.contact .name{
+	display:flex;
+}
+.contact .feed-back p{
+	font-size:18px;
+	line-height:40px;
+	margin-right:20px;
+}
+.contact .phone{
+	display:flex;
+}
+.contact .email{
+	display:flex;
+}
+.contact .feed-back h6{
+	margin-top:10px;
+}
+.contact .feed-back p{
+	padding-right:-20px;
+}
+.contact .feed-back input{
+	margin-top:5px;
+	height:30px;
+	margin-left:-60px;
+	background:#EEEEEE;
+	border:none;
+	padding:10px;
+	outline:none;
+	width:60%;
+}
+.contact .feed-back input[type=text]{
+	color:#171717;
+}
+@media screen and (max-width: 992px){
+	.contact .feed-back input{
+		width:100%;
+	}
+}
+@media screen and (max-width: 768px){
+	.contact .feed-back p{
+		margin-bottom:-10px;
+	}
+	.contact .feed-back input{
+		margin-left:0;
+		width:100%;
+		font-size:16px;
+	}
+}
+@media screen and (max-width: 576px){
+	.contact .feed-back input{
+		width:40%;
+	}
+}
+.contact .feed-back .typing input{
+	margin-left:-10px;
+	height:200px;
+	width:100%;
+	padding-right:20px;
+	padding-bottom:150px;
+	outline:none;
+}
+.contact .feed-back .text-left input{
+	margin-left:-10px;
+	background:#0DC5ED;
+	height:45px;
+	width:30%;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+/* -------contact--------- */
+
+.google-map{
+	margin-top:40px;
+}
+.google-map h6{
+	font-size:34px;
+	font-weight:bold;
+}
+@media screen and (max-width: 375px){
+	.google-map{
+		display:none;
+	}
+}
+.back-to-top{
+	position:fixed;
+	right:60px;
+	bottom:20px;
+}
+.back-to-top i{
+	color:#0DC5ED;
+}
+/* -------the-end------ */

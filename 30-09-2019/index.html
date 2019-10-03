@@ -1,66 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>bai tap ve nha 30 09 2019</title>
 </head>
+
 <body>
 	<script>
-		 // + Bài 5: Cho 1 mảng các object chứa thông tin sinh viên dạng { name: ''Minh'', gender: ''Male'', age: 20 }. Viết hàm tính ra số tuổi trung bình của toàn bộ sinh viên.
-		 function tinhTuoiTrungBinh(student){
-		 	for(let i=0;i<student.length;i++){
-		 		if(student[i].age <= 0){
-		 			return false;
-		 		}else{
-		 			let sum = 0;
-		 			let count = student.length;
-		 			let kq = 0;
-		 			for(let i=0;i<student.length;i++){
-		 				sum = sum + student[i].age;
-		 			}
-		 			return kq = sum / count;	
-		 			}
-		 		}
-		 	}
-		 let student = [
-		 	{name:"Trang", age:23, gender: "FeMale"},
-		 	 {name:"Anh", age:12, gender: "Male"},
-		 	 {name:"Thi", age:28, gender: "Male"}
-		 ];
-		 tinhTuoiTrungBinh(student);
 
-		  // + Bài 6: Cho 1 mảng các object chứa thông tin sinh viên dạng { name: ''Huy'', gender: ''Male'', age: 20 }. Viết hàm sắp xếp lại mảng trên theo tên học viên (không phân biệt hoa thường).
-		  let student = [
-		 	{name:"Trang", age:23, gender: "FeMale"},
-		 	 {name:"Anh", age:12, gender: "Male"},
-		 	 {name:"Thi", age:28, gender: "Male"}
-		 ];
-		 student.sort(function(a, b){
-	 		if (a.name.toLowerCase() < b.name.toLowerCase()) {return -1;}
-	 		if (a.name.toLowerCase() > b.name.toLowerCase()) {return 1;}
-	 		return 0;
-	 	});
+		const student = [
+			{ name: "HTrang", age: 23, gender: "FeMale" },
+			{ name: "Anh", age: 12, gender: "Male" },
+			{ name: "HThi", age: 28, gender: "Male" }
+		];
+		// + Bài 5: Cho 1 mảng các object chứa thông tin sinh viên dạng { name: ''Minh'', gender: ''Male'', age: 20 }. Viết hàm tính ra số tuổi trung bình của toàn bộ sinh viên.
+		function tinhTuoiTrungBinh(students) {
+			for (let i = 0; i < students.length; i++) {
+				if (students[i].age <= 0) {
+					return false;
+				} else {
+					let sum = 0;
+					let count = students.length;
+					let kq = 0;
+					for (let i = 0; i < students.length; i++) {
+						sum = sum + students[i].age;
+					}
+					return kq = sum / count;
+				}
+			}
+		}
+		tinhTuoiTrungBinh(student);
 
-		 for(let i=0;i<student.length;i++){
-		 	document.write("<p>" + student[i].name + "</p>");
-		 }
+		// + Bài 6: Cho 1 mảng các object chứa thông tin sinh viên dạng { name: ''Huy'', gender: ''Male'', age: 20 }. Viết hàm sắp xếp lại mảng trên theo tên học viên (không phân biệt hoa thường).
+		const sortString = (a, b) => {
+			const nameA = a.name.toLowerCase();
+			const nameB = b.name.toLowerCase();
+			return nameA > nameB ? 1 : -1;
+		}
+		function sortByName(students) {
+			return students.sort(sortString);
+		}
 
-		 // + Bài 8: Cho 1 số nguyên, hãy viết hàm sắp xếp lại các chữ số trong số nguyên đó sao cho ra 1 số nhỏ nhất có thể (không tính số 0 đầu tiên). Ví dụ với tham số 53751 thì kết quả là 13557.
-		 function sapXepSo(number){
-		 	let newNumber = number.toString().split("");
-		 	for(let i=0;i<newNumber.length;i++){
-		 		for(let j=0;j<newNumber.length;j++){
-		 			if(newNumber[j] > newNumber[i]){
-		 				let temp = newNumber[j];
-		 				newNumber[j] = newNumber[i];
-		 				newNumber[i] = temp;
-		 			}
-		 		}
-		 	}
-		 	return newNumber.join("");
-		 }
-		 sapXepSo(7991);
+		sortByName(student);
+
+		//sort theo tuoi
+
+		// + Bài 7: Cho 1 mảng các object chứa thông tin sinh viên dạng { name: ''Hoàng'', gender: ''Male'', age: 20 }. Viết hàm lọc ra những sinh viên nào có tên bắt đầu bằng chữ ''H'' hoặc ''h''.
+
+		// function filterByName(obj) {
+		// 	const newArr = obj.filter(person => person.name.startsWith("H") || person.name.startsWith("h"))
+		// 	return newArr;
+		// }
+
+
+		function locSinhVien(arr) {
+			let newarr = [];
+			for(let i=0;i<arr.length;i++){
+				if(arr[i].name[0] == "H" || arr[i].name[0] == "H" ){
+					newarr.push(arr[i]);
+				}
+			}
+			return newarr;
+		}
+		locSinhVien(student);
+
+		function locSoChan(number){
+			let newnumber = [];
+			for(let i=0;i<number.length;i++){
+				if(number[i] % 2 ==0){
+					newnumber.push(number[i]);
+				}
+			}
+			return newnumber;
+		}
+		locSoChan([3,5,6,2,8,13,2]);
+
+
+		// + Bài 8: Cho 1 số nguyên, hãy viết hàm sắp xếp lại các chữ số trong số nguyên đó sao cho ra 1 số nhỏ nhất có thể (không tính số 0 đầu tiên). Ví dụ với tham số 53751 thì kết quả là 13557.
+		function sapXepSo(number) {
+			let newNumber = number.toString().split("");
+			for (let i = 0; i < newNumber.length; i++) {
+				for (let j = 0; j < newNumber.length; j++) {
+					if (newNumber[j] > newNumber[i]) {
+						let temp = newNumber[j];
+						newNumber[j] = newNumber[i];
+						newNumber[i] = temp;
+					}
+				}
+			}
+			return newNumber;
+			if (newNumber[0] = 0) {
+				for (let i = 1; i < newNumber.length; i++) {
+
+				}
+			}
+		}
+		sapXepSo(7991);
 
 	</script>
 </body>
+
 </html>
