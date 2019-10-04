@@ -28,6 +28,9 @@ ul.breadcrumb {
 	background:#555555;
 	width:80%;
 }
+.main .filter{
+	margin-left:10px;
+}
 .main h4{
 	padding-top:15px;
 	margin-left:10px;
@@ -36,7 +39,7 @@ ul.breadcrumb {
 	font-weight:bold;
 }
 .main .locSanPham{
-	margin-left:-15px;
+	/* margin-left:-15px; */
 }
 .main .locSanPham ul li{
 	display:block;
@@ -81,7 +84,7 @@ ul.breadcrumb {
 		margin-left:0;
 	}
 	.main .locSanPham{
-		width:125%;
+		/* width:125%; */
 	}
 }
 @media screen and (max-width: 768px){
@@ -90,7 +93,7 @@ ul.breadcrumb {
 		font-size:18px;
 	}
 	.main .locSanPham{
-		display:none;
+		/* display:none; */
 	}
 	.main .sale-off{
 		display:none;

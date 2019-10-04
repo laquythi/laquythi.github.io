@@ -27,9 +27,12 @@ html , body{
 .infor .row p{
 	font-size:20px;
 }
+.infor .dongtay-1 img{
+	padding-top:45px;
+}
 @media screen and (max-width: 1200px){
 	.infor .row .text-2{
-		margin-left:40px;
+		/* margin-left:40px; */
 	}
 }
 @media screen and (max-width: 992px){
@@ -53,6 +56,9 @@ html , body{
 	.infor .row .text-2{
 		margin:0;
 	}
+	.infor .dongtay-1 img{
+		padding-top:20px;
+	}
 }
 @media screen and (max-width: 576px){
 	.infor .row h3{
@@ -63,6 +69,17 @@ html , body{
 	}
 	.infor .row .text-2{
 		margin-top:10px;
+	}
+	.infor .dongtay-1 img{
+		padding-top:10px;
+	}
+}
+@media screen and (max-width: 414px){
+	.infor .row p{
+		font-size:10px;
+	}
+	.infor .dongtay-1 img{
+		padding-top:0;
 	}
 }
 /* -------infor--------- */
@@ -92,26 +109,42 @@ html , body{
 }
 @media screen and (max-width:768px){
 	.book-day img.row1{
-		margin-left:150px;
+		/* margin-left:150px; */
 	}
 	.book-day img.row-2{
-		margin-left:50px;
+		/* margin-left:50px; */
 	}
 }
 @media screen and (max-width:576px){
 	.book-day img.row-1{
-		margin-left:50px;
+		/* margin-left:50px; */
 	}
 	.book-day img.row-2{
-		margin-left:50px;
+		margin-left:-25px;
 	}
 }
 /* ------book-day---------- */
+
+.muc-tieu h3{
+	padding:0 10px;
+}
+.muc-tieu .text-center p{
+	padding:0 4px;
+}
 @media screen and (max-width: 576px){
-	.text-center{
-		padding:0 10px;
+	.muc-tieu h3{
+		padding:0 5px;
+	}
+	.muc-tieu .text-center p{
+		padding:0 6px;
+	}	
+}
+@media screen and (max-width: 375px){
+	.muc-tieu .text-center p{
+		padding:0 5px;
 	}
 }
+/* ------muc-tieu------ */
 
 .back-to-top{
 	position:fixed;

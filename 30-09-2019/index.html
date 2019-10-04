@@ -78,6 +78,7 @@
 
 
 		// + Bài 8: Cho 1 số nguyên, hãy viết hàm sắp xếp lại các chữ số trong số nguyên đó sao cho ra 1 số nhỏ nhất có thể (không tính số 0 đầu tiên). Ví dụ với tham số 53751 thì kết quả là 13557.
+		//c1:cách này làm chưa tối ưu.
 		function sapXepSo(number) {
 			let newNumber = number.toString().split("");
 			for (let i = 0; i < newNumber.length; i++) {
@@ -89,15 +90,27 @@
 					}
 				}
 			}
-			return newNumber;
-			if (newNumber[0] = 0) {
-				for (let i = 1; i < newNumber.length; i++) {
-
-				}
+			// return newNumber;
+			if (newNumber[0] === 0) {
+				return newNumber.substring(1,newNumber(length-1));
 			}
 		}
-		sapXepSo(7991);
-
+		sapXepSo(79091);
+		//c2: trên lớp cách của Định.
+		function sort(number){
+			let arr = number.toString().split("");
+			let zeroNum = [];
+			let sortedNum = arr.filter(num =>{
+				if(num == 0){
+					zeroNum.push(num);
+				}
+				return num > 0;
+			});
+			sortedNum.sort();
+			sortedNum.splice(1,0,...zeroNum);
+			return sortedNum.join("");
+		}
+		sort(11005727);
 	</script>
 </body>
 
