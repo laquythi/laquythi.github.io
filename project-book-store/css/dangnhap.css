@@ -50,34 +50,40 @@ ul.breadcrumb {
 }
 @media screen and (max-width: 1200px){
 	.dang-nhap-bar .logo{
-		display:none;
+		/* display:none; */
 	}
 	.input .dangnhap input{
 		width:100%;
 	}
 }
 @media screen and (max-width: 992px){
-	.input input{
-		width:60%;
+	.dang-nhap-bar .logo{
+		display:none;
 	}
-	.input .dangnhap input{
-		width:60%;
+	.dang-nhap-bar .input input{
+		width:80%;
+	}
+	.dang-nhap-bar .input .dangnhap input{
+		width:80%;
 	}
 }
 @media screen and (max-width: 768px){
-	.input input{
-		width:100%;
+	.dang-nhap-bar .logo{
+		display:none;
 	}
-	.input .dangnhap input{
-		width:50%;
+	.dang-nhap-bar .input input{
+		width:80%;
+	}
+	.dang-nhap-bar .input .dangnhap input{
+		width:80%;
 	}
 }
 @media screen and (max-width: 576px){
 	.input input{
-		width:40%;
+		width:70%;
 	}
 	.input .dangnhap input{
-		width:40%;
+		width:70%;
 	}
 	.input .taikhoan{
 		margin-bottom:-15px;
@@ -85,10 +91,37 @@ ul.breadcrumb {
 	.input .matkhau{
 		margin-bottom:-20px;
 	}
+	.taikhoan p.quen-tai-khoan{
+		margin-bottom:15px;
+		margin-top:-10px;
+	}
+}
+@media screen and (max-width: 414px){
+	.dang-nhap-bar .input input{
+		width:40%;
+	}
+	.dang-nhap-bar .input .dangnhap input{
+		width:40%;
+	}
 }
 /* --------input-tai-khoan------ */
-
-
+@media screen and (max-width: 768px){
+	.other-account{
+		margin-left:10px;
+	}
+}
+@media screen and (max-width: 414px){
+	.other-account{
+		padding-left:190px;
+		margin-top:-250px;
+	}	
+}
+@media screen and (max-width: 320px){
+	.other-account{
+		padding-left:173px;
+	}
+}
+/* -----other-account------ */
 .new-account input{
 	margin:5px;
 	background:white;
@@ -110,15 +143,48 @@ ul.breadcrumb {
 	.new-account .ho-ten input{
 		width:38%;
 	}
+	.new-account .ngay-sinh input{
+		width:15%;
+	}
+	.new-account .ngay-sinh input.year{
+		width:25%;
+	}
 }
 @media screen and (max-width: 768px){
 	.new-account .ho-ten input{
-		width:24.5%;
+		width:36.5%;
+	}
+	.new-account .ngay-sinh input.year{
+		width:15%;
+	}
+	.new-account .ngay-sinh input{
+		width:100%;
 	}
 }
 @media screen and (max-width: 576px){
 	.new-account .ho-ten input{
-		width:24.8%;
+		width:23.5%;
+	}
+}
+@media screen and (max-width: 414px){
+	.new-account .ho-ten input{
+		width:31.5%;
+	}
+	.new-account .ngay-sinh input[type=number]{
+		font-size:16px;
+	}
+}
+@media screen and (max-width: 375px){
+	.new-account .ho-ten input{
+		width:35%;
+	}
+}
+@media screen and (max-width: 320px){
+	.new-account .ho-ten input{
+		width:42%;
+	}
+	.new-account .ngay-sinh{
+		/* padding-left:20px; */
 	}
 }
 .new-account .ngay-sinh{
@@ -131,19 +197,6 @@ ul.breadcrumb {
 }
 .new-account .ngay-sinh input.year{
 	width:15%;
-}
-@media screen and (max-width: 992px){
-	.new-account .ngay-sinh input{
-		width:15%;
-	}
-	.new-account .ngay-sinh input.year{
-		width:25%;
-	}
-}
-@media screen and (max-width: 768px){
-	.new-account .ngay-sinh input.year{
-		width:15%;
-	}
 }
 h6{
 	margin-top:10px;

@@ -7,6 +7,11 @@
   list-style: none;
   background:white;
 }
+@media screen and (max-width: 320px){
+	ul.breadcrumb{
+		width:100%;
+	}
+}
 /* -----breadcrumb------- */
 
 .sanPhamDaChon h6{
@@ -49,6 +54,15 @@
 }
 .sanPhamDaChon a:hover{
 	text-decoration:none;
+}
+@media screen and (max-width: 1024px){
+	.sanPhamDaChon p.price{
+		font-size:18px;
+		line-height:20px;
+	}
+}
+@media screen and (max-width: 768px){
+	
 }
 @media screen and (max-width: 576px){
 	.sanPhamDaChon{

@@ -12,6 +12,11 @@
 		margin-bottom:30px;
 	}
 }
+@media screen and (max-width: 1024px){
+	ul.breadcrumb{
+		margin-left:0;
+	}
+}
 /* -----breakcrumb--------- */
 
 .gioiThieuSach .about-book{
@@ -99,19 +104,47 @@
 }
 @media screen and (max-width: 576px){
 	.gioiThieuSach .about-book{
-		margin-left:20px;
+		margin-left:-20px;
+		margin-top:10px;
 	}
 	.gioiThieuSach .about-book p{
-		font-size:14px;
-		line-height:14px;
+		font-size:22px;
+		line-height:22px;
+	}
+	.gioiThieuSach .about-book p.price{
+		font-size:22px;
+	}
+	.gioiThieuSach .about-book input{
+		margin-left:0px;
+		/* width:60%; */
+		margin-top:-30px;
+	}
+	.gioiThieuSach .about-book input[type=button]{
+		font-size:16px;
+		padding:0px 2px;
 	}
 	.gioiThieuSach .infor-book h4{
 		margin-top:10px;
-		margin-left:50px;
+		margin-left:10px;
 	}
 	.gioiThieuSach .infor-book p{
 		font-size:14px;
 		line-height:20px;
+	}
+	.gioiThieuSach .infor-book p{
+		font-size:13px;
+		line-height:16px;
+	}
+}
+@media screen and (max-width: 414px){
+	.gioiThieuSach img{
+		margin-left:20px;
+	}
+	.gioiThieuSach .about-book{
+		margin-left:20px;
+	}
+	.gioiThieuSach .infor-book h4{
+		margin-left:10px;
 	}
 }
 /* -------gioiThieuSach------ */
@@ -129,14 +162,15 @@
 	margin-top:20px;
 }
 .comment .your-comment input{
-	width:100%;
+	/* width:100%; */
+	width:80%;
 	padding:5px 10px;
 	/* border:none; */
 	outline:none;
 }
 .comment button{
 	background:#0DC5ED;
-	border:1px solid grey;
+	/* border:1px solid grey; */
 	outline:none;
 	padding:5px;
 	margin-left:95px;
@@ -161,13 +195,35 @@
 	}
 	.comment .your-comment input{
 		width:80%;
-		margin-top:20px;
+		margin-top:0px;
 		margin-left:0px;
 	}
 	.comment button{
 		margin-top:10px;
-		margin-left:0;
+		margin-left:85px;
 	}
+}
+@media screen and (max-width: 414px){
+	.comment .feedback p{
+		font-size:14px;
+		margin-left:60px;
+		margin-top:-50px;
+	}
+	.comment .your-comment input{
+		width:100%;
+		margin-left:0px;
+		margin-top:10px;
+	}
+	.comment button{
+		margin-top:10px;
+		margin-left:0px;	
+	}
+}
+@media screen and (max-width: 375px){
+	
+}
+@media screen and (max-width: 320px){
+	
 }
 /* -----comment--------- */
 
