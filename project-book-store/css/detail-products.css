@@ -282,6 +282,27 @@
 		margin-left:80px;
 	}
 }
+@media screen and (max-width: 414px){
+	
+}
+@media screen and (max-width: 375px){
+	.SPLQ h4{
+		padding-left:-10px;
+	}
+	.SPDX h4{
+		padding-left:-10px;
+	}
+}
+@media screen and (max-width: 320px){
+	.SPLQ h4{
+		font-size:20px;
+		padding-left:20px;
+	}
+	.SPDX h4{
+		font-size:20px;
+		padding-left:20px;
+	}
+}
 /* -------SPDX------- */
 .back-to-top{
 	position:fixed;

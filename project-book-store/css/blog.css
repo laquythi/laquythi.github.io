@@ -46,6 +46,16 @@
 		margin-left:140px;
 	}
 }
+@media screen and (max-width: 414px){
+	.blog .img{
+		margin-left:30px;
+	}
+}
+@media screen and (max-width: 375px){
+	.blog .img{
+		margin-left:40px;
+	}
+}
 .text-center input{
 	padding:0 5px;
 }
