@@ -517,6 +517,15 @@ ul.breadcrumb li a:hover {
 	font-size:20px;
 	color:#0DC5ED;
 }
+@media screen and (max-width: 1024px){
+	.new-products p{
+		font-size:14px;
+		line-height:16px;
+	}
+	.new-products p.new-products-price{
+		font-size:18px;
+	}
+}
 @media screen and (max-width: 992px){
 	.new-products p{
 		font-size:20px;

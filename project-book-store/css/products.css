@@ -29,7 +29,7 @@ ul.breadcrumb{
 }
 @media screen and (max-width: 576px){
 	ul.breadcrumb{
-		margin-left:10px;
+		margin-left:-80px;
 		/* margin-left:60px; */
 		width:100%;
 	}
@@ -64,7 +64,7 @@ ul.breadcrumb{
 	width:80%;
 }
 .main .filter{
-	padding-left:10px;
+	/* padding-left:10px; */
 }
 .main h4{
 	padding-top:15px;
@@ -141,6 +141,10 @@ ul.breadcrumb{
 	}
 }
 @media screen and (max-width: 576px){
+	.main .filter{
+		margin:0;
+		padding:0;
+	}
 	.main h4{
 		margin-left:0;
 		font-size:16px;
@@ -162,9 +166,13 @@ ul.breadcrumb{
 	}
 }
 @media screen and (max-width: 414px){
-	.filter{
+	/* .filter{
 		margin-left:70px;
 		margin-top:-60px;
+	} */
+	.main .filter .locSanPham{
+		text-align:center;
+		margin-top:-50px;
 	}
 	.book-day{
 		display:none;
@@ -193,7 +201,7 @@ ul.breadcrumb{
 	.filter{
 		/* margin-left:20px;
 		width:100%; */
-		display:none;
+		/* display:none; */
 	}
 }
 /* -------loc-san-pham--------- */
