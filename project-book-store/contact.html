@@ -168,7 +168,26 @@
 	</section>
 
 	<section class="back-to-top">
-		<a href="#"><i class="fas fa-arrow-alt-circle-up"></i></a>
+		<a id="button"><i class="fas fa-arrow-alt-circle-up"></i></a>
 	</section>
+
+	<script
+	src="https://code.jquery.com/jquery-3.4.1.min.js"
+	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	crossorigin="anonymous"></script>
+	<script>
+		var btn = $('#button');
+		$(window).scroll(function() {
+			if ($(window).scrollTop() > 50) {
+				btn.addClass('show');
+			} else {
+				btn.removeClass('show');
+			}
+		});
+		btn.on('click', function(e) {
+			e.preventDefault();
+			$('html, body').animate({scrollTop:0}, '300');
+		});
+	</script>
 </body>
 </html>

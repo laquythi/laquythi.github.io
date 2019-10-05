@@ -72,7 +72,6 @@ html , body{
 }
 @media screen and (max-width: 320px){
 	.header-top .contact p{
-		/* margin-left:55px; */
 		margin-left:70px;
 	}
 	.header-top .button button{
@@ -101,7 +100,6 @@ html , body{
 @media screen and (max-width: 768px){
 	.banner .text-center input{
 		margin-top:-90px;
-		/* margin-left:-54px; */
 		margin-left:-60px;
 	}
 }
@@ -122,7 +120,6 @@ html , body{
 	}
 	.banner .text-center input{
 		margin-top:-45px;
-		/* margin-top:-40px; */
 		width:35%;
 		height:35px;
 	}
@@ -211,7 +208,6 @@ html , body{
 	}
 	.menu .menu-bar ul li{
 		margin:5px 30px;
-		/* left:150px; */
 		margin-left:45px;
 	}
 	.menu .menu-bar ul li a{
@@ -221,7 +217,6 @@ html , body{
 		width:33%;
 		margin-top:50px;
 		margin-bottom:20px;
-		/* margin-left:-550px; */
 		margin-left:-500px;
 	}
 	.menu .search input{
@@ -382,11 +377,6 @@ ul.breadcrumb li a:hover {
 		text-align:center;
 	}
 }
-@media screen and (max-width: 414px){
-	.sanPhamBanChay .img{
-		/* margin-left:70px; */
-	}
-}
 /* ------san pham ban chay----- */
 
 .Gladwell{
@@ -473,9 +463,6 @@ ul.breadcrumb li a:hover {
 }
 /* -------author------ */
 
-.other-author{
-	/* background:#EEEEEE; */
-}
 .other-author input{
 	background:#0DC5ED;
 	border:none;
@@ -543,9 +530,6 @@ ul.breadcrumb li a:hover {
 		font-size:20px;
 		line-height:20px;
 	}
-	.new-products .img{
-		/* margin-left:70px; */
-	}
 }
 /* ------new-products------ */
 
@@ -570,19 +554,10 @@ ul.breadcrumb li a:hover {
 	font-size:14px;
 	line-height:5px;
 }
-@media screen and (max-width: 576px){
-	.sanPhamTrongNuoc .img{
-		/* margin-left:70px; */
-	}
-}
 /* ------sanPhamTrongNuoc------ */
 
 .partner{
-	/* background:#EEEEEE; */
 	margin-top:30px;
-}
-.partner .container{
-	/* margin-bottom:20px; */
 }
 .partner .container-fluid{
 	margin-top:40px;
@@ -634,12 +609,29 @@ ul.breadcrumb li a:hover {
 }
 /* -----footer------ */
 
-.back-to-top{
-	position:fixed;
-	right:60px;
-	bottom:20px;
-}
 .back-to-top i{
 	color:#0DC5ED;
+}
+#button {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button:hover {
+  cursor: pointer;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
 }
 /* -----the-end------ */

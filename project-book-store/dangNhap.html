@@ -23,7 +23,7 @@
 						<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 taikhoan">
 							<p>Tài khoản</p>
 							<input type="text" placeholder="Account...">
-							<p class="quen-tai-khoan"><a href="" style="color:#171717;">Quên tài khoản</a></p>
+							<p class="quen-tai-khoan"><a href="">Quên tài khoản</a></p>
 						</div>
 						<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 matkhau">
 							<p>Mật khẩu</p>
@@ -136,7 +136,30 @@
 	</section>
 
 	<section class="back-to-top">
-		<a href="#"><i class="fas fa-arrow-alt-circle-up"></i></a>
+		<a id="button"><i class="fas fa-arrow-alt-circle-up"></i></a>
 	</section>
+
+	<script
+	src="https://code.jquery.com/jquery-3.4.1.min.js"
+	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	crossorigin="anonymous"></script>
+	<script>
+		var btn = $('#button');
+
+		$(window).scroll(function() {
+			if ($(window).scrollTop() > 50) {
+				btn.addClass('show');
+			} else {
+				btn.removeClass('show');
+			}
+		});
+
+		btn.on('click', function(e) {
+			e.preventDefault();
+			$('html, body').animate({scrollTop:0}, '300');
+		});
+
+
+	</script>
 </body>
 </html>

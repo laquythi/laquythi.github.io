@@ -16,8 +16,6 @@ ul.breadcrumb{
 @media screen and (max-width: 768px){
 	ul.breadcrumb{
 		padding-left:220px;
-		/* margin-left:20px; */
-		/* padding:0; */
 		width:100%;
 	}
 	ul.breadcrumb li{
@@ -30,7 +28,6 @@ ul.breadcrumb{
 @media screen and (max-width: 576px){
 	ul.breadcrumb{
 		margin-left:-80px;
-		/* margin-left:60px; */
 		width:100%;
 	}
 	ul.breadcrumb li{
@@ -63,18 +60,12 @@ ul.breadcrumb{
 	background:#555555;
 	width:80%;
 }
-.main .filter{
-	/* padding-left:10px; */
-}
 .main h4{
 	padding-top:15px;
 	margin-left:10px;
 	font-size:24px;
 	color:#0DC5ED;
 	font-weight:bold;
-}
-.main .locSanPham{
-	/* margin-left:-15px; */
 }
 .main .locSanPham ul li{
 	display:block;
@@ -90,14 +81,12 @@ ul.breadcrumb{
 	text-decoration:none;
 }
 .main .locSanPham ul li.theLoai{
-	/* font-size:20px; */
 	color:#EEEEEE;
 }
 .main .locSanPham ul li.theLoai ul li a{
 	font-size:16px;
 }
 .main .locSanPham ul li.xuatXu{
-	/* font-size:20px; */
 	color:#EEEEEE;
 }
 .main .locSanPham ul li.xuatXu ul li a{
@@ -166,10 +155,6 @@ ul.breadcrumb{
 	}
 }
 @media screen and (max-width: 414px){
-	/* .filter{
-		margin-left:70px;
-		margin-top:-60px;
-	} */
 	.main .filter .locSanPham{
 		text-align:center;
 		margin-top:-50px;
@@ -195,13 +180,6 @@ ul.breadcrumb{
 	}
 	.main .locSanPham ul li.xuatXu ul li a{
 		font-size:14px;
-	}
-}
-@media screen and (max-width: 375px){
-	.filter{
-		/* margin-left:20px;
-		width:100%; */
-		/* display:none; */
 	}
 }
 /* -------loc-san-pham--------- */
@@ -240,7 +218,6 @@ ul.breadcrumb{
 }
 .fa-cart-plus {
 	color:#DF0029;
-	/* margin-top:-15px; */
 	margin-top:-12px;
 	position: absolute;
 }
@@ -249,9 +226,6 @@ ul.breadcrumb{
 	margin-bottom:20px;
 }
 @media screen and (max-width: 768px){
-	.main .products{
-		/* margin-left:-100px; */
-	}
 	.main .products p{
 		font-size:16px;
 		line-height:10px;
@@ -262,9 +236,6 @@ ul.breadcrumb{
 	}
 }
 @media screen and (max-width: 576px){
-	.main .products{
-		/* margin-left:20px; */
-	}
 	.main .products p{
 		font-size:14px;
 		line-height:10px;
@@ -294,9 +265,6 @@ ul.breadcrumb{
 	}
 }
 @media screen and (max-width:375px){
-	.products .sp{
-		/* padding-left:30px; */
-	}
 	.products .sp p{
 		font-size:16px;
 		line-height:14px;
@@ -319,13 +287,30 @@ ul.breadcrumb{
 }
 /* ------products------ */
 
-.back-to-top{
-	position:fixed;
-	right:60px;
-	bottom:20px;
-}
 .back-to-top i{
 	color:#0DC5ED;
+}
+#button {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button:hover {
+  cursor: pointer;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
 }
 /* -----the-end----- */
 

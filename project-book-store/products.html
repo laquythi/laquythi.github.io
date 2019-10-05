@@ -66,40 +66,38 @@
 	<section class="main">
 		<div class="container-fluid">
 			<div class="row">
-				<!-- <div class="col-lg-3 col-md-4 col-sm-5 col-8 filter"> -->
-					<div class="col-lg-3 col-md-3 col-sm-3 filter">
-						<div class="locSanPham"  style="margin-top:55px;">
-							<h4>Lọc sản phẩm</h4>
-							<ul>
-								<li><a href="">Giá tăng dần</a></li>
-								<li><a href="">Giá giảm dần</a></li>
-								<li class="theLoai">Thể loại
-									<ul>
-										<li><a href="">Văn học (7)</a></li>
-										<li><a href="">Khoa Học & Công nghệ (12)</a></li>
-										<li><a href="">Kinh doanh & Đầu tư (7)</a></li>
-										<li><a href="">Phát triển bản thân (8)</a></li>
-									</ul>
-								</li>
-								<li class="xuatXu">Xuất xứ
-									<ul>
-										<li><a href="">Việt Nam (15)</a></li>
-										<li><a href="">Quốc Tế (30)</a></li>
-									</ul>
-								</li>
-								<li><a href="">Đang giảm giá (14)</a></li>
-								<li><a href="">Sách cũ bán chạy (34)</a></li>
-							</ul>
-						</div>
-						<div class="book-day" style="margin-left:10px;">
-							<a href=""><img src="images/advesting/ngay-hoi-sach.png" title="ngay hoi sach" class="img-fluid" alt=""></a>
-							<a href=""><img src="images/advesting/ngay-hoi-sach-2.png" title="ngay hoi sach" class="img-fluid" alt=""></a>
-						</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 filter">
+					<div class="locSanPham"  style="margin-top:55px;">
+						<h4>Lọc sản phẩm</h4>
+						<ul>
+							<li><a href="">Giá tăng dần</a></li>
+							<li><a href="">Giá giảm dần</a></li>
+							<li class="theLoai">Thể loại
+								<ul>
+									<li><a href="">Văn học (7)</a></li>
+									<li><a href="">Khoa Học & Công nghệ (12)</a></li>
+									<li><a href="">Kinh doanh & Đầu tư (7)</a></li>
+									<li><a href="">Phát triển bản thân (8)</a></li>
+								</ul>
+							</li>
+							<li class="xuatXu">Xuất xứ
+								<ul>
+									<li><a href="">Việt Nam (15)</a></li>
+									<li><a href="">Quốc Tế (30)</a></li>
+								</ul>
+							</li>
+							<li><a href="">Đang giảm giá (14)</a></li>
+							<li><a href="">Sách cũ bán chạy (34)</a></li>
+						</ul>
 					</div>
+					<div class="book-day" style="margin-left:10px;">
+						<a href=""><img src="images/advesting/ngay-hoi-sach.png" title="ngay hoi sach" class="img-fluid" alt=""></a>
+						<a href=""><img src="images/advesting/ngay-hoi-sach-2.png" title="ngay hoi sach" class="img-fluid" alt=""></a>
+					</div>
+				</div>
 
 				<div class="clearfix"></div>
 
-				<!-- <div class="col-lg-9 col-md-8 col-sm-7 col-12"> -->
 				<div class="col-lg-9 col-md-9 col-sm-9">
 					<div class="products">
 						<div class="container">
@@ -469,7 +467,26 @@
 	</section>
 
 	<section class="back-to-top">
-		<a href="#"><i class="fas fa-arrow-alt-circle-up"></i></a>
+		<a id="button"><i class="fas fa-arrow-alt-circle-up"></i></a>
 	</section>
+
+	<script
+	src="https://code.jquery.com/jquery-3.4.1.min.js"
+	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	crossorigin="anonymous"></script>
+	<script>
+		var btn = $('#button');
+		$(window).scroll(function() {
+			if ($(window).scrollTop() > 50) {
+				btn.addClass('show');
+			} else {
+				btn.removeClass('show');
+			}
+		});
+		btn.on('click', function(e) {
+			e.preventDefault();
+			$('html, body').animate({scrollTop:0}, '300');
+		});
+	</script>
 </body>
 </html>

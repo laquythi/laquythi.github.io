@@ -57,16 +57,10 @@
 	.dang-xuat-bar .logo p{
 		width:25%;
 	}
-	.dang-xuat-bar input{
-		/* margin-left:300px; */
-	}
 }
 @media screen and (max-width: 992px){
 	.dang-xuat-bar .logo p{
 		width:38%;
-	}
-	.dang-xuat-bar input{
-		/* margin-left:250px; */
 	}
 }
 @media screen and (max-width: 768px){

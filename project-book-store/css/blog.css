@@ -41,6 +41,11 @@
 		font-size:18px;
 	}
 }
+@media screen and (max-width: 576px){
+	.blog .img{
+		margin-left:140px;
+	}
+}
 .text-center input{
 	padding:0 5px;
 }

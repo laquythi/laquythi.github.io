@@ -1,5 +1,4 @@
- 
- ul.breadcrumb {
+  ul.breadcrumb {
   margin-top:20px;
   padding:5px;
   margin-left:20px;
@@ -61,9 +60,6 @@
 		line-height:20px;
 	}
 }
-@media screen and (max-width: 768px){
-	
-}
 @media screen and (max-width: 576px){
 	.sanPhamDaChon{
 		margin-left:40px;
@@ -87,10 +83,8 @@
 	margin-bottom:1px;
 }
 .nhapThongTin input{
-	/* background:#C4C4C4; */
 	outline:none;
 	font-size:18px;
-	/* border:none; */
 	padding:0 10px;
 }
 .nhapThongTin .cash{

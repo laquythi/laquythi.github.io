@@ -30,11 +30,6 @@ html , body{
 .infor .dongtay-1 img{
 	padding-top:45px;
 }
-@media screen and (max-width: 1200px){
-	.infor .row .text-2{
-		/* margin-left:40px; */
-	}
-}
 @media screen and (max-width: 992px){
 	.infor .row h3{
 		font-size:20px;
@@ -107,18 +102,7 @@ html , body{
 		margin-left:0;
 	}
 }
-@media screen and (max-width:768px){
-	.book-day img.row1{
-		/* margin-left:150px; */
-	}
-	.book-day img.row-2{
-		/* margin-left:50px; */
-	}
-}
 @media screen and (max-width:576px){
-	.book-day img.row-1{
-		/* margin-left:50px; */
-	}
 	.book-day img.row-2{
 		margin-left:-25px;
 	}
