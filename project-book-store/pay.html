@@ -199,11 +199,15 @@
 	<section class="back-to-top">
 		<a id="button"><i class="fas fa-arrow-alt-circle-up"></i></a>
 	</section>
+	
+	<div id="output"></div>
 
-	<script
-	src="https://code.jquery.com/jquery-3.4.1.min.js"
-	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-	crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/react/umd/react.development.js"></script>
+	<script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+	<script src="https://npmcdn.com/babel-transform-in-browser@6.4.6/dist/btib.min.js"></script>
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
 	<script>
 		var btn = $('#button');
 		$(window).scroll(function() {
@@ -217,6 +221,10 @@
 			e.preventDefault();
 			$('html, body').animate({scrollTop:0}, '300');
 		});
+	</script>
+	<script type="text/babel">
+		const getMessage = () => "Hello World";
+		document.getElementById('output').innerHTML = getMessage();
 	</script>
 </body>
 </html>
