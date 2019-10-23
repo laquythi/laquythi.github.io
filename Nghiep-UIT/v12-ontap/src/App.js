@@ -11,7 +11,7 @@ class App extends Component {
     this.state = {
       color : 'red',
       fontSize :15
-    }; 
+    };
   }
 
   onSetColor = (params) => {

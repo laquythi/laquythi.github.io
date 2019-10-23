@@ -1,0 +1,179 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font: 16px "Source Sans Pro", sans-serif;
+  border: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: #2e706c;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  display: table;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#quiz {
+  margin:auto;
+  position: relative;
+  width: calc(100% - 100px);
+  max-width: 700px;
+}
+
+#quiz h1 {
+  color: #fafafa;
+  font-weight: 600;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 44px;
+}
+
+#quiz button,
+#quiz h2 {
+  color: #00403c;
+  border-radius: 5px;
+  background: #9acfcc;
+  outline: none;
+  padding: 4px 8px;
+}
+
+#quiz button {
+  float: right;
+
+  cursor: pointer;
+  margin: 8px 0px 0px 8px;
+}
+
+#quiz button:hover {
+  background: #36a39c;
+  color: #fff;
+}
+
+#quiz button:disabled {
+  opacity: 0.5;
+  background: #9acfcc;
+  color: #00403c;
+  cursor: default;
+}
+
+#question {
+  padding: 20px;
+  background: #fafafa;
+}
+
+#question h2 {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#question input[type="radio"] {
+  display: none;
+}
+
+#question label {
+  display: inline-block;
+  margin: 4px;
+  padding: 8px;
+  background: #fae3bb;
+  color: #4c3000;
+  width: calc(50% - 8px);
+  min-width: 100px;
+  cursor: pointer;
+}
+
+#question label:hover {
+  background: #ebbb67;
+}
+
+#question input[type="radio"]:checked + label {
+  background: #cb8306;
+  color: #fafafa;
+}
+.timeleft{
+  font-size: 20px;
+}
+#quiz-results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 6px;
+  top: 44px;
+  left: 0px;
+  background: #fafafa;
+  width: 100%;
+  height: calc(100% - 44px);
+}
+
+#quiz-results-message {
+  display: block;
+  color: #00403c;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#quiz-results-score {
+  display: block;
+  color: #31706c;
+  font-size: 20px;
+}
+
+#quiz-results-score b {
+  color: #00403c;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.mar-bot-30{
+  margin-bottom: 30px;
+}
+footer, footer a{
+  margin-top: 100px;
+  color: white;
+  text-decoration: none;
+  color: #9acfcc;
+}
+
+footer a{
+  
+  font-weight:bold;
+  
+}
+
+footer a:hover{
+  text-decoration: underline
+}
+
+.progress-bar{
+  background:white;
+  width: 20%;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.blood{
+  
+  height: 20px;
+  background: #ffeb3b;
+  border-radius: 5px;
+}
