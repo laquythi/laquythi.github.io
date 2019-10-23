@@ -29,6 +29,27 @@
 		}
 		lapchuoi(113);
 
+		//bài tập đệ quy tự làm 
+		// 1 tính tổng S(n) = 1^2 + 2^2 + 3^2 + 4^2 + ... + n^2;
+		function tinhTongLuyThua(a){
+			if(a == 0){
+				return 0;
+			}else{
+				return Math.pow(a,2) + tinhTongLuyThua(a-1) ;
+			}
+		}
+		tinhTongLuyThua(4);
+
+		//2 tính tổng s = 1 + 2 + 3 + 4 + ... + n;
+		function tinhTong(n){
+			if(n == 0){
+				return 0;
+			}else{
+				return n + tinhTong(n-1);
+			}
+		}
+		tinhTong(4);
+
 		//bai 2:Cho 1 số nguyên dương n. Viết hàm tính n giai thừa (n!)
 		// c1:bài này e dùng đệ quy,mới tính dc giá trị của 5!. chưa làm dc theo yêu cầu 5! = 1 * 2 * 3 * 4 * 5 = 120.
 		function tinhGiaiThua(a){
