@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+
+	<script>
+		function greeting(name,language){
+			if(language === 'vi'){
+				return `xin chào ${name}`;
+			}if(language === 'ja'){
+				return `konichiwa ${name}`;
+			}
+			return 'Hi,' + name;
+		}
+		greeting('Thi','ja');
+
+		function greeting2(name='friend',language){
+			if(language === 'vi'){
+				return 'xin chao ' + name;
+			}if(language === 'ja'){
+				return 'konichiwa ' + name;
+			}
+			return 'Hello ' + name;
+		}
+		greeting2('Thi');
+	</script>
+</body>
+</html>

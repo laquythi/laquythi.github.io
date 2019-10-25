@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+
+	<script>
+		function greeting(){
+			console.log(`Hi ${this.name},I'm ${this.age}`);
+		}
+		const cat = {
+			name : 'Tom',
+			age : 5
+		};
+		greeting.call(cat);
+	</script>
+</body>
+</html>

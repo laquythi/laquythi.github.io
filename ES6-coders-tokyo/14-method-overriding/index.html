@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<script>
+		//phương thức ghi đè.
+		//viét theo cách thông thường.
+		//1 lớp CoffeeMachine,trong đó có hàm makeCoffee,trong hàm makeCoffee thực hiện in ra 'Making coffee...'
+		class CoffeeMachine{
+			makeCoffee(){
+				console.log('making coffee...');
+			}
+		}
+		//1 lớp SpecialCoffeeMachine kế thừa từ lớp CoffeeMachine;
+		class SpecialCoffeeMachine extends CoffeeMachine{
+		}
+		//khai báo 1 biến coffeeMachine,sau đó gán biến đó cho lớp SpecialCoffeeMachine;ở đây phải dùng từ khóa new SpecialCoffeeMachine();
+		const coffeeMachine = new SpecialCoffeeMachine();
+		//biến coffeeMachine thực hiện hàm makeCoffee,kết quả trả về là : Making coffee...
+		coffeeMachine.makeCoffee();
+
+		//sử dụng method overriding(ghi đè)
+		class CoffeeMachine{
+			makeCoffee(){
+				console.log('Making coffee');
+			}
+		}
+		class SpecialCoffeeMachine extends CoffeeMachine{
+			makeCoffee(){
+				console.log(' method overriding here,write something');
+			}
+
+		};
+		const coffeeMachine = new SpecialCoffeeMachine();
+		coffeeMachine.makeCoffee();
+
+		//sử dụng thêm 1 hàm callback
+		class CoffeeMachine{
+			makeCoffee(){
+				console.log('Making coffee');
+			}
+		}
+		class SpecialCoffeeMachine extends CoffeeMachine{
+			makeCoffee(callback){
+				console.log('Making coffee,and enjoy it !');
+				callback();
+			}
+
+		};
+		const coffeeMachine = new SpecialCoffeeMachine();
+		coffeeMachine.makeCoffee(function(){
+			console.log(`Don't forget Canyon vanilla  ^_^`);
+		});
+
+	</script>
+</body>
+</html>

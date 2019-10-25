@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+
+	<script>
+		//standard.chi có thể tính tổng chuỗi,sau khi đã truyền tham số cố định vào.
+		let obj = {
+			0 : 'thi',
+			1 : 'thu',
+			2 : 'trang',
+			length : 3
+		};
+		for(let i=0;i<obj.length;i++){
+			console.log(obj[i]);
+		}
+
+		//sử dụng arguments,chỉ cần viết hàm 1 lần,sau đó trong hàm này,nếu tính tổng,có thể truyền ...
+		// ...thêm bao nhiêu tham số tùy ý.
+		function sum(){
+			let result = 0;
+			for(let i=0;i<arguments.length;i++){
+				result = result + arguments[i];
+			}
+			return result;
+		}
+		sum(1,5,2,5);
+	</script>
+</body>
+</html>

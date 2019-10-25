@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<script>
+		function greeting(){
+			console.log(`Hi ${this.name},I'm ${this.age}`);
+		}
+		const cat = {
+			name : 'Tom',
+			age : 5
+		};
+		greeting.apply(cat);
+
+		function sum(){
+			const number = Array.from(arguments);
+			return number.reduce((sum,num) => sum + num,0);
+		}
+		sum(1,4,43,2);
+
+		function average(){
+			const x = sum.apply(null,arguments);
+			return x/arguments.length;
+		}
+
+		average(1,2,3,6);
+	</script>
+</body>
+</html>

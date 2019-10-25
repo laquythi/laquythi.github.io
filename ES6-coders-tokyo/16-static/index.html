@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<script>
+		class Foo{
+			static someMethod(){
+				console.log('some method');
+			}
+			anotherMethod(){
+				console.log('another method');
+			}
+		}
+		Foo.someMethod(); //kết quả trả về 'some method';
+		Foo.anotherMethod(); //báo lỗi vì anotherMethod chưa có static;
+		const foo = new Foo(); //instance
+		foo.anotherMethod(); //kết quả trả về 'another method';
+		foo.someMethod(); //báo lỗi vì static someMethod chỉ dùng cho clas.
+	</script>
+</body>
+</html>

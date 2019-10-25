@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+
+	<script>
+		//1.1
+		var a = {
+			name : 'la quy thi',
+			run : function(){
+				var run2 = function(){
+					console.log(this.name);
+				}.bind(this);
+				run2();
+			}
+		};
+		a.run();
+
+		//1.2
+		var a = {
+			name : 'laquythi',
+			run: function(){
+				var run2 = () => {
+					console.log(this.name);
+				};
+				run2();
+			}
+		}
+		a.run();
+
+		//2.1
+		var a = {
+			foo : 'bar',
+			run : function(){
+				setTimeout(function(){
+					console.log(this.foo);
+				}.bind(this),2000);
+			}
+		};
+		a.run();
+
+		//2.2
+		var a = {
+			foo : 'bar',
+			run : function(){
+				var that = this;
+				setTimeout(function(){
+					console.log(that.foo);
+				},2000);
+			}
+		};
+		a.run(); 
+
+		//2.3
+		var a = {
+			foo : 'bar',
+			run : function(){ 
+				setTimeout(() => {
+					console.log(this.foo);
+				},2000);
+			}
+		};
+		a.run();
+	</script>
+</body>
+</html>

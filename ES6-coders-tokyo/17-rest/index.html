@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<script>
+		function log(a,...name){ // rest có thể đặt tên bất kỳ nhưng bắt buộc phải đặt...
+			//...cuối cùng trong tham số truyền vào,ví dụ ...number;...name
+			console.log(a);
+			console.log(name);
+		};
+		log(1,5,2,4);
+
+		function log2(a,...rest){
+			console.log(a + rest);
+		};
+		log2(4,6,2,2);
+	</script>
+</body>
+</html>

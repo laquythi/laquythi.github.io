@@ -4,7 +4,7 @@ import Question from "./components/Question";
 import Footer from "./components/Footer";
 import Status from "./components/Status";
 
-const ANSWER_TIME = 10;
+const ANSWER_TIME = 5;
 
 class App extends React.Component {
   constructor(props) {
@@ -93,6 +93,9 @@ class App extends React.Component {
   //   console.log('will mount')
   //   clearInterval(this.interval);
   // }
+
+  //chuyen cau hoi ke tiep
+  
 
   render() {
     return (
