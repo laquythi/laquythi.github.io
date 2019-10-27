@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<script>
+		
+		const arr = [1,2,3,4,5];
+		const [a,,,,e] = arr;
+		console.log(a,e);
+
+		const arr2 = [6,7,8,9];
+		const [g,h,i,j] = arr2;
+		console.log(g,k);
+
+		const arr3 = [1,2,3,4];
+		const [a,...b] = arr3;
+		console.log(a,b);
+
+		const arr4 = [10];
+		const [a,b = 20] = arr4;
+		console.log(a,b);
+
+		const obj = {
+			a : 1,
+			b : 2,
+			c : 3
+		};
+		const {
+			a : x,
+			b : y,
+			c : z
+		} = obj;
+		console.log(x,y,z);
+
+		const obj = {
+			a : 1,
+			b : 2,
+			c : 3,
+			d : 4
+
+		};
+		const {a,...b} = obj;
+		console.log(a,b);
+	</script>
+</body>
+</html>

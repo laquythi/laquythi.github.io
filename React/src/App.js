@@ -1,121 +1,113 @@
 import React from "react";
 import "./App.css";
 import Question from "./components/Question";
-import Footer from "./components/Footer";
 import Status from "./components/Status";
-
-const ANSWER_TIME = 5;
-
+import Result from "./components/Result";
+//Use class ES6 để định nghĩa component
 class App extends React.Component {
+  //Khai báo giá trị, nơi duy nhất để gán giá trị cho state là hàm tạo constructor
   constructor(props) {
     super(props);
     this.state = {
-      quiz: [
-        { question: "1+1=?", answers: ["1", "2", "3", "4"], trueAns: "2" },
+      quizzes: [
         {
-          question: "Con gì kêu gâu gâu",
-          answers: ["Mèo", "Cún", "Dê", "Bò"],
-          trueAns: "Cún"
+          question: "Câu 1 : 5 x 2  = ?",
+          answers: ["5", "12", "30", "10"],
+          answerTrue: "10"
         },
         {
-          question: "Mặt trời mọc đằng nào",
-          answers: ["Tây", "Nam", "Đông", "Bắc"],
-          trueAns: "Đông"
+          question: "Câu 2: thành phố Hạ Long thuộc tỉnh nào ? ",
+          answers: ["Hải Dương", "Thái Bình", "Quảng Ninh", "Bình Dương"],
+          answerTrue: "Quảng Ninh"
         },
         {
-          question:
-            "Trong truyện về chú bé nói dối, tại sao sói ăn thịt đàn cừu",
-          answers: [
-            "Vì dân làng không tin cậu bé",
-            "Vì sói đói",
-            "Vì thịt cừu ngon",
-            "Em không biết"
-          ],
-          trueAns: "Em không biết"
+          question: "Câu 3: Anh Huy có đẹp trai không?",
+          answers: ["Đẹp trai", "Không đẹp trai", "Xấu trai", "Xinh trai"],
+          answerTrue: "Xinh Trai"
+        },
+        {
+          question: "Câu 4: Hồ Hoàn Kiếm thuộc quận nào của Hà Nội",
+          answers: ["Đống Đa", "2 Bà Trưng", "Hoàn Kiếm", "3 Đình"],
+          answerTrue: "Hoàn Kiếm"
         }
       ],
-      timeLeft: ANSWER_TIME,
-      currentQuestionIndex: 0,
-      score: 0,
-      displayResult: "none"
+      currentQuestion: 1,
+      thinkingTime: 5,
+      scoreQuiz: 0,
+      isDone: false
     };
-
-    this.rightSound = new Audio("../public/right.mp3");
-    this.wrongSound = new Audio("../public/fail.mp3");
   }
-
-  updateCurrentQuestion() {
-    if (this.state.currentQuestionIndex < this.state.quiz.length - 1) {
-      this.setState(state => ({
-        currentQuestionIndex: state.currentQuestionIndex + 1
-      }));
-    } else {
-      this.setState({ timeLeft: 0 });
-    }
-
-    // TODO: Reset lại đáp án
-  }
-
-  ticking() {
-    this.interval = setInterval(() => {}, ANSWER_TIME * 1000);
-
-    if (this.state.timeLeft > 0) {
-      // đến 0 thì ngưng
-      this.setState(state => ({ timeLeft: state.timeLeft - 1 }));
-    } else {
-      this.setState(state => ({ timeLeft: ANSWER_TIME }));
+  //Hàm next question
+  onAnswer(answer, answerTrue) {
+    console.log(answer, answerTrue);
+    if (answer===answerTrue) {
+      this.setState({
+        scoreQuiz: this.state.scoreQuiz+1
+      });
+    };
+    if(this.state.currentQuestion < this.state.quizzes.length){
+      this.setState({
+        currentQuestion: this.state.currentQuestion + 1,
+        thinkingTime: 5,
+      });
+    } 
+    else {
+      console.log("Số điểm của bạn là: "+ this.state.scoreQuiz);
+      //Dừng hàm đếm thời gian
+      clearInterval(this.myInterval)
+      this.setState({
+        isDone: true
+      });
     }
   }
-
-  onAnswer(answer, trueAns) {
-    // Hiển thị đáp án
-    this.setState(state => ({ displayResult: "block" }));
-
-    // Kiểm tra đáp án
-    if (answer === trueAns) {
-      this.setState(state => ({ score: state.score + 1 }));
-
-      // this.rightSound.play();
-    } else {
-      // this.wrongSound.play();
-    }
-
-    // Chuyển câu hỏi sau 2 giây
-    // TODO: Trong 2 giây này không cho phép chọn đáp án
-    setTimeout(() => {
-      this.updateCurrentQuestion();
-    }, 2000);
+  //Hàm đếm thời gian sử dụng Interval
+  componentDidMount() {
+    this.myInterval = setInterval(() => {
+      const thinkingTime = this.state.thinkingTime;
+      if (thinkingTime > 0) {
+        this.setState(({ thinkingTime }) => ({
+          thinkingTime: thinkingTime - 1
+        }));
+      }
+      else if (this.state.currentQuestion < this.state.quizzes.length){
+        this.setState({
+          currentQuestion: this.state.currentQuestion + 1,
+          thinkingTime: 5
+        });
+      }
+      else{
+        console.log("Số điểm của bạn là: "+ this.state.scoreQuiz);
+        //Dừng hàm đếm thời gian
+        clearInterval(this.myInterval)
+        this.setState({
+          isDone: true
+        });
+      }
+    }, 1000);
   }
-
-  componentDidMount() {}
-
-  // componentWillMount() {
-  //   console.log('will mount')
-  //   clearInterval(this.interval);
-  // }
-
-  //chuyen cau hoi ke tiep
-  
-
   render() {
+    const {quizzes, currentQuestion, } = this.state
     return (
-      <div id="quiz">
-        <Status
-          updateCurrentQuestion={this.updateCurrentQuestion}
-          timeLeft={this.state.timeLeft}
-          totalQuestion={this.state.quiz.length}
-          currentQuestionIndex={this.state.currentQuestionIndex}
-          progress={this.state.progress}
-          score={this.state.score}
-        />
-        <Question
-          quiz={this.state.quiz}
-          currentQuestionIndex={this.state.currentQuestionIndex}
-          onAnswer={this.onAnswer.bind(this)}
-          score={this.state.score}
-          displayResult={this.state.displayResult}
-        />
-        <Footer />
+      <div className="App">
+        <div className="box">
+          {this.state.isDone===false && <Status
+            totalQuestion={this.state.quizzes.length}
+            currentQuestion={this.state.currentQuestion}
+            timer={this.state.thinkingTime}
+            isDone={this.state.isDone}
+          />}
+          {this.state.isDone===false &&<Question
+            quizzes={this.state.quizzes}
+            currentQuestion={this.state.currentQuestion}
+            onAnswer={this.onAnswer.bind(this)}
+            isDone={this.state.isDone}
+          />}
+          {this.state.isDone===true && <Result 
+            totalQuestion={this.state.quizzes.length}
+            scoreQuiz={this.state.scoreQuiz}
+            isDone={this.state.isDone}
+          />}
+        </div>
       </div>
     );
   }

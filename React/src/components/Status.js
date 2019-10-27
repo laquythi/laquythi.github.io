@@ -1,17 +1,17 @@
 import React from "react";
 
-function Status(props) {
+function Status(props){
+  const progress = (props.currentQuestion / props.totalQuestion) * 100;
   return (
-    <div>
-      <h1 id="quiz-name">My Quiz</h1>
-      <div className="flex ">
-        <div className="progress-bar">
-          {props.currentQuestionIndex + 1}/{props.totalQuestion}
-        </div>
-        <h2 className="timeleft">{props.timeLeft}s </h2>
+    <div className="status_Area">
+      <div className="meter">
+        <span style={{width:progress + '%'}} />
+      </div>
+      <div className="time">
+        {props.time}
       </div>
     </div>
-  );
+  )
 }
 
 export default Status;

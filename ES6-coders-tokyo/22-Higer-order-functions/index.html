@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<script>
+		function waitAndRun(ms,func){
+			setTimeout(func,ms);
+		}
+		function run(){
+			console.log('Run');
+		}
+		waitAndRun(2000,run);
+	</script>
+</body>
+</html>

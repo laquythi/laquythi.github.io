@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<script>
+		const a = [1,2,3];
+		const b = [0,...a,4];
+		console.log(b);
+
+		const obj1 = {
+			a : 1,
+			b : 2,
+			c : 3
+		};
+		// let obj2 = obj1;
+		// console.log(obj2 === obj1);
+
+		// obj1.a = 2;
+		// console.log(obj2);
+
+		let obj2 = {};
+		for(let key in obj1){
+			obj2[key] = obj1[key];
+		}
+		console.log(obj2);
+
+
+		const obj1 = {
+			a : 1,
+			b : 2,
+			c : 3
+		};
+		const obj2 = {};
+		for(let key in obj1){
+			obj2[key] = obj1[key];	
+		}
+		obj1.c = 6;
+		console.log(obj1,obj2);
+	</script>
+</body>
+</html>
