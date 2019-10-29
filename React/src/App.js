@@ -1,8 +1,17 @@
 import React from "react";
 import "./App.css";
+
 import Question from "./components/Question";
 import Status from "./components/Status";
 import Result from "./components/Result";
+import Starting from "./components/Starting";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 //Use class ES6 để định nghĩa component
 class App extends React.Component {
   //Khai báo giá trị, nơi duy nhất để gán giá trị cho state là hàm tạo constructor
@@ -86,30 +95,42 @@ class App extends React.Component {
     }, 1000);
   }
   render() {
-    const {quizzes, currentQuestion, } = this.state
+    // const {quizzes, currentQuestion, } = this.state
+    // return (
+    //   <div className="App">
+    //     <div className="box">
+    //       {this.state.isDone===false && <Status
+    //         totalQuestion={this.state.quizzes.length}
+    //         currentQuestion={this.state.currentQuestion}
+    //         timer={this.state.thinkingTime}
+    //         isDone={this.state.isDone}
+    //       />}
+    //       {this.state.isDone===false &&<Question
+    //         quizzes={this.state.quizzes}
+    //         currentQuestion={this.state.currentQuestion}
+    //         onAnswer={this.onAnswer.bind(this)}
+    //         isDone={this.state.isDone}
+    //       />}
+    //       {this.state.isDone===true && <Result 
+    //         totalQuestion={this.state.quizzes.length}
+    //         scoreQuiz={this.state.scoreQuiz}
+    //         isDone={this.state.isDone}
+    //       />}
+    //     </div>
+        
+    //   </div>
+    // );
+
     return (
-      <div className="App">
-        <div className="box">
-          {this.state.isDone===false && <Status
-            totalQuestion={this.state.quizzes.length}
-            currentQuestion={this.state.currentQuestion}
-            timer={this.state.thinkingTime}
-            isDone={this.state.isDone}
-          />}
-          {this.state.isDone===false &&<Question
-            quizzes={this.state.quizzes}
-            currentQuestion={this.state.currentQuestion}
-            onAnswer={this.onAnswer.bind(this)}
-            isDone={this.state.isDone}
-          />}
-          {this.state.isDone===true && <Result 
-            totalQuestion={this.state.quizzes.length}
-            scoreQuiz={this.state.scoreQuiz}
-            isDone={this.state.isDone}
-          />}
-        </div>
-      </div>
-    );
+      <main className="grey">
+        <Switch>
+          <Route path="/" exact>
+            <Starting />
+          </Route>
+          <Route path="/quiz" ></Route>
+        </Switch>
+      </main>
+    )
   }
 }
 
