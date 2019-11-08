@@ -102,130 +102,387 @@ module.exports =
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "styled-jsx/style");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "C:\\Users\\Administrator\\Desktop\\laquythi.github.io\\hello-next\\components\\footer.js";
 
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
-
-const Footer = () => __jsx("footer", {
-  className: "jsx-3163841544",
+const footer = () => __jsx("div", {
+  className: "container",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 4
   },
   __self: undefined
 }, __jsx("div", {
-  className: "jsx-3163841544" + " " + "ft",
+  className: "row",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 5
   },
   __self: undefined
 }, __jsx("div", {
-  className: "jsx-3163841544" + " " + "about-me",
+  className: "col-xl-3 col-lg-6 col-md-6 col-sm-6 ft",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 6
   },
   __self: undefined
-}, __jsx("h3", {
-  className: "jsx-3163841544",
+}, __jsx("h4", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 7
   },
   __self: undefined
-}, "ch\u1EE7 s\u1EDF h\u1EEFu website"), __jsx("p", {
-  className: "jsx-3163841544",
+}, "Ch\u1EE7 s\u1EDF h\u1EEFu website"), __jsx("p", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 8
+  },
+  __self: undefined
+}, "C\xF4ng ty c\u1ED5 ph\u1EA9n VEB"), __jsx("p", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 9
+  },
+  __self: undefined
+}, "GPKD : 3400 2051 45921"), __jsx("p", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 10
   },
   __self: undefined
-}, "C\xF4ng ty c\u1ED5 ph\u1EA9n VEB"), __jsx("p", {
-  className: "jsx-3163841544",
+}, "Ng\xE0y c\u1EA5p : 27-07-2019"), __jsx("p", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 11
   },
   __self: undefined
-}, "GPKD : 3400 2051 45921"), __jsx("p", {
-  className: "jsx-3163841544",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 12
-  },
-  __self: undefined
-}, "Ng\xE0y c\u1EA5p : 27-07-2019"), __jsx("p", {
-  className: "jsx-3163841544",
+}, "N\u01A1i C\u1EA5p : S\u1EDF C\xF4ng Th\u01B0\u01A1ng HN")), __jsx("div", {
+  className: "col-xl-3 col-lg-6 col-md-6 col-sm-6 ft",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 13
   },
   __self: undefined
-}, "N\u01A1i C\u1EA5p : S\u1EDF C\xF4ng Th\u01B0\u01A1ng HN")), __jsx("div", {
-  className: "jsx-3163841544" + " " + "infor-me",
+}, __jsx("h4", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 14
+  },
+  __self: undefined
+}, "\u0110\u1ECBa ch\u1EC9"), __jsx("a", {
+  href: true,
   __source: {
     fileName: _jsxFileName,
     lineNumber: 15
   },
   __self: undefined
-}, __jsx("h3", {
-  className: "jsx-3163841544",
+}, "V\u0103n ph\xF2ng c\xF4ng ty", __jsx("br", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 16
+    lineNumber: 17
   },
   __self: undefined
-}, "\u0110\u1ECBa ch\u1EC9"), __jsx("p", {
-  className: "jsx-3163841544",
+})), __jsx("a", {
+  href: true,
   __source: {
     fileName: _jsxFileName,
     lineNumber: 19
   },
   __self: undefined
-}, "V\u0103n ph\xF2ng c\xF4ng ty"), __jsx("p", {
-  className: "jsx-3163841544",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 20
-  },
-  __self: undefined
-}, "T\u1ED5ng kho"), __jsx("p", {
-  className: "jsx-3163841544",
+}, "T\u1ED5ng kho", __jsx("br", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 21
   },
   __self: undefined
-}, "\u0110i\u1EC3m h\u1ED7 tr\u1EE3")), __jsx("div", {
-  className: "jsx-3163841544" + " " + "contact",
+})), __jsx("a", {
+  href: true,
   __source: {
     fileName: _jsxFileName,
     lineNumber: 23
   },
   __self: undefined
-}, __jsx("p", {
-  className: "jsx-3163841544",
+}, "\u0110i\u1EC3m h\u1ED7 tr\u1EE3", __jsx("br", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 24
+    lineNumber: 25
   },
   __self: undefined
-}, "ghi"))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-  id: "3163841544",
+}))), __jsx("div", {
+  className: "col-xl-3 col-lg-6 col-md-6 col-sm-6 ft",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 28
+  },
   __self: undefined
-}, ".ft.jsx-3163841544{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}a.jsx-3163841544{color:green;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcQWRtaW5pc3RyYXRvclxcRGVza3RvcFxcbGFxdXl0aGkuZ2l0aHViLmlvXFxoZWxsby1uZXh0XFxjb21wb25lbnRzXFxmb290ZXIuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBNEJnQixBQUdxQixBQVVBLFlBQ2QsOERBVEQsQUFBQyIsImZpbGUiOiJDOlxcVXNlcnNcXEFkbWluaXN0cmF0b3JcXERlc2t0b3BcXGxhcXV5dGhpLmdpdGh1Yi5pb1xcaGVsbG8tbmV4dFxcY29tcG9uZW50c1xcZm9vdGVyLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IExpbmsgZnJvbSBcIm5leHQvbGlua1wiO1xyXG5cclxuY29uc3QgRm9vdGVyID0gKCkgPT4gKFxyXG4gIDxmb290ZXI+XHJcbiAgICA8ZGl2IGNsYXNzTmFtZT1cImZ0XCI+XHJcbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWJvdXQtbWVcIj5cclxuICAgICAgICA8aDM+XHJcbiAgICAgICAgICBjaOG7pyBz4bufIGjhu691IHdlYnNpdGVcclxuICAgICAgICA8L2gzPlxyXG4gICAgICAgIDxwPkPDtG5nIHR5IGPhu5UgcGjhuqluIFZFQjwvcD5cclxuICAgICAgICA8cD5HUEtEIDogMzQwMCAyMDUxIDQ1OTIxPC9wPlxyXG4gICAgICAgIDxwPk5nw6B5IGPhuqVwIDogMjctMDctMjAxOTwvcD5cclxuICAgICAgICA8cD5OxqFpIEPhuqVwIDogU+G7nyBDw7RuZyBUaMawxqFuZyBITjwvcD5cclxuICAgICAgPC9kaXY+XHJcbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwiaW5mb3ItbWVcIj5cclxuICAgICAgICA8aDM+XHJcbiAgICAgICAgICDEkOG7i2EgY2jhu4lcclxuICAgICAgICA8L2gzPlxyXG4gICAgICAgIDxwPlbEg24gcGjDsm5nIGPDtG5nIHR5PC9wPlxyXG4gICAgICAgIDxwPlThu5VuZyBraG88L3A+XHJcbiAgICAgICAgPHA+xJBp4buDbSBo4buXIHRy4bujPC9wPlxyXG4gICAgICA8L2Rpdj5cclxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250YWN0XCI+XHJcbiAgICAgICAgPHA+Z2hpPC9wPlxyXG4gICAgICA8L2Rpdj5cclxuICAgIDwvZGl2PlxyXG5cclxuXHJcbiAgICA8c3R5bGUganN4PntgXHJcbiAgICAgIC5mdHtcclxuICAgICAgICBkaXNwbGF5OmZsZXg7XHJcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjpcclxuICAgICAgfVxyXG4gICAgICAuZnQgLmFib3V0LW1le1xyXG4gICAgICAgICBcclxuICAgICAgfVxyXG4gICAgICAuZnQgLmluZm9yLW1le1xyXG4gICAgICAgIFxyXG4gICAgICB9XHJcbiAgICAgIGEge1xyXG4gICAgICAgIGNvbG9yOiBncmVlbjtcclxuICAgICAgfVxyXG4gICAgYH08L3N0eWxlPlxyXG4gIDwvZm9vdGVyPlxyXG4pO1xyXG5cclxuZXhwb3J0IGRlZmF1bHQgRm9vdGVyO1xyXG4vLzQ6IHRyb25nIGNvbXBvbmVudHMgZm9vdGVyIGNo4buJIGPDsyAxIHRo4bq7IHAsdHJvbmcgxJHDsyBjaOG7qWEgbuG7mWkgZHVuZyBcclxuICAvL2NyZWF0ZSBieSByb2JpbiBodXlcclxuIl19 */\n/*@ sourceURL=C:\\Users\\Administrator\\Desktop\\laquythi.github.io\\hello-next\\components\\footer.js */"));
+}, __jsx("h4", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 29
+  },
+  __self: undefined
+}, "\u0110\u1ED5i tr\u1EA3 h\xE0ng"), __jsx("a", {
+  href: true,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 30
+  },
+  __self: undefined
+}, "7 ng\xE0y \u0111\u1EA7u ti\xEAn", __jsx("br", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 32
+  },
+  __self: undefined
+})), __jsx("a", {
+  href: true,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 34
+  },
+  __self: undefined
+}, "8-30 ng\xE0y", __jsx("br", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 36
+  },
+  __self: undefined
+})), __jsx("a", {
+  href: true,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 38
+  },
+  __self: undefined
+}, "Sau 30 ng\xE0y", __jsx("br", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 40
+  },
+  __self: undefined
+}))), __jsx("div", {
+  className: "col-xl-3 col-lg-6 col-md-6 col-sm-6 ft",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 43
+  },
+  __self: undefined
+}, __jsx("h4", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 44
+  },
+  __self: undefined
+}, "Ch\xEDnh s\xE1ch h\u1EADu m\xE3i"), __jsx("a", {
+  href: true,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 45
+  },
+  __self: undefined
+}, "\u0110\u1ED1i v\u1EDBi kh\xE1ch c\xF3 th\u1EBB th\xE0nh vi\xEAn", __jsx("br", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 47
+  },
+  __self: undefined
+})), __jsx("a", {
+  href: true,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 49
+  },
+  __self: undefined
+}, "\u0110\u1ED1i v\u1EDBi kh\xE1ch v\xE3ng lai", __jsx("br", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 51
+  },
+  __self: undefined
+})), __jsx("a", {
+  href: true,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 53
+  },
+  __self: undefined
+}, "\u0110\u1ED1i v\u1EDBi CB & CNV", __jsx("br", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 55
+  },
+  __self: undefined
+})))));
 
-/* harmony default export */ __webpack_exports__["default"] = (Footer); //4: trong components footer chỉ có 1 thẻ p,trong đó chứa nội dung 
-//create by robin huy
+/* harmony default export */ __webpack_exports__["default"] = (footer);
+
+/***/ }),
+
+/***/ "./components/main-breadcrumb.js":
+/*!***************************************!*\
+  !*** ./components/main-breadcrumb.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "C:\\Users\\Administrator\\Desktop\\laquythi.github.io\\hello-next\\components\\main-breadcrumb.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+const mainbreakcrumb = () => __jsx("div", {
+  className: "row",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 4
+  },
+  __self: undefined
+}, __jsx("div", {
+  className: "col-lg-12 col-md-12",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 5
+  },
+  __self: undefined
+}, __jsx("ul", {
+  className: "breadcrumb",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 6
+  },
+  __self: undefined
+}, __jsx("li", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 7
+  },
+  __self: undefined
+}, __jsx("a", {
+  href: "./",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 8
+  },
+  __self: undefined
+}, "Trang Ch\u1EE7")))));
+
+/* harmony default export */ __webpack_exports__["default"] = (mainbreakcrumb);
+
+/***/ }),
+
+/***/ "./components/main-header.js":
+/*!***********************************!*\
+  !*** ./components/main-header.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\Users\\Administrator\\Desktop\\laquythi.github.io\\hello-next\\components\\main-header.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+const mainheader = () => __jsx("div", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 2
+  },
+  __self: undefined
+}, __jsx("div", {
+  className: "row",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 3
+  },
+  __self: undefined
+}, __jsx("div", {
+  className: "col-lg-6 col-md-6 col-sm-6 contact",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 4
+  },
+  __self: undefined
+}, __jsx("div", {
+  className: "row",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 5
+  },
+  __self: undefined
+}, __jsx("p", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 6
+  },
+  __self: undefined
+}, "li\xEAn h\u1EC7: 0123-456-789"), __jsx("p", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 9
+  },
+  __self: undefined
+}, "laquythi@gmail.com"))), __jsx("div", {
+  className: "col-lg-4 col-md-4 col-sm-6 button",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 14
+  },
+  __self: undefined
+}, __jsx("div", {
+  className: "row",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 15
+  },
+  __self: undefined
+}, __jsx("a", {
+  href: "profile.htnl",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 16
+  },
+  __self: undefined
+}, __jsx("button", {
+  type: "button",
+  className: "btn",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 16
+  },
+  __self: undefined
+}, "\u0110\u0103ng Nh\u1EADp")), __jsx("a", {
+  href: "dangnhap.html",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 17
+  },
+  __self: undefined
+}, __jsx("button", {
+  type: "button",
+  className: "btn",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 17
+  },
+  __self: undefined
+}, "T\u1EA1o T\xE0i Kho\u1EA3n"))))));
+
+/* harmony default export */ __webpack_exports__["default"] = (mainheader);
 
 /***/ }),
 
@@ -240,30 +497,46 @@ const Footer = () => __jsx("footer", {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu */ "./components/menu.js");
-/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./footer */ "./components/footer.js");
+/* harmony import */ var _main_header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./main-header */ "./components/main-header.js");
+/* harmony import */ var _main_menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./main-menu */ "./components/main-menu.js");
+/* harmony import */ var _main_breadcrumb__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./main-breadcrumb */ "./components/main-breadcrumb.js");
+/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./footer */ "./components/footer.js");
 var _jsxFileName = "C:\\Users\\Administrator\\Desktop\\laquythi.github.io\\hello-next\\components\\main-layout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+
+
 const MainLayout = props => __jsx("div", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 4
-  },
-  __self: undefined
-}, __jsx(_menu__WEBPACK_IMPORTED_MODULE_1__["default"], {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5
-  },
-  __self: undefined
-}), props.children, __jsx(_footer__WEBPACK_IMPORTED_MODULE_2__["default"], {
-  __source: {
-    fileName: _jsxFileName,
     lineNumber: 7
+  },
+  __self: undefined
+}, __jsx(_main_header__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 8
+  },
+  __self: undefined
+}), __jsx(_main_menu__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 9
+  },
+  __self: undefined
+}), __jsx(_main_breadcrumb__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 10
+  },
+  __self: undefined
+}), props.children, __jsx(_footer__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 12
   },
   __self: undefined
 }));
@@ -275,10 +548,10 @@ const MainLayout = props => __jsx("div", {
 
 /***/ }),
 
-/***/ "./components/menu.js":
-/*!****************************!*\
-  !*** ./components/menu.js ***!
-  \****************************/
+/***/ "./components/main-menu.js":
+/*!*********************************!*\
+  !*** ./components/main-menu.js ***!
+  \*********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -288,59 +561,123 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\Administrator\\Desktop\\laquythi.github.io\\hello-next\\components\\menu.js";
+var _jsxFileName = "C:\\Users\\Administrator\\Desktop\\laquythi.github.io\\hello-next\\components\\main-menu.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-const Menu = () => __jsx("nav", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 3
-  },
-  __self: undefined
-}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  href: "/",
+const MainMenu = () => __jsx("div", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 4
   },
   __self: undefined
-}, __jsx("a", {
+}, __jsx("div", {
+  className: "logo",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 5
   },
   __self: undefined
-}, "Home Page")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  href: "/about",
+}, __jsx("a", {
+  href: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 7
+    lineNumber: 6
   },
   __self: undefined
-}, __jsx("a", {
+}, __jsx("img", {
+  src: "images/logo/VEP.png",
+  alt: true,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 6
+  },
+  __self: undefined
+}))), __jsx("div", {
+  className: "menu-bar",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 8
   },
   __self: undefined
-}, "About my page")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  href: "/products",
+}, __jsx("ul", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 9
+  },
+  __self: undefined
+}, __jsx("li", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 10
   },
   __self: undefined
 }, __jsx("a", {
+  href: "./",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 10
+  },
+  __self: undefined
+}, "Trang ch\u1EE7")), __jsx("li", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 11
   },
   __self: undefined
-}, "Product")));
+}, __jsx("a", {
+  href: "./about",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 11
+  },
+  __self: undefined
+}, "Gi\u1EDBi thi\u1EC7u")), __jsx("li", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 12
+  },
+  __self: undefined
+}, __jsx("a", {
+  href: "./products",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 12
+  },
+  __self: undefined
+}, "S\u1EA3n ph\u1EA9m")))), __jsx("div", {
+  className: "search",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 15
+  },
+  __self: undefined
+}, __jsx("input", {
+  type: "text",
+  placeholder: "T\xECm ki\u1EBFm s\u1EA3n ph\u1EA9m...",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 16
+  },
+  __self: undefined
+}), __jsx("a", {
+  href: true,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 17
+  },
+  __self: undefined
+}, __jsx("i", {
+  className: "fas fa-search",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 17
+  },
+  __self: undefined
+}))));
 
-/* harmony default export */ __webpack_exports__["default"] = (Menu); //3: trong components menu có 2 thẻ link,link đến HomePage và About
+/* harmony default export */ __webpack_exports__["default"] = (MainMenu);
 
 /***/ }),
 
@@ -2052,18 +2389,25 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 const Index = () => __jsx(_components_main_layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 3
+    lineNumber: 4
   },
   __self: undefined
 }, __jsx("h3", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 4
+    lineNumber: 5
   },
   __self: undefined
 }, "welcome to my page"));
 
 /* harmony default export */ __webpack_exports__["default"] = (Index); // 1:mainlayout bao bọc thẻ h1,xem tiếp sang file mainlayout
+//  import MainLayout from "../components/main-layout";
+// const Index = () => (
+//   <MainLayout>
+//     <h3>welcome to my page</h3>
+//   </MainLayout>
+// )
+// export default Index;
 
 /***/ }),
 
@@ -2197,17 +2541,6 @@ module.exports = require("react");
 /***/ (function(module, exports) {
 
 module.exports = require("react-is");
-
-/***/ }),
-
-/***/ "styled-jsx/style":
-/*!***********************************!*\
-  !*** external "styled-jsx/style" ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("styled-jsx/style");
 
 /***/ }),
 

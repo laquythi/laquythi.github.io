@@ -1,8 +1,13 @@
-import Menu from "./menu";
+import MainHeader from "./main-header";
+import MainMenu from "./main-menu";
+import MainBreakCrumb from "./main-breadcrumb";
 import Footer from "./footer";
+
 const MainLayout = props => (
   <div>
-    <Menu />
+    <MainHeader />
+    <MainMenu />
+    <MainBreakCrumb />
     {props.children}
     <Footer />
   </div>

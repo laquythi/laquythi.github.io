@@ -2,7 +2,7 @@ import MainLayout from "../components/main-layout";
 
 const About = () => (
   <MainLayout>
-    <h1>About page</h1>
+    <p>render something about my page here</p>
   </MainLayout>
 );
 
