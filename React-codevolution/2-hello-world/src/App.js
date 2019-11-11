@@ -5,23 +5,34 @@ import Greet from "./components/Greet";
 import Welcome from "./components/Welcome";
 import Hello from "./components/Hello";
 import Message from "./components/Message";
-// import { tsPropertySignature } from "@babel/types";
+import Counter from "./components/Counter";
+import FunctionClick from "./components/FunctionClick";
+import ClassClick from "./components/ClassClick";
+import EventBind from "./components/EventBind";
+import ParentComponent from "./components/ParentComponent";
 
 class App extends React.Component {
   render() {
     return (
       <div>
         <div className="App">
-          <Message />
-          {/* <Greet /> */}
-          {/* <Welcome /> */}
-          {/* <Hello name="thi" isName="me" >
+          <FunctionClick></FunctionClick>
+          <ClassClick />
+          <EventBind />
+          <ParentComponent />
+          {/* <Counter />
+          <Greet name="Thi" heroName="laquythi" />
+          <Welcome name="React JS" heroName="Javascript language" /> */}
+          {/* <Message /> */}
+          {/* <Greet />
+           <Welcome />
+          <Hello name="thi" isName="me" >
             <p>this is children props</p>  
-          </Hello>  */}
-          {/* <Hello name="memories" isName="mylove">
+          </Hello> 
+          <Hello name="memories" isName="mylove">
             <button>Action</button>
-          </Hello> */}
-          {/* <Hello name="trang" isName="mysister" /> */}
+          </Hello>
+          <Hello name="trang" isName="mysister" /> */}
         </div>
       </div>
     );

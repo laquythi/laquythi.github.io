@@ -5,9 +5,10 @@ import React from "react";
 
 class Welcome extends React.Component{
     render(){
+        const {name,heroName} = this.props;
         return(
             <div>
-                <h1>this {this.props.name} is {this.props.isName} </h1>
+                <h1>{name} is {heroName} </h1>
             </div>
         )
     }

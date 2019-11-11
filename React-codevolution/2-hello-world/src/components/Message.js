@@ -34,34 +34,34 @@
 
 import React from "react";
 
-class Message extends React.Component {
-  constructor() {
+class Message extends React.Component{
+  constructor(){
     super();
     this.state = {
-      name: "Memories PMM",
-      age: 27,
-      address: "QN",
-      message: "good luck"
+      name : 'thu pham',
+      age : 27,
+      add : 'van don',
+      message : 'good luck'
     };
   }
   changeMessage(){
-      this.setState({
-        name: "Autumn",
-        age: 72,
-        address: "vd",
-        message: "^^"
-      })
+    this.setState({
+      name : 'Memories Pmm',
+      age : 72,
+      add : 'dong xa',
+      message : 'thanks'
+    })
   }
-  render() {
-    return (
+  render(){
+    return(
       <div>
         <h1>{this.state.name}</h1>
         <h1>{this.state.age}</h1>
-        <h1>{this.state.address}</h1>
+        <h1>{this.state.add}</h1>
         <h1>{this.state.message}</h1>
-        <button onClick={()=>{this.changeMessage()}}>confirm</button>
+        <button onClick={()=>this.changeMessage()}>confirm</button>
       </div>
-    );
+    )
   }
 }
 export default Message;
