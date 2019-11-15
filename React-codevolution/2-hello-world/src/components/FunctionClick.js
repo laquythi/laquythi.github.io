@@ -1,6 +1,6 @@
 // import React from "react";
 
-//viet theo cach nay,clickhandler() se chi console.log ra 1 lần duy nhất khi tải trang.
+//c1: viet theo cach nay,clickhandler() se chi console.log ra 1 lần duy nhất khi tải trang.
 // function FunctionClick(){
 //     function clickHandler(){
 //        console.log('button clicked');

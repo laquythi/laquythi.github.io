@@ -5,7 +5,7 @@ class EventBind extends React.Component{
         super(props)
 
         this.state = {
-            message : 'hello'
+            message : 'hello Thu Bon'
         }
         // c2:
         // this.clickHandler = this.clickHandler.bind(this);
@@ -21,7 +21,7 @@ class EventBind extends React.Component{
     //c3
     clickHandler = () => {
         this.setState({
-            message : 'Goodbye'
+            message : 'Hi Memories PMM'
         })
     }
 
