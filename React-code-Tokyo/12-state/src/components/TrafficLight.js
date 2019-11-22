@@ -19,7 +19,6 @@ class TrafficLight extends React.Component{
         },1000);
     }
     
-
     render(){
         const {currentColor} = this.props;
         console.log('Redering...',currentColor);
