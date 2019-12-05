@@ -53,7 +53,7 @@ class App extends React.Component {
       if (anything.status) {
         result = (
           <Product
-            key={index} //hoac key={product.id}
+            key={index} //hoac key={anything.id}
             price={anything.price}
             image={anything.image}
           >

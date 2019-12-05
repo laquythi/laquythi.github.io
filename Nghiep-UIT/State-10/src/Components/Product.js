@@ -1,18 +1,17 @@
 import React from "react";
 
 class Product extends React.Component {
-  //c1:
-//  constructor(props){
-//    super(props);
-//    this.onAddToCart = this.onAddToCart.bind(this);
-//  }
-//  onAddToCart(){
-//    alert(this.props.children + ' ' + this.props.price + ' vnd');
-//  }
- //c2:
-  onAddToCart2 = () => {
+  constructor(props){
+    super(props);
+    this.onAddToCart = this.onAddToCart.bind(this);
+  }
+  onAddToCart(){
     alert(this.props.children + ' ' + this.props.price + ' vnd');
   }
+  onAddToCart2 = () => {
+    console.log(this.props.children + ' ' + this.props.price + ' vnd');
+  }
+  
   render() {
     return (
       <div className="container">
@@ -23,7 +22,8 @@ class Product extends React.Component {
               <div className="caption">
                 <h3>{this.props.children}</h3>
                 <p>{this.props.price} VNĐ</p>
-                <a className="btn btn-primary" onClick={this.onAddToCart2}>Mua Ngay</a>
+                <a className="btn btn-primary" onClick={this.onAddToCart}>Mua Ngay</a>
+                <a className="btn btn-danger" onClick={this.onAddToCart2}>Buy Now</a>
               </div>
             </div>
           </div>
