@@ -25,10 +25,17 @@ class TaskForm extends React.Component {
   onSubmit = event => {
     event.preventDefault();
     this.props.onSubmit(this.state);
+    //close form;
+    this.onClear();
+    this.onCloseForm();
   };
   onClear = () => {
-    console.log('close tap');
+    this.setState({
+      name : '',
+      status : false
+    })
   }
+
   render() {
     return (
       <div className="panel panel-warning">

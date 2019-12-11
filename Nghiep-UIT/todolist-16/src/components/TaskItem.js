@@ -1,6 +1,9 @@
 import React from "react";
 
 class TaskItem extends React.Component {
+  onUpdateStatus = () => {
+    this.props.onUpdateStatus(this.props.task.id);
+  }
   render() {
     var { task, index } = this.props;
     return (
@@ -13,7 +16,7 @@ class TaskItem extends React.Component {
               task.status === true
                 ? "btn btn-success"
                 : "btn btn-danger"
-            }
+            } onClick={this.onUpdateStatus}
           >
             {task.status === true ? "Kích hoạt" : "Ẩn"}
           </span>

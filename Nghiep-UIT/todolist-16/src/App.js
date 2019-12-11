@@ -20,39 +20,6 @@ class App extends React.Component {
       });
     }
   }
-  onGenerateData = () => {
-    var tasks = [
-      {
-        id: this.generateID(),
-        name: "hoc lap trinh",
-        status: true
-      },
-      {
-        id: this.generateID(),
-        name: "choi game",
-        status: false
-      },
-      {
-        id: this.generateID(),
-        name: "code ReactJS",
-        status: true
-      },
-      {
-        id: this.generateID(),
-        name: "code visual basic",
-        status: false
-      },
-      {
-        id: this.generateID(),
-        name: "code ReactJS",
-        status: true
-      }
-    ];
-    this.setState({
-      tasks: tasks
-    });
-    localStorage.setItem("tasks", JSON.stringify(tasks));
-  };
   s4() {
     return Math.floor((1 + Math.random()) * 0x10000)
       .toString(16)
@@ -92,6 +59,28 @@ class App extends React.Component {
     })
     localStorage.setItem('tasks',JSON.stringify(tasks));
   };
+  onUpdateStatus = (id) => {
+    var { tasks } = this.state;
+    var index = this.findIndex(id);
+    console.log(index);
+    if(index !== -1){
+      tasks[index].status = !tasks[index].status;
+      this.setState({
+        tasks : tasks
+      });
+      localStorage.setItem('tasks',JSON.stringify(tasks));
+    }
+  }
+  findIndex = (id) => {
+    var {tasks} = this.state;
+    var result = -1;
+    tasks.forEach((task,index) => {
+      if(task.id === id){
+        result = index;
+      }
+    });
+    return result;
+  }
   render() {
     var { tasks, isDisplayForm } = this.state; // var tasks = this.state.tasks; var isDisplayForm = this.state.isDisplayForm;
     var elmTaskForm = isDisplayForm ? (
@@ -129,19 +118,12 @@ class App extends React.Component {
             >
               <span className="fa fa-plus mr-5">Thêm Công Việc</span>
             </button>
-            <button
-              type="button"
-              className="btn btn-warning ml-5"
-              onClick={this.onGenerateData}
-            >
-              <span className="fa fa-plus mr-5">Generate Data</span>
-            </button>
             <div className="row mt-15">
               <Control />
             </div>
             <div className="row mt-15">
               <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <TaskList tasks={tasks} />
+                <TaskList tasks={tasks} onUpdateStatus={this.onUpdateStatus} />
               </div>
             </div>
           </div>
