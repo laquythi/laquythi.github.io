@@ -4,9 +4,20 @@ class TaskForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      id : "",
       name: "",
       status: true
     };
+  }
+  componentWillMount(){
+    if(this.props.task){
+      this.setState({
+        id : this.props.task.id,
+        name : this.props.task.name,
+        status : this.props.task.status
+      });
+      console.log(this.state);
+    }
   }
   onCloseForm = () => {
     this.props.onCloseForm();
@@ -37,11 +48,12 @@ class TaskForm extends React.Component {
   }
 
   render() {
+    var { id } = this.state;
     return (
       <div className="panel panel-warning">
         <div className="panel-heading">
           <h3 className="panel-title">
-            Thêm Công Việc
+            {id !== '' ? 'Cập nhật công việc' : 'Thêm công việc' }
             <span
               className="fa fa-times-circle text-right"
               onClick={this.onCloseForm}

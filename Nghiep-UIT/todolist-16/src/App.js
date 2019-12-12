@@ -9,7 +9,8 @@ class App extends React.Component {
     super(props);
     this.state = {
       tasks: [],
-      isDisplayForm: false
+      isDisplayForm: false,
+      taskEditing : null
     };
   }
   componentWillMount() {
@@ -47,44 +48,77 @@ class App extends React.Component {
   };
   onCloseForm = () => {
     this.setState({
-      isDisplayForm: false 
+      isDisplayForm: false
     });
   };
-  onSubmit = (data) => {
-    var { tasks } = this.state;
-    data.id = this.generateID();
-    tasks.push(data);
+  onShowForm = () => {
     this.setState({
-      tasks : tasks
-    })
-    localStorage.setItem('tasks',JSON.stringify(tasks));
+      isDisplayForm : true
+    });
+  }
+  onSubmit = data => {
+    var { tasks } = this.state;
+    if(data.id === ''){
+      data.id = this.generateID();
+      tasks.push(data);
+    }else{
+      var index = this.findIndex(data.id);
+      tasks[index]=data;
+    }
+    this.setState({
+      tasks: tasks,
+      taskEditing : null
+    });
+    localStorage.setItem("tasks", JSON.stringify(tasks));
   };
-  onUpdateStatus = (id) => {
+  onUpdateStatus = id => {
     var { tasks } = this.state;
     var index = this.findIndex(id);
     console.log(index);
-    if(index !== -1){
+    if (index !== -1) {
       tasks[index].status = !tasks[index].status;
       this.setState({
-        tasks : tasks
+        tasks: tasks
       });
-      localStorage.setItem('tasks',JSON.stringify(tasks));
+      localStorage.setItem("tasks", JSON.stringify(tasks));
     }
-  }
-  findIndex = (id) => {
-    var {tasks} = this.state;
+  };
+  findIndex = id => {
+    var { tasks } = this.state;
     var result = -1;
-    tasks.forEach((task,index) => {
-      if(task.id === id){
+    tasks.forEach((task, index) => {
+      if (task.id === id) {
         result = index;
       }
     });
     return result;
+  };
+  onDelete = id => {
+    var { tasks } = this.state;
+    var index = this.findIndex(id);
+    console.log(index);
+    if (index !== -1) {
+      tasks.splice(index,1);
+      this.setState({
+        tasks: tasks
+      });
+      localStorage.setItem("tasks", JSON.stringify(tasks));
+    }
+    this.onCloseForm();
+  };
+  onUpdate = (id) => {
+    var {tasks} = this.state;
+    var index = this.findIndex(id);
+    var taskEditing = tasks[index];
+    this.setState({
+      taskEditing : taskEditing
+    })
+    this.onShowForm();
   }
   render() {
-    var { tasks, isDisplayForm } = this.state; // var tasks = this.state.tasks; var isDisplayForm = this.state.isDisplayForm;
+    var { tasks, isDisplayForm,taskEditing } = this.state; // var tasks = this.state.tasks; var isDisplayForm = this.state.isDisplayForm;
     var elmTaskForm = isDisplayForm ? (
-      <TaskForm onSubmit={this.onSubmit} onCloseForm={this.onCloseForm} />
+      <TaskForm onSubmit={this.onSubmit} onCloseForm={this.onCloseForm} task={taskEditing} />
     ) : (
       ""
     ); //isDisplayForm === true ? <TaskForm/> : '';
@@ -123,7 +157,12 @@ class App extends React.Component {
             </div>
             <div className="row mt-15">
               <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <TaskList tasks={tasks} onUpdateStatus={this.onUpdateStatus} />
+                <TaskList
+                  tasks={tasks}
+                  onUpdateStatus={this.onUpdateStatus}
+                  onDelete={this.onDelete}
+                  onUpdate={this.onUpdate}
+                />
               </div>
             </div>
           </div>

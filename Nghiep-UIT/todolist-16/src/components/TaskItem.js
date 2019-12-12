@@ -4,6 +4,12 @@ class TaskItem extends React.Component {
   onUpdateStatus = () => {
     this.props.onUpdateStatus(this.props.task.id);
   }
+  onDelete = () => {
+    this.props.onDelete(this.props.task.id);
+  }
+  onUpdate = () => {
+    this.props.onUpdate(this.props.task.id);
+  }
   render() {
     var { task, index } = this.props;
     return (
@@ -22,12 +28,12 @@ class TaskItem extends React.Component {
           </span>
         </td>
         <td className="text-center">
-          <button type="button" className="btn btn-warning">
+          <button type="button" className="btn btn-warning" onClick={this.onUpdate}>
             <span className="fa fa-pencil mr-5" />
             Sửa
           </button>
           &nbsp;
-          <button type="button" className="btn btn-danger">
+          <button type="button" className="btn btn-danger" onClick={this.onDelete}>
             <span className="fa fa-trash mr-5" />
             Xóa
           </button>
