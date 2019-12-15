@@ -1,0 +1,40 @@
+.navbar{
+    width:100%;
+}
+.navbar a.navbar-brand{
+    font-size:30px;
+    margin-left:-25px;
+}
+.navbar ul{
+    padding-left:250px;;
+}
+.navbar .collapse ul li a{
+    margin-left:60px;
+    font-size: 16px;
+    font-family: 'playfair_display';
+}
+@media screen and (max-width:1200px){
+    .navbar ul{
+        padding-left:200px;
+    }
+    .navbar .collapse ul li a{
+        margin:0 15px;
+    }
+}
+@media screen and (max-width:992px){
+    .navbar ul{
+        padding-left:120px;
+    }
+    .navbar .collapse ul li a{
+        margin:0 10px;
+    }
+}
+@media screen and (max-width:768px){
+    .navbar ul{
+        padding-left:40px;
+    }
+    .navbar .collapse ul li a{
+        margin:0 3px;
+        font-size:14px;
+    }
+}

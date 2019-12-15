@@ -1,0 +1,23 @@
+.load-more button a {
+    color: #626262;
+    text-decoration: none;
+}
+.load-more {
+    margin: 33px 0 135px;
+}
+.button {
+    text-align: center;
+    transition: all 0.5s;
+    width: 165px;
+    height: 60px;
+    background-color: #ffffff;
+    border: 1px solid black;
+}
+.button a {
+    color: #626262;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}

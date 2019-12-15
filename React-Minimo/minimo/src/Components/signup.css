@@ -1,0 +1,39 @@
+.sign-up{
+    background-color: #D7D7D7;
+    height:150px;
+}
+.sign-up p{
+    font-size:32px;
+    top:30px;
+}
+.sign-up input{
+    width:20%;
+    border:none;
+    outline: none;
+    border-bottom:1px solid black;
+    background-color:#D7D7D7;
+}
+.sign-up .input{
+    position: relative;
+}
+.sign-up .send i{
+    position: absolute;
+    margin-left:-20px;
+    color:black;
+    /* transform: rotate(60deg); */
+}
+@media screen and (max-width:992px){
+    .sign-up input{
+        width:25%;
+    }
+}
+@media screen and (max-width:768px){
+    .sign-up input{
+        width:30%;
+    }
+}
+@media screen and (max-width:576px){
+    .sign-up input{
+        width:40%;
+    }
+}

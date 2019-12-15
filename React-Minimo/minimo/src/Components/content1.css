@@ -1,0 +1,75 @@
+.content{
+    padding:50px 180px;
+}
+.content .row-1{
+    margin: 60px auto;
+}
+.content .row-2{
+    padding: 60px auto;
+}
+.row img{
+    opacity:0.5;
+    transition:opacity 1s linear;
+    margin-bottom:20px;
+}
+.row img:hover{
+    opacity:1;
+    transition:opacity 1s linear ;
+}
+h6 a{
+    font-size:18px;
+    color:gray;
+    top:20px;
+    opacity: 0.5;
+    font-style: italic;
+}
+h6 a:hover{
+    opacity: 0.5;
+    color:gray;
+    text-decoration: none;
+}
+h2 a{
+    color:gray;
+    font-size:30px;
+    padding:20px auto;
+    opacity:0.5;
+    transition: opacity 2s linear;
+}
+h2 a:hover{
+    color:black;
+    opacity:1;
+    text-decoration: none;
+}
+.content p{
+    font-size:16px;
+}
+@media screen and (max-width:1200px){
+    .content{
+        padding: 50px 80px;
+    }
+}
+@media screen and (max-width:992px){
+    .content{
+        padding: 30px 50px;
+    }
+    h6 a{
+        font-size:18px;
+    }
+    h2 a{
+        font-size:20px;
+    }
+}
+@media screen and (max-width:768px){
+    .content{
+        padding : 10px 0;
+    }
+    h6 a{
+        font-size: 15px;
+    }
+    h2 a{
+        font-size: 18px;
+    }
+    .content p{
+        font-size:14px;
+    }
+}
