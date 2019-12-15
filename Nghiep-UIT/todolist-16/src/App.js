@@ -10,7 +10,7 @@ class App extends React.Component {
     this.state = {
       tasks: [],
       isDisplayForm: false,
-      taskEditing : null
+      taskEditing: null
     };
   }
   componentWillMount() {
@@ -42,9 +42,18 @@ class App extends React.Component {
     );
   }
   onToggleForm = () => {
-    this.setState({
-      isDisplayForm: !this.state.isDisplayForm
-    });
+    if (this.state.isDisplayForm && this.state.taskEditing !== null) {
+      console.log('th1');
+      this.setState({
+        isDisplayForm: true,
+        taskEditing: null
+      });
+    }else {
+      this.setState({
+        isDisplayForm: !this.state.isDisplayForm,
+        taskEditing: null
+      });
+    }
   };
   onCloseForm = () => {
     this.setState({
@@ -53,21 +62,21 @@ class App extends React.Component {
   };
   onShowForm = () => {
     this.setState({
-      isDisplayForm : true
+      isDisplayForm: true
     });
-  }
+  };
   onSubmit = data => {
     var { tasks } = this.state;
-    if(data.id === ''){
+    if (data.id === "") {
       data.id = this.generateID();
       tasks.push(data);
-    }else{
+    } else {
       var index = this.findIndex(data.id);
-      tasks[index]=data;
+      tasks[index] = data;
     }
     this.setState({
       tasks: tasks,
-      taskEditing : null
+      taskEditing: null
     });
     localStorage.setItem("tasks", JSON.stringify(tasks));
   };
@@ -98,7 +107,7 @@ class App extends React.Component {
     var index = this.findIndex(id);
     console.log(index);
     if (index !== -1) {
-      tasks.splice(index,1);
+      tasks.splice(index, 1);
       this.setState({
         tasks: tasks
       });
@@ -106,19 +115,23 @@ class App extends React.Component {
     }
     this.onCloseForm();
   };
-  onUpdate = (id) => {
-    var {tasks} = this.state;
+  onUpdate = id => {
+    var { tasks } = this.state;
     var index = this.findIndex(id);
     var taskEditing = tasks[index];
     this.setState({
-      taskEditing : taskEditing
-    })
+      taskEditing: taskEditing
+    });
     this.onShowForm();
-  }
+  };
   render() {
-    var { tasks, isDisplayForm,taskEditing } = this.state; // var tasks = this.state.tasks; var isDisplayForm = this.state.isDisplayForm;
+    var { tasks, isDisplayForm, taskEditing } = this.state; // var tasks = this.state.tasks; var isDisplayForm = this.state.isDisplayForm;
     var elmTaskForm = isDisplayForm ? (
-      <TaskForm onSubmit={this.onSubmit} onCloseForm={this.onCloseForm} task={taskEditing} />
+      <TaskForm
+        onSubmit={this.onSubmit}
+        onCloseForm={this.onCloseForm}
+        task={taskEditing}
+      />
     ) : (
       ""
     ); //isDisplayForm === true ? <TaskForm/> : '';
