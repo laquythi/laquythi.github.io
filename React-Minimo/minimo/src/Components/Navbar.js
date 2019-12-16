@@ -25,22 +25,22 @@ class Navbar extends React.Component {
               <div className="collapse navbar-collapse" id="collapsibleNavId">
                 <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <a className="nav-link" href="true">
                       LIFESTYLE<span className="sr-only">(current)</span>
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <a className="nav-link" href="true">
                       PHOTODIARY
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <a className="nav-link" href="true">
                       MUSIC
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <a className="nav-link" href="true">
                       TRAVEL
                     </a>
                   </li>

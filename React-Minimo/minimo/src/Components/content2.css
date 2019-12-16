@@ -1,3 +1,7 @@
+.content p{
+    font-size:16px;
+    margin-right:50px;
+}
 .load-more button a {
     color: #626262;
     text-decoration: none;
