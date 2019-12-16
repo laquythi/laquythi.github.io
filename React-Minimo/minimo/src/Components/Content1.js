@@ -37,14 +37,14 @@ class Content1 extends React.Component {
           </h6>
           <div className="row">
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 row-1">
-              <a href>
+              <a href="true">
                 <img src="../images/life-style.jpg" alt="" className="img-fluid" />
               </a>
               <h6>
-                <a href>LIFE STYLE</a>
+                <a href="true">LIFE STYLE</a>
               </h6>
               <h2>
-                <a href>More than just a music festival</a>
+                <a href="true">More than just a music festival</a>
               </h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -53,14 +53,14 @@ class Content1 extends React.Component {
               </p>
             </div>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 row-1">
-              <a href>
+              <a href="true">
                 <img src="../images/coffee.jpg" alt="" className="img-fluid" />
               </a>
               <h6>
-                <a href>LIFE STYLE</a>
+                <a href="true">LIFE STYLE</a>
               </h6>
               <h2>
-                <a href>Life tastes better with coffee</a>
+                <a href="true">Life tastes better with coffee</a>
               </h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -69,14 +69,14 @@ class Content1 extends React.Component {
               </p>
             </div>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 row-2">
-              <a href>
+              <a href="true">
                 <img src="../images/the-gate.jpg" alt="" className="img-fluid" />
               </a>
               <h6>
-                <a href>PHOTODIARY</a>
+                <a href="true">PHOTODIARY</a>
               </h6>
               <h2>
-                <a href>American dream</a>
+                <a href="true">American dream</a>
               </h2>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -86,14 +86,14 @@ class Content1 extends React.Component {
               </p>
             </div>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 row-2">
-              <a href>
+              <a href="true">
                 <img src="../images/the-man.png" alt="" className="img-fluid" />
               </a>
               <h6>
-                <a href>PHOTODIARY</a>
+                <a href="true">PHOTODIARY</a>
               </h6>
               <h2>
-                <a href>A day exploring the Alps</a>
+                <a href="true">A day exploring the Alps</a>
               </h2>
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
