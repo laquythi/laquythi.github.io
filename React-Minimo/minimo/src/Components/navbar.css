@@ -25,16 +25,28 @@
     .navbar ul{
         padding-left:120px;
     }
+    .navbar a.navbar-brand{
+        margin-left:-40px;
+    }
     .navbar .collapse ul li a{
         margin:0 10px;
+        left:100px;
     }
 }
 @media screen and (max-width:768px){
     .navbar ul{
-        padding-left:40px;
+        padding-left:20px;
+    }
+    .navbar a.navbar-brand{
+        margin-left:-30px;
     }
     .navbar .collapse ul li a{
         margin:0 3px;
         font-size:14px;
+    }
+}
+@media screen and (max-width:576px){
+    .navbar ul{
+        padding-left:10px;
     }
 }

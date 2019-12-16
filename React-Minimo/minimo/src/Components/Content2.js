@@ -9,7 +9,7 @@ class Content2 extends React.Component {
           <div className="row">
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
               <a href="true">
-                <img src="../images/girl.jpg" alt="true" className="img-fluid" />
+                <img src="../images/girl.jpg" title="the girl" alt="true" className="img-fluid" />
               </a>
               <h6>
                 <a href="true">LIFE STYLE</a>
@@ -26,7 +26,7 @@ class Content2 extends React.Component {
             </div>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
               <a href="true">
-                <img src="../images/the-way.png" alt="true" className="img-fluid" />
+                <img src="../images/the-way.png" title="the way" alt="true" className="img-fluid" />
               </a>
               <h6>
                 <a href="true">LIFE STYLE</a>

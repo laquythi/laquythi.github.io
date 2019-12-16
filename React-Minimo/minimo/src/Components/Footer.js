@@ -8,20 +8,21 @@ class Footer extends React.Component {
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-md-6 col-sm-12">
-              <p>Copyright 2019 MINIMØ.</p>
+              <p className="copyright">Copyright 2019 MINIMØ.</p>
             </div>
             <div className="col-lg-6 col-md-6 col-sm-12">
               <div className="row">
                 <div className="col-lg-6 col-md-6 col-sm-12">
                   <h6>Contact</h6>
-                  <p>Phone : 0123-456-789</p>
-                  <p>Address : 1600 Pennsylvania Avenue NW Washington, DC 20500</p>
+                  <p>0123-456-789</p>
+                  <p>theminimo@gmail.com</p>
+                  <p className="address">1600 Pennsylvania Avenue NW</p>
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-12">
                   <h6>About Us</h6>
-                  <a href="true">Story</a><br/>
-                  <a href="true">Mission</a><br/>
-                  <a href="true">Collaborators</a>
+                  <p><a href="true">Story</a></p>
+                  <p><a href="true">Mission</a></p>
+                  <p><a href="true">Collaborators</a></p>
                 </div>
               </div>
             </div>

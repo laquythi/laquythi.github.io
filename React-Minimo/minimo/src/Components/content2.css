@@ -1,6 +1,6 @@
 .content p{
     font-size:16px;
-    margin-right:50px;
+    margin-right:65px;
 }
 .content h2 a{
     color:black;
@@ -32,4 +32,22 @@
     display: inline-block;
     position: relative;
     transition: 0.5s;
+}
+@media screen and (max-width:1200px){
+    .content p{
+        margin-right:0;
+    }
+}
+@media screen and (max-width:992px){
+    .content .row{
+        margin-top:20px;
+    }
+    .content p{
+        margin-right:0px;
+    }
+}
+@media screen and (max-width:576px){
+    .content {
+        padding: auto 10px;
+    }
 }

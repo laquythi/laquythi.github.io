@@ -38,7 +38,7 @@ class Content1 extends React.Component {
           <div className="row">
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 row-1">
               <a href="true">
-                <img src="../images/life-style.jpg" alt="" className="img-fluid" />
+                <img src="../images/life-style.jpg" title="life style" alt="" className="img-fluid" />
               </a>
               <h6>
                 <a href="true">LIFE STYLE</a>
@@ -54,7 +54,7 @@ class Content1 extends React.Component {
             </div>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 row-1">
               <a href="true">
-                <img src="../images/coffee.jpg" alt="" className="img-fluid" />
+                <img src="../images/coffee.jpg" title="hot coffee" alt="" className="img-fluid" />
               </a>
               <h6>
                 <a href="true">LIFE STYLE</a>
@@ -70,7 +70,7 @@ class Content1 extends React.Component {
             </div>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 row-2">
               <a href="true">
-                <img src="../images/the-gate.jpg" alt="" className="img-fluid" />
+                <img src="../images/the-gate.jpg" title="the gate" alt="" className="img-fluid" />
               </a>
               <h6>
                 <a href="true">PHOTODIARY</a>
@@ -87,7 +87,7 @@ class Content1 extends React.Component {
             </div>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 row-2">
               <a href="true">
-                <img src="../images/the-man.png" alt="" className="img-fluid" />
+                <img src="../images/the-man.png" title="the man" alt="" className="img-fluid" />
               </a>
               <h6>
                 <a href="true">PHOTODIARY</a>
