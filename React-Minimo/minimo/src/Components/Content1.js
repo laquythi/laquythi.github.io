@@ -31,7 +31,7 @@ class Content1 extends React.Component {
             magnam aliquam quaerat voluptatem.
           </p>
           <h6>
-            <a href className="comment">
+            <a href="true" className="comment">
               LEAVE A COMMENT
             </a>
           </h6>

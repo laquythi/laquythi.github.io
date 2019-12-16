@@ -9,7 +9,7 @@ class Signup extends React.Component {
           <p>Sign up for our newsletter!</p> <br />
           <div className="input">
             <input type="text" placeholder="Enter a valid email address" />
-            <a href className="send">
+            <a href="true" className="send">
               <i className="far fa-paper-plane" />
             </a>
           </div>
