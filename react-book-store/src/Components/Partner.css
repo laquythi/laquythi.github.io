@@ -1,0 +1,18 @@
+.partner{
+	margin-top:30px;
+}
+.partner .container-fluid{
+	margin-top:40px;
+}
+.partner h4{
+	margin-top:20px;
+}
+.partner img{
+	border-radius:5px;
+	margin-bottom:20px;
+}
+@media screen and (max-width: 576px){
+	.partner{
+		display:none;
+	}
+}

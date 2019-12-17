@@ -1,0 +1,31 @@
+.footer{
+	background:#171717;
+}
+.footer .row{
+	margin-top:20px;
+}
+.footer h4{
+	margin-top:20px;
+	color:#F4E9E9;
+	font-size: 24px;
+	font-weight:bold;
+}
+.footer .ft a{
+	color:#919294;
+	font-size: 18px;
+	margin-top:10px
+}
+.footer p{
+	color:#919294;
+	font-size:18px;
+	line-height:20px;
+}
+.footer .row a:hover{
+	text-decoration:none;
+	color:#0DC5ED;
+}
+@media screen and (max-width: 576px){
+	.footer .ft{
+		text-align:center;
+	}
+}
