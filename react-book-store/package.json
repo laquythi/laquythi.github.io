@@ -2,7 +2,7 @@
   "name": "react-book-store",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http:/laquythi.github.io/react-book-store",
+  "homepage": "http://react-book-store",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
