@@ -10,6 +10,7 @@ html , body{
 }
 /* -------html body---------- */
 
+/* -----header----- */
 .header-top{
 	background:#171717;
 }
@@ -78,9 +79,9 @@ html , body{
 		margin-left:40px;
 	}
 }
-/* --------header-top-------- */
+/* --------header-------- */
 
-
+/* -----banner----- */
 .banner img{
 	position:relative;
 }
@@ -125,6 +126,8 @@ html , body{
 	}
 }
 /* -----banner-------- */
+
+/* -----menu----- */
 .menu{
 	display:flex;
 	background:#EEEEEE;
@@ -286,9 +289,9 @@ html , body{
 		width:80%;
 	}
 }
-/* ---------nav-bar-------- */
+/* ---------menu-------- */
 
-
+/* -----bread-crumb----- */
  ul.breadcrumb {
   margin-top:20px;
   padding: 10px 10px;
@@ -353,6 +356,7 @@ ul.breadcrumb li a:hover {
 }
 /* -----breakcrumb------- */
 
+/* -----san-pham-ban-chay----- */
 .sanPhamBanChay{
 	margin-top:50px;
 }
@@ -379,6 +383,7 @@ ul.breadcrumb li a:hover {
 }
 /* ------san pham ban chay----- */
 
+/* -----author----- */
 .Gladwell{
 	background:#EEEEEE;
 }
@@ -463,6 +468,7 @@ ul.breadcrumb li a:hover {
 }
 /* -------author------ */
 
+/* ------other-author----- */
 .other-author input{
 	background:#0DC5ED;
 	border:none;
@@ -477,6 +483,7 @@ ul.breadcrumb li a:hover {
 }
 /* ---------other-author----------- */
 
+/* -----new-products----- */
 .new-products {
 	margin-top:80px;
 	background:#EEEEEE;
@@ -533,6 +540,8 @@ ul.breadcrumb li a:hover {
 }
 /* ------new-products------ */
 
+
+/* -----nation-products----- */
 .sanPhamTrongNuoc{
 	margin-top:50px;
 }
@@ -556,6 +565,7 @@ ul.breadcrumb li a:hover {
 }
 /* ------sanPhamTrongNuoc------ */
 
+/* -----partner----- */
 .partner{
 	margin-top:30px;
 }
@@ -576,6 +586,7 @@ ul.breadcrumb li a:hover {
 }
 /* -----partner------- */
 
+/* -----footer----- */
 .footer{
 	background:#171717;
 }
@@ -609,6 +620,7 @@ ul.breadcrumb li a:hover {
 }
 /* -----footer------ */
 
+/* -----back-to-top----- */
 .back-to-top i{
 	color:#0DC5ED;
 }
