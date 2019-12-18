@@ -1,3 +1,4 @@
+  /* ------breadcrumb------ */
   ul.breadcrumb {
   margin-top:20px;
   padding:5px;
@@ -13,6 +14,7 @@
 }
 /* -----breadcrumb------- */
 
+/* ------sanPhamDaChon------ */
 .sanPhamDaChon h6{
 	font-size:20px;
 	font-weight:bold;
@@ -67,6 +69,7 @@
 }
 /* -----sanPhamDaChon----- */
 
+/* ------nhapThongTin------ */
 .nhapThongTin{
 	margin-top:40px;
 	margin-left:60px;
@@ -124,6 +127,8 @@
 }
 /* ------nhapThongTin-------- */
 
+
+/* ------qr & button------ */
 .QR{
 	margin-top:40px;
 }
@@ -153,7 +158,9 @@
 		margin-left:0px;
 	}
 }
+/* ------qr & button------ */
 
+/* ------back-to-top------ */
 .back-to-top{
 	position:fixed;
 	right:60px;

@@ -1,0 +1,29 @@
+.QR{
+	margin-top:40px;
+}
+.QR img{
+	margin-left:100px;
+}
+.QR .text-center{
+	margin-top:20px;
+}
+@media screen and (max-width: 1200px){
+	.QR img{
+		margin-left:80px;
+	}
+}
+@media screen and (max-width: 992px){
+	.QR img{
+		margin-left:10px;
+	}
+}
+@media screen and (max-width: 768px){
+	.QR img{
+		margin-left:10px;
+	}
+}
+@media screen and (max-width: 576px){
+	.QR img{
+		margin-left:0px;
+	}
+}
