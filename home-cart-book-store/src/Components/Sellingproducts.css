@@ -1,0 +1,24 @@
+.sanPhamBanChay{
+	margin-top:50px;
+}
+.sanPhamBanChay h3{
+	padding-top:20px;
+	text-align:center;
+	font-size:25px;
+	margin:20px 0;
+}
+.sanPhamBanChay p{
+	font-size:14px;
+	line-height:20px;
+	margin:5px;
+}
+.sanPhamBanChay p.price{
+	font-size:16px;
+	color:#0DC5ED;
+	font-weight:normal;
+}
+@media screen and (max-width: 576px){
+	.sanPhamBanChay h3{
+		text-align:center;
+	}
+}

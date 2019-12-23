@@ -1,0 +1,82 @@
+.Gladwell{
+	background:#EEEEEE;
+}
+.author{
+	margin-top:40px;
+}
+.author  p.best-seller{
+	font-size:16px;
+	font-weight:normal;
+}
+.author .row .infor{
+	margin-top:50px;
+}
+.author h3{
+	font-size:18px;
+}
+.author .infor p.best-seller{
+	font-size:30px;
+}
+.author .infor p{
+	font-size:19px;
+}
+.author img{
+	margin-top:60px;
+	width:80%;
+}
+.author .sanphamlienquan p{
+	margin-top:5px;
+	font-size:16px;
+}
+.author .sanphamlienquan img{
+	margin-left:-10px;
+}
+@media screen and (max-width: 992px){
+	.author .sanphamlienquan img{
+		margin-left:0;
+	}
+}
+@media screen and (max-width: 768px){
+	.author .infor h3{
+		font-size:16px;
+	}
+	.author .infor p.best-seller{
+		font-size:13px;
+	}
+	.author .infor p{
+		font-size:13px;
+	}
+	.author .sanphamlienquan p{
+		font-size:14px;
+		margin-left:-5px;
+	}
+}
+@media screen and (max-width: 576px){
+	.author .img img{
+		margin:30px auto;
+	}
+	.author .sanphamlienquan .img img{
+		margin-left:100px;
+	}
+	.author .sanphamlienquan p{
+		display:none;
+	}
+}
+@media screen and (max-width: 414px){
+	.author .img img{
+		margin-left:30px;
+	}
+	.author .sanphamlienquan .img img{
+		margin-left:70px;
+		width:50%;
+	}
+}
+@media screen and (max-width: 375px){
+	.author .img img{
+		margin-left:30px;
+	}
+	.author .sanphamlienquan .img img{
+		margin-left:70px;
+		width:50%;
+	}
+}

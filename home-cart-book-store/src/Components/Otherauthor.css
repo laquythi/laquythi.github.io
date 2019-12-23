@@ -1,0 +1,12 @@
+.other-author input{
+	background:#0DC5ED;
+	border:none;
+	margin-top:10px;
+	margin-bottom:20px;
+}
+@media screen and (max-width: 576px){
+	.other-author p.text-center{
+		margin-left:-50px;
+		font-size: 25px;
+	}
+}

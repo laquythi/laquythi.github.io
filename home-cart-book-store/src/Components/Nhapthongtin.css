@@ -1,0 +1,55 @@
+.nhapThongTin{
+	margin-top:40px;
+	margin-left:60px;
+}
+.nhapThongTin .text-center{
+	margin:-10px 0;
+	color:#0DC5ED;
+}
+.nhapThongTin .text-center h5{
+	font-weight:bold;
+}
+.nhapThongTin p{
+	margin-top:25px;
+	margin-bottom:1px;
+}
+.nhapThongTin input{
+	outline:none;
+	font-size:18px;
+	padding:0 10px;
+}
+.nhapThongTin .cash{
+	display:flex;
+}
+.nhapThongTin .cash p{
+	margin-top:0px;
+	margin-left:10px;
+}
+.nhapThongTin .credit-card{
+	display:flex;
+}
+.nhapThongTin .credit-card p{
+	margin-top:0px;
+	margin-left:10px;
+}
+.nhapThongTin .final{
+	margin-top:20px;
+}
+.nhapThongTin .final p{
+	line-height:15px;
+}
+.nhapThongTin p.money{
+	font-size:25px;
+	font-weight:bold;
+	color:red;
+}
+.nhapThongTin .final button{
+	width:40%;
+	height:auto;
+	margin-top:20px;
+}
+.nhapThongTin p.final{
+	line-height:25px;
+	margin-top:15px;
+	color:#F21F1F;
+}

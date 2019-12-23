@@ -1,0 +1,52 @@
+.sanPhamDaChon h6{
+	font-size:20px;
+	font-weight:bold;
+	margin-left:30px;
+}
+.sanPhamDaChon .img{
+	margin-left:30px;
+	margin-top:30px;
+}
+.sanPhamDaChon .price{
+	color:#0DC5ED;
+}
+.sanPhamDaChon p.price{
+	margin-top:15px;
+	font-size:22px;
+	font-weight:bold;
+}
+.sanPhamDaChon p{
+	font-size:18px;
+	line-height:7px;
+	margin-top:10px;
+}
+.sanPhamDaChon .soLuong p{
+	font-size:18px;
+	line-height:10px;
+	margin-top:-6px;
+}
+.sanPhamDaChon .soLuong{
+	display:flex;
+}
+.sanPhamDaChon .soLuong a{
+	margin-left:5px;
+	margin-top:-15px;
+}
+.sanPhamDaChon a p{
+	color:#F21F1F;
+	margin-top:-5px;
+}
+.sanPhamDaChon a:hover{
+	text-decoration:none;
+}
+@media screen and (max-width: 1024px){
+	.sanPhamDaChon p.price{
+		font-size:18px;
+		line-height:20px;
+	}
+}
+@media screen and (max-width: 576px){
+	.sanPhamDaChon{
+		margin-left:40px;
+	}
+}
