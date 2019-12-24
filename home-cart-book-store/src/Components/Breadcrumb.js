@@ -4,25 +4,22 @@ import "./Breadcrumb.css";
 class Breadcrumb extends React.Component {
   render() {
     return (
-      <section className="container">
+      <div className="container">
         <div className="row">
-          <div className="col-lg-12 col-md-12 col-sm-12">
-            <ul className="breadcrumb">
+          <div className="col-lg-12 col-md-12">
+            <ul
+              className="breadcrumb"
+              style={{ background: "none", marginBottom: "-150px" }}
+            >
               <li>
-                <a href="true">Trang Chủ</a>
-              </li>
-              <li>
-                <a href="true">Sản Phẩm</a>
-              </li>
-              <li>
-                <a href="true" style={{ color: "#0DC5ED" }}>
-                  Giỏ Hàng
+                <a href="index.html" style={{ fontSize: 28, color: "#0DC5ED" }}>
+                  Trang Chủ
                 </a>
               </li>
             </ul>
           </div>
         </div>
-      </section>
+      </div>
     );
   }
 }

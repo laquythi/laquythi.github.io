@@ -1,10 +1,14 @@
 import React from "react";
-import "../App.css";
+// import "../App.css";
+import "./style.css";
 
 import Header from "./Header";
+import Banner from "./Banner";
 import Menu from "./Menu";
 import Breadcrumb from "./Breadcrumb";
 import Sellingproducts from "./Sellingproducts";
+import Newproducts from "./Newproducts";
+import Nationproducts from "./Nationproducts";
 import Author from "./Author";
 import Otherauthor from "./Otherauthor";
 import Partner from "./Partner";
@@ -14,17 +18,20 @@ import Backtotop from "./Backtotop";
 class Home extends React.Component {
   render() {
     return (
-      <div className="home">
-        <Header />
-        <Menu />
-        <Breadcrumb />
-        <Sellingproducts />
-        <Author />
-        <Otherauthor />
-        <Partner />
-        <Footer />
-        <Backtotop />
-      </div>
+        <div>
+          <Header />
+          <Banner />
+          <Menu />
+          <Breadcrumb />
+          <Sellingproducts />
+          <Author />
+          <Otherauthor />
+          <Newproducts />
+          <Nationproducts />
+          <Partner />
+          <Footer />
+          <Backtotop />
+        </div>
     );
   }
 }

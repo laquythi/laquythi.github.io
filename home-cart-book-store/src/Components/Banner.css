@@ -1,0 +1,43 @@
+.banner img{
+	position:relative;
+}
+.banner input{
+	background:#0DC5ED;
+	border:none;
+	position:absolute;
+	margin-top:-150px;
+	margin-left:-80px;
+}
+@media screen and (max-width: 1024px){
+	.banner .text-center input{
+		margin-left:-100px;
+		margin-top:-100px;
+	}
+}
+@media screen and (max-width: 768px){
+	.banner .text-center input{
+		margin-top:-90px;
+		margin-left:-60px;
+	}
+}
+@media screen and (max-width: 576px){
+	.banner .text-center input{
+		margin-left:-70px;
+		margin-top:-70px;
+	}
+}
+@media screen and (max-width: 414px){
+	.banner .text-center input{
+		margin-top:-52px;
+	}
+}
+@media screen and (max-width: 375px){
+	.banner input[type=button]{
+		font-size:16px;
+	}
+	.banner .text-center input{
+		margin-top:-45px;
+		width:35%;
+		height:35px;
+	}
+}

@@ -1,0 +1,19 @@
+.muc-tieu h3{
+	padding:0 10px;
+}
+.muc-tieu .text-center p{
+	padding:0 4px;
+}
+@media screen and (max-width: 576px){
+	.muc-tieu h3{
+		padding:0 5px;
+	}
+	.muc-tieu .text-center p{
+		padding:0 6px;
+	}	
+}
+@media screen and (max-width: 375px){
+	.muc-tieu .text-center p{
+		padding:0 5px;
+	}
+}

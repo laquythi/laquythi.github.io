@@ -1,0 +1,21 @@
+.sanPhamTrongNuoc{
+	margin-top:50px;
+}
+.sanPhamTrongNuoc .img{
+	margin-bottom:30px;
+}
+.sanPhamTrongNuoc .price{
+	font-size:20px;
+	color:#0DC5ED;
+}
+.sanPhamTrongNuoc input{
+	background:#0DC5ED;
+	border:none;
+	margin-bottom:30px;
+	margin-top:20px;
+}
+.sanPhamTrongNuoc p{
+	margin-top:10px;
+	font-size:14px;
+	line-height:5px;
+}
