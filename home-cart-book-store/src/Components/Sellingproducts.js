@@ -12,7 +12,7 @@ class Sellingproducts extends React.Component {
               <img
                 src="images/products/hary-poster.png"
                 title="hary-poster"
-                alt
+                alt="true"
               />
             </a>
             <p>Tác Giả : JK Rowling</p>
@@ -27,7 +27,7 @@ class Sellingproducts extends React.Component {
               <img
                 src="images/products/dacnhantam.png"
                 title="dacnhantam"
-                alt
+                alt="true"
               />
             </a>
             <p>Tác Giả : D Carnegie</p>
@@ -42,7 +42,7 @@ class Sellingproducts extends React.Component {
               <img
                 src="images/products/xachbalo.png"
                 title="xach ba lo len va di"
-                alt
+                alt="true"
               />
             </a>
             <p>Tác Giả : Huyền Chip</p>
@@ -57,7 +57,7 @@ class Sellingproducts extends React.Component {
               <img
                 src="images/products/nhagiakim.png"
                 title="nhà giả kim"
-                alt
+                alt="true"
               />
             </a>
             <p>Tác Giả : P Coelho</p>
@@ -72,7 +72,7 @@ class Sellingproducts extends React.Component {
               <img
                 src="images/products/start-up.png"
                 title="quốc gia khởi nghiệp"
-                alt
+                alt="true"
               />
             </a>
             <p>Tác Giả : Saul Singer</p>
@@ -87,7 +87,7 @@ class Sellingproducts extends React.Component {
               <img
                 src="images/products/block-chain.png"
                 title="blockchain"
-                alt
+                alt="true"
               />
             </a>
             <p>Tác Giả : D Hansel</p>

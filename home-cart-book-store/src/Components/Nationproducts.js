@@ -19,7 +19,7 @@ class Nationproducts extends React.Component {
           <div className="row">
             <div className="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-6 img text-center">
               <a href="detail-product.html">
-                <img src="images/products/bi-vo.png" title="bỉ vỏ" alt />
+                <img src="images/products/bi-vo.png" title="bỉ vỏ" alt="true" />
               </a>
               <p>Tác Giả : Nguyên Hồng</p>
               <p>Tái Bản : 2014</p>
@@ -30,7 +30,7 @@ class Nationproducts extends React.Component {
             </div>
             <div className="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-6 img text-center">
               <a href="detail-product.html">
-                <img src="images/products/sodo.png" title="số đỏ" alt />
+                <img src="images/products/sodo.png" title="số đỏ" alt="true" />
               </a>
               <p>Tác Giả : VT Phụng</p>
               <p>Tái Bản : 2013</p>
@@ -44,7 +44,7 @@ class Nationproducts extends React.Component {
                 <img
                   src="images/products/xachbalo.png"
                   title="huyền chip"
-                  alt
+                  alt="true"
                 />
               </a>
               <p>Tác Giả : Huyền Chip</p>
@@ -59,7 +59,7 @@ class Nationproducts extends React.Component {
                 <img
                   src="images/products/demen-phieluuky.png"
                   title="dế mèn phiêu lưu ký"
-                  alt
+                  alt="true"
                 />
               </a>
               <p>Tác Giả : Tô Hoài</p>
@@ -74,7 +74,7 @@ class Nationproducts extends React.Component {
                 <img
                   src="images/products/vanhoc-donghaocoma.png"
                   title="đồng hào có ma"
-                  alt
+                  alt="true"
                 />
               </a>
               <p>Tác Giả : NC Hoan</p>
@@ -89,7 +89,7 @@ class Nationproducts extends React.Component {
                 <img
                   src="images/products/comthay-comco.png"
                   title="cơm thầy cơm cô"
-                  alt
+                  alt="true"
                 />
               </a>
               <p>Tác Giả : VT Phụng</p>
@@ -101,7 +101,7 @@ class Nationproducts extends React.Component {
             </div>
             <div className="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-6 img text-center">
               <a href="detail-product.html">
-                <img src="images/products/pho-chu-lai.png" title="phố" alt />
+                <img src="images/products/pho-chu-lai.png" title="phố" alt="true" />
               </a>
               <p>Tác Giả : Chu Lai</p>
               <p>Tái Bản : 2010</p>
@@ -115,7 +115,7 @@ class Nationproducts extends React.Component {
                 <img
                   src="images/products/trai-suc-vat.png"
                   title="trại súc vật"
-                  alt
+                  alt="true"
                 />
               </a>
               <p>Tác Giả : Unknown</p>
@@ -130,7 +130,7 @@ class Nationproducts extends React.Component {
                 <img
                   src="images/products/an-may-di-vang.png"
                   title="ăn mày dĩ vãng"
-                  alt
+                  alt="true"
                 />
               </a>
               <p>Tác Giả : Chu Lai</p>
@@ -145,7 +145,7 @@ class Nationproducts extends React.Component {
                 <img
                   src="images/products/3-nguoi-khac.png"
                   title="3 người khác"
-                  alt
+                  alt="true"
                 />
               </a>
               <p>Tác Giả : Tô Hoài</p>
@@ -160,7 +160,7 @@ class Nationproducts extends React.Component {
                 <img
                   src="images/products/song-o-day-song.png"
                   title="sóng ở đáy sông"
-                  alt
+                  alt="true"
                 />
               </a>
               <p>Tác Giả : Lê Lựu</p>
@@ -175,7 +175,7 @@ class Nationproducts extends React.Component {
                 <img
                   src="images/products/di-ngang-ha-noi.png"
                   title="đi ngang hà nội"
-                  alt
+                  alt="true"
                 />
               </a>
               <p>Tác Giả : NN Tiến</p>

@@ -8,7 +8,7 @@ class Banner extends React.Component {
         <img
           src="images/banner/banner.png"
           className="img-fluid"
-          alt
+          alt="true"
           style={{ width: "100%" }}
         />
         <div className="text-center">

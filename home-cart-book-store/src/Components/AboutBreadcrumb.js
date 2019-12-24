@@ -12,7 +12,7 @@ class AboutBreadcrumb extends React.Component {
                 <a href="index.html">Trang Chủ</a>
               </li>
               <li>
-                <a href="#" style={{ color: "#0DC5ED" }}>
+                <a href="true" style={{ color: "#0DC5ED" }}>
                   Giới Thiệu
                 </a>
               </li>

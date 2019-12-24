@@ -3,6 +3,9 @@ import "./Menu.css";
 import { BrowserRouter as Router, Route,Link} from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
+import Products from "./Products";
+import Blog from "./Blog";
+import Contact from "./Contact";
 
 class Menu extends React.Component {
   render() {
@@ -11,37 +14,40 @@ class Menu extends React.Component {
         <section className="menu container-fluid">
           <div className="logo">
             <a href="true">
-              <img src="images/logo/VEP.png" alt="true" />
+              {/* <img src="images/logo/VEP.png" alt="true" /> */}
             </a>
           </div>
           <div className="menu-bar">
             <ul>
               <li>
-                <Link to="/">Trang chủ</Link>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/About">Giới thiệu</Link>
+                <Link to="/about">About</Link>
               </li>
               <li>
-                <a href="true">Sản phẩm</a>
+                <Link to="/products">Products</Link>
               </li>
               <li>
-                <a href="true">Blog</a>
+                <Link to="/blog">Blog</Link>
               </li>
               <li>
-                <a href="true">Liên hệ</a>
+                <Link to="/contact">Liên hệ</Link>
               </li>
             </ul>
           </div>
           <div className="search">
             <input type="text" placeholder="Tìm kiếm sản phẩm..." />
-            <a href="true">
+            {/* <a href="true">
               <i className="fas fa-search" />
-            </a>
+            </a> */}
           </div>
+          <Route path="/" exact  component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/products" component={Products} />
+          <Route path="/blog" component={Blog} />
+          <Route path="/contact" component={Contact} />
         </section>
-        <Route path="/" exact Component={Home} />
-        <Route path="/About" Component={About} />
       </Router>
     );
   }

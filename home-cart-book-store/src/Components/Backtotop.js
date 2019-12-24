@@ -5,9 +5,9 @@ class Backtotop extends React.Component {
   render() {
     return (
       <section className="back-to-top">
-        <a id="button">
+        {/* <a className="button">
           <i className="fas fa-arrow-alt-circle-up" />
-        </a>
+        </a> */}
       </section>
     );
   }

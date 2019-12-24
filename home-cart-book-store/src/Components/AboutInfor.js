@@ -20,12 +20,12 @@ class AboutInfor extends React.Component {
             </p>
           </div>
           <div className="col-lg-4 col-md-6 text-center">
-            <img src="images/about/dongtay-1.png" className="img-fluid" alt />
+            <img src="images/about/dongtay-1.png" className="img-fluid" alt="true" />
           </div>
         </div>
         <div className="row dongtay-2" style={{ marginTop: 20 }}>
           <div className="col-lg-4 col-md-6 text-center">
-            <img src="images/about/dongtay-2.png" className="img-fluid" alt />
+            <img src="images/about/dongtay-2.png" className="img-fluid" alt="true" />
           </div>
           <div className="col-lg-8 col-md-6">
             <p className="text-2">

@@ -23,7 +23,7 @@ class Otherauthor extends React.Component {
                   <img
                     src="images/author/jk-rowling.png"
                     title="JK Rowling"
-                    alt
+                    alt="true"
                   />
                 </a>
                 <p>JK Rowling</p>
@@ -35,7 +35,7 @@ class Otherauthor extends React.Component {
                   <img
                     src="images/author/keith-ferrazzi.png"
                     title="keith-ferrazzi"
-                    alt
+                    alt="true"
                   />
                 </a>
                 <p>Keith Ferrazzi</p>
@@ -47,7 +47,7 @@ class Otherauthor extends React.Component {
                   <img
                     src="images/author/luuquangvu.png"
                     title="lưu quang vũ"
-                    alt
+                    alt="true"
                   />
                 </a>
                 <p>Lưu Quang Vũ</p>
@@ -59,7 +59,7 @@ class Otherauthor extends React.Component {
                   <img
                     src="images/author/henry-kissingger.png"
                     title="henry kissinger"
-                    alt
+                    alt="true"
                   />
                 </a>
                 <p>Henry Kissingger</p>
@@ -71,7 +71,7 @@ class Otherauthor extends React.Component {
                   <img
                     src="images/author/paulo-coeho.png"
                     title="paulo coeho"
-                    alt
+                    alt="true"
                   />
                 </a>
                 <p>Paulo Coeho</p>
@@ -80,7 +80,7 @@ class Otherauthor extends React.Component {
             <div className="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-6">
               <div className="text-center">
                 <a href="detail-product.html">
-                  <img src="images/author/chulai.png" title="chu lai" alt />
+                  <img src="images/author/chulai.png" title="chu lai" alt="true" />
                 </a>
                 <p>Chu Lai</p>
               </div>

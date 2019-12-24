@@ -25,7 +25,7 @@ class Author extends React.Component {
                 src="images/author/malcom-gladwell.png"
                 title="malcom gladwell"
                 className="gladwell"
-                alt
+                alt="true"
               />
             </div>
             <div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">
@@ -35,7 +35,7 @@ class Author extends React.Component {
                     <img
                       src="images/home-sachcungtacgia/chuchonhinthaygi.png"
                       title="chú chó nhìn thấy gì"
-                      alt
+                      alt="true"
                     />
                   </a>
                   <p style={{ color: "#0DC5ED" }}>
@@ -48,7 +48,7 @@ class Author extends React.Component {
                     <img
                       src="images/home-sachcungtacgia/david.png"
                       title="david & goliath"
-                      alt
+                      alt="true"
                     />
                   </a>
                   <p style={{ color: "#0DC5ED" }}>
@@ -62,7 +62,7 @@ class Author extends React.Component {
                       src="images/home-sachcungtacgia/outliers.png"
                       style={{ marginTop: 5 }}
                       title="outliers"
-                      alt
+                      alt="true"
                     />
                   </a>
                   <p style={{ color: "#0DC5ED" }}>
@@ -76,7 +76,7 @@ class Author extends React.Component {
                       src="images/home-sachcungtacgia/diembungphat.png"
                       style={{ marginTop: 5 }}
                       title="điểm bùng phát"
-                      alt
+                      alt="true"
                     />
                   </a>
                   <p style={{ color: "#0DC5ED" }}>

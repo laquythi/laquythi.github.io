@@ -15,7 +15,7 @@ class Newproducts extends React.Component {
                 <img
                   src="images/products/kyxnangditruocdamme.png"
                   title="kỹ năng đi trước đam mê"
-                  alt
+                  alt="true"
                 />
               </a>
               <p>Tác Giả : Cal Newport</p>
@@ -30,7 +30,7 @@ class Newproducts extends React.Component {
                 <img
                   src="images/products/block-chain.png"
                   title="blockchain"
-                  alt
+                  alt="true"
                 />
               </a>
               <p>Tác Giả : Devan Hansel</p>
@@ -45,7 +45,7 @@ class Newproducts extends React.Component {
                 <img
                   src="images/products/kddt-donald-trump.png"
                   title="think like a champion"
-                  alt
+                  alt="true"
                 />
               </a>
               <p>Tác Giả : Donald Trump</p>
@@ -60,7 +60,7 @@ class Newproducts extends React.Component {
                 <img
                   src="images/products/uber.png"
                   title="chuyến đi bão táp"
-                  alt
+                  alt="true"
                 />
               </a>
               <p>Tác Giả : Adam Lashinsky</p>
@@ -75,7 +75,7 @@ class Newproducts extends React.Component {
                 <img
                   src="images/products/start-up.png"
                   title="quốc gia khởi nghiệp"
-                  alt
+                  alt="true"
                 />
               </a>
               <p>Tác Giả : Singer</p>
@@ -87,7 +87,7 @@ class Newproducts extends React.Component {
             </div>
             <div className="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-6 img text-center">
               <a href="detail-product.html">
-                <img src="images/products/python.png" title="python" alt />
+                <img src="images/products/python.png" title="python" alt="true" />
               </a>
               <p>Tác Giả : O'Relly</p>
               <p>Xuất Bản : 2019</p>
@@ -101,7 +101,7 @@ class Newproducts extends React.Component {
                 <img
                   src="images/products/ptbt-never-eat-alone.png"
                   title="đừng bao giờ đi ăn một mình"
-                  alt
+                  alt="true"
                 />
               </a>
               <p>Tác Giả : Keith Ferrazzi</p>
@@ -113,7 +113,7 @@ class Newproducts extends React.Component {
             </div>
             <div className="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-6 img text-center">
               <a href="detail-product.html">
-                <img src="images/products/0-1.png" title="0-1" alt />
+                <img src="images/products/0-1.png" title="0-1" alt="true" />
               </a>
               <p>Tác Giả : Peter Thiel</p>
               <p>Xuất Bản : 2019</p>
@@ -127,7 +127,7 @@ class Newproducts extends React.Component {
                 <img
                   src="images/products/nhagiakim.png"
                   title="nha gia kim"
-                  alt
+                  alt="true"
                 />
               </a>
               <p>Tác Giả : Paulo Coeho</p>
@@ -142,7 +142,7 @@ class Newproducts extends React.Component {
                 <img
                   src="images/products/khcn-apple.png"
                   title="inside apple"
-                  alt
+                  alt="true"
                 />
               </a>
               <p>Tác Giả : Adam Lashinky</p>

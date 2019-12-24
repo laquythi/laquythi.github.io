@@ -11,7 +11,7 @@ class Qrbutton extends React.Component {
               src="images/advesting/QR.png"
               className="img-fluid"
               title="thanh toan QR"
-              alt
+              alt="true"
             />
           </a>
           <div className="text-center">
