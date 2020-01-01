@@ -1,43 +1,58 @@
 import React from "react";
-import "./App.css";
 import Data from "./Components/Data";
 
 class App extends React.Component {
   render() {
-    return (
-      <div className="container">
-          <Data 
-          province="Thái Bình"
-          district="Đông Hưng"
-          population="134038"
-           />
-          <Data
-           province="Thái Bình"
-           district="Hưng Hà"
-           population="154038"
-          />
-          <Data
-           province="Thái Bình"
-           district="Thái Thụy"
-           population="482081"
-          />
-          <Data 
-          province="Nam Định"
-          district="Vụ Bản"
-          population="75917"
-          />
-          <Data 
-          province="Nam Định"
-          district="Hải Hậu"
-          population="58289"
-          />
-          <Data 
-          province="Quảng Ninh"
-          district="Vân Đồn"
-          population="1408284"
-          />
-      </div>
-    );
+    var informations = [
+      {
+        id: 1,
+        province: "Thái Bình",
+        district: "Đông Hưng",
+        population: "1458023"
+      },
+      {
+        id: 2,
+        province: "Thái Bình",
+        district: "Hưng Hà",
+        population: "1094722"
+      },
+      {
+        id: 3,
+        province: "Nam Định",
+        district: "Hải Hậu",
+        population: "1285023"
+      },
+      {
+        id: 4,
+        province: "Quảng Ninh",
+        district: "Vân Đồn",
+        population: "937391"
+      },
+      {
+        id: 5,
+        province: "Hà Nam",
+        district: "Lý Nhân",
+        population: "2048371"
+      },
+      {
+        id: 6,
+        province: "Hải Dương",
+        district: "Nam Sách",
+        population: "1048282"
+      }
+    ];
+    let elements = informations.map((anything, index) => {
+      let result = (
+        <Data
+          key={anything.id}
+          province={anything.province}
+          district={anything.district}
+          population={anything.population}
+        />
+      );
+      return result;
+    });
+    return <div className="container">{elements}</div>;
   }
 }
 
