@@ -1,5 +1,5 @@
 import React from "react";
-
+//dung setState,ko dung eventHandle
 class ClassCounter extends React.Component {
   constructor(props) {
     super(props);
@@ -11,7 +11,9 @@ class ClassCounter extends React.Component {
     return (
       <div>
         <p>you clicked {this.state.count} times</p>
-        <button onClick={ () => this.setState({count : this.state.count + 1})}>Count : {this.state.count}</button>
+        <button onClick={() => this.setState({ count: this.state.count + 1 })}>
+          Count : {this.state.count}
+        </button>
       </div>
     );
   }

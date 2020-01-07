@@ -1,13 +1,14 @@
 import React from 'react';
-import ClassCounter from './Components/ClassCounter';
+import Example from "./Components/Example";
+import HookCounter from "./Components/HookCounter";
 
 class App extends React.Component {
   render() {
     return(
       <div>
-        {/* <HookCounter /> */}
+        <HookCounter />
         {/* <Example /> */}
-        <ClassCounter />
+        {/* <ClassCounter /> */}
       </div>
     );
   }

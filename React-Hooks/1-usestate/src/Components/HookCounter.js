@@ -1,5 +1,6 @@
 import React from "react";
 
+//dung eventHandle,ko dung setState.
 class HookCounter extends React.Component {
   constructor(props) {
     super(props);
@@ -7,8 +8,7 @@ class HookCounter extends React.Component {
       count: 0
     };
   }
-
-  incrementCount = () => {
+  onChange = () => {
     this.setState({
       count: this.state.count + 1
     });
@@ -18,9 +18,7 @@ class HookCounter extends React.Component {
     return (
       <div>
         <p>you clicked {this.state.count} times</p>
-        <button onClick={this.incrementCount}>
-          count : {this.state.count}
-        </button>
+        <button onClick={this.onChange}>Count : {this.state.count} </button>
       </div>
     );
   }
