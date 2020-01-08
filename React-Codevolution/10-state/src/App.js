@@ -1,9 +1,5 @@
 import React from "react";
-// import Message from "./Components/Message";
-import Counter from "./Components/Counter";
-import ClassClick from "./Components/ClassClick";
-import EventBind from "./Components/EventBind";
-import UserGreeting from "./Components/UserGreeting";
+import NameList from "./Components/NameList";
 
 class App extends React.Component{
   render(){
@@ -13,7 +9,8 @@ class App extends React.Component{
         {/* <Counter name="Thi La Quy" address="Thai Binh" /> */}
         {/* <ClassClick /> */}
         {/* <EventBind /> */}
-        <UserGreeting />
+        {/* <UserGreeting /> */}
+        <NameList />
       </div>
     )
   }
