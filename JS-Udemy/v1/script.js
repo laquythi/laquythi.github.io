@@ -377,19 +377,109 @@
 // };
 // console.log(Thi.calcYear(1991));
 
+// var Thi = {
+// 	name : 'thi',
+// 	birthYear : 1991,
+// 	address : 'thai binh',
+// 	family : ['dad','mom','sister'],
+// 	isMarried : false,
+// 	calcYear : function (){
+// 		this.age = 2020 - this.birthYear;
+// 	}
+// };
+// Thi.calcYear();
+// console.log(Thi);
+/*------------the end---------*/
+
+
+
+/* Code challenge */
+// var Thi = {
+// 	fullName : 'la quy thi',
+// 	mass : 58,
+// 	height : 1.56,
+// 	calcBMI : function (){
+// 		this.bmi = this.mass / ( this.height * this.height);
+// 		return this.bmi;
+// 	}
+// };
+// var Hoach = {
+// 	fullName : 'Hoach Mai',
+// 	mass : 76,
+// 	height : 1.81,
+// 	calcBMI : function (){
+// 		this.bmi = this.mass / ( this.height * this.height) ;
+// 		return this.bmi;
+// 	}
+// };
+// Thi.calcBMI();
+// Hoach.calcBMI();
+// console.log(Thi,Hoach);
+// Thi.bmi > Hoach.bmi ? console.log('Thi co chi so khoi hon Hoach') : console.log('Hoach co chi so khoi hon Thi') ;
+/*------------the end---------*/
+
+
+/* Loops and iteration */
+
+// for(var i = 0 ; i <= 10;i++){
+// 	console.log(i);
+// }
+
+var Thi = ['la quy thi',1991,true,'developer',false,'thi lun',true,29,'thai binh'];
+// for(var i = 0;i < Thi.length;i++){
+// 	console.log(Thi[i]);
+// }
+
+// var i = 0;
+// while(i < Thi.length){
+// 	console.log(Thi[i]);
+// 	i++;
+// }
+
+// for(var i = 0; i < Thi.length;i++){
+// 	if(typeof Thi[i] != 'string') break;
+// 	console.log(Thi[i]);
+// }
+
+// for(var i = 0;i < Thi.length;i++){
+// 	if(typeof Thi[i] === 'number') break;
+// 	console.log(Thi[i]);
+// }
+for(var i = Thi.length - 1;i >= 0 ;i--){
+	console.log(Thi[i]);
+}
+/*------------the end---------*/
+
+
+
+/* Coding challenge */
 var Thi = {
-	name : 'thi',
-	birthYear : 1991,
-	address : 'thai binh',
-	family : ['dad','mom','sister'],
-	isMarried : false,
-	calcYear : function (){
-		this.age = 2020 - this.birthYear;
+	fullName : 'la quy thi',
+	bills : [156,43,98,203,129],
+	calcTips : function(){
+		this.tips = [];
+		this.finalValues = [];
+
+		for(var i = 0;i<this.bills.length;i++){
+			var percentage;
+			var bill = this.bills[i];
+
+			if(bill < 50 ){
+				percentage = 0.2;
+			}else if(bill >= 50 && bill < 200 ){
+				percentage = 0.15;
+			}else{
+				percentage = 0.1;
+			}
+
+			this.tips[i] = bill * percentage;
+			this.finalValues[i] = bill + bill * percentage;
+		}
 	}
 };
-Thi.calcYear();
-console.log(Thi);
 
+Thi.calcTips();
+console.log(Thi);
 
 
 
