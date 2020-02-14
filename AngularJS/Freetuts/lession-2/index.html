@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div ng-app="myapp">
+        <div ng-controller="HeaderController">
+            <h2>hello,I'm {{data.name}},I come from {{data.country}} </h2>
+        </div>
+        <div ng-controller="ContentController">
+            <h4>I'm trying to become a {{job.name}} developer,and I think I {{job.condition}} do it. </h4>
+        </div>
+    </div>
+
+    <script src="angular.min.js"></script>
+    <script>
+       angular.module("myapp",[]).controller("HeaderController",function ($scope){
+           $scope.data = {
+               name : 'la quy thi',
+               country : 'thai binh'
+           };
+       }).controller("ContentController",function ($scope){
+           $scope.job = {
+               name : 'front-end',
+               condition : 'can'
+           };
+       });
+    </script>
+</body>
+</html>
