@@ -1,0 +1,63 @@
+<!-- vi du ve ng-model -->
+<!-- <html>
+    <head>
+        <title>Angular JS Model</title>
+        <style>
+            .my-input {
+                -webkit-transition:all linear 0.5s;
+                transition:all linear 0.5s;
+                background: transparent;
+            }
+            .my-input.ng-invalid {
+                color:white;
+                background: red;
+            }
+        </style>
+    </head>
+    <body ng-app="MyForm">
+        <form name="testForm" ng-controller="ExampleController">
+            <input ng-model="val" ng-pattern="/^\d+$/" name="anim" class="my-input" />
+        </form>
+
+        <script src="angular.min.js"></script>
+        <script>
+            angular.module('MyForm', [])
+                    .controller('ExampleController', ['$scope', function($scope) {
+            }]);
+        </script>
+    </body>
+</html> -->
+
+
+
+<html>
+    <head>
+        <title>Angular JS Model</title>
+        <meta charset='utf8'/>
+        <style>
+            .my-input {
+                -webkit-transition:all linear 0.5s;
+                transition:all linear 0.5s;
+                background: transparent;
+            }
+            .my-input.ng-invalid {
+                color:white;
+                background: red;
+            }
+        </style>
+    </head>
+    <body ng-app="MyForm">
+        <form name="testForm" ng-controller="ExampleController">
+            <h2>Vui lòng nhập dữ liệu nhé</h2>
+            <input ng-model="val" required name="anim" class="my-input" />
+        </form>
+
+
+        <script src="angular.min.js"></script>
+        <script>
+            angular.module('MyForm', [])
+                    .controller('ExampleController', ['$scope', function($scope) {
+            }]);
+        </script>
+    </body>
+</html>
