@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div ng-app="myapp">
+        <div ng-controller="MyController">
+            <h2>my name is {{infor.name}},I come from {{infor.country}} </h2>
+        </div>
+        <div ng-controller="contentcontroller">
+            <h1>I want to become a {{infor.job}},I can {{infor.doIt}} </h1>
+        </div>
+    </div>
+
+    <script src="angular.min.js"></script>
+    <script>
+        angular.module("myapp",[]).controller("MyController",function ($scope){
+            $scope.infor = {
+                name : 'la quy thi',
+                country : 'thai binh'
+            };
+        }).controller("contentcontroller",function ($scope){
+            $scope.infor = {
+                job : 'front-end developer',
+                doIt : 'do it'
+            };
+        });
+    </script>
+</body>
+</html>

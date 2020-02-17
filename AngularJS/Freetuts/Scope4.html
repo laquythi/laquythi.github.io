@@ -1,0 +1,127 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body ng-app="myapp">
+    <div ng-controller="myController">
+        nhap ten ban : 
+        <input type="text" ng-model="username">
+        <button ng-click="sayHello()">In thong bao</button>
+        <hr>
+        {{greeting}}
+    </div>
+
+    <script src="angular.min.js"></script>
+    <script>
+        angular.module("myapp",[]).controller("myController",["$scope",function ($scope){
+            $scope.sayHello = function (){
+                $scope.greeting = 'xin chao ' + $scope.username;
+            }
+        }]);
+    </script>
+</body>
+</html> -->
+
+<!-- pham vi anh huong cua scope -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .show-scope-demo.ng-scope,
+        .show-scope-demo .ng-scope  {
+            border: 1px solid red;
+            margin: 3px;
+        }
+        .show-scope-demo .ng-scope .ng-scope{
+            border:solid 1px blue;
+        }
+    </style>
+</head>
+<body ng-app="myapp">
+    <div class="show-scope-demo">
+        <div ng-controller="HeaderController">
+            hello {{name}}
+        </div>
+        <div ng-controller="ContentController">
+            hello {{name}}
+        </div>
+    </div>
+    <script src="angular.min.js"></script>
+    <script>
+        angular.module("myapp",[]).controller("HeaderController",function ($scope){
+            $scope.name = 'thi la quy';
+        }).controller("ContentController",function ($scope){
+            $scope.name = 'la quy thi';
+        });
+
+    </script>
+</body>
+</html> -->
+
+
+<!-- rootScope -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div ng-app="myapp">
+        <div ng-controller="HeaderController">
+            Hello {{name}}
+        </div>
+        <div ng-controller="ContentController">
+            Hello {{name}}
+        </div>
+    </div>
+    
+    <script src="angular.min.js"></script>
+    <script>
+        angular.module("myapp",[]).controller("HeaderController",function ($scope){
+        }).controller("ContentController",function ($scope,$rootScope){
+            $rootScope.name = 'thi la quy';
+        });
+    </script>
+</body>
+</html> -->
+
+
+<!-- scope long nhau -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body ng-app="myapp">
+    <div ng-controller="TopController">
+        <div ng-controller="HeaderController">
+            hello {{name}}
+        </div>
+        <div ng-controller="BottomController">
+            hi,my name is {{name}}
+        </div>
+        {{name}}
+    </div>
+
+    <script src="angular.min.js"></script>
+    <script>
+        angular.module("myapp",[]).controller("TopController",function ($scope){
+
+        }).controller("HeaderController",function ($scope){
+            $scope.name = 'la quy thi';
+        }).controller("BottomController",function ($scope){
+
+        });
+    </script>
+</body>
+</html>
