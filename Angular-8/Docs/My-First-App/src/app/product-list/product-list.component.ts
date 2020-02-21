@@ -13,6 +13,10 @@ export class ProductListComponent implements OnInit {
   share(){
     window.alert('the product has been shared!');
   }
+
+  onNotify(){
+    window.alert('you will be notified when the product goes sale');
+  }
   ngOnInit(): void {
   }
 
