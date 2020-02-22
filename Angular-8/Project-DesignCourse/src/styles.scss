@@ -1,0 +1,58 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+$primary : rgb(111,0,255);
+body{
+  font-family: 'Roboto' ;
+  margin : 0;
+  font-size: 18px;
+}
+.container{
+  width:80%;
+  margin :0 auto;
+}
+header{
+  background-color: $primary;
+  padding : 1em 0;
+  ul li{
+    list-style: none;
+  }
+  a{
+    color : white;
+    text-decoration: none;
+  }
+  a.logo{
+    font-weight: bold;
+  }
+  a:hover{
+    color:orange;
+  }
+  nav{
+    float:right;
+  }
+  ul{
+    display:flex;
+    margin : 0;
+  }
+  li a{
+    padding : 1rem;
+  }
+}
+span{
+  background-color: orange;
+ }
+ span:hover{
+  cursor: pointer;
+}
+.play-container{
+  padding: 1rem;
+  border:1px solid black;
+}
+.active{
+  background-color:gray;
+  border: 1px solid black;
+}
+.notactive {
+  background-color: orange;
+  border: 5px solid blue;
+}
