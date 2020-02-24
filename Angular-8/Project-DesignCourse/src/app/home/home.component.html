@@ -1,20 +1,24 @@
-<p>home components worked</p>
+<h3>home component</h3>
 <div class="play-container">
-  <p>You've clicked <span (click)="countClick()">this</span>{{clickCounter}} times.</p>
+  <p>You've clicked <span (click)="countClick()">this </span> {{clickCounter}} times. </p>
 </div>
+<br/>
 
 <div class="play-container">
-  <p>
-    <input type="text" [(ngModel)] = "name"> <br/>
-    <strong>You're writting : {{name}} </strong>
-  </p>
+  <input type="text" [(ngModel)] = "name">
+  <p>You're writting <br/> <strong>{{name}}</strong> </p>
 </div>
 
-<div class="play-container" [ngClass]="setClasses()">
-  <ng-template [ngIf]="clickCounter > 4 " [ngIfElse]="none">
-    <p>the click counter <strong>IS GREATER</strong> than 4.</p>
+<br/>
+<div class="play-container" [ngStyle]="{
+  'background-color': clickCounter > 4 ? 'orange' : 'gray',
+  'border': clickCounter > 4 ? '1px solid blue' : '3px solid red'
+}" >
+  <ng-template [ngIf] = "clickCounter > 4" [ngIfElse]="none">
+    <p>The click counter <strong>IS GREATER </strong> than 4.</p>
   </ng-template>
   <ng-template #none>
-    <p>the click counter <strong>is not greater </strong> than 4.</p>
+    <p>The click counter <strong>not greater </strong> than 4.</p>
   </ng-template>
 </div>
+<br/>
