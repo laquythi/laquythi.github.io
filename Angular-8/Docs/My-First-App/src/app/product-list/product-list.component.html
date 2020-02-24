@@ -1,8 +1,8 @@
 <p>product list work</p>
-<div *ngFor="let product of product">
+<div *ngFor="let product of product;index as productId">
 
   <h3>
-   <a [title]="'detail ' + product.name">{{product.name}}</a>
+   <a [title]="'detail ' + product.name" [routerLink]="['/products',productId]">{{product.name}}</a>
   </h3>
 
   <p *ngIf="product.description">
