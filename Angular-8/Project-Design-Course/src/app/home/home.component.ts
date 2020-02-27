@@ -15,4 +15,5 @@ export class HomeComponent implements OnInit {
   countClick(){
     this.clickCounter = this.clickCounter + 1;
   }
+
 }
