@@ -1,0 +1,20 @@
+<!-- main app container -->
+<div class="card text-center m-3">
+  <h3 class="card-header">Angular 8 Pagination Example</h3>
+  <div class="card-body">
+      <div *ngFor="let item of pageOfItems">{{item.name}}</div>
+  </div>
+  <div class="card-footer pb-0 pt-3">
+      <jw-pagination [items]="items" (changePage)="onChangePage($event)"></jw-pagination>
+  </div>
+</div>
+
+<!-- credits -->
+<div class="text-center">
+  <p>
+      <a href="https://jasonwatmore.com/post/2019/06/18/angular-8-simple-pagination-example" target="_top">Angular 8 - Simple Pagination Example</a>
+  </p>
+  <p>
+      <a href="http://jasonwatmore.com" target="_top">JasonWatmore.com</a>
+  </p>
+</div>
