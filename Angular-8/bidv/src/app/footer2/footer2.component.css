@@ -1,0 +1,30 @@
+.row {
+  background: #FFFFFF;
+  opacity: 0.7;
+}
+.row .content {
+  width: 80%;
+}
+.row button {
+  margin: 10px auto;
+  background-color: #00A8FF;
+  color : white;
+}
+.text-center {
+  display:flex;
+  padding-left : 100px;
+}
+.text-center .small{
+  width : 5px;
+  height : 5px;
+  border-radius: 50%;
+  background-color: gray;
+  margin : 10px;
+}
+.text-center .big{
+  width : 15px;
+  height : 15px;
+  border-radius : 50%;
+  background-color: gray;
+  margin : 5px;
+}

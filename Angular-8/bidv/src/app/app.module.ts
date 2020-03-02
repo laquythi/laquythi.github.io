@@ -18,6 +18,9 @@ import { Page2Component } from './page2/page2.component';
 import { Header2Component } from './header2/header2.component';
 import { Body2Component } from './body2/body2.component';
 import { Footer2Component } from './footer2/footer2.component';
+import { UserId2Component } from './user-id2/user-id2.component';
+import { UserPassport2Component } from './user-passport2/user-passport2.component';
+import { UserQrCode2Component } from './user-qr-code2/user-qr-code2.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +40,10 @@ import { Footer2Component } from './footer2/footer2.component';
     Page2Component,
     Header2Component,
     Body2Component,
-    Footer2Component
+    Footer2Component,
+    UserId2Component,
+    UserPassport2Component,
+    UserQrCode2Component
   ],
   imports: [
     BrowserModule,
