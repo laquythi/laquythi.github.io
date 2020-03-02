@@ -1,15 +1,14 @@
 .container{
   background-image: url(../../assets/images/436679.png);
   background-repeat: no-repeat;
-  top: -18px;
-  left: -51px;
-  /* width: 1397px;
-  height: 786px; */
 }
-
-.text-center strong{
-  color: white;
+.row{
+  margin : 25px auto;
 }
-.one{
-  display:flex;
+.three{
+  padding-bottom : 20px;
+}
+.four{
+  margin-top : -30px;
+  padding-bottom : 20px;
 }

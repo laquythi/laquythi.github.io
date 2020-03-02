@@ -7,6 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'bidv';
-  image1 : string = "./images/436679.png";
-  image2 : string = "./images/Bag.png";
 }

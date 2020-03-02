@@ -1,0 +1,16 @@
+.text-center{
+  padding : 10px;
+  background-color: blue;
+  opacity: 40%;
+  border-radius: 20px;
+}
+.text-center p{
+  padding-top : 5px;
+  color:white;
+}
+.text-center a:hover{
+  text-decoration: none;
+}
+.text-center p:hover{
+  color:black;
+}
