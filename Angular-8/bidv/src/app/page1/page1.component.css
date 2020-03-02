@@ -2,13 +2,25 @@
   background-image: url(../../assets/images/436679.png);
   background-repeat: no-repeat;
 }
+.text-center a{
+  font-size : 30px;
+  color:white;
+  font-weight: bold;
+}
+.text-center a:hover{
+  text-decoration: none;
+  color : blue;
+}
 .row{
   margin : 25px auto;
+  /* width : 90%; */
 }
 .three{
   padding-bottom : 20px;
 }
 .four{
-  margin-top : -30px;
+  margin-top : -26px;
   padding-bottom : 20px;
+  /* background-color: blue;
+  opacity: 20%; */
 }

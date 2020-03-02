@@ -14,6 +14,10 @@ import { OtherComponent } from './other/other.component';
 import { FooterButtonComponent } from './footer-button/footer-button.component';
 import { FooterLangViComponent } from './footer-lang-vi/footer-lang-vi.component';
 import { FooterLangEngComponent } from './footer-lang-eng/footer-lang-eng.component';
+import { Page2Component } from './page2/page2.component';
+import { Header2Component } from './header2/header2.component';
+import { Body2Component } from './body2/body2.component';
+import { Footer2Component } from './footer2/footer2.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +33,11 @@ import { FooterLangEngComponent } from './footer-lang-eng/footer-lang-eng.compon
     OtherComponent,
     FooterButtonComponent,
     FooterLangViComponent,
-    FooterLangEngComponent
+    FooterLangEngComponent,
+    Page2Component,
+    Header2Component,
+    Body2Component,
+    Footer2Component
   ],
   imports: [
     BrowserModule,
