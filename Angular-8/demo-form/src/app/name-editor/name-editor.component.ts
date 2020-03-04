@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl} from '@angular/forms';
+
 @Component({
   selector: 'app-name-editor',
   templateUrl: './name-editor.component.html',
@@ -8,7 +9,7 @@ import {FormControl} from '@angular/forms';
 export class NameEditorComponent implements OnInit {
   name = new FormControl('');
   changeName(){
-    this.name.setValue('MicroTec');
+    this.name.setValue('Memories Phamm');
   }
   constructor() { }
 

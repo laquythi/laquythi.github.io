@@ -12,35 +12,34 @@ import {FormArray} from '@angular/forms';
 export class ProfileEditorComponent implements OnInit {
   profileForm = this.fb.group({
     firstName : ['',Validators.required],
-    lastName : [''],
+    lastName : ['',Validators.required],
     address : this.fb.group({
       street : [''],
       dist : [''],
       city : ['']
     }),
-    aliases: this.fb.array([
+    aliases : this.fb.array([
       this.fb.control('')
     ])
   });
+  updateProfile(){
+    this.profileForm.patchValue({
+      firstName : 'memories phamm',
+      address : {
+        street : 'dinh thon,my dinh'
+      }
+    });
+  }
   onSubmit(){
     console.log(this.profileForm.value);
   }
-  updateProfile(){
-    this.profileForm.patchValue({
-      firstName : 'Thi',
-      lastName : 'La Quy',
-      address : {
-        street : 'dong hung thai binh'
-      }
-    })
-  }
-  get aliases(){
+  get aliases (){
     return this.profileForm.get('aliases') as FormArray;
   }
   addAlias(){
     this.aliases.push(this.fb.control(''));
   }
-  constructor(private fb : FormBuilder) { }
+  constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {
   }
