@@ -23,11 +23,23 @@
       City : <input type="text" formControlName="city">
     </label>
 
-    <button type="submit">Submit</button>
-
     <p>
       <button (click)="updateProfile()">Update Profile</button>
     </p>
   </div>
+
+  <div formArrayName="aliases">
+    <h3>Aliases</h3>
+    <button (click)="addAlias()">Add Alias</button>
+    <div *ngFor="let alias of aliases.controls;let i=index">
+      <label>
+        Alias :
+        <input type="text" [formControlName]="i">
+      </label>
+    </div>
+  </div>
+  <button type="submit">Submit</button>
+
+  <p>Form Status : {{profileForm.status}}</p>
 
 </form>
