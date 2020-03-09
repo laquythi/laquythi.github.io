@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Ten Pipe</th>
+            <th>Input</th>
+            <th>Output</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>FormatData</td>
+            <td>{{describe}}</td>
+            <td>{{describe | formatData}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr/>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <input type="text" class="form-control" [(ngModel)]="idFilter">
+            </td>
+            <td>
+              <input type="text" class="form-control" [(ngModel)]="nameFilter">
+            </td>
+            <td>
+              <select class="form-control" [(ngModel)]="statusFilter">
+                <option value="true">Active</option>
+                <option value="false">De-active</option>
+              </select>
+            </td>
+          </tr>
+          <tr *ngFor="let item of products | filter :idFilter :nameFilter :statusFilter">
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.status ? 'Active' : 'non-active'}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

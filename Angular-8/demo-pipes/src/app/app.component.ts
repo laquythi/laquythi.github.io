@@ -13,4 +13,10 @@ export class AppComponent {
   public array : string[] = ['abc','def','ghi','123','456','789'];
   public total : number = 85.683958754;
   public today : Date = new Date();
+  public product : any = {
+    id : 1,
+    name  : 'Max Pro 2018',
+    price : '2000USD',
+    status : true
+  };
 }
