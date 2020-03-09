@@ -1,0 +1,84 @@
+<div class="container" [style.margin-top.px]="30">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>STT</th>
+            <th>Ten Pipe</th>
+            <th>Du lieu dau vao</th>
+            <th>ket qua hien thi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>UpperCase</td>
+            <td>{{content}}</td>
+            <td>{{content | uppercase}}</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>LowerCase</td>
+            <td>{{content}}</td>
+            <td>{{content | lowercase}}</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>TitleCase</td>
+            <td>{{content}}</td>
+            <td>{{content | titlecase}}</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Title</td>
+            <td>{{title}}</td>
+            <td>{{title | slice:3:14}}</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>number</td>
+            <td>{{amount}}</td>
+            <td>{{amount | number:'6.4-13'}}</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Percen</td>
+            <td>{{result}}</td>
+            <td>{{result | percent:'1.0-4'}}</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>array</td>
+            <td>{{array}}</td>
+            <td>{{array | slice:1}}</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Currency</td>
+            <td>{{total}}</td>
+            <td>{{total | currency:'VND':true:'1.0-8'}}</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Date</td>
+            <td>{{today}}</td>
+            <td>{{today | date:'MM/dd/yy h:mm a'}}</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Date</td>
+            <td>{{today}}</td>
+            <td>{{today | date:'h:mm:ss a zzzz'}}</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Date</td>
+            <td>{{today}}</td>
+            <td>{{today | date:'MMMM d, y'}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
