@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xl-6 col-lg-6 col-md-6">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h4 class="panel-title">{{title}}</h4>
+        </div>
+        <div class="panel-body">
+          <ng-container *ngIf="isShowing">
+            <app-life-cycle-hook [total]="total">
+            </app-life-cycle-hook>
+          </ng-container>
+          <button class="btn btn-primary" (click)="onToggle()">Toggle</button>
+          <br/>
+          so thu 1: <input type="text" class="form-control" [(ngModel)]="a">
+          so thu 2 : <input type="text" class="form-control" [(ngModel)]="b"><br/>
+          <button type="button" class="btn btn-danger" (click)="amount()">Tinh Tong</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
