@@ -1,0 +1,22 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h4 class="panel-title">Them Sua Phim</h4>
+  </div>
+  <div class="panel-body">
+    <form action="" role="form">
+      <div class="form-group">
+        <label for="">Ten Phim</label>
+        <input type="text" class="form-control" #name>
+      </div>
+      <div class="form-group">
+        <label for="">Duong Dan</label>
+        <input type="text" class="form-control" #link>
+      </div>
+      <div class="form-group">
+        <label for="">Tac Gia</label>
+        <input type="text" class="form-control" #author>
+      </div>
+      <button  type="button" class="btn btn-primary" (click)="addVideo(name.value,link.value,author.value)">Them</button>
+    </form>
+  </div>
+</div>

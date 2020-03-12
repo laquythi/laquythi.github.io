@@ -1,0 +1,26 @@
+<div class="panel panel-danger">
+  <div class="panel-heading">
+    <h4 class="panel-title">danh sach phim</h4>
+  </div>
+  <div class="panel-body">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>STT</th>
+          <th>Name</th>
+          <th>Link</th>
+          <th>Author</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of movies;let i = index">
+          <td>{{i+1}}</td>
+          <td>{{item.name}}</td>
+          <td> <a [href]=" 'https://vi.wikipedia.org/wiki/The_Social_Network' ">Link</a> </td>
+          <td>{{item.author}}</td>
+        </tr>
+      </tbody>
+    </table>
+    {{movies | json}}
+  </div>
+</div>
