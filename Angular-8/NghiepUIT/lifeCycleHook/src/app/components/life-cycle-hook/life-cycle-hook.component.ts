@@ -18,7 +18,7 @@ export class LifeCycleHookComponent implements OnInit ,OnChanges ,OnDestroy{
       {
         id : 1,
         name : 'canyon vanilla',
-        statsu : true
+        status : true
       }
     ];
   }
