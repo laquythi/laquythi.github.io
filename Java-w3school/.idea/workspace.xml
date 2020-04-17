@@ -1,20 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95d2cec0-7ceb-4dc5-a6cf-5c3a892408f9" name="Default Changelist" comment="" />
+    <list default="true" id="95d2cec0-7ceb-4dc5-a6cf-5c3a892408f9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/javacore-basic/Object-classes/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacore-basic/Object-classes/out/production/Object-classes/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/javacore-basic/Object-classes/out/production/Object-classes/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacore-basic/Object-classes/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/javacore-basic/Object-classes/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacore-basic/basic-syntax/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacore-basic/basic-syntax/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacore-basic/basic-syntax/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacore-basic/basic-syntax/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacore-basic/basic-syntax/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacore-basic/basic-syntax/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacore-basic/basic-syntax/basic-syntax.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacore-basic/basic-syntax/out/production/basic-syntax/com/company/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacore-basic/basic-syntax/src/com/company/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NOTE/new word.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../NOTE/new word.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NOTE/new words.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../NOTE/new words.xlsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1ac4RI4FkF9OfkxqxP36T4okfEQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/javacore-basic" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -39,6 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1587021538501</updated>
       <workItem from="1587021542744" duration="79000" />
+      <workItem from="1587106987166" duration="27000" />
     </task>
     <servers />
   </component>
@@ -46,10 +69,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="462" y="105" key="FileChooserDialogImpl" timestamp="1587021618365">
+    <state x="462" y="105" key="FileChooserDialogImpl" timestamp="1587107012259">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="462" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1587021618365" />
+    <state x="462" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1587107012259" />
     <state x="65" y="0" key="new project wizard" timestamp="1587021620290">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

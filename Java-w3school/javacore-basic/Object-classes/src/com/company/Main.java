@@ -122,7 +122,24 @@ public class Main {
 //            i++;
 //        }while (i<names.length);
 
+//        int myId[] = {7,8,9,9,8,7};
+//        System.out.println(myId.length);
 
+//        String[] myFriends = {"anh","phong","trang","tra","nhung"};
+//        int i=0;
+//        do {
+//            System.out.println(myFriends[i]);
+//            i++;
+//        }while (i<myFriends.length);
+
+//        String[] cars = {"bmw","mec","toy","ford"};
+//        for(String i : cars){
+//            System.out.println(i);
+//        }
+
+        int[][] myNumbers = {{1,2,3,4},{5,6,8}}; // => {0,1}
+        int x = myNumbers[1][2]; //
+        System.out.println(x);
 
     }
 }

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/basic-syntax.iml" filepath="$PROJECT_DIR$/basic-syntax.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javacore-basic.iml" filepath="$PROJECT_DIR$/javacore-basic.iml" />
     </modules>
   </component>
 </project>
