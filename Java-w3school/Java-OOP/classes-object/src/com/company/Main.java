@@ -20,20 +20,6 @@
 //    }
 //}
 
-//package com.company;
-//public class Main{
-//    public static void main(String[] args){
-//        OtherClass otherClassObj = new OtherClass();
-//        otherClassObj.printSomeThing();
-//    }
-
-//package com.company;
-//public class Main{
-//    public static void main(String[] args){
-//        OtherClass otherClassObj = new OtherClass();
-//        otherClassObj.printSomeThing();
-//    }
-//}
 
 //  Java Class Attributes
 //package com.company;
@@ -104,3 +90,74 @@
 //}
 
 //  Java class Methods
+//package com.company;
+//public class Main{
+//    static void firstMethod(){
+//        System.out.println("first method on class Methods");
+//    }
+//    public static void main(String[] args){
+//        firstMethod();
+//    }
+//}
+
+//package com.company;
+//public class Main{
+//    static void myStaticMethod(){
+//        System.out.println("static method can be called without creating object");
+//    }
+//    public void myPublicMethod(){
+//        System.out.println("public method must be called by creating object");
+//    }
+//    public static void main(String[] args){
+//        myStaticMethod();
+//        Main newObj = new Main();
+//        newObj.myPublicMethod();
+//    }
+//}
+
+//  Access Methods With an Object
+//package com.company;
+//public class Main{
+//    public void fullOption(){
+//        System.out.println("your choice is full option");
+//    }
+//    public void yourPrice(int price){
+//        System.out.println("your price is " + price);
+//    }
+//    public static void main(String[] args){
+//        Main newObj = new Main();
+//        newObj.fullOption();
+//        newObj.yourPrice(200);
+//    }
+//}
+
+//  Using Multiple Classes
+//package com.company;
+//public class Main{
+//    public static void main(String[] args){
+//        Car newObj = new Car();
+//        newObj.fullOption();
+//        newObj.maxSpeed(200);
+//    }
+//}
+
+//  Java Constructors
+//package com.company;
+//public class Main{
+//    String name;
+//    public Main(){
+//        name = "la quy thi";
+//    }
+//    public static void main(String[] args){
+//        Main newObj = new Main();
+//        System.out.println(newObj.name);
+//    }
+//}
+
+//  Java Constructor Parameters
+package com.company;
+public class Main{
+    public static void main(String[] args){
+        
+    }
+}
