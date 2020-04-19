@@ -44,14 +44,35 @@
 //}
 
 //      Method with if else
+//package com.company;
+//public class Main{
+//    static void checkAge(int age){
+//        if(age > 18){
+//            System.out.println("you can married");
+//        }else{
+//            System.out.println("you can\'t married");
+//        }
+//    }
+//    public static void main(String[] args){
+//        checkAge(19);
+//    }
+//}
+
+//      Java methods overloading
+
 package com.company;
 public class Main{
-    static int check(int x){
-        if(x >= 18){
-            System.out.println();
-        }
+    static int plusMethod(int x,int y){
+        return x + y;
+    }
+    static double plusMethodDouble(double x,double y){
+        return x + y;
     }
     public static void main(String[] args){
-
+        int sum1 = plusMethod(4,5);
+        double sum2 = plusMethodDouble(5.4,7.6);
+        System.out.println(sum1);
+        System.out.println(sum2);
     }
 }
+
