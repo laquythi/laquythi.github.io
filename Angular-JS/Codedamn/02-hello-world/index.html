@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myLanguageApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="angular.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container text-center" style="margin-top:20px;">
+        <input type="text" ng-model="name">
+        <div ng-bind="name"></div>
+        <div ng-init="language='angularJS'">
+            {{language}}
+        </div>
+    </div>
+    <div class="container text-center">
+        <div
+            ng-init="myCollection=[{name:'48',style:'sporter'},{name:'breakout',style:'dyna'},{name:'fat bob',style:'softtail'},{name:'muscle',style:'v-rod'}]">
+            <p ng-repeat="item in myCollection">
+                <a href="">name : {{item.name}}</a>
+                <a href="">style : {{item.style}}</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="container" ng-controller="languages">
+        select you language:
+        <button ng-click="scala()">Scala</button>
+        <button ng-click="ruby()">Ruby</button>
+        <button ng-click="python()">Python</button>
+        <button ng-click="java()">Java</button>
+        <p>you have selected: {{myLanguage}}</p>
+    </div>
+
+    <script>
+        // var application = angular.module('myLanguageApp', []);
+        // application.controller('languages', ['$scope', function ($scope) {
+        //     $scope.myLanguage = 'None';
+
+        //     $scope.scala = function () {
+        //         $scope.myLanguage = 'scala';
+        //     }
+        //     $scope.ruby = function () {
+        //         $scope.myLanguage = 'ruby';
+        //     }
+        //     $scope.python = function () {
+        //         $scope.myLanguage = 'python';
+        //     }
+        //     $scope.java = function () {
+        //         $scope.myLanguage = 'java';
+        //     }
+        // }]);
+
+        var application = angular.module('myLanguageApp',[]);
+        application.controller('languages',['$scope',function ($scope){
+            $scope.myLanguage = 'None';
+
+            $scope.scala = function(){
+                $scope.myLanguage = 'Scala';
+            }
+            $scope.ruby = function(){
+                $scope.myLanguage = 'Ruby';
+            }
+            $scope.python = function (){
+                $scope.myLanguage = 'Python';
+            }
+            $scope.java = function (){
+                $scope.myLanguage = 'Java';
+            }
+        }]);
+    </script>
+</body>
+
+</html>

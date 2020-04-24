@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.onepay:onesm-http-client:1.0.20150807">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/onepay/onesm-http-client/1.0.20150807/onesm-http-client-1.0.20150807.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/onepay/onesm-http-client/1.0.20150807/onesm-http-client-1.0.20150807-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/onepay/onesm-http-client/1.0.20150807/onesm-http-client-1.0.20150807-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

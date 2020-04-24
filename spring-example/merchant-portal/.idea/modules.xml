@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../merchant-portal/ma-common/ma-common.iml" filepath="$PROJECT_DIR$/../../merchant-portal/ma-common/ma-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../merchant-portal/ma-eventbus/ma-eventbus.iml" filepath="$PROJECT_DIR$/../../merchant-portal/ma-eventbus/ma-eventbus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../merchant-portal/ma-service/ma-service.iml" filepath="$PROJECT_DIR$/../../merchant-portal/ma-service/ma-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../merchant-portal/ma-web/ma-web.iml" filepath="$PROJECT_DIR$/../../merchant-portal/ma-web/ma-web.iml" />
+    </modules>
+  </component>
+</project>

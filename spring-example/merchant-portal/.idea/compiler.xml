@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ma-web" />
+        <module name="ma-service" />
+        <module name="ma-eventbus" />
+        <module name="ma-common" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ma-common" target="1.8" />
+      <module name="ma-eventbus" target="1.8" />
+      <module name="ma-service" target="1.8" />
+      <module name="ma-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
