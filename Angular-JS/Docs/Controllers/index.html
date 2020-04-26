@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="angular.min.js"></script>
+    <script src="controllers.js"></script>
+</head>
+<body ng-app="spicyApp2">
+    <div ng-controller="SpicyController">
+        <!-- <input ng-model="customSpice">
+        <button ng-click="spicy('chili')">Chili</button>
+        <button ng-click="spicy(customSpice)">Custom spice</button>
+        <p>The food is {{spice}} spicy !</p> -->
+
+        <input ng-model="customSpice">
+        <button ng-click="spicy('chili)'">Chili</button>
+        <button ng-click="spicy(customSpice)">Custom spice</button>
+        <p>The food is {{spice}} spicy !</p>
+    </div> 
+</body>
+</html>

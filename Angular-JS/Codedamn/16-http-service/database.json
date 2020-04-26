@@ -1,0 +1,20 @@
+{
+    "record":[
+        {
+            "name":"thi la quy",
+            "age":"29"
+        },
+        {
+            "name":"hong anh la",
+            "age":"13"
+        },
+        {
+            "name":"la quy phong",
+            "age":"8"
+        },
+        {
+            "name":"nhung la",
+            "age":"20"
+        }
+    ]
+}
