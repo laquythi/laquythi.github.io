@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="angular.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body ng-app="myApp">
+    <!-- ng-model & ng-init -->
+    <!-- <div>
+        Name : <input type="text" ng-model="name"><br/>
+        you're writting {{name}}
+    </div> -->
+
+    <!-- <div ng-init="name='la quy thi'">
+        Name : <input type="text" ng-model="name"><br/>
+        You're writting {{name}}
+    </div> -->
+
+    <!-- ng-repeat -->
+    <!-- <div ng-init="arrayName=['thi','trang','phong','hong anh']">
+        <ul ng-repeat="name in arrayName">
+            <li style="list-style: none;">{{name}}</li>
+        </ul>
+    </div> -->
+    <!-- <div ng-init="objectName=[
+        {name:'thi la quy',age : 29},
+        {name : 'la trang',age : 24},
+        {name : 'la hong anh',age : 13},
+        {name : 'la quy phong', age : 8}
+    ]">
+        <ul ng-repeat="init in objectName">
+            <li>{{init.name + " " + init.age}}</li>
+        </ul>
+    </div> -->
+
+    <!-- create new directive -->
+    <div>
+        <w3-test-directive></w3-test-directive>
+    </div>
+
+    <!-- <script>
+        var app = angular.module('myApp',[]);
+        app.directive('w3TestDirective',function(){
+            return{
+                template: "<h4>I'm creating a first directive</h4>"
+            }
+        })
+    </script> -->
+</body>
+</html>
