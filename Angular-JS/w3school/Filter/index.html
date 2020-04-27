@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="angular.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body ng-app="myApp">
+
+    <!-- pipe uppercase character -->
+    <!-- <div ng-controller="myCtrl">
+        <input type="text" ng-model="yourName"><br/>
+        <p>your name is {{yourName | lowercase}}</p>
+    </div> -->
+    
+    <!-- sort by name,age -->
+    <!-- <div ng-controller="myCtrl">
+        <ul ng-repeat="name in listName | orderBy : 'age' ">
+            {{name.name + " " + name.age}}
+        </ul>
+    </div> -->
+
+    <!-- filter by currency
+    <div ng-controller="myCtrl">
+        <p>Your cost is : {{cost | currency}}</p>
+    </div> -->
+
+    <!-- filter by character -->
+    <!-- <div ng-controller="myCtrl">
+        <p ng-repeat="name in listName | filter : 't' ">listName filter by character 't' is :   {{name}}</p>
+    </div> -->
+
+    <!-- filter array name -->
+    <!-- <div ng-controller="myCtrl">
+        <p>type anything on input field:</p>
+        <input type="text" ng-model="test">
+        <ul ng-repeat="name in listName | filter : test ">
+            <li><a href="">{{name}}</a></li>
+        </ul>
+    </div> -->
+
+    <!-- sort the table -->
+    <div ng-controller="myCtrl">
+        <table class="table table-bordered">
+            <tr>
+                <th ng-click="orderByMe('name')">Name</th>
+                <th ng-click="orderByMe('age')">Age</th>
+            </tr>
+            <tr ng-repeat="name in objectName | orderBy : orderByMe">
+                <td>{{name.name}}</td>
+                <td>{{name.age}}</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
