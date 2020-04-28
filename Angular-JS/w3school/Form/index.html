@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="angular.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body ng-app='myApp'>
+    <!-- checkbox -->
+    <!-- <div ng-controller='myCtrl'>
+        <form>
+            <h3>click your checkbox to show content below</h3>
+            <input type="checkbox" ng-model="myVar">
+        </form>
+        <h2 ng-show="myVar">Content below</h2>
+    </div> -->
+
+    <!-- RadioButton & ng-switch ng-switch-when -->
+    <!-- <div ng-controller='myCtrl'>
+        <form>
+            <h4>please choice you favorite</h4>
+            <input type="radio" ng-model="cigarette" value="cohiba">Cohiba
+            <input type="radio" ng-model="cigarette" value="canyon">Canyon
+            <input type="radio" ng-model="cigarette" value="fire-cured">Fire-cured
+        </form>
+
+        <div ng-switch="cigarette">
+            <div ng-switch-when="cohiba">
+                <h4>sine 1900</h4>
+                <h3>from Cuba</h3>
+            </div>
+            <div ng-switch-when="canyon">
+                <h4>sine 1990</h4>
+                <h3>from Singapore</h3>
+            </div>
+            <div ng-switch-when="fire-cured">
+                <h4>sine 1950</h4>
+                <h3>from Kentucky</h3>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Application Code -->
+    <div ng-controller='myCtrl'>
+        <form novalidate>
+            first name : <br/>
+            <input type="text" ng-model="user.firstName"><br/>
+            last name : <br/>
+            <input type="text" ng-model="user.lastName"> <br/>
+            <button ng-click="reset()">RESET</button>
+        </form>
+        <p>form = {{user}}</p>
+        <p>master = {{master}}</p>
+    </div>
+</body>
+</html>

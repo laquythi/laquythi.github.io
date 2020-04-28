@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="angular.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body ng-app='myApp'>
+    <!-- mouse events -->
+    <!-- <div ng-controller='myCtrl'>
+        <h4 ng-keydown="count = count + 1">click mouse here</h4>
+        <h6>{{count}}</h6>
+    </div> -->
+
+    <!-- Toggle -->
+   <!-- <div ng-controller="myCtrl">
+       <button ng-click="myFunc()">Click Me!</button>
+       <ul ng-show="showMe">
+           <li><a href="">Cohiba</a></li>
+           <li><a href="">Olivia</a></li>
+           <li><a href="">Gurkha</a></li>
+       </ul>
+   </div> -->
+
+   <!-- $event object -->
+   <div ng-controller="myCtrl">
+       <h4 ng-mousemove="myFunc($event)">Mouse over Me!</h4>
+       <p>Coordinates: {{x + ',' + y}}</p>
+   </div>
+   <p>Mouse over the heading to display the value of clientX and clientY from the event object.</p>
+</body>
+</html>

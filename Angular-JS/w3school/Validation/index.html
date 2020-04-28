@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="angular.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body ng-app="myApp">
+    <div ng-controller="myCtrl">
+        <form name="myForm">
+            <input name="myInput" ng-model="myInput" required>
+        </form>
+        <p>the input's valid state is : </p>
+        <h2>{{myForm.myInput.$valid}}</h2>
+    </div>
+</body>
+</html>
