@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +9,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
     <script src="script.js"></script>
 </head>
+<body ng-app='myApp'>
+    an app
+    <div ng-view>
 
-<body ng-app="myApp">
-    <div>
-        <p><a href="#/!">Index</a></p>
-        <a href="#!about">About</a>
-        <a href="#!product">Product</a>
     </div>
-    <div ng-view></div>
 </body>
-
 </html>
