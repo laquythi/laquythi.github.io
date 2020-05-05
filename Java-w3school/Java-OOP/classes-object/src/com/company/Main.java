@@ -154,10 +154,97 @@
 //    }
 //}
 
-//  Java Constructor Parameters
+
+//  OOP
+//  Class/Objects
+//package com.company;
+//public class Main{
+//    String name = "la quy thi";
+//}
+
+//  OOP Java Class Attributes
+//  package com.company;
+//public class Main{
+//    final int x = 7;
+//    int y = 9;
+//    public static void main(String[] args){
+//        Main myObj = new Main();
+//        System.out.println(myObj.x);
+//        myObj.x = 17;
+//        System.out.println(myObj.x);
+//    }
+//}
+
+//package com.company;
+//public class Main{
+//    String fname = "thi";
+//    String lname = "la quy";
+//    int age = 29;
+//    public static void main(String[] args){
+//        Main myObj = new Main();
+//        System.out.println("name:" + myObj.fname + " " + myObj.lname + " " + myObj.age );
+//    }
+//}
+
+//  OOP Java Class Methods
+//package com.company;
+//public class Main{
+//    static void myMethod(){
+//        System.out.println("hello world");
+//    }
+//    public static void main(String[] args){
+//        myMethod();
+//    }
+//}
+
+//package com.company;
+//public class Main{
+//    // static method
+//    static void myStaticMethod(){
+//        System.out.println("Static methods can be called without creating objects");
+//    }
+//
+//    // public method
+//    public void myPublicMethod(){
+//        System.out.println("Public methods must be called by creating objects");
+//    }
+//
+//    // main method
+//    public static void main(String[] args){
+//        myStaticMethod();
+//
+//        Main newObj = new Main(); // Create an object of Main
+//        newObj.myPublicMethod(); // Call the public method on the object
+//    }
+//}
+
+//  Access Methods With an Object
+// c1
+//package com.company;
+//public class Main{
+//    static void fullThrottle(){
+//        System.out.println("the car is going as fast as it can !");
+//    }
+//
+//    public void maxSpeed(int maxSpeed){
+//        System.out.println("max speed is " + maxSpeed);
+//    }
+//
+//    public static void main(String[] args){
+//        fullThrottle();
+//        Main newCar = new Main();
+//        newCar.maxSpeed(190);
+//    }
+//}
+
+//c2
 package com.company;
 public class Main{
-    public static void main(String[] args){
-        
+    static void fullThrottle(){
+        System.out.println("the car is going as fast as it can !");
+    }
+
+    public void maxSpeed(int maxSpeed){
+        System.out.println("max speed is " +  maxSpeed);
     }
 }
