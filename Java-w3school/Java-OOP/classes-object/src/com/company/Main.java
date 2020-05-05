@@ -238,13 +238,139 @@
 //}
 
 //c2
-package com.company;
-public class Main{
-    static void fullThrottle(){
-        System.out.println("the car is going as fast as it can !");
-    }
+//package com.company;
+//public class Main{
+//    static void fullThrottle(){
+//        System.out.println("the car is going as fast as it can !");
+//    }
+//
+//    public void maxSpeed(int maxSpeed){
+//        System.out.println("max speed is " +  maxSpeed);
+//    }
+//}
 
-    public void maxSpeed(int maxSpeed){
-        System.out.println("max speed is " +  maxSpeed);
+//  OOP Constructor
+//package com.company;
+//public class Main{
+//    final String name ;
+//
+//    public Main(){
+//        name = "la quy thi";
+//    }
+//
+//    public static void main(String[] args){
+//        Main newObj = new Main();
+//        System.out.println(newObj.name);
+//    }
+//}
+
+//package com.company;
+//public class Main{
+//    int x;
+//
+//    public Main(int y){
+//        x = y;
+//    }
+//
+//    public static void main(String[] args){
+//        Main newObj = new Main(1991);
+//        System.out.println(newObj.x);
+//    }
+//}
+
+// many parameters
+//package com.company;
+//public class Main{
+//    String name;
+//    int age;
+//    String address;
+//
+//    public Main(String fullName,int Age,String addressCountry){
+//        name = fullName;
+//        age = Age;
+//        address = addressCountry;
+//    }
+//
+//    public static void main(String[] args){
+//        Main newGuy = new Main("la quy thi",29,"thai binh");
+//        System.out.println("guy name is " + newGuy.name + ".he is " + newGuy.age + " year old," + " he come from " + newGuy.address);
+//    }
+//}
+
+// OOP Java Modifiers
+
+//  OOP Java Encapsulation ??????????
+//package com.company;
+//public class Main{
+//    String name;
+//    public static void main(String[] args){
+//        Main newObj = new Main();
+//        newObj.name = "thi la quy";
+//        System.out.println(newObj.name);
+//    }
+//}
+
+// OOP Java Packages
+//  package from Java API
+//package com.company;
+//import java.util.Scanner;
+//class Main{
+//    public static void main(String[] args){
+//        Scanner myObj = new Scanner(System.in);
+//        System.out.println("enter username");
+//
+//        String username = myObj.nextLine();
+//        System.out.println("username is " + username);
+//    }
+//}
+
+//  OOP Java Polymorphism
+//package com.company;
+//class Main{
+//    public void maxSpeed(){
+//        System.out.println("speed limit at : ");
+//    }
+//}
+//class Mustang extends Main{
+//    public void maxSpeed(){
+//        System.out.println("320 km");
+//    }
+//}
+//class Porches extends Main{
+//    public void maxSpeed(){
+//        System.out.println("280 km");
+//    }
+//}
+//class myMainClass{
+//    public static void main(String[] args){
+//        Main newMustang = new Mustang();
+//        Main newPorches = new Porches();
+//        newMustang.maxSpeed();
+//        newPorches.maxSpeed();
+//    }
+//}
+
+package com.company;
+class Main{
+    public void maxSpeed(){
+        System.out.println("speed limit is : ");
+    }
+}
+class Mustang extends Main{
+    public void maxSpeed(){
+        System.out.println("320 km");
+    }
+}
+class Porches extends Main{
+    public void maxSpeed(){
+        System.out.println("280km");
+    }
+}
+class myMainClass{
+    public static void main(String[] args){
+        Main myMustang = new Mustang();
+        Main myPorches = new Porches();
+        myMustang.maxSpeed();
+        myPorches.maxSpeed();
     }
 }
