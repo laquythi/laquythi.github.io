@@ -41,6 +41,24 @@ public class Main {
 
 
         // Vong lap For
-        
+//        for(int i=1;i<=9;i++){
+//            System.out.println("java OOP chuong " + i);
+//        }
+
+        // Vong lap while
+//        int n = 1;
+//        while(n < 10){
+//            System.out.println("java OOP chuong " + n);
+//            n++;
+//        }
+
+        // Vong lap do while
+//        int i = 1;
+//        do {
+//            System.out.println("java OOP chuong " + i);
+//            i++;
+//        }while(i < 10);
+
+
     }
 }
