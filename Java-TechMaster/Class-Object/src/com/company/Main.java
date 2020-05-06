@@ -1,5 +1,7 @@
 package com.company;
 
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -22,5 +24,18 @@ public class Main {
 //        Mark introduce = new Mark();
 //        System.out.println(introduce);
 
+        //Tham chiếu trực tiếp đến biến instance của lớp cha.
+//        Bike2 newBike = new Bike2();
+//        newBike.display(); // global vehicle
+//        System.out.println(newBike.speed); //100;
+//        Vehicle newVehicle = new Vehicle();
+//        System.out.println(newVehicle.speed); // 50;
+
+        // Gọi trực tiếp Constructor của lớp cha
+//        Bike2 newBike = new Bike2();
+
+        // Gọi trực tiếp phương thức của lớp cha
+        Student newStudent = new Student();
+        newStudent.display();
     }
 }
