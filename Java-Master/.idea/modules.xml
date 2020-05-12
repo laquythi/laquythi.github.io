@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java-Master.iml" filepath="$PROJECT_DIR$/.idea/Java-Master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mutil-Thread/Mutil-Thread.iml" filepath="$PROJECT_DIR$/Mutil-Thread/Mutil-Thread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Synchronization-Thread/Synchronization-Thread.iml" filepath="$PROJECT_DIR$/Synchronization-Thread/Synchronization-Thread.iml" />
+    </modules>
+  </component>
+</project>
