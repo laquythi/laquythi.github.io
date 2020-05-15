@@ -38,9 +38,5 @@ public class BatchJDBC {
         preparedStatement.addBatch();
 
         preparedStatement.executeBatch();
-
-
-
-
     }
 }
