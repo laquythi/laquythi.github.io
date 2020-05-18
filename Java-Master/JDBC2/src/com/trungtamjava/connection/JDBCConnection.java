@@ -27,4 +27,5 @@ public class JDBCConnection {
             System.out.println("ket noi ko thanh cong");
         }
     }
+
 }
