@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {RouterModule} from '@angular/router';
+import {FormsModule,ReactiveFormsModule} from '@angular/forms';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,6 +28,8 @@ import { ShippingComponent } from './shipping/shipping.component';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot([
       {path : '',component:ProductListComponent},
       {path: 'products/:productId', component: ProductDetailsComponent},
