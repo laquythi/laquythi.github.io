@@ -1,22 +1,17 @@
 export const products = [
     {
-        name : 'Iphone X',
-        price : 700,
-        description : 'born in 2017'
+      name: 'Phone XL',
+      price: 799,
+      description: 'A large phone with one of the best screens'
     },
     {
-        name : 'Iphone 11',
-        price : 820,
-        description : 'born in 2019'
+      name: 'Phone Mini',
+      price: 699,
+      description: 'A great phone with one of the best cameras'
     },
     {
-        name : 'Iphone 5S',
-        price : 100,
-        description : 'born in 2013'
-    },
-    {
-        name : 'Iphone 7',
-        price : 350,
-        description : 'born in 2016'
+      name: 'Phone Standard',
+      price: 299,
+      description: ''
     }
-];
+  ];
