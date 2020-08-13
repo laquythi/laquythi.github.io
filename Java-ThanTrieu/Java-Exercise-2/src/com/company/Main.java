@@ -100,11 +100,16 @@ public class Main {
 //            System.out.print(arr[i] + " ");
 //        }
 
+        // cach 2 : lam theo Than Trieu
+
+
+
         // 5 : nhap 2 mang a[n], b[m] , 1 so p (0 <= p <= n)
         // hay chen mang b vao vi tri p cua a. vi du a[4,7,3,5] b[1,4,2,3] p = 2 => a[8] = {4,7,1,4,2,3,3,5};
         // clone code cua than trieu,xem tai file Exercise2-bai5
 
-        // 6 :
+        // 6: xem tai file bai 6
+
     }
 
 
