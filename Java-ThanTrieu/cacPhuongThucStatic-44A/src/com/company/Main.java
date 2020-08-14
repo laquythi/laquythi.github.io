@@ -12,9 +12,11 @@ public class Main {
     }
 
     public void doSomeThing(int n){
+        // phuong thuc doSomeThing ko static,nen ko the dung chung trong ham main(ko the goi pt doSomeThing)
         System.out.println("n = " + n);
     }
     public static void doOtherThing(int n){
+        // pt doOtherThing co bien static nen co the goi dc trong ham main.
         System.out.println("n = " + n);
     }
 }
