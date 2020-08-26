@@ -61,15 +61,12 @@ public class Main {
         System.out.println("nhap ten cuon sach ma ban muon tim : ");
         String ten = new Scanner(System.in).nextLine();
         System.out.println("thong tin ve cuon sach ban muon tim la :");
-        int count = 0;
         for(Map.Entry<Integer,String> item : map.entrySet()){
             if(item.getValue().contains(ten)){
                 System.out.println(item.getKey() + "\t" + item.getValue());
-                count++;
+            }else{
+                System.out.println("cuon sach ban dang tim ko ton tai trong hash map");
             }
-        }
-        if(count == 0){
-            System.out.println("cuon sach ban dang tim ko ton tai trong hash map");
         }
     }
 
