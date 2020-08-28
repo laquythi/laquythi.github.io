@@ -15,9 +15,9 @@ public class TestSinhVien {
 //        System.out.println("ten cua sv 2 la " + sv.getHoTen());
 
         // method
-//        hellenTran.xuatThongTin();
+        hellenTran.xuatThongTin();
 
         // toString method
-        System.out.println(hellenTran);
+//        System.out.println(hellenTran);
     }
 }
