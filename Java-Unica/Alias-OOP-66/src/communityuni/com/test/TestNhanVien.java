@@ -7,9 +7,10 @@ public class TestNhanVien{
 //        NhanVien nv1 = new NhanVien(1,"thi");
 //        NhanVien nv2 = new NhanVien(2,"hellen");
 //        nv1 = nv2; // nv1 tro den vung nho ma nv2 dang quan ly
+//        chi can nv1 hoac nv2 thay doi thi ca 2 se thay doi
+
 //        nv2.setTen("memories");
 //        System.out.println("ten cua nhan vien 1 la " + nv1.getTen()); // luc nay ten nv1 se la "memories".
-//
 //        nv1.setTen("thuy tran");
 //        System.out.println("ten cua nhan vien 2 la " + nv2.getTen()); // thuy tran
 
