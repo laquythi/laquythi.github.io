@@ -15,7 +15,6 @@ public class NhanVien {
     }
 
     // getter setter
-
     public String getTen() {
         return ten;
     }

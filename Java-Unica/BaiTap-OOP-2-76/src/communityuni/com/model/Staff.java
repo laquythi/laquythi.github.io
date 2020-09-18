@@ -17,6 +17,7 @@ public class Staff {
         this.staffList = staffList;
     }
 
+    // method
     public void addStaffMember(StaffMember sm){
         staffList.add(sm);
     }
