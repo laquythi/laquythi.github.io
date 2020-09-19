@@ -15,6 +15,7 @@ public class Point {
         this.y = y;
     }
 
+
     // getter setter
     public int getX() {
         return x;

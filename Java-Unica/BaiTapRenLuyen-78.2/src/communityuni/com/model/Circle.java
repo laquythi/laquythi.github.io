@@ -5,38 +5,37 @@ public class Circle extends Point {
 
     // constructor
     public Circle() {
-
+        super();
     }
-
-    public Circle(double radius) {
+    public Circle(double radius){
         super();
         this.radius = radius;
     }
-
-    public Circle(int x, int y, double radius) {
+    public Circle(int x,int y,double radius){
         super(x, y);
         this.radius = radius;
     }
 
-    // getter setter
 
+    // getter setter
     public double getRadius() {
         return radius;
     }
 
-    public void setRadius(double radius) {
+    public double setRadius(double radius) {
         this.radius = radius;
+        return radius;
     }
 
     // method
     // tinh duong kinh hinh tron
     public double getDiameter(){
-        return this.getRadius()*2;
+        return (this.getRadius())*2;
     }
 
     // tinh chu vi hinh tron
     public double getCircumference(){
-        return Math.PI*this.getRadius()*2;
+        return Math.PI*this.radius*2;
     }
 
     // tinh dien tich hinh tron
