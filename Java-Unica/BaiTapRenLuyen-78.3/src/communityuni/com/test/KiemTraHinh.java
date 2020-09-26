@@ -9,7 +9,6 @@ import java.util.Scanner;
 
 public class KiemTraHinh {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
         Hinh hinhChuNhat = new HinhChuNhat("blue",4.0,5.0);
         System.out.println("chu vi hinh chu nhat la " + hinhChuNhat.tinhChuVi() + " \ndien tich hinh chu nhat la " + hinhChuNhat.tinhDienTich()
         + "\nmau sac hinh chu nhat la " + hinhChuNhat.getMau()

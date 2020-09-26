@@ -7,13 +7,11 @@ public abstract class Hinh {
     public Hinh(String mau) {
         this.mau = mau;
     }
-
     public Hinh() {
         super();
     }
 
     // getter setter
-
     public String getMau() {
         return mau;
     }

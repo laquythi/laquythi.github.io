@@ -34,6 +34,7 @@ public class HinhChuNhat extends Hinh {
         this.chieuRong = chieuRong;
     }
 
+    // chi can khai bao HinhChuNhat extends Hinh, override tu dong render
     @Override
     public double tinhDienTich() {
         return this.getChieuDai()*this.getChieuRong();

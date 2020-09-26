@@ -24,6 +24,7 @@ public class HinhTron extends Hinh {
         this.banKinh = banKinh;
     }
 
+    // chi can khai bao HinhTron extends Hinh, override tu dong render
     @Override
     public double tinhDienTich() {
         return Math.PI*Math.pow(this.getBanKinh(),2);
