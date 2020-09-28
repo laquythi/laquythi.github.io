@@ -13,7 +13,7 @@ public class MiniQuiz {
         }else{
             System.out.println("ban tra loi sai cau so 1,dap an dung la " + "ha noi");
         }
-        
+
         boolean dapAn2 = question2.answerCorrect("DC");
         if(dapAn2 == true){
             System.out.println("ban tra loi dung cau hoi so 2");
