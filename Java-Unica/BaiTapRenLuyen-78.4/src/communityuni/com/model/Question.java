@@ -4,33 +4,35 @@ public class Question implements Complexity {
     private String answer;
     private String question;
 
-    // getter setter
-    public void setAnswer(String answer) {
-        this.answer = answer;
-    }
-    public void setQuestion(String question) {
-        this.question = question;
-    }
-
     // constructor
     public Question() {
         super();
     }
 
-    // method
-    public String getQuestion(){
-        return this.getQuestion();
-    };
-    public String getAnswer(){
-      return this.getQuestion();
-    };
-    public boolean anserCorrect(String anserCorrect){
-        if(anserCorrect.equals(this.answer)){
-            return true;
-        }else{
-            return false;
-        }
+    public Question(String question,String answer) {
+        this.answer = answer;
+        this.question = question;
     }
+
+    // getter setter
+    public String getAnswer() {
+        return answer;
+    }
+    public void setAnswer(String answer) {
+        this.answer = answer;
+    }
+
+    public String getQuestion() {
+        return question;
+    }
+    public void setQuestion(String question) {
+        this.question = question;
+    }
+
+    // answer method
+    public boolean answerCorrect(String answerCorrect){
+        return answerCorrect.equals(this.answer);
+    };
 
     @Override
     public String toString() {
