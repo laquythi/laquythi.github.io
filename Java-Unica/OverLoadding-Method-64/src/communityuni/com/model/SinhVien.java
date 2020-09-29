@@ -15,11 +15,11 @@ public class SinhVien {
         this.ma = ma;
     }
     public SinhVien(int ma,String ten){
-        this(ma);
+        this(ma); // tai su dung ma da khai bao o constructor ben tren
         this.ten = ten;
     }
     public SinhVien(int ma,String ten,Double diem){
-        this(ma, ten);
+        this(ma, ten); // tai su dung ma,ten da khai bao o constructor ben tren
         this.diem = diem;
     }
 

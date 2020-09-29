@@ -9,9 +9,9 @@ public class TestSanPham {
         SanPham sp3 = new SanPham(3,"Sting",8.0);
 
         double t = SanPham.tongTien(sp1,sp2,sp3);
-        System.out.println(t);
+        System.out.println(t); // 27.5
 
         double t2 = SanPham.tongTien(sp1,sp3);
-        System.out.println(t2);
+        System.out.println(t2); // 18.0
     }
 }

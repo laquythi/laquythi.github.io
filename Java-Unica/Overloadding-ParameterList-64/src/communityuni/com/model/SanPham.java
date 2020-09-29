@@ -16,6 +16,7 @@ public class SanPham {
         this.giaSanPham = giaSanPham;
     }
 
+    // setter getter
     public int getMaSanPham() {
         return maSanPham;
     }

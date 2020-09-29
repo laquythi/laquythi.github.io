@@ -7,7 +7,7 @@ public class Main {
         try {
             int x = 5;
             int y = 0;
-            int z = x/x;
+            int z = x/y;
             System.out.println("z = " + z);
             System.out.println("cam on");
         }catch (Exception ex){
