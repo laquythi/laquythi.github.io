@@ -23,7 +23,6 @@ public abstract class Hinh {
     public abstract double tinhDienTich();
     public abstract double tinhChuVi();
 
-    public String layThongTin(){
-        return this.mau + " " + this.tinhDienTich() + " " + this.tinhChuVi();
-    }
+    public abstract String layThongTin();
+
 }

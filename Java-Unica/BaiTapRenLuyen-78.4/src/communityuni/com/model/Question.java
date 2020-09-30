@@ -31,7 +31,8 @@ public class Question implements Complexity {
 
     // answer method
     public boolean answerCorrect(String answerCorrect){
-        return answerCorrect.equals(this.answer);
+//        return answerCorrect.equals(this.answer);
+        return answerCorrect.equalsIgnoreCase(this.answer);
     };
 
     @Override

@@ -33,18 +33,22 @@ public class Circle extends Point {
         return (this.getRadius())*2;
     }
 
+
+    @Override
     // tinh chu vi hinh tron
     public double getCircumference(){
-        return Math.PI*this.radius*2;
+//        return Math.PI*this.radius*2;
+        return (Math.floor(Math.PI*this.radius*2)*100)/100;
     }
 
     // tinh dien tich hinh tron
     public double getArea(){
-        return Math.PI*Math.pow(this.getRadius(),2);
+//        return Math.PI*Math.pow(this.getRadius(),2);
+        return Math.floor(Math.PI*Math.pow(this.getRadius(),2)*100)/100;
     }
 
-    @Override
     public String toString() {
-        return this.getDiameter() + "-" + this.getCircumference() + "-" + this.getArea();
+        return "duong kinh = " + this.getDiameter() + "\nchu vi = " + this.getCircumference() + "\ndien tich = " + this.getArea()
+                + "\nx=" + getX() + ",y=" + getY() ;
     }
 }

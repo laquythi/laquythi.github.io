@@ -27,17 +27,17 @@ public class TestNhanVien {
 
         System.out.println("luong cua nhan vien 2 la " + nv2.getLuong());
 
-//        if (nv1.lonHon(nv2) == true){
-//            System.out.println("nhan vien 1 luong lon hon nhan vien 2 la : " + (nv1.getLuong() - nv2.getLuong()) );
-//        }else{
-//            System.out.println("nhan vien 2 luong lon hon nhan vien 1 la : " + (nv2.getLuong() - nv1.getLuong()));
-//        }
+        if (nv1.lonHon(nv2)){
+            System.out.println("nhan vien 1 luong lon hon nhan vien 2 la : " + (nv1.getLuong() - nv2.getLuong()) );
+        }else{
+            System.out.println("nhan vien 2 luong lon hon nhan vien 1 la : " + (nv2.getLuong() - nv1.getLuong()));
+        }
 
         // cach 2 : so sanh ko dung ham lonHon
-        if( (nv1.getLuong() - nv2.getLuong() > 0) ){
-            System.out.println("nhan vien 1 luong lon hon nhan vien 2 la " + (nv1.getLuong() - nv2.getLuong()) );
-        }else{
-            System.out.println("nhan vien 2 luong lon hon nhan vien 1 la " + (nv2.getLuong() - nv1.getLuong()) );
-        }
+//        if( (nv1.getLuong() - nv2.getLuong() > 0) ){
+//            System.out.println("nhan vien 1 luong lon hon nhan vien 2 la " + (nv1.getLuong() - nv2.getLuong()) );
+//        }else{
+//            System.out.println("nhan vien 2 luong lon hon nhan vien 1 la " + (nv2.getLuong() - nv1.getLuong()) );
+//        }
     }
 }

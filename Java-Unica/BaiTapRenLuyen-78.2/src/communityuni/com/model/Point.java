@@ -1,6 +1,6 @@
 package communityuni.com.model;
 
-public class Point {
+public abstract class Point {
     private int x;
     private int y;
 
@@ -37,4 +37,7 @@ public class Point {
     public String toString() {
         return this.x + "-" + this.y;
     }
+
+    public abstract double getCircumference();
+    public abstract double getArea();
 }

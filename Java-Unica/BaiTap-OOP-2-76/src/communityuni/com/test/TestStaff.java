@@ -13,7 +13,7 @@ public class TestStaff {
         thi.setAddress("hai ba trung");
         thi.setPhone("123456");
         thi.setPayRate(0.12);
-        thi.setSocialSecurityNumber("SEC 151789987");
+        thi.setSocialSecurityNumber("SEC 789987");
         st.addStaffMember(thi);
 
         Employee hellen = new Employee();
@@ -21,7 +21,7 @@ public class TestStaff {
         hellen.setAddress("thanh xuan");
         hellen.setPhone("654321");
         hellen.setPayRate(0.66);
-        hellen.setSocialSecurityNumber("SEC 27041993");
+        hellen.setSocialSecurityNumber("SEC 270493");
         st.addStaffMember(hellen);
 
         Executive an = new Executive();

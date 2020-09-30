@@ -15,4 +15,8 @@ public class HinhVuong extends HinhChuNhat{
     public HinhVuong(String mau,double doRong) {
         super(mau,doRong,doRong);
     }
+
+    public String layThongTin() {
+        return "------------------\nmau sac - " + this.getMau() + "\ndien tich - " + this.tinhDienTich() + "\nchu vi - " + this.tinhChuVi();
+    }
 }

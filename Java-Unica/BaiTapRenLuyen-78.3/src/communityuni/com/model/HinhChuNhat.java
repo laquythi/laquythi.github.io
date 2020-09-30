@@ -44,4 +44,11 @@ public class HinhChuNhat extends Hinh {
     public double tinhChuVi() {
         return (this.getChieuDai()*2) + (this.getChieuRong()*2);
     }
+
+    @Override
+    public String layThongTin() {
+        return "------------------\nmau sac - " + this.getMau() + "\ndien tich - " + this.tinhDienTich() + "\nchu vi - " + this.tinhChuVi();
+    }
+
+
 }

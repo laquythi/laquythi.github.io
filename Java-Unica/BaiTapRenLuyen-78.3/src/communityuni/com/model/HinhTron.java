@@ -8,7 +8,9 @@ public class HinhTron extends Hinh {
         super(mau);
         this.banKinh = banKinh;
     }
+
     public HinhTron(double banKinh) {
+        super();
         this.banKinh = banKinh;
     }
 
@@ -33,5 +35,10 @@ public class HinhTron extends Hinh {
     @Override
     public double tinhChuVi() {
         return Math.PI*this.getBanKinh()*2;
+    }
+
+    @Override
+    public String layThongTin() {
+        return "------------------\nmau sac - " + this.getMau() + "\ndien tich - " + this.tinhDienTich() + "\nchu vi - " + this.tinhChuVi();
     }
 }
