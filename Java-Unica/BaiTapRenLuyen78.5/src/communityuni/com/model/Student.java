@@ -7,12 +7,13 @@ public class Student {
     private String shoolAddress;
 
     // constructor
-//    public Student(String firstName, String lastName, String homeAddress, String shoolAddress) {
-//        this.firstName = firstName;
-//        this.lastName = lastName;
-//        this.homeAddress = homeAddress;
-//        this.shoolAddress = shoolAddress;
-//    }
+    public Student(String firstName, String lastName, String homeAddress, String shoolAddress) {
+        super();
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.homeAddress = homeAddress;
+        this.shoolAddress = shoolAddress;
+    }
 
     public Student() {
         super();
@@ -51,18 +52,12 @@ public class Student {
         this.shoolAddress = shoolAddress;
     }
 
-//    @Override
-//    public String toString() {
-//        return firstName + " " + lastName + " " + homeAddress + " " + shoolAddress;
-//    }
-
-
     @Override
     public String toString() {
         return "Student:" +
-                "firstName = " + firstName +
-                ", lastName = " + lastName  +
-                ", homeAddress = " + homeAddress  +
-                ", shoolAddress = " + shoolAddress;
+                "\nfirstName = " + firstName +
+                ",\nlastName = " + lastName  +
+                ",\nhomeAddress = " + homeAddress  +
+                ",\nshoolAddress = " + shoolAddress;
     }
 }

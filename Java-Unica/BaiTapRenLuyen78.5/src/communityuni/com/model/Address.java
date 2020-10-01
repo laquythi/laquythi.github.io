@@ -69,11 +69,10 @@ public class Address extends Student {
 
     @Override
     public String toString() {
-        return "Address:" +
-                "streetAddress='" + streetAddress + '\'' +
-                ", city='" + city + '\'' +
-                ", state='" + state + '\'' +
-                ", zipCode=" + zipCode +
+        return "\nstreetAddress='" + streetAddress + '\'' +
+                ",\ncity='" + city + '\'' +
+                ",\nstate='" + state + '\'' +
+                ",\nzipCode=" + zipCode +
                 '.';
     }
 }
