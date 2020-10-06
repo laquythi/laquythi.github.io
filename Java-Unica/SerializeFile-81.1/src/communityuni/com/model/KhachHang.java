@@ -7,15 +7,19 @@ public class KhachHang implements Serializable {
     private String ten;
 
     // constructor
+
     public KhachHang(int ma, String ten) {
+        super();
         this.ma = ma;
         this.ten = ten;
     }
-    public KhachHang(){
+
+    public KhachHang() {
         super();
     }
 
     // getter setter
+
     public int getMa() {
         return ma;
     }

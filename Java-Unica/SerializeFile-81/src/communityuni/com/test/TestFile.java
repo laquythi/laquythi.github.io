@@ -12,7 +12,6 @@ public class TestFile {
 //        dsKH.add(new KhachHang(1,"hellen"));
 //        dsKH.add(new KhachHang(2,"tracy"));
 //        dsKH.add(new KhachHang(3,"trang lax"));
-//        dsKH.add(new KhachHang(4,"memories"));
 //
 //        boolean kq = SerializeFileFactory.luuFile(dsKH,"D:/dataKhachHang.txt");
 //        if(kq == true){
