@@ -8,6 +8,7 @@ public class MyThread extends Thread {
             try {
                 Thread.sleep(1000);
                 System.out.println(Thread.currentThread().getName()+":i = " + i);
+                System.out.println("---------------");
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
