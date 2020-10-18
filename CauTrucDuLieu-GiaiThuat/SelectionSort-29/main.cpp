@@ -39,17 +39,19 @@ void selectionSort(int M[],int n){
 	int min;
 	for(int i=0;i<n-1;i++){
 		// gia su so dau tien trong day la nho nhat (min)
+		// dang co BUG,neu nhap so phan tu la chan(1 3 5 7 9....) thi thuat toan dung,neu nhap so ptu le (2 4 6 8 ...) thi sap xep sai
+		// resolved BUG
 		min = i;
 		for(int j=i+1;j<n;j++){
 			if(M[j] < M[min]){
 				min = j;
 			}
-			if(min != i){
+		}
+		if(min != i){
 				int temp = M[i];
 				M[i] = M[min];
 				M[min] = temp;
 			}
-		}
 	}
 	xuatMang(M,n);
 }
