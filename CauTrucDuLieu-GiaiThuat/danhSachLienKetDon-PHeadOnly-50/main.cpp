@@ -154,6 +154,19 @@ void sortList(SingleList &list){
 	}
 }
 
+void freeMemory(SingleList &list){
+	cout<<"bat dau thu hoi bo nho\n";
+	while(list.pHead != NULL){
+		Node *ptmp = list.pHead;
+		list.pHead = list.pHead -> pNext;
+		ptmp->pNext = NULL;
+		cout<<"da xoa so "<<ptmp->data<<"\n";
+		delete ptmp;
+		ptmp = NULL;
+	}
+	cout<<"xoa thanh cong danh sach.";
+}
+
 int main(int argc, char** argv) {
 	SingleList list;
 	Intialize(list);
@@ -188,5 +201,7 @@ int main(int argc, char** argv) {
 	sortList(list);
 	cout<<"\nlist sau khi sort la : \n";
 	printList(list);
+	
+	freeMemory(list);
 	return 0;
 }
