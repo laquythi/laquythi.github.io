@@ -23,5 +23,8 @@ public class TestSanPham {
         for (SanPham sp: dsSp) {
             System.out.println(sp);
         }
+
+//        int a = 012;
+//        System.out.println(a); print a = 10 ???????
     }
 }

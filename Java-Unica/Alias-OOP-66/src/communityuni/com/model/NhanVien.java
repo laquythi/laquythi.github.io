@@ -19,6 +19,7 @@ public class NhanVien implements Cloneable{
         return null;
     }
 
+    // getter & setter
     public int getMa() {
         return ma;
     }

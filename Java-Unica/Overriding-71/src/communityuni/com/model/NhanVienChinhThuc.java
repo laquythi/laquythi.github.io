@@ -1,6 +1,7 @@
 package communityuni.com.model;
 
 public class NhanVienChinhThuc extends NhanVien{
+
     // override la truong hop tap hop cac lop co quan he huyet thong(cha,con)
     // cac phuong thuc(vi du o day tinhLuong) giong nhau o cac lop quan he huyet thong,co cung signature(int),khac nhau ve noi dung ham
     @Override

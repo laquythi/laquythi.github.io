@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:npm_and_yarn" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:npm_and_yarn" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:Angular-8" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:npm_and_yarn" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:Angular-8" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:Attribute-Directives" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:npm_and_yarn" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:Angular-8" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:bidv" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:npm_and_yarn" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:Angular-8" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:demo-reactive-form" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="02945797-c40c-468d-8859-b059ef357569" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Interface-70/src/communityuni/com/model/IGiaiTri.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Interface-70/src/communityuni/com/model/ILamViec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Interface-70/src/communityuni/com/model/SinhVien.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Interface-70/src/communityuni/com/model/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OverLoadding-Method-64/src/communityuni/com/model/SinhVien.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OverLoadding-Method-64/src/communityuni/com/model/SinhVien.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Overloadding-ParameterList-64/out/production/Overloadding-ParameterList-64/communityuni/com/model/SanPham.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Overloadding-ParameterList-64/out/production/Overloadding-ParameterList-64/communityuni/com/model/SanPham.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Overloadding-ParameterList-64/src/communityuni/com/model/SanPham.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Overloadding-ParameterList-64/src/communityuni/com/model/SanPham.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Overloadding-ParameterList-64/src/communityuni/com/test/TestSanPham.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Overloadding-ParameterList-64/src/communityuni/com/test/TestSanPham.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Static-OOP-67/src/communityuni/com/model/LeanStatic.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Static-OOP-67/src/communityuni/com/model/LeanStatic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TryCatchFinally-26/out/production/TryCatchFinally-26/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TryCatchFinally-26/out/production/TryCatchFinally-26/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TryCatchFinally-26/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TryCatchFinally-26/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NOTE/12E86D5C.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NOTE/new words.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../NOTE/new words.xlsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1gmKYmr2mUQRxj1wYKdA4qqRKDn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
+  <component name="RunManager" selected="Application.TestNhanVien">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+      <module name="Overriding-71" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestNhanVien" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="communityuni.com.test.TestNhanVien" />
+      <module name="Overriding-71" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="communityuni.com.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.TestNhanVien" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestNhanVien" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="02945797-c40c-468d-8859-b059ef357569" name="Default Changelist" comment="" />
+      <created>1598714379161</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598714379161</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1598714562455">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1598714562455" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1598719195367">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1598719195367" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1598719195367">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1598719195367" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1598719195367">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1598719195367" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1598719195367">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1598719195367" />
+    <state x="65" y="0" key="new project wizard" timestamp="1598951056506">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1598951056506" />
+  </component>
+</project>

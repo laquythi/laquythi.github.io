@@ -5,7 +5,7 @@ public class LeanStatic {
 
     public void setA(int value) {
         a = value; // a la instance variable,value la local variable,a va value co ten ko giong nhau
-        // nen co the viet a = value.
+        // nen co the(chi can) viet a = value.
     }
     public int getA() {
         return a;

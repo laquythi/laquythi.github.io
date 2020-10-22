@@ -4,6 +4,19 @@ public class SinhVien {
     private String hoTen;
     private Double diem;
 
+    // constructor
+    public SinhVien(String hoTen,Double diem){
+        this.hoTen = hoTen;
+        this.diem = diem;
+//        System.out.println("day la constructor co doi so.");
+    }
+
+    public SinhVien(){
+//        System.out.println("day la constructor mac dinh");
+        this.hoTen = "random name";
+    }
+
+    // getter setter
     public String getHoTen() {
         return hoTen;
     }
@@ -18,17 +31,6 @@ public class SinhVien {
 
     public void setDiem(Double diem) {
         this.diem = diem;
-    }
-
-    public SinhVien(String hoTen,Double diem){
-        this.hoTen = hoTen;
-        this.diem = diem;
-//        System.out.println("day la constructor co doi so.");
-    }
-
-    public SinhVien(){
-//        System.out.println("day la constructor mac dinh");
-        this.hoTen = "random name";
     }
 
     public void xuatThongTin(){

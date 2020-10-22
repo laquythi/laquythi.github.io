@@ -2,7 +2,7 @@ package communityuni.com.model;
 
 public class TamGiac {
     // co 2 loai : service method & support method
-    // service method dung de cac lop khac goi toi,con support method chi su dung trong noi ham
+    // service method dung de cac lop khac goi toi,con support method chi su dung trong noi ham (su dung access modify private)
     // vi du o duoi,tinhChuVi,tinhDienTich la service method(vi dc class TestTamGiac goi toi),trong khi tinhNuaChuVi(private) chi la support method
     // vi tinhNuaChuVi chi dc goi trong class TamGiac
     private double canhA;

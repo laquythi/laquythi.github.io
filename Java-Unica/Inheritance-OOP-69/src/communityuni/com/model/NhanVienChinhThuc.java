@@ -1,6 +1,7 @@
 package communityuni.com.model;
 
 public class NhanVienChinhThuc extends NhanVien{
+
     // 2 constructor ko dc thua huong,phai tu khai bao
     public NhanVienChinhThuc(){
         super();
@@ -9,6 +10,7 @@ public class NhanVienChinhThuc extends NhanVien{
         super(ma, ten);
     }
 
+    // auto render override when class NhanVienChinhThuc extends class NhanVien
     @Override
     public void tinhLuong() {
         super.tinhLuong();

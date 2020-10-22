@@ -71,6 +71,7 @@ public class Main {
     public static void timKiem() {
         System.out.println("moi ban nhap ten can tim kiem :");
         String ten = new Scanner(System.in).nextLine();
+        
         if(dsSinhVien.contains(ten) == true){
             System.out.println("ten ban nhap co ton tai trong danh sach sinh vien : ");
         }else{
@@ -81,7 +82,9 @@ public class Main {
     public static void xoaDanhSach() {
         System.out.println("moi ban nhap vi tri can xoa : ");
         int viTri = new Scanner(System.in).nextInt();
+
         dsSinhVien.remove(viTri);
+
         System.out.println("danh sach sau khi xoa bot phan tu la : ");
         for (int i = 0; i < dsSinhVien.size(); i++) {
             System.out.println(dsSinhVien.get(i));
@@ -91,9 +94,12 @@ public class Main {
     public static void suaDanhSach() {
         System.out.println("moi ban nhap vi tri can sua : ");
         int viTri = new Scanner(System.in).nextInt();
+
         System.out.println("moi ban nhap gia tri moi : ");
         String value = new Scanner(System.in).nextLine();
+
         dsSinhVien.set(viTri,value);
+
         System.out.println("danh sach sinh vien sau khi sua la  : ");
         for (int i = 0; i < dsSinhVien.size(); i++) {
             System.out.println(dsSinhVien.get(i));

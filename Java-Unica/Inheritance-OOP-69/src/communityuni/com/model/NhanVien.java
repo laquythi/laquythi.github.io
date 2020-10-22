@@ -4,6 +4,7 @@ public class NhanVien {
     protected int ma;
     protected String ten;
 
+    // constructor
     public NhanVien(){
 
     }
@@ -13,6 +14,7 @@ public class NhanVien {
         this.ten = ten;
     }
 
+    // getter & setter
     public int getMa() {
         return ma;
     }

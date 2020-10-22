@@ -4,18 +4,21 @@ import communityuni.com.model.NhanVien;
 
 public class TestNhanVien{
     public static void main(String[] args) {
+        // truong hop 1 : ca 2 doi tuong nv1 va nv2 cung tro den 1 vung nho ma nv2 dang quan ly
+        // lay vi du 2 nguoi su dung chung 1 tai khoan Bank
 //        NhanVien nv1 = new NhanVien(1,"thi");
 //        NhanVien nv2 = new NhanVien(2,"hellen");
 //        nv1 = nv2; // nv1 tro den vung nho ma nv2 dang quan ly
 //        chi can nv1 hoac nv2 thay doi thi ca 2 se thay doi
 
-//        nv2.setTen("memories");
-//        System.out.println("ten cua nhan vien 1 la " + nv1.getTen()); // luc nay ten nv1 se la "memories".
+//        nv2.setTen("trang lax");
+//        System.out.println("ten cua nhan vien 1 la " + nv1.getTen()); // luc nay ten nv1 se la "trang lax".
 //        nv1.setTen("thuy tran");
 //        System.out.println("ten cua nhan vien 2 la " + nv2.getTen()); // thuy tran
 
         System.out.println("---------------------");
 
+        // truong hop 2 :
 //        NhanVien nv3 = new NhanVien(3,"trang");
 //        NhanVien nv4 = new NhanVien(4,"nhung");
 //        nv4 = nv3.copy();

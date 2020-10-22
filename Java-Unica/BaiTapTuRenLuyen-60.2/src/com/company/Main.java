@@ -74,6 +74,7 @@ public class Main {
         // 1 tim kiem theo ma sinh vien
 //        System.out.println("moi ban nhap ma sinh vien :");
 //        int ma = new Scanner(System.in).nextInt();
+
 //        if(dsSinhVien.containsKey(ma) == false){
 //            System.out.println("ko ton tai sinh vien co ma " + ma + " trong danh sach");
 //        }else{
@@ -83,8 +84,10 @@ public class Main {
         // 2 dung phuong thuc contains de tim ky tu nam trong ten sinh vien
 //        System.out.println("moi ban nhap ten sinh vien can tim :");
 //        String name = new Scanner(System.in).nextLine();
+
 //        System.out.println("thong tin ve sinh vien ban dang tim la :");
 //        int count = 0;
+
 //        for (Map.Entry<Integer,String> item : dsSinhVien.entrySet()){
 //            if (item.getValue().contains(name) == true){
 //                System.out.println(item.getKey() + "\t" + item.getValue());
@@ -94,6 +97,7 @@ public class Main {
 //        if(count == 0){
 //            System.out.println("ko ton tai sinh vien co ma nhu tren.");
 //        }
+
         // 3 tim sinh vien co ten gom chu "an"
         String name = "an";
         System.out.println("thong tin ve sinh vien ban dang tim la : ");
@@ -112,6 +116,7 @@ public class Main {
     public static void xoa() {
         System.out.println("nhap ma sinh vien can xoa : ");
         int ma = new Scanner(System.in).nextInt();
+
         if(dsSinhVien.containsKey(ma) == false){
             System.out.println("chua co sinh vien nao co ma so nhu tren.");
         }else{
@@ -126,6 +131,7 @@ public class Main {
     public static void suaDanhSach() {
         System.out.println("moi ban nhap ma sinh vien can sua :");
         int ma = new Scanner(System.in).nextInt();
+
         if(dsSinhVien.containsKey(ma) == false){
             System.out.println("chua co sinh vien nao co ma so nhu tren.");
         }else{
@@ -149,6 +155,7 @@ public class Main {
     public static void themSv() {
         System.out.println("moi ban nhap ma sinh vien ");
         int ma = new Scanner(System.in).nextInt();
+
         if(dsSinhVien.containsKey(ma) == true){
             System.out.println("ma sinh vien da ton tai trong danh sach");
         }else{
