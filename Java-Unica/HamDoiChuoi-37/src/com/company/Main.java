@@ -4,8 +4,11 @@ public class Main {
 
     public static void main(String[] args) {
 	// 37: replace & replaceFirst
-//        String fullName = "thi la quy dong son dong hung ";
-//        fullName = fullName.replace("dong","bac");
+        // Phương thức replaceAll() nhận tham số vào như một chuỗi.
+        //  phương thức replace() có thể nhận tham số truyền vào như là ký tự hoặc là chuỗi.
+
+//        String fullName = "thi la quy dong son dong hung thai binh la quy thi";
+//        fullName = fullName.replace('l', 'n');
 //        System.out.println(fullName);
 
 
@@ -15,13 +18,13 @@ public class Main {
 //        System.out.println(fullname);
 //        System.out.println(fullname.length());
 //
-//        fullname = fullname.trim();
-//        System.out.println(fullname);
-//        System.out.println(fullname.length());
+//        String fullname2 = fullname.trim();
+//        System.out.println(fullname2);
+//        System.out.println(fullname2.length());
 
         // 39 : ham so sanh chuoi
-//        String name1 = "l a q u y t h i";
-//        String name2 = "la quy THI ";
+        String name1 = "ABC";
+        String name2 = "abc";
 //        int x = name2.compareTo(name1);
 //        System.out.println(x);
 //
@@ -43,6 +46,7 @@ public class Main {
         // 40 : ham noi chuoi
         // khi su dung toan tu + de noi chuoi,vi du name + " " + address,se lam qua trinh xu ly du lieu lau hon
         // vay nen trong thuc te,khi noi chuoi,hay dung StringBuilder.
+
 //        String name = "la quy thi";
 //        String address = "dong hung thai binh";
 //        StringBuilder sb = new StringBuilder();
@@ -52,22 +56,23 @@ public class Main {
 //        System.out.println(sb);
 
         // 41 : ham tach chuoi
-//        String infor = "1131020126;la quy thi;web front-end 4";
-//        String [] arr = infor.split(";");
-//        if(arr.length == 3){
-//            System.out.println("ma sinh vien:"+arr[0]);
-//            System.out.println("ten sinh vien:"+arr[1]);
-//            System.out.println("lop:"+arr[2]);
-//            System.out.println("---------");
-//        }
-//        for (int i = 0; i < arr.length; i++) {
-//            System.out.println(arr[i]);
-//        }
-//
-//        System.out.println("---------using foreach--------");
-//        for (String i :arr) {
-//            System.out.println(i);
-//        }
+        String infor = "1131020126;la quy thi;web front-end 4";
+        String [] arr = infor.split(";");
+        if(arr.length == 3){
+            System.out.println("ma sinh vien:"+arr[0]);
+            System.out.println("ten sinh vien:"+arr[1]);
+            System.out.println("lop:"+arr[2]);
+            System.out.println("---------");
+        }
+
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println(arr[i]);
+        }
+
+        System.out.println("---------foreach--------");
+        for (String i :arr) {
+            System.out.println(i);
+        }
 
         // 42 : ham doi chu HOA-thuong
 //        String name = "la quy thi dong son dong hung thai binh";

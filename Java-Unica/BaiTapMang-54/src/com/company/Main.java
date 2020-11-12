@@ -58,9 +58,9 @@ public class Main {
 //        for (int j = 0; j < M.length; j++) {
 //            System.out.print(M[j] + " ");
 //        }
-//
 //    }
 
+//    bai 2 lam tuong tu nhu bai 1,thay dieu kien trong vong lap for thanh M[j] > M[i]
 //    public static void bai2(){
 //        Scanner sc = new Scanner(System.in);
 //        int[] M;
@@ -99,9 +99,11 @@ public class Main {
 //    public static void bai3(){
 //        Scanner sc = new Scanner(System.in);
 //        double[] M;
+
 //        System.out.print("nhap so phan tu cua mang M : ");
 //        int n = sc.nextInt();
 //        M = new double[n];
+
 //        Random rd = new Random();
 //        for (int i = 0; i < M.length; i++) {
 //            M[i] = rd.nextDouble();
@@ -129,11 +131,12 @@ public class Main {
 //    }
 
     public static void bai4(){
-        Scanner sc = new Scanner(System.in);
         int[] M;
         System.out.print("nhap so phan tu cho mang : ");
+        Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         M = new int[n];
+
         Random rd = new Random();
         for (int i = 0; i < M.length; i++) {
             M[i] = rd.nextInt(100);
@@ -143,8 +146,8 @@ public class Main {
         for (int i = 0; i < M.length; i++) {
             System.out.print(M[i] + " ");
         }
-
-        // xuat ra cac so chan,dem cac so chan
+//
+//        // xuat ra cac so chan,dem cac so chan
         System.out.println("\ncac so chan trong mang : ");
         int demChan = 0;
         for (int i = 0; i < M.length; i++) {
@@ -154,8 +157,8 @@ public class Main {
             }
         }
         System.out.print("co tong cong " + demChan + " so chan trong mang");
-
-        // xuat ra cac so le,dem cac so le
+//
+//        // xuat ra cac so le,dem cac so le
         System.out.println("\ncac so le trong mang : ");
         int demLe = 0;
         for (int i = 0; i < M.length; i++) {
@@ -165,8 +168,8 @@ public class Main {
             }
         }
         System.out.print("co tong cong " + demLe + " so le trong mang");
-
-        // xuat ra cac so nguyen to,dem cac so nguyen to
+//
+//        // xuat ra cac so nguyen to,dem cac so nguyen to
         int demSoNt = 0;
         System.out.println("\ncac so nguyen to trong mang la ");
         for (int i = 0; i < M.length; i++) {
@@ -182,7 +185,6 @@ public class Main {
             }
         }
         System.out.println("\nco tat ca " + demSoNt + " so nguyen to trong mang");
-
     }
 
 }

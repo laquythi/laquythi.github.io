@@ -22,6 +22,7 @@ public class Main {
 //        }else{
 //            System.out.println("[memories] ko ton tai trong chuoi fullName");
 //        }
+
         StringTokenizer token = new StringTokenizer(fullName);
         int count = 0;
         while (token.hasMoreTokens()){

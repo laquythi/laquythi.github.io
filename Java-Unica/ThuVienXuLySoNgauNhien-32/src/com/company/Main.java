@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        Random rd = new Random();
+
 //        int x = rd.nextInt(100);
 //        System.out.println(x); // equal 0 <= x <= 99
 
@@ -23,28 +23,44 @@ public class Main {
     }
 
     public static void doanSo(){
-        int count = 0;
-        for (int i = 0; i < 100; i++) {
-            Random rd = new Random();
-            int number = 0 + rd.nextInt(10);
-            System.out.println(number);
-            if(number == 7){
-                System.out.println("day la ngay sinh cua toi");
-                break;
+       int count = 0;
+        System.out.println("may tinh ra 1 so ngau nhien (0 - 10)");
+
+        Random rd = new Random();
+        int soMayTinhDoan = rd.nextInt(10);
+
+        do {
+            System.out.println("moi ban nhap so can doan ");
+            int soNguoiDoan = new Scanner(System.in).nextInt();
+
+            if(soNguoiDoan == soMayTinhDoan){
+                System.out.println("ban doan dung,so may tinh doan = " + soMayTinhDoan);
+
+                System.out.println("ban co muon choi tiep khong ? (c/k)");
+
+                String traLoi = new Scanner(System.in).nextLine();
+                if(traLoi.equalsIgnoreCase("c")){
+                    doanSo();
+                }else{
+                    break;
+                }
             }else{
-                System.out.println("day ko la ngay sinh cua toi");
+                System.out.println("ban doan sai");
                 count++;
-                if(count == 5){
-                    System.out.println("ban doan sai qua so lan cho phep");
-                    System.out.println("ban co muon choi tiep ko ? (c/k)");
+                if(count == 7){
+                    System.out.println("ban doan sai qua 7 lan cho phep,so may tinh doan la " + soMayTinhDoan);
+
+                    System.out.println("ban co muon choi tiep khong ? (c/k)");
+
                     String traLoi = new Scanner(System.in).nextLine();
-                    if (traLoi.equalsIgnoreCase("k")){
-                        break;
-                    }else{
+                    if(traLoi.equalsIgnoreCase("c")){
                         doanSo();
+                    }else{
+                        break;
                     }
                 }
             }
-        }
+        }while (count < 7);
+
     }
 }

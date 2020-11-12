@@ -21,9 +21,9 @@ public class Main {
         System.out.println("nhap so phan tu cua mang : ");
         int n = sc.nextInt();
         int[] M = new int[n];
+
         nhapMang(M);
         System.out.println("mang ban vua nhap la : ");
-
         xuatMang(M);
 
         // tinh tong cac phan tu trong mang

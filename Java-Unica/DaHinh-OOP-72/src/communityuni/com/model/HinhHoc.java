@@ -4,6 +4,7 @@ public abstract class HinhHoc {
     private int chieuDai;
     private int chieuRong;
 
+    // constructor
     public HinhHoc() {
         super();
     }
@@ -14,6 +15,7 @@ public abstract class HinhHoc {
         this.chieuRong = chieuRong;
     }
 
+    // getter setter
     public int getChieuDai() {
         return chieuDai;
     }

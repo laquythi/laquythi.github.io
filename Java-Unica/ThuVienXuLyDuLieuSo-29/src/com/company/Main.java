@@ -29,8 +29,10 @@ public class Main {
         int x = 366921214;
         DecimalFormat df = new DecimalFormat("#,###");
         DecimalFormatSymbols dfs = new DecimalFormatSymbols(Locale.getDefault());
-//        dfs.setGroupingSeparator('.');
+
+        dfs.setGroupingSeparator('.');
+
         df.setDecimalFormatSymbols(dfs);
-        System.out.println(df.format(x));
+        System.out.println(df.format(x)); // equal 366.921.214
     }
 }

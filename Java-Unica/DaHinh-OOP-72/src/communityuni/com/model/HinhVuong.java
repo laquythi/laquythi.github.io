@@ -1,6 +1,8 @@
 package communityuni.com.model;
 
 public class HinhVuong extends HinhChuNhat {
+
+    // constructor
     public HinhVuong() {
         super();
     }

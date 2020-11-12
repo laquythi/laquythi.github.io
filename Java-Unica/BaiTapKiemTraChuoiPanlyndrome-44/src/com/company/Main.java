@@ -10,7 +10,8 @@ public class Main {
         String arr;
         System.out.println("moi ban nhap chuoi : ");
         arr = sc.nextLine();
-        char[] arr1 = arr.toCharArray();
+        char[] arr1 = arr.toCharArray(); // bien chuoi ban vua nhap thanh 1 mang
+
         boolean flag = true;
         for (int i = 0; i < arr1.length; i++) {
             if(arr1[i] != arr1[arr1.length-i-1]){

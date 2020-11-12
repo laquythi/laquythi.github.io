@@ -13,10 +13,13 @@ public class Main {
 
 //        Calendar cal = Calendar.getInstance();
 //        System.out.println(cal.getTime()); // equal Wed Aug 19 14:20:05 ICT 2020
+
 //        int year = cal.get(Calendar.YEAR);
 //        System.out.println(year); // equal 2020
+
 //        int month = cal.get(Calendar.MONTH);
 //        System.out.println(month + 1); // equal 8 because month run from 0 - 11
+
 //        int day = cal.get(Calendar.DATE);
 //        System.out.println(day);
 
@@ -29,8 +32,8 @@ public class Main {
 //        System.out.println(sdf.format(time)); // equal 19/08/20 02:57:23 PM
 
         // chuyen chuoi nhap vao sang dinh dang ngay thang nam sinh
-        Calendar cal = Calendar.getInstance();
-        int yearNow = cal.get(Calendar.YEAR);
+        Calendar cal = Calendar.getInstance(); // lay ra ngay thang nam hien tai
+        int yearNow = cal.get(Calendar.YEAR); // lay ra nam hien tai
 
         System.out.println("moi ban nhap nam sinh (dd/MM/yy) : ");
         String ns = new Scanner(System.in).nextLine();
@@ -40,8 +43,7 @@ public class Main {
             Date birthday = sdf.parse(ns);
             // doi ngay thang nam:
             cal.setTime(birthday);
-            int yearNs = cal.get(Calendar.YEAR);
-
+            int yearNs = cal.get(Calendar.YEAR); // lay ra nam sinh vua nhap
             int tuoi = yearNow - yearNs;
             System.out.println("ban " + tuoi + " tuoi");
         } catch (ParseException e) {

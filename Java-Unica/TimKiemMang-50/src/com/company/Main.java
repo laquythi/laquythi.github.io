@@ -9,17 +9,22 @@ public class Main {
 	// write your code here
         int[] M;
         Scanner sc = new Scanner(System.in);
+
         System.out.println("nhap so phan tu cua mang M ");
         int n = sc.nextInt();
         M = new int[n];
+
         System.out.println("nhap gia tri cho cac phan tu trong mang M");
         nhapMang(M);
+
         System.out.println("gia tri cua mang M la ");
         xuatMang(M);
         System.out.println("------------");
+
         System.out.println("moi ban nhap vao so muon tim : ");
         int k = sc.nextInt();
         timSoLanXuatHien(M,k);
+
         System.out.println("vi tri xuat hien " + k + " trong mang la : ");
         timViTriXuatHien(M,k);
     }

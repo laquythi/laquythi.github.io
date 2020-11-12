@@ -9,8 +9,8 @@ public class Main {
 	// 1 bai tap choi game doan so:
         int count = 5;
             do {
-                int random = new Random().nextInt(5);
-                System.out.println("so ngau nhien la " + random); // lay dc so ngau nhien tu 0 - 5;
+                int random = new Random().nextInt(5); // so ngau nhien tu 0 - 5
+//                System.out.println("so ngau nhien la " + random); // lay dc so ngau nhien tu 0 - 5;
                 System.out.println("moi nguoi choi doan so,luu y doan trong khoang 0 - 5 : ");
                 int nguoiChoiDoan;
                 Scanner sc = new Scanner(System.in);

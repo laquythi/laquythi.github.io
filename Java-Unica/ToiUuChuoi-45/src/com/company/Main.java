@@ -2,13 +2,6 @@ package com.company;
 
 public class Main {
 
-    public static void main(String[] args) {
-	// write your code here
-        String s = "    lA   qUy THI ";
-        System.out.println(s);
-        String sToiUu = toiUu(s);
-        System.out.println(sToiUu);
-    }
     public static String toiUu(String s){
         String sToiUu = s;
         sToiUu = sToiUu.trim();
@@ -22,5 +15,13 @@ public class Main {
             }
         }
         return  sToiUu.trim();
+    }
+
+    public static void main(String[] args) {
+	// write your code here
+        String s = "    lA   qUy THI ";
+        System.out.println(s);
+        String sToiUu = toiUu(s);
+        System.out.println(sToiUu);
     }
 }
