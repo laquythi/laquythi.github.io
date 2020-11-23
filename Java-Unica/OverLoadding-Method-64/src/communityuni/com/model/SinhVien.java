@@ -2,7 +2,7 @@ package communityuni.com.model;
 
 public class SinhVien {
     // overloadding: nap chong phuong thuc
-    // 2 hoac nhieu hon cac phuong thuc trung ten,nhung khac nhau doi so truyen vao
+    // 2 hoac nhieu hon cac phuong thuc trung ten,cung kieu tra ve,nhung khac nhau doi so truyen vao
     private int ma;
     private String ten;
     private double diem;

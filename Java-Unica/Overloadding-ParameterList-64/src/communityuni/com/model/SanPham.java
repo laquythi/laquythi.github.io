@@ -48,7 +48,7 @@ public class SanPham {
 
     public static double tongTien(SanPham ... phams){
         double tien = 0;
-        // cach viet 1
+        // cach viet 1 dung vong lap foreach
 //        for(SanPham sp : phams){
 //            tien = tien + sp.giaSanPham;
 //        }

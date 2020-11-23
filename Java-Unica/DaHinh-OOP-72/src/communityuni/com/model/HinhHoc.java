@@ -32,6 +32,7 @@ public abstract class HinhHoc {
         this.chieuRong = chieuRong;
     }
 
+    // abstract method ko co than phuong thuc
     public abstract double tinhChuVi();
     public abstract double tinhDienTich();
 }

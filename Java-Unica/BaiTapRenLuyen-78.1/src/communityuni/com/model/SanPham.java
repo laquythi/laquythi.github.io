@@ -8,6 +8,7 @@ public class SanPham extends DanhMucSanPham {
 
     // constructor
     public SanPham() {
+
     }
     public SanPham(int maSanPham, String tenSanPham, double giaSanPham, String xuatXu) {
         super();

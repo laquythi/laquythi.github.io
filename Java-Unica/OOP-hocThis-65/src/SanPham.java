@@ -4,7 +4,6 @@ public class SanPham {
     private double gia; // instance variable
 
     // constructor
-
     public SanPham(int ma, String ten, double gia) {
         this.ma = ma;
         this.ten = ten;
@@ -17,7 +16,7 @@ public class SanPham {
     }
 
     public void setMa(int ma) { // int ma : local variable
-        this.ma = ma; // this.ma(instance variable). ma -> local variable
+        this.ma = ma; // this.ma -> (instance variable). ma -> local variable
     }
 
     public String getTen() {

@@ -8,7 +8,7 @@ public class TestNhanVien {
         NhanVienChinhThuc thi = new NhanVienChinhThuc(1,"la quy thi");
         thi.tinhLuong();
 
-        NhanVienThoiVu toan = new NhanVienThoiVu(2,"tuan bui");
-        toan.tinhLuong();
+        NhanVienThoiVu tuan = new NhanVienThoiVu(2,"tuan bui");
+        tuan.tinhLuong();
     }
 }

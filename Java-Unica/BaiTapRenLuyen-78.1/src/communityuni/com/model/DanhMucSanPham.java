@@ -6,6 +6,7 @@ public class DanhMucSanPham {
 
     // construtor
     public DanhMucSanPham() {
+
     }
     public DanhMucSanPham(int maDanhMuc, String tenDanhMuc) {
         super();

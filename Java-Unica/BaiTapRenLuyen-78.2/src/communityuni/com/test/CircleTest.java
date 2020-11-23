@@ -48,8 +48,10 @@ public class CircleTest {
 //        Scanner sc = new Scanner(System.in);
 //        System.out.println("nhap vao ban kinh duong tron ");
 //        double radius = sc.nextDouble();
+
 //        System.out.println("nhap vao toa do x : ");
 //        int x = sc.nextInt();
+        
 //        System.out.println("nhap vao toa do y : ");
 //        int y = sc.nextInt();
 //

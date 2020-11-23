@@ -4,6 +4,7 @@ public abstract class NhanVien {
     private int ma;
     private String ten;
 
+    // constructor
     public NhanVien(int ma, String ten) {
         super();
         this.ma = ma;
@@ -14,6 +15,7 @@ public abstract class NhanVien {
         super();
     }
 
+    // getter setter
     public int getMa() {
         return ma;
     }

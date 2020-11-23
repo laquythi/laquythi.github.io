@@ -2,7 +2,7 @@ package communityuni.com.model;
 
 public class NhanVienChinhThuc extends NhanVien{
 
-    // 2 constructor ko dc thua huong,phai tu khai bao
+    // 2 constructor ko dc ke thua,phai tu khai bao
     public NhanVienChinhThuc(){
         super();
     }

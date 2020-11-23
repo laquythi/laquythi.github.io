@@ -142,7 +142,7 @@ public class Main {
             M[i] = rd.nextInt(100);
         }
 
-        System.out.println("mang sau khi nhap ngau nhien la :");
+        System.out.println("mang sau khi nhap ngau nhien la :"  );
         for (int i = 0; i < M.length; i++) {
             System.out.print(M[i] + " ");
         }

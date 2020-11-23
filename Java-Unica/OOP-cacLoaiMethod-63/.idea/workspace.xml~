@@ -67,20 +67,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02945797-c40c-468d-8859-b059ef357569" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Interface-70/src/communityuni/com/model/IGiaiTri.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Interface-70/src/communityuni/com/model/ILamViec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Interface-70/src/communityuni/com/model/SinhVien.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Interface-70/src/communityuni/com/model/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OverLoadding-Method-64/src/communityuni/com/model/SinhVien.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OverLoadding-Method-64/src/communityuni/com/model/SinhVien.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Overloadding-ParameterList-64/out/production/Overloadding-ParameterList-64/communityuni/com/model/SanPham.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Overloadding-ParameterList-64/out/production/Overloadding-ParameterList-64/communityuni/com/model/SanPham.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Overloadding-ParameterList-64/src/communityuni/com/model/SanPham.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Overloadding-ParameterList-64/src/communityuni/com/model/SanPham.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Overloadding-ParameterList-64/src/communityuni/com/test/TestSanPham.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Overloadding-ParameterList-64/src/communityuni/com/test/TestSanPham.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Static-OOP-67/src/communityuni/com/model/LeanStatic.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Static-OOP-67/src/communityuni/com/model/LeanStatic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TryCatchFinally-26/out/production/TryCatchFinally-26/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TryCatchFinally-26/out/production/TryCatchFinally-26/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TryCatchFinally-26/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TryCatchFinally-26/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../NOTE/12E86D5C.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../NOTE/new words.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../NOTE/new words.xlsx" afterDir="false" />
+    <list default="true" id="dcee896b-c970-4f21-91ba-21498ab5c321" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../OOP-62/src/communityuni/com/model/SinhVien.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OOP-62/src/communityuni/com/model/SinhVien.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/communityuni/com/model/TamGiac.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communityuni/com/model/TamGiac.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NOTE/new word.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../NOTE/new word.docx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +87,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectId" id="1gmKYmr2mUQRxj1wYKdA4qqRKDn" />
+  <component name="ProjectId" id="1giT6BpJ8oXAuX8XX5pm2q3bary" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -105,11 +95,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Application.TestNhanVien">
+  <component name="RunManager" selected="Application.TestTamGiac">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
-      <module name="Overriding-71" />
+      <module name="OOP-cacLoaiMethod-63" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -117,9 +108,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestNhanVien" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="communityuni.com.test.TestNhanVien" />
-      <module name="Overriding-71" />
+    <configuration name="TestTamGiac" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="communityuni.com.test.TestTamGiac" />
+      <module name="OOP-cacLoaiMethod-63" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="communityuni.com.test.*" />
@@ -132,22 +123,22 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.TestNhanVien" />
+      <item itemvalue="Application.TestTamGiac" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestNhanVien" />
+        <item itemvalue="Application.TestTamGiac" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="02945797-c40c-468d-8859-b059ef357569" name="Default Changelist" comment="" />
-      <created>1598714379161</created>
+      <changelist id="dcee896b-c970-4f21-91ba-21498ab5c321" name="Default Changelist" comment="" />
+      <created>1598596237261</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1598714379161</updated>
+      <updated>1598596237261</updated>
     </task>
     <servers />
   </component>
@@ -164,29 +155,29 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1598714562455">
+    <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1598596441353">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1598714562455" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1598719195367">
+    <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1598596441353" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1598598158451">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1598719195367" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1598719195367">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1598598158451" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1598598158436">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1598719195367" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1598719195367">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1598598158436" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1598598158436">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1598719195367" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1598719195367">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1598598158436" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1598598158451">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1598719195367" />
-    <state x="65" y="0" key="new project wizard" timestamp="1598951056506">
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1598598158451" />
+    <state x="65" y="0" key="new project wizard" timestamp="1598696824599">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1598951056506" />
+    <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1598696824599" />
   </component>
 </project>
