@@ -1,0 +1,38 @@
+[
+    {
+        "id":1,
+        "name":"Pacific rim",
+        "tel": "0909017419",
+        "Permission":1
+    },
+    {
+        "id":2,
+        "name":"F.D Roosevelt",
+        "tel": "0123456789",
+        "Permission":2
+    },
+    {
+        "id":3,
+        "name":"D.Trump",
+        "tel": "0366921214",
+        "Permission":2
+    },
+    {
+        "id":4,
+        "name":"Adam Smith",
+        "tel": "0396103920",
+        "Permission":3
+    },
+    {
+        "id":5,
+        "name":"Saddam Hussein",
+        "tel": "0987654321",
+        "Permission":4
+    },
+    {
+        "id":6,
+        "name":"Mark Cuban",
+        "tel": "0964045861",
+        "Permission":2
+    }
+]
