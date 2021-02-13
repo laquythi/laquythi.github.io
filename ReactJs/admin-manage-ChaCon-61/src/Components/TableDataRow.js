@@ -10,6 +10,18 @@ class TableDataRow extends Component {
             return 'Normal';
         }
     }
+
+    editClick = () => {
+        this.props.editFunClick();
+        this.props.changeEditUserStatus();
+    }
+
+    // khai bao function xoa
+    deleteButtonClick = (idUser) => {
+        // nhan duoc props tu ham co ten tuong tu trong TableData
+        this.props.deleteButtonClick(idUser);
+    }
+
     render() {
         return (
             <tr>
@@ -18,8 +30,8 @@ class TableDataRow extends Component {
                 <td>{this.props.tel}</td>
                 <td>{this.permissionShow()}</td>
                 <td>
-                    <div className="btn btn-warning mr-2 sua"><i className="fa fa-edit">Sửa</i></div>
-                    <div className="btn btn-danger xoa"><i className="fas fa-trash-alt"> Xóa</i></div>
+                    <div className="btn btn-warning mr-2 sua" onClick={() => this.editClick()}><i className="fa fa-edit">Sửa</i></div>
+                    <div className="btn btn-danger xoa" onClick={(idUser) => this.deleteButtonClick(this.props.id)}><i className="fas fa-trash-alt"> Xóa</i></div>
                 </td>
             </tr>
         );

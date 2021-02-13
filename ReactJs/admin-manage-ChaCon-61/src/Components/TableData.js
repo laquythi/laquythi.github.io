@@ -3,8 +3,23 @@ import TableDataRow from './TableDataRow';
 
 class TableData extends Component {
 
+    // khai bao ham deleteButtonClick(day la 1 ham khac voi ham co ten tuong tu trong TableDataRow)
+    deleteButtonClick = (idUser) => {
+        // sau khi khai bao ham deleteUser trong App.js,truyen vao <TableData /> ==> TableData se nhan duoc 1 props la deleteUser
+        this.props.deleteUser(idUser);
+    }
+ 
     mappingDataUser = () => (
-        this.props.dataUserProps.map((value,key) => (<TableDataRow key={key} stt={key} userName={value.name} tel={value.tel} permission={value.Permission} />)
+        this.props.dataUserProps.map((value,key) => (<TableDataRow
+        deleteButtonClick = {(idUser) => this.deleteButtonClick(idUser)}
+        changeEditUserStatus = {() => this.props.changeEditUserStatus()}
+        editFunClick={(user) => this.props.editFunc(value)} 
+        key={key} 
+        stt={key} 
+        id={value.id}
+        userName={value.name} 
+        tel={value.tel} 
+        permission={value.Permission} />)
         )
     )
         
