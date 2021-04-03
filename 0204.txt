@@ -1,0 +1,6 @@
+1 tao controller
+2 tao view
+3 tao models
+4 connect Db
+5 action in controller
+6 validation
